@@ -54,8 +54,9 @@ busybox.links: applets/busybox.mkll include/config.h
 install: applets/install.sh busybox busybox.links
 	$(SHELL) $< $(PREFIX)
 
-uninstall: busybox busybox.links
-	for i in `cat busybox.links` ; do rm -f $$PREFIX$$i; done
+uninstall: busybox.links
+	rm -f $(PREFIX)/bin/busybox
+	for i in `cat busybox.links` ; do rm -f $(PREFIX)$$i; done
 
 install-hardlinks: applets/install.sh busybox busybox.links
 	$(SHELL) $< $(PREFIX) --hardlinks
@@ -147,7 +148,7 @@ include/config/MARKER: depend scripts/split-include
 
 include/config.h: .config
 	@if [ ! -x ./scripts/config/conf ] ; then \
-	    make -C scripts/config conf; \
+	    $(MAKE) -C scripts/config conf; \
 	fi;
 	@./scripts/config/conf -o sysdeps/$(TARGET_OS)/Config.in
 
@@ -167,12 +168,12 @@ all: menuconfig
 # ---------------------------------------------------------------------------
 
 scripts/config/conf:
-	make -C scripts/config conf
+	$(MAKE) -C scripts/config conf
 	-@if [ ! -f .config ] ; then \
 		cp sysdeps/$(TARGET_OS)/defconfig .config; \
 	fi
 scripts/config/mconf:
-	make -C scripts/config ncurses conf mconf
+	$(MAKE) -C scripts/config ncurses conf mconf
 	-@if [ ! -f .config ] ; then \
 		cp sysdeps/$(TARGET_OS)/defconfig .config; \
 	fi
