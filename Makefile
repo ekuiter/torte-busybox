@@ -122,7 +122,7 @@ $(ALL_MAKEFILES): %/Makefile: $(top_srcdir)/%/Makefile
 include $(patsubst %,%/Makefile.in, $(SRC_DIRS))
 -include $(top_builddir)/.depend
 
-busybox: $(ALL_MAKEFILES) .depend include/config.h $(libraries-y)
+busybox: $(ALL_MAKEFILES) .depend include/bb_config.h $(libraries-y)
 	$(CC) $(LDFLAGS) -o $@ -Wl,--start-group $(libraries-y) $(LIBRARIES) -Wl,--end-group
 	$(STRIPCMD) $@
 
@@ -163,9 +163,9 @@ docs/busybox.pod : $(top_srcdir)/docs/busybox_header.pod $(top_srcdir)/include/u
 	    cat $(top_srcdir)/docs/busybox_footer.pod ) > docs/busybox.pod
 
 docs/BusyBox.txt: docs/busybox.pod
-	@echo
-	@echo BusyBox Documentation
-	@echo
+	$(SECHO)
+	$(SECHO) BusyBox Documentation
+	$(SECHO)
 	-mkdir -p docs
 	-pod2text $< > $@
 
@@ -212,10 +212,17 @@ include/config.h: .config
 	fi;
 	@$(top_builddir)/scripts/config/conf -o $(CONFIG_CONFIG_IN)
 
+include/bb_config.h: include/config.h
+	echo "#ifndef AUTOCONF_INCLUDED" > $@
+	sed -e 's/#undef CONFIG_\(.*\)/#define ENABLE_\1 0/' \
+	    -e 's/#define CONFIG_\(.*\)/#define CONFIG_\1\n#define ENABLE_\1/' \
+		< $< >> $@
+	echo "#endif" >> $@
+
 finished2:
-	@echo
-	@echo Finished installing...
-	@echo
+	$(SECHO)
+	$(SECHO) Finished installing...
+	$(SECHO)
 
 else # ifeq ($(strip $(HAVE_DOT_CONFIG)),y)
 
@@ -279,7 +286,7 @@ clean:
 
 distclean: clean
 	- rm -f scripts/split-include scripts/mkdep
-	- rm -rf include/config include/config.h
+	- rm -rf include/config include/config.h include/bb_config.h
 	- find . -name .depend -exec rm -f {} \;
 	rm -f .config .config.old .config.cmd
 	- $(MAKE) -C scripts/config clean
