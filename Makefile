@@ -192,15 +192,14 @@ scripts/mkdep: $(top_srcdir)/scripts/mkdep.c
 scripts/split-include: $(top_srcdir)/scripts/split-include.c
 	$(HOSTCC) $(HOSTCFLAGS) -o $@ $<
 
-.depend: scripts/mkdep include/config.h
+depend dep: .depend
+.depend: scripts/mkdep include/config.h include/bbconfigopts.h
 	rm -f .depend .hdepend;
 	mkdir -p include/config;
 	scripts/mkdep -I include -- \
 	  `find $(top_srcdir) -name \*.c -print | sed -e "s,^./,,"` >> .depend;
 	scripts/mkdep -I include -- \
 	  `find $(top_srcdir) -name \*.h -print | sed -e "s,^./,,"` >> .hdepend;
-
-depend dep: .depend include/bbconfigopts.h
 
 include/config/MARKER: depend scripts/split-include
 	scripts/split-include include/config.h include/config
@@ -221,7 +220,6 @@ include/bb_config.h: include/config.h
 
 include/bbconfigopts.h: .config
 	scripts/config/mkconfigs >include/bbconfigopts.h
-       
 
 finished2:
 	$(SECHO)
@@ -296,20 +294,20 @@ distclean: clean
 	- $(MAKE) -C scripts/config clean
 
 release: distclean #doc
-	cd ..;					\
-	rm -rf $(PROG)-$(VERSION);		\
-	cp -a busybox $(PROG)-$(VERSION);	\
-						\
-	find $(PROG)-$(VERSION)/ -type d	\
-				 -name CVS	\
-				 -print		\
-		-exec rm -rf {} \; ;            \
-						\
-	find $(PROG)-$(VERSION)/ -type f	\
-				 -name .\#*	\
-				 -print		\
-		-exec rm -f {} \;  ;            \
-						\
+	cd ..; \
+	rm -rf $(PROG)-$(VERSION); \
+	cp -a busybox $(PROG)-$(VERSION); \
+	\
+	find $(PROG)-$(VERSION)/ -type d \
+		-name CVS \
+		-print \
+		-exec rm -rf {} \; ; \
+	\
+	find $(PROG)-$(VERSION)/ -type f \
+		-name .\#* \
+		-print \
+		-exec rm -f {} \; ; \
+	\
 	tar -cvzf $(PROG)-$(VERSION).tar.gz $(PROG)-$(VERSION)/;
 
 tags:
@@ -322,4 +320,3 @@ endif # ifeq ($(skip-makefile),)
 
 .PHONY: dummy subdirs release distclean clean config oldconfig \
 	menuconfig tags check test depend buildtree
-
