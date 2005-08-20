@@ -288,7 +288,7 @@ clean:
 
 distclean: clean
 	- rm -f scripts/split-include scripts/mkdep
-	- rm -rf include/config include/config.h include/bb_config.h
+	- rm -rf include/config include/config.h include/bb_config.h include/bbconfigopts.h
 	- find . -name .depend -exec rm -f {} \;
 	rm -f .config .config.old .config.cmd
 	- $(MAKE) -C scripts/config clean
@@ -299,7 +299,7 @@ release: distclean #doc
 	cp -a busybox $(PROG)-$(VERSION); \
 	\
 	find $(PROG)-$(VERSION)/ -type d \
-		-name CVS \
+		-name .svn \
 		-print \
 		-exec rm -rf {} \; ; \
 	\
