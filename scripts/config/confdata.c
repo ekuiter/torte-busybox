@@ -322,8 +322,8 @@ int conf_write(const char *name)
 	while (menu) {
 		sym = menu->sym;
 		if (!sym) {
-			if (!menu_is_visible(menu))
-				goto next;
+			//if (!menu_is_visible(menu))
+			//	goto next;
 			str = menu_get_prompt(menu);
 			fprintf(out, "\n"
 				     "#\n"
@@ -336,8 +336,8 @@ int conf_write(const char *name)
 					       " */\n", str);
 		} else if (!(sym->flags & SYMBOL_CHOICE)) {
 			sym_calc_value(sym);
-			if (!(sym->flags & SYMBOL_WRITE))
-				goto next;
+			//if (!(sym->flags & SYMBOL_WRITE))
+			//	goto next;
 			sym->flags &= ~SYMBOL_WRITE;
 			type = sym->type;
 			if (type == S_TRISTATE) {
@@ -396,21 +396,20 @@ int conf_write(const char *name)
 			case S_HEX:
 				str = sym_get_string_value(sym);
 				if (str[0] != '0' || (str[1] != 'x' && str[1] != 'X')) {
-					fprintf(out, "%s=%s\n", sym->name, str);
+					fprintf(out, "%s=%s\n", sym->name, *str ? str : "0");
 					if (out_h)
 						fprintf(out_h, "#define %s 0x%s\n", sym->name, str);
 					break;
 				}
 			case S_INT:
 				str = sym_get_string_value(sym);
-				fprintf(out, "%s=%s\n", sym->name, str);
+				fprintf(out, "%s=%s\n", sym->name, *str ? str : "0");
 				if (out_h)
 					fprintf(out_h, "#define %s %s\n", sym->name, str);
 				break;
 			}
 		}
 
-	next:
 		if (menu->list) {
 			menu = menu->list;
 			continue;
