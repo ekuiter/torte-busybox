@@ -70,7 +70,7 @@ $(filter-out _all,$(MAKECMDGOALS)) _all: $(KBUILD_OUTPUT)/Rules.mak $(KBUILD_OUT
 	$(MAKE) -C $(KBUILD_OUTPUT) \
 	top_srcdir=$(CURDIR) \
 	top_builddir=$(KBUILD_OUTPUT) \
-	TOPDIR=$(KBUILD_OUTPUT)	\
+	TOPDIR=$(KBUILD_OUTPUT) \
 	KBUILD_SRC=$(CURDIR) \
 	-f $(CURDIR)/Makefile $@
 
@@ -100,7 +100,7 @@ ifeq ($(strip $(HAVE_DOT_CONFIG)),y)
 
 all: busybox busybox.links doc
 
-all_tree:	$(ALL_MAKEFILES)
+all_tree:       $(ALL_MAKEFILES)
 
 $(ALL_MAKEFILES): %/Makefile: $(top_srcdir)/%/Makefile
 	[ -d $(@D) ] || mkdir -p $(@D); cp $< $@
@@ -184,7 +184,16 @@ scripts/bb_mkdep: $(top_srcdir)/scripts/bb_mkdep.c
 	$(HOSTCC) $(HOSTCFLAGS) -o $@ $<
 
 depend dep: .depend
-.depend: scripts/bb_mkdep include/config.h include/bb_config.h
+
+DEP_INCLUDES=include/config.h include/bb_config.h
+ifeq ($(strip $(CONFIG_BBCONFIG)),y)
+DEP_INCLUDES += include/bbconfigopts.h
+
+include/bbconfigopts.h: .config
+	scripts/config/mkconfigs > $@
+endif
+
+.depend: scripts/bb_mkdep $(DEP_INCLUDES)
 	@rm -f .depend
 	@mkdir -p include/config
 	scripts/bb_mkdep -c include/config.h -c include/bb_config.h > $@
@@ -201,10 +210,6 @@ include/bb_config.h: include/config.h
 	    -e 's/#define CONFIG_\(.*\)/#define CONFIG_\1\n#define ENABLE_\1/' \
 		< $< >> $@
 	@echo "#endif" >> $@
-
-include/bbconfigopts.h: .config
-	@[ -d $(@D) ] || mkdir -v $(@D)
-	$(top_srcdir)/scripts/config/mkconfigs >include/bbconfigopts.h
 
 finished2:
 	$(SECHO)
@@ -260,8 +265,8 @@ clean:
 	    docs/busybox pod2htm* *.gdb *.elf *~ core .*config.log \
 	    docs/BusyBox.txt docs/BusyBox.1 docs/BusyBox.html \
 	    docs/busybox.net/BusyBox.html busybox.links libbb/loop.h \
-	    .config.old busybox testsuite/links/*
-	- rm -rf _install
+	    .config.old busybox
+	- rm -rf _install testsuite/links
 	- find . -name .\*.flags -exec rm -f {} \;
 	- find . -name \*.o -exec rm -f {} \;
 	- find . -name \*.a -exec rm -f {} \;
