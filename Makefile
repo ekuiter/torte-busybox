@@ -12,12 +12,11 @@ noconfig_targets := menuconfig config oldconfig randconfig \
 	defconfig allyesconfig allnoconfig clean distclean \
 	release tags
 
-ifndef TOPDIR
-TOPDIR=$(CURDIR)/
-endif
+# the toplevel sourcedir
 ifndef top_srcdir
 top_srcdir=$(CURDIR)
 endif
+# toplevel directory of the object-tree
 ifndef top_builddir
 top_builddir=$(CURDIR)
 endif
@@ -70,7 +69,6 @@ $(filter-out _all,$(MAKECMDGOALS)) _all: $(KBUILD_OUTPUT)/Rules.mak $(KBUILD_OUT
 	$(MAKE) -C $(KBUILD_OUTPUT) \
 	top_srcdir=$(CURDIR) \
 	top_builddir=$(KBUILD_OUTPUT) \
-	TOPDIR=$(KBUILD_OUTPUT) \
 	KBUILD_SRC=$(CURDIR) \
 	-f $(CURDIR)/Makefile $@
 
@@ -96,6 +94,36 @@ ifeq ($(skip-makefile),)
 
 _all: all
 
+help:
+	@echo 'Cleaning:'
+	@echo '  clean			- delete temporary files created by build'
+	@echo '  distclean		- delete all non-source files (including .config)'
+	@echo
+	@echo 'Build:'
+	@echo '  all			- Executable and documentation'
+	@echo '  busybox		- the swiss-army executable'
+	@echo '  doc			- docs/BusyBox.{txt,html,1}'
+	@echo
+	@echo 'Configuration:'
+	@echo '  allnoconfig		- disable all symbols in .config'
+	@echo '  allyesconfig		- enable (almost) all symbols in .config'
+	@echo '  config		- text based configurator (of last resort).'
+	@echo '  defconfig		- set .config to defaults'
+	@echo '  menuconfig		- interactive curses-based configurator'
+	@echo '  oldconfig		- resolve any unresolved symbols in .config'
+	@echo
+	@echo 'Installation:'
+	@echo '  install		- install busybox and symlinks into $prefix'
+	@echo '  install-hardlinks	- install busybox and hardlinks into $prefix'
+	@echo '  uninstall'
+	@echo
+	@echo 'Development:'
+	@echo '  check			- run the test suite for all applets'
+	@echo '  randconfig		- generate a random configuration'
+	@echo '  release		- create a distribution tarball'
+	@echo '  sizes			- show size of all enabled busybox symbols'
+	@echo
+
 ifeq ($(strip $(HAVE_DOT_CONFIG)),y)
 
 all: busybox busybox.links doc
@@ -110,9 +138,8 @@ $(ALL_MAKEFILES): %/Makefile: $(top_srcdir)/%/Makefile
 include $(patsubst %,%/Makefile.in, $(SRC_DIRS))
 -include $(top_builddir)/.depend
 
-%.o: .depend
 busybox: $(ALL_MAKEFILES) .depend $(libraries-y)
-	$(CC) $(LDFLAGS) -o $@ -Wl,--start-group $(libraries-y) $(LIBRARIES) -Wl,--end-group
+	$(CC) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -Wl,--start-group $(libraries-y) $(LIBRARIES) -Wl,--end-group
 	$(STRIPCMD) $@
 
 busybox.links: $(top_srcdir)/applets/busybox.mkll include/config.h $(top_srcdir)/include/applets.h
@@ -184,9 +211,8 @@ docs/busybox.net/BusyBox.html: docs/busybox.pod
 scripts/bb_mkdep: $(top_srcdir)/scripts/bb_mkdep.c
 	$(HOSTCC) $(HOSTCFLAGS) -o $@ $<
 
-depend dep: .depend
+DEP_INCLUDES := include/config.h include/bb_config.h
 
-DEP_INCLUDES=include/config.h include/bb_config.h
 ifeq ($(strip $(CONFIG_BBCONFIG)),y)
 DEP_INCLUDES += include/bbconfigopts.h
 
@@ -194,6 +220,7 @@ include/bbconfigopts.h: .config
 	scripts/config/mkconfigs > $@
 endif
 
+depend dep $(top_builddir)/.depend: .depend
 .depend: scripts/bb_mkdep $(DEP_INCLUDES)
 	@rm -f .depend
 	@mkdir -p include/config
