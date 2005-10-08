@@ -9,7 +9,8 @@
 # You shouldn't need to mess with anything beyond this point...
 #--------------------------------------------------------------
 noconfig_targets := menuconfig config oldconfig randconfig \
-	defconfig allyesconfig allnoconfig clean distclean \
+	defconfig allyesconfig allnoconfig allbareconfig \
+	clean distclean \
 	release tags
 
 # the toplevel sourcedir
@@ -35,16 +36,6 @@ SRC_DIRS:=$(patsubst %,$(top_srcdir)/%,$(DIRS))
 .PHONY: _all
 _all:
 
-# All object directories.
-OBJ_DIRS = scripts/config include $(DIRS)
-$(OBJ_DIRS):
-	mkdir -p "$(patsubst %,$(top_builddir)/%,$@)"
-
-scripts/config/Makefile: $(top_srcdir)/scripts/config/Makefile
-	cp -v $< $@
-
-include $(top_srcdir)/Rules.mak
-
 CONFIG_CONFIG_IN = $(top_srcdir)/sysdeps/$(TARGET_OS)/Config.in
 CONFIG_DEFCONFIG = $(top_srcdir)/sysdeps/$(TARGET_OS)/defconfig
 
@@ -53,6 +44,7 @@ ifeq ($(KBUILD_SRC),)
 ifdef O
   ifeq ("$(origin O)", "command line")
     KBUILD_OUTPUT := $(O)
+    top_builddir := $(O)
   endif
 else
 # If no alternate output-dir was specified, we build in cwd
@@ -61,26 +53,30 @@ else
   KBUILD_OUTPUT := $(top_builddir)
 endif
 
+# All object directories.
+OBJ_DIRS := $(DIRS)
+all_tree := $(patsubst %,$(top_builddir)/%,$(OBJ_DIRS) scripts scripts/config include)
+all_tree: $(all_tree)
+$(all_tree):
+	@mkdir -p "$@"
+
 ifneq ($(KBUILD_OUTPUT),)
 # Invoke a second make in the output directory, passing relevant variables
-# check that the output directory actually exists
+# Check that the output directory actually exists
 saved-output := $(KBUILD_OUTPUT)
 KBUILD_OUTPUT := $(shell cd $(KBUILD_OUTPUT) && /bin/pwd)
 $(if $(wildcard $(KBUILD_OUTPUT)),, \
      $(error output directory "$(saved-output)" does not exist))
 
-# We only need a copy of the Makefile for the config targets and reuse
-# the rest from the source directory, i.e. we do not cp ALL_MAKEFILES.
-all_tree: $(OBJ_DIRS) $(KBUILD_OUTPUT)/Rules.mak $(KBUILD_OUTPUT)/Makefile scripts/config/Makefile
-
 .PHONY: $(MAKECMDGOALS)
 
 $(filter-out _all,$(MAKECMDGOALS)) _all: $(KBUILD_OUTPUT)/Rules.mak $(KBUILD_OUTPUT)/Makefile all_tree
-#all:
 	$(MAKE) -C $(KBUILD_OUTPUT) \
 	top_srcdir=$(top_srcdir) \
 	top_builddir=$(top_builddir) \
 	KBUILD_SRC=$(top_srcdir) \
+	PREFIX=$(PREFIX) \
+	CROSS=$(CROSS) \
 	-f $(CURDIR)/Makefile $@
 
 $(KBUILD_OUTPUT)/Rules.mak:
@@ -103,6 +99,11 @@ endif # ifeq ($(KBUILD_SRC),)
 
 ifeq ($(skip-makefile),)
 
+# We only need a copy of the Makefile for the config targets and reuse
+# the rest from the source directory, i.e. we do not cp ALL_MAKEFILES.
+scripts/config/Makefile: $(top_srcdir)/scripts/config/Makefile
+	cp $< $@
+
 _all: all
 
 help:
@@ -118,7 +119,8 @@ help:
 	@echo 'Configuration:'
 	@echo '  allnoconfig		- disable all symbols in .config'
 	@echo '  allyesconfig		- enable (almost) all symbols in .config'
-	@echo '  config		- text based configurator (of last resort).'
+	@echo '  allbareconfig		- enable all basics without any features'
+	@echo '  config		- text based configurator (of last resort)'
 	@echo '  defconfig		- set .config to defaults'
 	@echo '  menuconfig		- interactive curses-based configurator'
 	@echo '  oldconfig		- resolve any unresolved symbols in .config'
@@ -136,9 +138,20 @@ help:
 	@echo
 
 
+include $(top_srcdir)/Rules.mak
+
 ifneq ($(strip $(HAVE_DOT_CONFIG)),y)
 
+# Default target if none was requested explicitly
 all: menuconfig
+
+# warn if no configuration exists and we are asked to build a non-config target
+.config:
+	@echo ""
+	@echo "No $(top_builddir)/$@ found!"
+	@echo "Please refer to 'make  help', section Configuration."
+	@echo ""
+	@exit 1
 
 # configuration
 # ---------------------------------------------------------------------------
@@ -177,6 +190,13 @@ allnoconfig: scripts/config/conf
 
 defconfig: scripts/config/conf
 	@./scripts/config/conf -d $(CONFIG_CONFIG_IN)
+
+allbareconfig: scripts/config/conf
+	@./scripts/config/conf -y $(CONFIG_CONFIG_IN)
+	sed -i -r -e "s/^(CONFIG_DEBUG|USING_CROSS_COMPILER|CONFIG_STATIC|CONFIG_SELINUX).*/# \1 is not set/" .config
+	sed -i -e "/FEATURE/s/=.*//;/^[^#]/s/.*FEATURE.*/# \0 is not set/;" .config
+	@echo "CONFIG_FEATURE_BUFFERS_GO_ON_STACK=y" >> .config
+	@./scripts/config/conf -o $(CONFIG_CONFIG_IN)
 
 else # ifneq ($(strip $(HAVE_DOT_CONFIG)),y)
 
@@ -281,11 +301,12 @@ include/bbconfigopts.h: .config
 	$(top_srcdir)/scripts/config/mkconfigs > $@
 endif
 
-depend dep $(top_builddir)/.depend: .depend
+depend dep: .depend
 .depend: scripts/bb_mkdep $(DEP_INCLUDES)
 	@rm -f .depend
 	@mkdir -p include/config
-	scripts/bb_mkdep -c include/config.h -c include/bb_config.h -I $(top_srcdir)/include $(top_srcdir)/ > $@.tmp
+	scripts/bb_mkdep -c include/config.h -c include/bb_config.h \
+			-I $(top_srcdir)/include $(top_srcdir) > $@.tmp
 	mv $@.tmp $@
 
 include/config.h: .config
@@ -300,11 +321,6 @@ include/bb_config.h: include/config.h
 	    -e 's/#define CONFIG_\(.*\)/#define CONFIG_\1\n#define ENABLE_\1/' \
 		< $< >> $@
 	@echo "#endif" >> $@
-
-finished2:
-	$(SECHO)
-	$(SECHO) Finished installing...
-	$(SECHO)
 
 clean:
 	- $(MAKE) -C scripts/config $@
@@ -349,4 +365,4 @@ tags:
 endif # ifeq ($(skip-makefile),)
 
 .PHONY: dummy subdirs release distclean clean config oldconfig \
-	menuconfig tags check test depend buildtree
+	menuconfig tags check test depend dep buildtree
