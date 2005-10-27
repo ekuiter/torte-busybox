@@ -53,6 +53,11 @@ else
   KBUILD_OUTPUT := $(top_builddir)
 endif
 
+ifneq ($(strip $(HAVE_DOT_CONFIG)),y)
+# pull in OS specific commands like cp, mkdir, etc. early
+-include $(top_srcdir)/Rules.mak
+endif
+
 # All object directories.
 OBJ_DIRS := $(DIRS)
 all_tree := $(patsubst %,$(top_builddir)/%,$(OBJ_DIRS) scripts scripts/config include)
@@ -75,8 +80,6 @@ $(filter-out _all,$(MAKECMDGOALS)) _all: $(KBUILD_OUTPUT)/Rules.mak $(KBUILD_OUT
 	top_srcdir=$(top_srcdir) \
 	top_builddir=$(top_builddir) \
 	KBUILD_SRC=$(top_srcdir) \
-	PREFIX=$(PREFIX) \
-	CROSS=$(CROSS) \
 	-f $(CURDIR)/Makefile $@
 
 $(KBUILD_OUTPUT)/Rules.mak:
@@ -182,7 +185,7 @@ randconfig: scripts/config/conf
 
 allyesconfig: scripts/config/conf
 	@./scripts/config/conf -y $(CONFIG_CONFIG_IN)
-	sed -i -r -e "s/^(CONFIG_DEBUG|USING_CROSS_COMPILER|CONFIG_STATIC|CONFIG_SELINUX).*/# \1 is not set/" .config
+	sed -i -r -e "s/^(CONFIG_DEBUG|USING_CROSS_COMPILER|CONFIG_STATIC|CONFIG_SELINUX|CONFIG_FEATURE_DEVFS).*/# \1 is not set/" .config
 	@./scripts/config/conf -o $(CONFIG_CONFIG_IN)
 
 allnoconfig: scripts/config/conf
@@ -254,7 +257,7 @@ sizes:
 	-rm -f busybox
 	$(MAKE) top_srcdir=$(top_srcdir) top_builddir=$(top_builddir) \
 		-f $(top_srcdir)/Makefile STRIPCMD=/bin/true
-	nm --size-sort busybox
+	$(NM) --size-sort busybox
 
 # Documentation Targets
 doc: docs/busybox.pod docs/BusyBox.txt docs/BusyBox.1 docs/BusyBox.html
