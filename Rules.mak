@@ -1,21 +1,14 @@
 # Rules.make for busybox
 #
-# Copyright (C) 1999-2004 by Erik Andersen <andersen@codepoet.org>
+# Copyright (C) 1999-2005 by Erik Andersen <andersen@codepoet.org>
 #
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or
-# (at your option) any later version.
+# Licensed under GPLv2, see the file LICENSE in this tarball for details.
 #
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-# General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
-#
+
+# Pull in the user's busybox configuration
+ifeq ($(filter $(noconfig_targets),$(MAKECMDGOALS)),)
+-include $(top_builddir)/.config
+endif
 
 #--------------------------------------------------------
 PROG      := busybox
@@ -84,11 +77,11 @@ CFLAGS_EXTRA=$(subst ",, $(strip $(EXTRA_CFLAGS_OPTIONS)))
 # For other libraries, you are on your own.  But these may (or may not) help...
 #LDFLAGS+=-nostdlib
 #LIBRARIES:=$(LIBCDIR)/lib/libc.a -lgcc
-#CROSS_CFLAGS+=-nostdinc -I$(LIBCDIR)/include -I$(GCCINCDIR)
+#CROSS_CFLAGS+=-nostdinc -I$(LIBCDIR)/include -I$(GCCINCDIR) -funsigned-char
 #GCCINCDIR:=$(shell gcc -print-search-dirs | sed -ne "s/install: \(.*\)/\1include/gp")
 
 WARNINGS=-Wall -Wstrict-prototypes -Wshadow
-CFLAGS=-I$(top_builddir)/include -I$(top_srcdir)/include -I$(srcdir)
+CFLAGS=-I$(top_builddir)/include -I$(top_srcdir)/include -I$(srcdir) -funsigned-char
 ARFLAGS=cru
 
 #--------------------------------------------------------
@@ -106,11 +99,6 @@ TARGET_ARCH:=$(shell $(CC) -dumpmachine | sed -e s'/-.*//' \
 		-e 's/mipsel-.*/mipsel/' \
 		-e 's/cris.*/cris/' \
 		)
-endif
-
-# Pull in the user's busybox configuration
-ifeq ($(filter $(noconfig_targets),$(MAKECMDGOALS)),)
--include $(top_builddir)/.config
 endif
 
 # A nifty macro to make testing gcc features easier
