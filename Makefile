@@ -222,7 +222,7 @@ LIBBUSYBOX_SONAME:=$(LD_LIBBUSYBOX).$(MAJOR_VERSION).$(MINOR_VERSION).$(SUBLEVEL
 DO_INSTALL_LIBS:=$(LD_LIBBUSYBOX) \
 	$(LD_LIBBUSYBOX).$(MAJOR_VERSION) \
 	$(LD_LIBBUSYBOX).$(MAJOR_VERSION).$(MINOR_VERSION)
- 
+
 ifeq ($(CONFIG_BUILD_AT_ONCE),y)
 # Which parts of the internal libs are requested?
 # Per default we only want what was actually selected.
@@ -381,7 +381,7 @@ docs/busybox.net/BusyBox.html: docs/busybox.pod
 scripts/bb_mkdep: $(top_srcdir)/scripts/bb_mkdep.c
 	$(HOSTCC) $(HOSTCFLAGS) -o $@ $<
 
-DEP_INCLUDES := include/config.h include/bb_config.h
+DEP_INCLUDES := include/config.h include/bb_config.h include/_usage.h
 
 ifeq ($(strip $(CONFIG_BBCONFIG)),y)
 DEP_INCLUDES += include/bbconfigopts.h
@@ -411,13 +411,22 @@ include/bb_config.h: include/config.h
 		< $< >> $@
 	@echo "#endif" >> $@
 
+# Create macros for usage.h, e.g.:
+#if ENABLE_HAVE_DOT_CONFIG
+#define USAGE_HAVE_DOT_CONFIG(a) a
+#else
+#define USAGE_HAVE_DOT_CONFIG(a)
+#endif
+include/_usage.h: .config
+	awk '/CONFIG|BB_APPLET/{gsub("#[[:space:]]*|=y|.*CONFIG_|.*BB_APPLET_","");if(!/=/){print("#if ENABLE_"$$1"\n#define USAGE_"$$1"(a) a\n#else\n#define USAGE_"$$1"(a)\n#endif");}}' $(<) > $(@)
+
 clean:
 	- $(MAKE) -C scripts/config $@
 	- $(RM_F) docs/busybox.dvi docs/busybox.ps \
 	    docs/busybox.pod docs/busybox.net/busybox.html \
 	    docs/busybox pod2htm* *.gdb *.elf *~ core .*config.log \
 	    docs/BusyBox.txt docs/BusyBox.1 docs/BusyBox.html \
-	    docs/busybox.net/BusyBox.html busybox.links libbb/loop.h \
+	    docs/busybox.net/BusyBox.html busybox.links \
 	    $(DO_INSTALL_LIBS) $(LIBBUSYBOX_SONAME) \
 	    .config.old busybox
 	- rm -rf _install testsuite/links
@@ -428,7 +437,7 @@ clean:
 
 distclean: clean
 	- $(RM_F) scripts/bb_mkdep
-	- rm -rf include/config include/config.h include/bb_config.h include/bbconfigopts.h
+	- rm -rf include/config $(DEP_INCLUDES)
 	- find . -name .depend -exec $(RM_F) {} \;
 	$(RM_F) .config .config.old .config.cmd
 
