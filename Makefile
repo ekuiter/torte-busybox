@@ -185,7 +185,6 @@ randconfig: scripts/config/conf
 allyesconfig: scripts/config/conf
 	@./scripts/config/conf -y $(CONFIG_CONFIG_IN)
 	sed -i -r -e "s/^(USING_CROSS_COMPILER)=.*/# \1 is not set/" .config
-	echo "CONFIG_FEATURE_SHARED_BUSYBOX=y" >> .config
 	@./scripts/config/conf -o $(CONFIG_CONFIG_IN)
 
 allnoconfig: scripts/config/conf
@@ -197,7 +196,7 @@ allnoconfig: scripts/config/conf
 
 defconfig: scripts/config/conf
 	@./scripts/config/conf -y $(CONFIG_CONFIG_IN)
-	sed -i -r -e "s/^(USING_CROSS_COMPILER|CONFIG_(DEBUG.*|STATIC|SELINUX|BUILD_(AT_ONCE|LIBBUSYBOX)|FEATURE_(DEVFS|FULL_LIBBUSYBOX|SHARED_BUSYBOX|MTAB_SUPPORT|CLEAN_UP)))=.*/# \1 is not set/" .config
+	sed -i -r -e "s/^(USING_CROSS_COMPILER|CONFIG_(DEBUG.*|STATIC|SELINUX|BUILD_(AT_ONCE|LIBBUSYBOX)|FEATURE_(DEVFS|FULL_LIBBUSYBOX|SHARED_BUSYBOX|MTAB_SUPPORT|CLEAN_UP|UDHCP_DEBUG)))=.*/# \1 is not set/" .config
 	@./scripts/config/conf -o $(CONFIG_CONFIG_IN)
 
 
@@ -385,9 +384,9 @@ docs/busybox.net/BusyBox.html: docs/busybox.pod
 
 # The nifty new buildsystem stuff
 scripts/bb_mkdep: $(top_srcdir)/scripts/bb_mkdep.c
-	$(HOSTCC) $(HOSTCFLAGS) -o $@ $<
+	$(Q)$(HOSTCC) $(HOSTCFLAGS) -o $@ $<
 
-DEP_INCLUDES := include/config.h include/bb_config.h include/_usage.h
+DEP_INCLUDES := include/bb_config.h
 
 ifeq ($(strip $(CONFIG_BBCONFIG)),y)
 DEP_INCLUDES += include/bbconfigopts.h
@@ -402,32 +401,14 @@ depend dep: .depend
 	$(disp_gen)
 	$(Q)$(RM_F) .depend
 	$(Q)mkdir -p include/config
-	$(Q)scripts/bb_mkdep -c include/config.h -c include/bb_config.h \
-			-I $(top_srcdir)/include $(top_srcdir) > $@.tmp
+	$(Q)scripts/bb_mkdep -I $(top_srcdir)/include $(top_srcdir) > $@.tmp
 	$(Q)mv $@.tmp $@
 
-include/config.h: .config
+include/bb_config.h: .config
 	@if [ ! -x $(top_builddir)/scripts/config/conf ] ; then \
 	    $(MAKE) -C scripts/config conf; \
 	fi;
 	@$(top_builddir)/scripts/config/conf -o $(CONFIG_CONFIG_IN)
-
-include/bb_config.h: include/config.h
-	@echo -e "#ifndef BB_CONFIG_H\n#define BB_CONFIG_H" > $@
-	@sed -e 's/#undef CONFIG_\(.*\)/#define ENABLE_\1 0/' \
-	    -e 's/#define CONFIG_\(.*\)/#define CONFIG_\1\n#define ENABLE_\1/' \
-		< $< >> $@
-	@echo "#endif" >> $@
-
-# Create macros for usage.h, e.g.:
-#if ENABLE_HAVE_DOT_CONFIG
-#define USAGE_HAVE_DOT_CONFIG(a) a
-#else
-#define USAGE_HAVE_DOT_CONFIG(a)
-#endif
-include/_usage.h: .config
-	$(disp_gen)
-	$(Q)awk '/CONFIG|BB_APPLET/{gsub("#[[:space:]]*|=y|.*CONFIG_|.*BB_APPLET_","");if(!/=/){print("#if ENABLE_"$$1"\n#define USAGE_"$$1"(a) a\n#else\n#define USAGE_"$$1"(a)\n#endif");}}' $(<) > $(@)
 
 clean:
 	- $(MAKE) -C scripts/config $@
@@ -447,7 +428,7 @@ clean:
 distclean: clean
 	- $(RM_F) scripts/bb_mkdep
 	- rm -rf include/config $(DEP_INCLUDES)
-	- find . -name .depend -exec $(RM_F) {} \;
+	- find . -name .depend'*' -exec $(RM_F) {} \;
 	$(RM_F) .config .config.old .config.cmd
 
 release: distclean #doc

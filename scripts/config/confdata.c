@@ -280,6 +280,10 @@ int conf_write(const char *name)
 	int type, l;
 	const char *str;
 
+	/* busybox`s code */
+	const char *opt_name;
+	int use_flg;
+
 	dirname[0] = 0;
 	if (name && name[0]) {
 		struct stat st;
@@ -315,7 +319,10 @@ int conf_write(const char *name)
 	fprintf(out, "#\n"
 		     "# Automatically generated make config: don't edit\n"
 		     "#\n");
+
+	/* busybox`s code */
 	if (out_h) {
+		fprintf(out_h, "#ifndef BB_CONFIG_H\n#define BB_CONFIG_H\n");
 		fprintf(out_h, "/*\n"
 			     " * Automatically generated header file: don't edit\n"
 			     " */\n\n"
@@ -329,6 +336,7 @@ int conf_write(const char *name)
 				     getenv("EXTRA_VERSION"));
 		fprintf(out_h, "\n");
 	}
+	/* end busybox`s code */
 
 	if (!sym_change_count)
 		sym_clear_all_valid();
@@ -367,6 +375,16 @@ int conf_write(const char *name)
 				if (modules_sym->curr.tri == no)
 					type = S_BOOLEAN;
 			}
+
+			/* busybox`s code */
+			opt_name = strchr(sym->name, '_');
+			if(opt_name == NULL)
+				opt_name = sym->name;
+			else
+				opt_name++;
+			use_flg = 1;
+			/* end busybox`s code */
+
 			switch (type) {
 			case S_BOOLEAN:
 			case S_TRISTATE:
@@ -375,13 +393,14 @@ int conf_write(const char *name)
 					fprintf(out, "# %s is not set\n", sym->name);
 					if (out_h)
 						fprintf(out_h, "#undef %s\n", sym->name);
+					use_flg = 0;    /* busybox`s code */
 					break;
 				case mod:
-#if 0
+#if 0   /* busybox`s code */
 					fprintf(out, "%s=m\n", sym->name);
 					if (out_h)
 						fprintf(out_h, "#define %s_MODULE 1\n", sym->name);
-#endif
+#endif  /* busybox`s code */
 					break;
 				case yes:
 					fprintf(out, "%s=y\n", sym->name);
@@ -430,14 +449,24 @@ int conf_write(const char *name)
 					fprintf(out_h, "#define %s %s\n", sym->name, str);
 				break;
 			}
+			/* busybox`s code */
+			if (out_h) {
+				fprintf(out_h, "#define ENABLE_%s %d\n", opt_name, use_flg);
+				fprintf(out_h, "#define USE_%s(...)%s\n", opt_name,
+					(use_flg ? "  __VA_ARGS__" : ""));
+				fprintf(out_h, "#define SKIP_%s(...)%s\n\n", opt_name,
+					(use_flg ? "" : "  __VA_ARGS__"));
+			}
+			/* end busybox`s code */
 		}
 next:
 		menu = next_menu(menu);
 	}
 	fclose(out);
 	if (out_h) {
+		fprintf(out_h, "#endif /* BB_CONFIG_H */\n");   /* busybox`s code */
 		fclose(out_h);
-		rename(".tmpconfig.h", "include/config.h");
+		rename(".tmpconfig.h", "include/bb_config.h");  /* busybox`s config name */
 		file_write_dep(NULL);
 	}
 	if (!name || basename != conf_def_filename) {
