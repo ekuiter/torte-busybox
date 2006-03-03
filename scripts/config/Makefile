@@ -2,8 +2,12 @@
 #
 # Copyright (C) 2002 Erik Andersen <andersen@codepoet.org>
 
+ifndef top_srcdir
 top_srcdir=../..
+endif
+ifndef top_builddir
 top_builddir=../..
+endif
 srcdir=$(top_srcdir)/scripts/config
 include $(top_srcdir)/Rules.mak
 
@@ -50,22 +54,20 @@ MCONF_OBJS   = $(patsubst %.c,%.o, $(MCONF_SRC) $(LXD_SRC))
 SHARED_OBJS  = $(patsubst %.c,%.o, $(SHARED_SRC))
 
 conf: $(CONF_OBJS) $(SHARED_OBJS)
-	$(SECHO) "  "HOSTCC $@ ; true
-	$(Q)$(HOSTCC) $(NATIVE_LDFLAGS) $^ -o $@
+	$(do_link.h)
 
 mconf: $(MCONF_OBJS) $(SHARED_OBJS)
-	$(SECHO) "  "HOSTCC $@ ; true
-	$(Q)$(HOSTCC) $(NATIVE_LDFLAGS) $^ -o $@ $(LIBS)
+	$(do_link.h) $(LIBS)
 
 $(CONF_OBJS): %.o : $(srcdir)/%.c $(SHARED_DEPS)
 	$(compile.h) -I.
 
 $(MCONF_OBJS): %.o : $(srcdir)/%.c $(SHARED_DEPS)
-	@[ -d $(@D) ] || mkdir -v $(@D)
+	@[ -d $(@D) ] || mkdir $(@D)
 	$(compile.h) $(HOSTNCURSES) -I.
 
 lkc_defs.h: $(srcdir)/lkc_proto.h
-	@sed < $< > $@ 's/P(\([^,]*\),.*/#define \1 (\*\1_p)/'
+	@$(SED) < $< > $@ 's/P(\([^,]*\),.*/#define \1 (\*\1_p)/'
 
 ###
 # The following requires flex/bison
