@@ -15,7 +15,7 @@ PROG      := busybox
 MAJOR_VERSION   :=1
 MINOR_VERSION   :=1
 SUBLEVEL_VERSION:=1
-EXTRAVERSION    :=-pre0
+EXTRAVERSION    :=
 VERSION   :=$(MAJOR_VERSION).$(MINOR_VERSION).$(SUBLEVEL_VERSION)$(EXTRAVERSION)
 BUILDTIME := $(shell TZ=UTC date -u "+%Y.%m.%d-%H:%M%z")
 
@@ -196,11 +196,7 @@ else
     LDFLAGS += $(call check_ld,--warn-common,)
     LDFLAGS += $(call check_ld,--sort-common,)
 endif
-ifeq ($(CONFIG_STRIP_BINARIES),y)
-    STRIPCMD:=$(STRIP) -s --remove-section=.note --remove-section=.comment
-else
-    STRIPCMD:=/bin/true -Not_stripping_since_we_are_debugging
-endif
+STRIPCMD:=$(STRIP) -s --remove-section=.note --remove-section=.comment
 ifeq ($(strip $(CONFIG_STATIC)),y)
     PROG_CFLAGS += $(call check_gcc,-static,)
 endif
