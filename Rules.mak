@@ -13,9 +13,9 @@ endif
 #--------------------------------------------------------
 PROG      := busybox
 MAJOR_VERSION   :=1
-MINOR_VERSION   :=1
-SUBLEVEL_VERSION:=1
-EXTRAVERSION    :=
+MINOR_VERSION   :=2
+SUBLEVEL_VERSION:=0
+EXTRAVERSION    :=-pre0
 VERSION   :=$(MAJOR_VERSION).$(MINOR_VERSION).$(SUBLEVEL_VERSION)$(EXTRAVERSION)
 BUILDTIME := $(shell TZ=UTC date -u "+%Y.%m.%d-%H:%M%z")
 
@@ -195,6 +195,14 @@ else
     CFLAGS+=$(WARNINGS) $(OPTIMIZATIONS) -D_GNU_SOURCE -DNDEBUG
     LDFLAGS += $(call check_ld,--warn-common,)
     LDFLAGS += $(call check_ld,--sort-common,)
+endif
+# warn a bit more verbosely for non-release versions
+ifneq ($(EXTRAVERSION),)
+    CFLAGS+=$(call check_gcc,-Wformat,)
+    CFLAGS+=$(call check_gcc,-Wformat=2,)
+    CFLAGS+=$(call check_gcc,-Wformat-nonliteral,)
+    CFLAGS+=$(call check_gcc,-Wformat-security,)
+    CFLAGS+=$(call check_gcc,-Wformat-y2k,)
 endif
 STRIPCMD:=$(STRIP) -s --remove-section=.note --remove-section=.comment
 ifeq ($(strip $(CONFIG_STATIC)),y)
