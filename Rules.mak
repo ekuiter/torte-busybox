@@ -38,6 +38,7 @@ AS             = $(CROSS)as
 LD             = $(CROSS)ld
 NM             = $(CROSS)nm
 STRIP          = $(CROSS)strip
+ELF2FLT        = $(CROSS)elf2flt
 CPP            = $(CC) -E
 SED           ?= sed
 
@@ -72,11 +73,14 @@ CFLAGS_EXTRA=$(subst ",, $(strip $(EXTRA_CFLAGS_OPTIONS)))
 #CROSS_CFLAGS+=-nostdinc -I$(LIBCDIR)/include -I$(GCCINCDIR) -funsigned-char
 #GCCINCDIR:=$(shell gcc -print-search-dirs | sed -ne "s/install: \(.*\)/\1include/gp")
 
-WARNINGS=-Wall -Wstrict-prototypes -Wshadow
-CFLAGS:=-I$(top_builddir)/include -I$(top_srcdir)/include -I$(srcdir)
-
+# This must bind late because srcdir is reset for every source subdirectory.
+CFLAGS=-I$(top_builddir)/include -I$(top_srcdir)/include -I$(srcdir)
+CFLAGS+=$(CHECKED_CFLAGS)
 ARFLAGS=cru
 
+# Warnings
+
+CFLAGS+=-Wall -Wstrict-prototypes -Wshadow
 
 # gcc centric. Perhaps fiddle with findstring gcc,$(CC) for the rest
 # get the CC MAJOR/MINOR version
@@ -100,8 +104,13 @@ TARGET_ARCH:=$(shell $(CC) -dumpmachine | sed -e s'/-.*//' \
 		)
 endif
 
-# A nifty macro to make testing gcc features easier
+# A nifty macro to make testing gcc features easier, but note that everything
+# that uses this _must_ use := or it will be re-evaluated for every file.
+ifeq ($(strip $(V)),2)
+VERBOSE_CHECK_GCC=echo check_gcc $(1) >> /dev/stderr;
+endif
 check_gcc=$(shell \
+	$(VERBOSE_CHECK_GCC)\
 	if [ "$(1)" != "" ]; then \
 		if $(CC) $(1) -S -o /dev/null -xc /dev/null > /dev/null 2>&1; \
 		then echo "$(1)"; else echo "$(2)"; fi \
@@ -113,9 +122,13 @@ check_ld=$(shell \
 		$(LD) --help | grep -q "\$(1)" && echo "-Wl,$(1)" ; \
 	fi)
 
-CFLAGS+=$(call check_gcc,-funsigned-char,)
+# Pin CHECKED_CFLAGS with := so it's only evaluated once.
+CHECKED_CFLAGS:=$(call check_gcc,-funsigned-char,)
+CHECKED_CFLAGS+=$(call check_gcc,-mmax-stack-frame=256,)
 
-CFLAGS+=$(call check_gcc,-mmax-stack-frame=256,)
+# Preemptively pin this too.
+PROG_CFLAGS:=
+
 
 #--------------------------------------------------------
 # Arch specific compiler optimization stuff should go here.
@@ -189,24 +202,24 @@ else
     endif
 endif
 ifeq ($(strip $(CONFIG_DEBUG)),y)
-    CFLAGS  +=$(WARNINGS) -g -D_GNU_SOURCE
+    CFLAGS  +=-g -D_GNU_SOURCE
     LDFLAGS += $(call check_ld,--warn-common,)
 else
-    CFLAGS+=$(WARNINGS) $(OPTIMIZATIONS) -D_GNU_SOURCE -DNDEBUG
+    CFLAGS+=$(OPTIMIZATIONS) -D_GNU_SOURCE -DNDEBUG
     LDFLAGS += $(call check_ld,--warn-common,)
     LDFLAGS += $(call check_ld,--sort-common,)
 endif
 # warn a bit more verbosely for non-release versions
 ifneq ($(EXTRAVERSION),)
-    CFLAGS+=$(call check_gcc,-Wstrict-prototypes,)
-    CFLAGS+=$(call check_gcc,-Wmissing-prototypes,)
-    CFLAGS+=$(call check_gcc,-Wmissing-declarations,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Wstrict-prototypes,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Wmissing-prototypes,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Wmissing-declarations,)
 endif
 STRIPCMD:=$(STRIP) -s --remove-section=.note --remove-section=.comment
 ifeq ($(strip $(CONFIG_STATIC)),y)
     PROG_CFLAGS += $(call check_gcc,-static,)
 endif
-CFLAGS_SHARED += $(call check_gcc,-shared,)
+CFLAGS_SHARED := $(call check_gcc,-shared,)
 LIB_CFLAGS+=$(CFLAGS_SHARED)
 
 ifeq ($(strip $(CONFIG_BUILD_LIBBUSYBOX)),y)
@@ -231,7 +244,7 @@ endif
 
 
 OBJECTS:=$(APPLET_SOURCES:.c=.o) busybox.o usage.o applets.o
-CFLAGS    += $(CROSS_CFLAGS)
+CFLAGS    += $(CHECKED_CFLAGS) $(CROSS_CFLAGS)
 ifdef BB_INIT_SCRIPT
     CFLAGS += -DINIT_SCRIPT='"$(BB_INIT_SCRIPT)"'
 endif
@@ -279,16 +292,19 @@ pur_disp_compile.h = echo "  "HOSTCC $(show_objs)
 pur_disp_strip     = echo "  "STRIP $(show_objs)
 pur_disp_link      = echo "  "LINK $(show_objs)
 pur_disp_ar        = echo "  "AR $(ARFLAGS) $(show_objs)
+pur_disp_elf2flt   = echo "  "ELF2FLT $(ELF2FLTFLAGS) $(show_objs)
 sil_disp_compile.c = true
 sil_disp_compile.h = true
 sil_disp_strip     = true
 sil_disp_link      = true
 sil_disp_ar        = true
+sil_disp_elf2flt   = true
 ver_disp_compile.c = echo $(cmd_compile.c)
 ver_disp_compile.h = echo $(cmd_compile.h)
 ver_disp_strip     = echo $(cmd_strip)
 ver_disp_link      = echo $(cmd_link)
 ver_disp_ar        = echo $(cmd_ar)
+ver_disp_elf2flt   = echo $(cmd_elf2flt)
 disp_compile.c     = $($(DISP)_disp_compile.c)
 disp_compile.h     = $($(DISP)_disp_compile.h)
 disp_strip         = $($(DISP)_disp_strip)
@@ -296,15 +312,18 @@ disp_link          = $($(DISP)_disp_link)
 disp_ar            = $($(DISP)_disp_ar)
 disp_gen           = $(SECHO) "  "GEN $@ ; true
 disp_doc           = $(SECHO) "  "DOC $(subst docs/,,$@) ; true
+disp_elf2flt       = $($(DISP)_disp_elf2flt)
 cmd_compile.c      = $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c -o $@ $<
 cmd_compile.h      = $(HOSTCC) $(HOSTCFLAGS) -c -o $@ $<
 cmd_strip          = $(STRIPCMD) $@
 cmd_link           = $(CC) $(CFLAGS) $(EXTRA_CFLAGS) $(LDFLAGS)
 cmd_ar             = $(AR) $(ARFLAGS) $@ $^
+cmd_elf2flt        = $(ELF2FLT) $(ELF2FLTFLAGS) $< -o $@
 compile.c          = @$(disp_compile.c) ; $(cmd_compile.c)
 compile.h          = @$(disp_compile.h) ; $(cmd_compile.h)
 do_strip           = @$(disp_strip)     ; $(cmd_strip)
 do_link            = @$(disp_link)      ; $(cmd_link)
 do_ar              = @$(disp_ar)        ; $(cmd_ar)
+do_elf2flt         = @$(disp_elf2flt)   ; $(cmd_elf2flt)
 
 .PHONY: dummy
