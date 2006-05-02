@@ -144,8 +144,12 @@ ifeq ($(strip $(shell [ $(CC_MAJOR) -ge 3 ] ; echo $$?)),0)
 	CFLAGS_COMBINE:=$(call check_gcc,--combine,)
 endif
 OPTIMIZATION+=$(call check_gcc,-funit-at-a-time,)
+OPTIMIZATION+=$(call check_gcc,-fgcse-after-reload,)
+ifneq ($(CONFIG_BUILD_LIBBUSYBOX),y)
 # http://gcc.gnu.org/bugzilla/show_bug.cgi?id=25795
-#PROG_CFLAGS+=$(call check_gcc,-fwhole-program,)
+# This prevents us from using -fwhole-program when we build the lib
+PROG_CFLAGS+=$(call check_gcc,-fwhole-program,)
+endif # CONFIG_BUILD_LIBBUSYBOX
 endif # CONFIG_BUILD_AT_ONCE
 
 LIB_LDFLAGS:=$(call check_ld,--enable-new-dtags,)
@@ -214,6 +218,10 @@ ifneq ($(EXTRAVERSION),)
     CHECKED_CFLAGS+=$(call check_gcc,-Wstrict-prototypes,)
     CHECKED_CFLAGS+=$(call check_gcc,-Wmissing-prototypes,)
     CHECKED_CFLAGS+=$(call check_gcc,-Wmissing-declarations,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Wunused,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Winit-self,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Wshadow,)
+    CHECKED_CFLAGS+=$(call check_gcc,-Wcast-align,)
 endif
 STRIPCMD:=$(STRIP) -s --remove-section=.note --remove-section=.comment
 ifeq ($(strip $(CONFIG_STATIC)),y)
@@ -291,24 +299,28 @@ pur_disp_compile.c = echo "  "CC $(show_objs)
 pur_disp_compile.h = echo "  "HOSTCC $(show_objs)
 pur_disp_strip     = echo "  "STRIP $(show_objs)
 pur_disp_link      = echo "  "LINK $(show_objs)
+pur_disp_link.h    = echo "  "HOSTLINK $(show_objs)
 pur_disp_ar        = echo "  "AR $(ARFLAGS) $(show_objs)
 pur_disp_elf2flt   = echo "  "ELF2FLT $(ELF2FLTFLAGS) $(show_objs)
 sil_disp_compile.c = true
 sil_disp_compile.h = true
 sil_disp_strip     = true
 sil_disp_link      = true
+sil_disp_link.h    = true
 sil_disp_ar        = true
 sil_disp_elf2flt   = true
 ver_disp_compile.c = echo $(cmd_compile.c)
 ver_disp_compile.h = echo $(cmd_compile.h)
 ver_disp_strip     = echo $(cmd_strip)
 ver_disp_link      = echo $(cmd_link)
+ver_disp_link.h    = echo $(cmd_link.h)
 ver_disp_ar        = echo $(cmd_ar)
 ver_disp_elf2flt   = echo $(cmd_elf2flt)
 disp_compile.c     = $($(DISP)_disp_compile.c)
 disp_compile.h     = $($(DISP)_disp_compile.h)
 disp_strip         = $($(DISP)_disp_strip)
 disp_link          = $($(DISP)_disp_link)
+disp_link.h        = $($(DISP)_disp_link.h)
 disp_ar            = $($(DISP)_disp_ar)
 disp_gen           = $(SECHO) "  "GEN $@ ; true
 disp_doc           = $(SECHO) "  "DOC $(subst docs/,,$@) ; true
@@ -317,12 +329,14 @@ cmd_compile.c      = $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c -o $@ $<
 cmd_compile.h      = $(HOSTCC) $(HOSTCFLAGS) -c -o $@ $<
 cmd_strip          = $(STRIPCMD) $@
 cmd_link           = $(CC) $(CFLAGS) $(EXTRA_CFLAGS) $(LDFLAGS)
+cmd_link.h         = $(HOSTCC) $(HOSTCFLAGS) $< -o $@
 cmd_ar             = $(AR) $(ARFLAGS) $@ $^
 cmd_elf2flt        = $(ELF2FLT) $(ELF2FLTFLAGS) $< -o $@
 compile.c          = @$(disp_compile.c) ; $(cmd_compile.c)
 compile.h          = @$(disp_compile.h) ; $(cmd_compile.h)
 do_strip           = @$(disp_strip)     ; $(cmd_strip)
 do_link            = @$(disp_link)      ; $(cmd_link)
+do_link.h          = @$(disp_link.h)    ; $(cmd_link.h)
 do_ar              = @$(disp_ar)        ; $(cmd_ar)
 do_elf2flt         = @$(disp_elf2flt)   ; $(cmd_elf2flt)
 
