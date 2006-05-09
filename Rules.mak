@@ -74,13 +74,15 @@ CFLAGS_EXTRA=$(subst ",, $(strip $(EXTRA_CFLAGS_OPTIONS)))
 #GCCINCDIR:=$(shell gcc -print-search-dirs | sed -ne "s/install: \(.*\)/\1include/gp")
 
 # This must bind late because srcdir is reset for every source subdirectory.
-CFLAGS=-I$(top_builddir)/include -I$(top_srcdir)/include -I$(srcdir)
+INCS:=-I$(top_builddir)/include -I$(top_srcdir)/include
+CFLAGS=$(INCS) -I$(srcdir) -D_GNU_SOURCE
 CFLAGS+=$(CHECKED_CFLAGS)
 ARFLAGS=cru
 
 # Warnings
 
-CFLAGS+=-Wall -Wstrict-prototypes -Wshadow
+CFLAGS += -Wall -Wstrict-prototypes -Wshadow
+LDFLAGS += $(call check_ld,--warn-common,)
 
 # gcc centric. Perhaps fiddle with findstring gcc,$(CC) for the rest
 # get the CC MAJOR/MINOR version
@@ -182,7 +184,7 @@ ifeq ($(strip $(shell [ $(CC_MAJOR) -ge 4 -a $(CC_MINOR) -ge 1 ] ; echo $$?)),0)
 	OPTIMIZATION+=$(call check_gcc,-fno-branch-count-reg,)
 endif # gcc-4.1 and beyond
 endif
-OPTIMIZATIONS:=$(OPTIMIZATION) $(call check_gcc,-fomit-frame-pointer,)
+OPTIMIZATION+=$(call check_gcc,-fomit-frame-pointer,)
 
 #
 #--------------------------------------------------------
@@ -206,14 +208,21 @@ else
 	LIBRARIES:=-lefence
     endif
 endif
+
+# Debugging info
+
 ifeq ($(strip $(CONFIG_DEBUG)),y)
-    CFLAGS  +=-g -D_GNU_SOURCE
-    LDFLAGS += $(call check_ld,--warn-common,)
+    CFLAGS +=-g
 else
-    CFLAGS+=$(OPTIMIZATIONS) -D_GNU_SOURCE -DNDEBUG
-    LDFLAGS += $(call check_ld,--warn-common,)
+    CFLAGS +=-DNDEBUG
     LDFLAGS += $(call check_ld,--sort-common,)
 endif
+
+ifneq ($(strip $(CONFIG_DEBUG_PESSIMIZE)),y)
+else
+    CFLAGS += $(OPTIMIZATION)
+endif
+
 # warn a bit more verbosely for non-release versions
 ifneq ($(EXTRAVERSION),)
     CHECKED_CFLAGS+=$(call check_gcc,-Wstrict-prototypes,)
@@ -327,10 +336,10 @@ disp_gen           = $(SECHO) "  "GEN $@ ; true
 disp_doc           = $(SECHO) "  "DOC $(subst docs/,,$@) ; true
 disp_elf2flt       = $($(DISP)_disp_elf2flt)
 cmd_compile.c      = $(CC) $(CFLAGS) $(EXTRA_CFLAGS) -c -o $@ $<
-cmd_compile.h      = $(HOSTCC) $(HOSTCFLAGS) -c -o $@ $<
+cmd_compile.h      = $(HOSTCC) $(HOSTCFLAGS) $(INCS) -c -o $@ $<
 cmd_strip          = $(STRIPCMD) $@
 cmd_link           = $(CC) $(CFLAGS) $(EXTRA_CFLAGS) $(LDFLAGS)
-cmd_link.h         = $(HOSTCC) $(HOSTCFLAGS) $< -o $@
+cmd_link.h         = $(HOSTCC) $(HOSTCFLAGS) $(INCS) $< -o $@
 cmd_ar             = $(AR) $(ARFLAGS) $@ $^
 cmd_elf2flt        = $(ELF2FLT) $(ELF2FLTFLAGS) $< -o $@
 compile.c          = @$(disp_compile.c) ; $(cmd_compile.c)

@@ -133,7 +133,7 @@ help:
 	@echo
 	@echo 'Development:'
 	@echo '  bloatcheck             - show size difference between busybox_unstripped'
-	@echo '                           and busybox_old
+	@echo '                           and busybox_old'
 	@echo '  check			- run the test suite for all applets'
 	@echo '  checkhelp		- check for missing help-entries in Config.in'
 	@echo '  randconfig		- generate a random configuration'
@@ -362,7 +362,7 @@ sizes: busybox_unstripped
 	$(NM) --size-sort $(<)
 .PHONY: bloatcheck
 bloatcheck: busybox_old busybox_unstripped
-	@scripts/bloat-o-meter busybox_old busybox_unstripped
+	@$(top_srcdir)/scripts/bloat-o-meter busybox_old busybox_unstripped
 
 .PHONY: objsizes
 objsizes: busybox_unstripped
