@@ -350,4 +350,12 @@ do_link.h          = @$(disp_link.h)    ; $(cmd_link.h)
 do_ar              = @$(disp_ar)        ; $(cmd_ar)
 do_elf2flt         = @$(disp_elf2flt)   ; $(cmd_elf2flt)
 
+uppercase = $(shell echo $1 | tr '[:lower:]' '[:upper:]')
+%.a:
+	@if test -z "$($(call uppercase,$*)_DIR)" ; then \
+		echo "Invalid target $@" ; \
+		exit 1 ; \
+	fi
+	$(Q)$(MAKE) $($(call uppercase,$*)_DIR)$@
+
 .PHONY: dummy
