@@ -414,15 +414,22 @@ include/bbconfigopts.h: .config
 	$(Q)$(top_srcdir)/scripts/config/mkconfigs > $@
 endif
 
-scripts/usage: $(top_srcdir)/scripts/usage.c .config
-	$(do_link.h) -I$(top_srcdir)/include
+ifeq ($(strip $(CONFIG_FEATURE_COMPRESS_USAGE)),y)
+USAGE_BIN:=scripts/usage
+$(USAGE_BIN): $(top_srcdir)/scripts/usage.c
+	$(do_link.h)
 
 DEP_INCLUDES += include/usage_compressed.h
-include/usage_compressed.h: .config scripts/usage
-	$(Q)sh $(top_srcdir)/scripts/usage_compressed "$(top_srcdir)/scripts" > $@
+
+include/usage_compressed.h: .config $(USAGE_BIN)
+	$(Q)$(SHELL) $(top_srcdir)/scripts/usage_compressed "$(top_builddir)/scripts" > $@
+endif # CONFIG_FEATURE_COMPRESS_USAGE
+
+# workaround alleged bug in make-3.80, make-3.81
+.NOTPARALLEL: .depend
 
 depend dep: .depend
-.depend: scripts/bb_mkdep $(DEP_INCLUDES)
+.depend: scripts/bb_mkdep $(USAGE_BIN) $(DEP_INCLUDES)
 	$(disp_gen)
 	$(Q)rm -f .depend
 	$(Q)mkdir -p include/config
@@ -450,7 +457,7 @@ clean:
 
 distclean: clean
 	rm -f scripts/bb_mkdep scripts/usage
-	rm -r -f include/config include/_usage.h include/config.h $(DEP_INCLUDES)
+	rm -r -f include/config include/config.h $(DEP_INCLUDES)
 	find . -name .depend'*' -print0 | xargs -0 rm -f
 	rm -f .hdepend
 	rm -f .config .config.old .config.cmd
