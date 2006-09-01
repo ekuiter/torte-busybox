@@ -278,6 +278,7 @@ endif # CONFIG_FEATURE_FULL_LIBBUSYBOX
 APPLET_SRC:=$(APPLET_SRC-y)
 APPLETS_DEFINE:=$(APPLETS_DEFINE-y)
 else  # CONFIG_BUILD_AT_ONCE
+APPLET_SRC:=
 # no --combine, build archives out of the individual .o
 # This was the old way the binary was built.
 libbusybox-obj:=archival/libunarchive/libunarchive.a \
@@ -447,9 +448,6 @@ include/usage_compressed.h: .config $(USAGE_BIN) \
 	$(Q)SED="$(SED)" $(SHELL) $(top_srcdir)/scripts/usage_compressed \
 	"$(top_builddir)/scripts" > $@
 endif # CONFIG_FEATURE_COMPRESS_USAGE
-
-# workaround alleged bug in make-3.80, make-3.81
-.NOTPARALLEL: .depend
 
 depend dep: .depend
 .depend: scripts/bb_mkdep $(USAGE_BIN) $(DEP_INCLUDES)
