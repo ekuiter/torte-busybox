@@ -2,7 +2,7 @@ VERSION = 1
 PATCHLEVEL = 2
 SUBLEVEL = 1
 EXTRAVERSION = .svn
-NAME=Unnamed
+NAME = Unnamed
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -399,7 +399,6 @@ ifeq ($(config-targets),1)
 export KBUILD_DEFCONFIG
 
 config %config: scripts_basic outputmakefile FORCE
-	$(Q)mkdir -p include/linux
 	$(Q)$(MAKE) $(build)=scripts/kconfig $@
 	$(Q)$(MAKE) -C $(srctree) KBUILD_SRC= .kernelrelease
 
@@ -460,7 +459,7 @@ ifeq ($(dot-config),1)
 # oldconfig if changes are detected.
 -include .kconfig.d
 
-include .config
+-include .config
 
 # If .config needs to be updated, it will be done via the dependency
 # that autoconf has on .config.
@@ -472,7 +471,6 @@ include .config
 # If kconfig.d is missing then we are probarly in a cleaned tree so
 # we execute the config step to be sure to catch updated Kconfig files
 include/autoconf.h: .kconfig.d .config
-	$(Q)mkdir -p include/linux
 	$(Q)$(MAKE) -f $(srctree)/Makefile silentoldconfig
 
 else
@@ -565,9 +563,17 @@ busybox-all  := $(core-y) $(libs-y)
 # Rule to link busybox - also used during CONFIG_KALLSYMS
 # May be overridden by arch/$(ARCH)/Makefile
 quiet_cmd_busybox__ ?= LINK    $@
-      cmd_busybox__ ?= scripts/trylink $(CC) -o $@ \
+ifdef CONFIG_STATIC
+      cmd_busybox__ ?= $(srctree)/scripts/trylink $(CC) \
+      -static \
+      -o $@ \
       -Wl,--warn-common -Wl,--sort-common -Wl,--gc-sections \
-      -Wl,--start-group $(busybox-all) -Wl,--end-group \
+      -Wl,--start-group $(busybox-all) -Wl,--end-group
+else
+      cmd_busybox__ ?= $(srctree)/scripts/trylink $(CC) -o $@ \
+      -Wl,--warn-common -Wl,--sort-common -Wl,--gc-sections \
+      -Wl,--start-group $(busybox-all) -Wl,--end-group
+endif
 
 # Generate System.map
 quiet_cmd_sysmap = SYSMAP 
@@ -798,10 +804,10 @@ include/config/MARKER: scripts/basic/split-include include/autoconf.h
 	@echo '  SPLIT   include/autoconf.h -> include/config/*'
 	@scripts/basic/split-include include/autoconf.h include/config
 	@echo '  GEN     include/bbconfigopts.h'
-	@scripts/mkconfigs >include/bbconfigopts.h
+	@$(srctree)/scripts/mkconfigs >include/bbconfigopts.h
 	@$(MAKE) $(build)=scripts
 	@echo '  GEN     include/usage_compressed.h'
-	@scripts/usage_compressed include/usage_compressed.h scripts
+	@$(srctree)/scripts/usage_compressed include/usage_compressed.h scripts
 	@touch $@
 
 # Generate some files
@@ -909,13 +915,15 @@ endif # CONFIG_MODULES
 
 # Directories & files removed with 'make clean'
 CLEAN_DIRS  += $(MODVERDIR)
-CLEAN_FILES +=	busybox System.map \
+CLEAN_FILES +=	busybox* System.map \
                 .tmp_kallsyms* .tmp_version .tmp_busybox* .tmp_System.map
 
 # Directories & files removed with 'make mrproper'
 MRPROPER_DIRS  += include/config include2
 MRPROPER_FILES += .config .config.old include/asm .version .old_version \
-                  include/autoconf.h \
+		  include/autoconf.h \
+		  include/bbconfigopts.h \
+		  include/usage_compressed.h \
 		  .kernelrelease Module.symvers tags TAGS cscope*
 
 # clean - Delete most, but leave enough to build external modules
@@ -940,7 +948,7 @@ clean: archclean $(clean-dirs)
 #
 mrproper: rm-dirs  := $(wildcard $(MRPROPER_DIRS))
 mrproper: rm-files := $(wildcard $(MRPROPER_FILES))
-mrproper-dirs      := $(addprefix _mrproper_,Documentation/DocBook scripts)
+mrproper-dirs      := $(addprefix _mrproper_,scripts)
 
 PHONY += $(mrproper-dirs) mrproper archmrproper
 $(mrproper-dirs):
