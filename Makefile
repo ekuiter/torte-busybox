@@ -681,7 +681,7 @@ busybox_unstripped: $(busybox-all) FORCE
 	$(Q)rm -f .old_version
 
 busybox: busybox_unstripped
-	$(Q)strip -s --remove-section=.note --remove-section=.comment \
+	$(Q)$(STRIP) -s --remove-section=.note --remove-section=.comment \
 		busybox_unstripped -o $@
 
 # The actual objects are generated when descending, 
@@ -806,9 +806,6 @@ include/config/MARKER: scripts/basic/split-include include/autoconf.h
 	@scripts/basic/split-include include/autoconf.h include/config
 	@echo '  GEN     include/bbconfigopts.h'
 	@$(srctree)/scripts/mkconfigs >include/bbconfigopts.h
-	@$(MAKE) $(build)=scripts
-	@echo '  GEN     include/usage_compressed.h'
-	@$(srctree)/scripts/usage_compressed include/usage_compressed.h scripts
 	@touch $@
 
 # Generate some files
