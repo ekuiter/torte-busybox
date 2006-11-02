@@ -1,6 +1,6 @@
 VERSION = 1
 PATCHLEVEL = 2
-SUBLEVEL = 1
+SUBLEVEL = 2
 EXTRAVERSION = .svn
 NAME = Unnamed
 
@@ -263,7 +263,7 @@ export quiet Q KBUILD_VERBOSE
 MAKEFLAGS += --include-dir=$(srctree)
 
 # We need some generic definitions
-include  $(srctree)/scripts/Kbuild.include
+include $(srctree)/scripts/Kbuild.include
 
 # For maximum performance (+ possibly random breakage, uncomment
 # the following)
@@ -302,7 +302,6 @@ AFLAGS_KERNEL	=
 CFLAGS		:=
 CPPFLAGS	:=
 AFLAGS		:=
-include $(srctree)/Makefile.flags
 
 # Read KERNELRELEASE from .kernelrelease (if it exists)
 KERNELRELEASE = $(shell cat .kernelrelease 2> /dev/null)
@@ -466,6 +465,9 @@ ifeq ($(dot-config),1)
 # that autoconf has on .config.
 # To avoid any implicit rule to kick in, define an empty command
 .config .kconfig.d: ;
+
+# Now we can define CFLAGS etc according to .config
+include $(srctree)/Makefile.flags
 
 # If .config is newer than include/autoconf.h, someone tinkered
 # with it and forgot to run make oldconfig.
@@ -986,7 +988,7 @@ rpm: FORCE
 boards := $(wildcard $(srctree)/arch/$(ARCH)/configs/*_defconfig)
 boards := $(notdir $(boards))
 
--include Makefile.help
+-include $(srctree)/Makefile.help
 
 # Documentation targets
 # ---------------------------------------------------------------------------
@@ -1280,7 +1282,7 @@ endif	# skip-makefile
 PHONY += FORCE
 FORCE:
 
--include Makefile.custom
+-include $(srctree)/Makefile.custom
 
 # Declare the contents of the .PHONY variable as phony.  We keep that
 # information in a variable se we can use it in if_changed and friends.
