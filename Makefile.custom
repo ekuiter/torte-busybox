@@ -5,10 +5,16 @@
 %.bflt: %_unstripped
 	$(CROSS_COMPILE)elf2flt $(ELF2FLTFLAGS) $< -o $@
 
-busybox.links: $(srctree)/applets/busybox.mkll $(srctree)/include/applets.h
+busybox.links: $(srctree)/applets/busybox.mkll $(objtree)/include/autoconf.h $(srctree)/include/applets.h
 	$(Q)-$(SHELL) $^ >$@
 
 .PHONY: install
+ifeq ($(CONFIG_INSTALL_APPLET_SYMLINKS),y)
+INSTALL_OPTS:= --symlinks
+endif
+ifeq ($(CONFIG_INSTALL_APPLET_HARDLINKS),y)
+INSTALL_OPTS:= --hardlinks
+endif
 install: $(srctree)/applets/install.sh busybox busybox.links
 	$(Q)DO_INSTALL_LIBS="$(strip $(LIBBUSYBOX_SONAME) $(DO_INSTALL_LIBS))" \
 		$(SHELL) $< $(CONFIG_PREFIX) $(INSTALL_OPTS)
