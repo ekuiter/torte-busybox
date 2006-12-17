@@ -42,6 +42,22 @@ check test: busybox
 	bindir=$(objtree) srcdir=$(srctree)/testsuite SED="$(SED)" \
 	$(SHELL) $(srctree)/testsuite/runtest $(if $(KBUILD_VERBOSE:1=),-v)
 
+.PHONY: release
+release: distclean
+	cd ..; \
+	rm -r -f busybox-$(VERSION).$(PATCHLEVEL).$(SUBLEVEL)$(EXTRAVERSION); \
+	cp -a busybox busybox-$(VERSION).$(PATCHLEVEL).$(SUBLEVEL)$(EXTRAVERSION) && { \
+	find busybox-$(VERSION).$(PATCHLEVEL).$(SUBLEVEL)$(EXTRAVERSION)/ -type d \
+		-name .svn \
+		-print \
+		-exec rm -r -f {} \; ; \
+	find busybox-$(VERSION).$(PATCHLEVEL).$(SUBLEVEL)$(EXTRAVERSION)/ -type f \
+		-name .\#* \
+		-print \
+		-exec rm -f {} \; ; \
+	tar -czf busybox-$(VERSION).$(PATCHLEVEL).$(SUBLEVEL)$(EXTRAVERSION).tar.gz \
+		busybox-$(VERSION).$(PATCHLEVEL).$(SUBLEVEL)$(EXTRAVERSION)/ ; }
+
 .PHONY: checkhelp
 checkhelp:
 	$(Q)$(srctree)/scripts/checkhelp.awk \
@@ -107,11 +123,22 @@ docs/busybox.net/BusyBox.html: docs/busybox.pod
 # documentation, cross-reference
 # Modern distributions already ship synopsis packages (e.g. debian)
 # If you have an old distribution go to http://synopsis.fresco.org/
-syn_tgt := $(wildcard $(patsubst %,%/*.c,$(SRC_DIRS)))
-syn     := $(patsubst %.c, %.syn, $(syn_tgt))
+syn_tgt = $(wildcard $(patsubst %,%/*.c,$(busybox-alldirs)))
+syn     = $(patsubst %.c, %.syn, $(syn_tgt))
+
+comma:= ,
+brace_open:= (
+brace_close:= )
+
+SYN_CPPFLAGS := $(strip $(CPPFLAGS) $(EXTRA_CPPFLAGS))
+SYN_CPPFLAGS := $(subst $(brace_open),\$(brace_open),$(SYN_CPPFLAGS))
+SYN_CPPFLAGS := $(subst $(brace_close),\$(brace_close),$(SYN_CPPFLAGS))
+#SYN_CPPFLAGS := $(subst ",\",$(SYN_CPPFLAGS))
+#")
+#SYN_CPPFLAGS := [$(patsubst %,'%'$(comma),$(SYN_CPPFLAGS))'']
 
 %.syn: %.c
-	synopsis -p C -l Comments.SSDFilter,Comments.Previous $(INCS) -Wp,verbose,debug,preprocess,cppflags="'$(CFLAGS) $(EXTRA_CFLAGS) $(LDFLAGS) $(PROG_CFLAGS) $(PROG_LDFLAGS) $(CFLAGS_COMBINE) $(APPLETS_DEFINE) $(BUSYBOX_DEFINE)'" -o $@ $<
+	synopsis -p C -l Comments.SSDFilter,Comments.Previous -Wp,preprocess=True,cppflags="'$(SYN_CPPFLAGS)'" -o $@ $<
 
 .PHONY: html
 html: $(syn)
