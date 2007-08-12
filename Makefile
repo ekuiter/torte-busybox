@@ -569,7 +569,7 @@ busybox-all  := $(core-y) $(libs-y)
 # May be overridden by arch/$(ARCH)/Makefile
 quiet_cmd_busybox__ ?= LINK    $@
       cmd_busybox__ ?= $(srctree)/scripts/trylink $(CC) $(LDFLAGS) \
-      -o $@ -Wl,-M \
+      -o $@ -Wl,-Map -Wl,$@.map \
       -Wl,--warn-common -Wl,--sort-common -Wl,--gc-sections \
       -Wl,--start-group $(busybox-all) -Wl,--end-group \
       $(LDLIBS)
@@ -760,7 +760,7 @@ PHONY += prepare-all
 # 2) Create the include2 directory, used for the second asm symlink
 prepare3: .kernelrelease
 ifneq ($(KBUILD_SRC),)
-	@echo '  Using $(srctree) as source for kernel'
+	@echo '  Using $(srctree) as source for busybox'
 	$(Q)if [ -f $(srctree)/.config ]; then \
 		echo "  $(srctree) is not clean, please run 'make mrproper'";\
 		echo "  in the '$(srctree)' directory.";\
