@@ -6,6 +6,12 @@
 
 menu "Linux Module Utilities"
 
+config MODINFO
+	bool "modinfo"
+	default y
+	help
+	  Show information about a Linux Kernel module
+
 config MODPROBE_SMALL
 	bool "Simplified modutils"
 	default y
