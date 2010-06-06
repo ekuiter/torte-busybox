@@ -29,7 +29,7 @@ config MD5_SIZE_VS_SPEED
 
 config FEATURE_FAST_TOP
 	bool "Faster /proc scanning code (+100 bytes)"
-	default n
+	default y
 	help
 	  This option makes top (and ps) ~20% faster (or 20% less CPU hungry),
 	  but code size is slightly bigger.
@@ -44,7 +44,7 @@ config FEATURE_ETC_NETWORKS
 
 config FEATURE_EDITING
 	bool "Command line editing"
-	default n
+	default y
 	help
 	  Enable line editing (mainly for shell command line).
 
@@ -69,21 +69,21 @@ config FEATURE_EDITING_VI
 config FEATURE_EDITING_HISTORY
 	int "History size"
 	range 0 99999
-	default 15
+	default 255
 	depends on FEATURE_EDITING
 	help
 	  Specify command history size.
 
 config FEATURE_EDITING_SAVEHISTORY
 	bool "History saving"
-	default n
+	default y
 	depends on ASH && FEATURE_EDITING
 	help
 	  Enable history saving in ash shell.
 
 config FEATURE_TAB_COMPLETION
 	bool "Tab completion"
-	default n
+	default y
 	depends on FEATURE_EDITING
 	help
 	  Enable tab completion.
@@ -151,7 +151,7 @@ config FEATURE_COPYBUF_KB
 
 config MONOTONIC_SYSCALL
 	bool "Use clock_gettime(CLOCK_MONOTONIC) syscall"
-	default y
+	default n
 	help
 	  Use clock_gettime(CLOCK_MONOTONIC) syscall for measuring
 	  time intervals (time, ping, traceroute etc need this).

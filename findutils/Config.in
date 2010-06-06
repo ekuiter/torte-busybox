@@ -9,7 +9,7 @@ menu "Finding Utilities"
 
 config FIND
 	bool "find"
-	default n
+	default y
 	help
 	  find is used to search your system to find specified files.
 
@@ -145,7 +145,7 @@ config FEATURE_FIND_PRUNE
 
 config FEATURE_FIND_DELETE
 	bool "Enable -delete: delete files/dirs"
-	default n
+	default y
 	depends on FIND && FEATURE_FIND_DEPTH
 	help
 	  Support the 'find -delete' option for deleting files and directories.
@@ -175,14 +175,14 @@ config FEATURE_FIND_CONTEXT
 
 config FEATURE_FIND_LINKS
 	bool "Enable -links: link count matching"
-	default n
+	default y
 	depends on FIND
 	help
 	  Support the 'find -links' option for matching number of links.
 
 config GREP
 	bool "grep"
-	default n
+	default y
 	help
 	  grep is used to search files for a specified pattern.
 
@@ -215,14 +215,14 @@ config FEATURE_GREP_CONTEXT
 
 config XARGS
 	bool "xargs"
-	default n
+	default y
 	help
 	  xargs is used to execute a specified command for
 	  every item from standard input.
 
 config FEATURE_XARGS_SUPPORT_CONFIRMATION
 	bool "Enable -p: prompt and confirmation"
-	default n
+	default y
 	depends on XARGS
 	help
 	  Support -p: prompt the user whether to run each command
@@ -230,14 +230,14 @@ config FEATURE_XARGS_SUPPORT_CONFIRMATION
 
 config FEATURE_XARGS_SUPPORT_QUOTES
 	bool "Enable single and double quotes and backslash"
-	default n
+	default y
 	depends on XARGS
 	help
 	  Support quoting in the input.
 
 config FEATURE_XARGS_SUPPORT_TERMOPT
 	bool "Enable -x: exit if -s or -n is exceeded"
-	default n
+	default y
 	depends on XARGS
 	help
 	  Support -x: exit if the command size (see the -s or -n option)
@@ -245,7 +245,7 @@ config FEATURE_XARGS_SUPPORT_TERMOPT
 
 config FEATURE_XARGS_SUPPORT_ZERO_TERM
 	bool "Enable -0: NUL-terminated input"
-	default n
+	default y
 	depends on XARGS
 	help
 	  Support -0: input items are terminated by a NUL character
