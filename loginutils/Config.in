@@ -6,6 +6,8 @@
 
 menu "Login/Password Management Utilities"
 
+
+
 config FEATURE_SHADOWPASSWDS
 	bool "Support for shadow passwords"
 	default y

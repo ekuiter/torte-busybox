@@ -6,6 +6,8 @@
 
 menu "Print Utilities"
 
+
+
 config LPD
 	bool "lpd"
 	default y
