@@ -550,7 +550,7 @@ config READAHEAD
 
 config RFKILL
 	bool "rfkill"
-	default y
+	default n
 	help
 	  Enable/disable wireless devices.
 
