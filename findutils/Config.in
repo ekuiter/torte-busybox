@@ -6,7 +6,6 @@
 
 menu "Finding Utilities"
 
-
 config FIND
 	bool "find"
 	default y
@@ -179,7 +178,6 @@ config FEATURE_FIND_LINKS
 	depends on FIND
 	help
 	  Support the 'find -links' option for matching number of links.
-
 config GREP
 	bool "grep"
 	default y
