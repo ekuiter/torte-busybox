@@ -212,7 +212,6 @@ config FEATURE_GREP_CONTEXT
 	  Print the specified number of leading (-B) and/or trailing (-A)
 	  context surrounding our matching lines.
 	  Print the specified number of context lines (-C).
-
 config XARGS
 	bool "xargs"
 	default y
