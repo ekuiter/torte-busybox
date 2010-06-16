@@ -6,7 +6,17 @@
 
 menu "Miscellaneous Utilities"
 
+config UBIATTACH
+	bool "ubiattach"
+	default n
+	help
+	  Attach MTD device to an UBI device.
 
+config UBIDETACH
+	bool "ubidetach"
+	default n
+	help
+	  Detach MTD device from an UBI device.
 
 config ADJTIMEX
 	bool "adjtimex"
