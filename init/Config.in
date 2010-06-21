@@ -42,17 +42,8 @@ config FEATURE_BOOTCHARTD_CONFIG_FILE
 	default y
 	depends on BOOTCHARTD
 	help
-	  Create extended header file compatible with "big" bootchartd.
-	  "Big" bootchartd is a shell script and it dumps some
-	  "convenient" info int the header, such as:
-	    title = Boot chart for `hostname` (`date`)
-	    system.uname = `uname -srvm`
-	    system.release = `cat /etc/DISTRO-release`
-	    system.cpu = `grep '^model name' /proc/cpuinfo | head -1` ($cpucount)
-	    system.kernel.options = `cat /proc/cmdline`
-	  This data is not mandatory for bootchart graph generation,
-	  and is considered bloat. Nevertheless, this option
-	  makes bootchartd applet to dump a subset of it.
+	  Enable reading and parsing of $PWD/bootchartd.conf
+	  and /etc/bootchartd.conf files.
 
 config INIT
 	bool "init"
