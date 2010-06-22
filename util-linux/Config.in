@@ -6,7 +6,11 @@
 
 menu "Linux System Utilities"
 
-
+config REV
+	bool "rev"
+	default y
+	help
+	  Reverse lines of a file or files.
 
 config ACPID
 	bool "acpid"
