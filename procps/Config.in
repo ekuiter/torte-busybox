@@ -6,7 +6,12 @@
 
 menu "Process Utilities"
 
-
+config SMEMCAP
+	bool "smemcap"
+	default y
+	help
+	  smemcap is a tool for capturing process data for smem,
+	  a memory usage statistic tool.
 
 config FREE
 	bool "free"
