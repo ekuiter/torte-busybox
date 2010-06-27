@@ -11,9 +11,9 @@ config CONSPY
 	default n
 	help
 	  A text-mode VNC like program for Linux virtual terminals.
-	  example : conspy num      shared access to console num
-	  or        conspy -d num   screenshot of console num
-	  or        conspy -cs num  poor man's GNU screen like
+	  example:  conspy NUM      shared access to console num
+	  or        conspy -nd NUM  screenshot of console num
+	  or        conspy -cs NUM  poor man's GNU screen like
 config UBIATTACH
 	bool "ubiattach"
 	default n
