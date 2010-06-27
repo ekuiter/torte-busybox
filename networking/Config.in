@@ -6,7 +6,38 @@
 
 menu "Networking Utilities"
 
+config NC
+	bool "nc"
+	default y
+	help
+	  A simple Unix utility which reads and writes data across network
+	  connections.
 
+config NC_SERVER
+	bool "Netcat server options (-l)"
+	default y
+	depends on NC
+	help
+	  Allow netcat to act as a server.
+
+config NC_EXTRA
+	bool "Netcat extensions (-eiw and filename)"
+	default y
+	depends on NC
+	help
+	  Add -e (support for executing the rest of the command line after
+	  making or receiving a successful connection), -i (delay interval for
+	  lines sent), -w (timeout for initial connection).
+
+config NC_110_COMPAT
+	bool "Netcat 1.10 compatibility (+2.5k)"
+	default y
+	depends on NC
+	help
+	  This option makes nc closely follow original nc-1.10.
+	  The code is about 2.5k bigger. It enables
+	  -s ADDR, -n, -u, -v, -o FILE, -z options, but loses
+	  busybox-specific extensions: -f FILE and -ll.
 
 config FEATURE_IPV6
 	bool "Enable IPv6 support"
@@ -623,29 +654,6 @@ config FEATURE_NAMEIF_EXTENDED
 	    new_interface_name  bus=usb-0000:00:08.2-3 00:80:C8:38:91:B5
 	    new_interface_name  mac=00:80:C8:38:91:B5
 	    new_interface_name  00:80:C8:38:91:B5
-
-config NC
-	bool "nc"
-	default y
-	help
-	  A simple Unix utility which reads and writes data across network
-	  connections.
-
-config NC_SERVER
-	bool "Netcat server options (-l)"
-	default y
-	depends on NC
-	help
-	  Allow netcat to act as a server.
-
-config NC_EXTRA
-	bool "Netcat extensions (-eiw and filename)"
-	default y
-	depends on NC
-	help
-	  Add -e (support for executing the rest of the command line after
-	  making or receiving a successful connection), -i (delay interval for
-	  lines sent), -w (timeout for initial connection).
 
 config NETSTAT
 	bool "netstat"
