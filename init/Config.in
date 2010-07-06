@@ -21,7 +21,7 @@ config BOOTCHARTD
 	  and stopped using bootchartd stop.
 
 config FEATURE_BOOTCHARTD_BLOATED_HEADER
-	bool "bootchartd"
+	bool "Compatible, bloated header"
 	default y
 	depends on BOOTCHARTD
 	help
@@ -38,7 +38,7 @@ config FEATURE_BOOTCHARTD_BLOATED_HEADER
 	  makes bootchartd applet to dump a subset of it.
 
 config FEATURE_BOOTCHARTD_CONFIG_FILE
-	bool "bootchartd"
+	bool "Support bootchartd.conf"
 	default y
 	depends on BOOTCHARTD
 	help
