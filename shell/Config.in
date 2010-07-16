@@ -117,7 +117,8 @@ config HUSH_MODE_X
 	default y
 	depends on HUSH
 	help
-	  This instructs hush to print commands before execution. Adds ~300 bytes.
+	  This instructs hush to print commands before execution.
+	  Adds ~300 bytes.
 
 config ASH
 	bool "ash"
