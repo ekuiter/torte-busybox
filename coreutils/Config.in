@@ -37,7 +37,7 @@ config FEATURE_DATE_ISOFMT
 config FEATURE_DATE_NANO
 	bool "Support %[num]N nanosecond format specifier"
 	default n
-	depends on DATE
+	depends on DATE && PLATFORM_LINUX # syscall(__NR_clock_gettime)
 	help
 	  Support %[num]N format specifier. Adds ~250 bytes of code.
 
@@ -680,6 +680,7 @@ config FEATURE_SPLIT_FANCY
 config STAT
 	bool "stat"
 	default y
+	depends on PLATFORM_LINUX # statfs()
 	help
 	  display file or filesystem status.
 
@@ -695,6 +696,7 @@ config FEATURE_STAT_FORMAT
 config STTY
 	bool "stty"
 	default y
+	depends on PLATFORM_LINUX
 	help
 	  stty is used to change and print terminal line settings.
 

@@ -5,6 +5,7 @@
 #
 
 menu "Linux Module Utilities"
+depends on PLATFORM_LINUX
 
 config MODINFO
 	bool "modinfo"
