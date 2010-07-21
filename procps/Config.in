@@ -6,6 +6,11 @@
 
 menu "Process Utilities"
 
+config MPSTAT
+	bool "mpstat"
+	default y
+	help
+	  Per-processor statistics
 config SMEMCAP
 	bool "smemcap"
 	default y
