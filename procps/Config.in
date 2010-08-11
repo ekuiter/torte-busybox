@@ -6,6 +6,11 @@
 
 menu "Process Utilities"
 
+config IOSTAT
+	bool "iostat"
+	default y
+	help
+	  Report CPU and I/O statistics
 config MPSTAT
 	bool "mpstat"
 	default y
