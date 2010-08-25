@@ -15,6 +15,12 @@ config CONSPY
 	  example:  conspy NUM      shared access to console num
 	  or        conspy -nd NUM  screenshot of console num
 	  or        conspy -cs NUM  poor man's GNU screen like
+config NANDWRITE
+	bool "nandwrite"
+	default n
+	depends on PLATFORM_LINUX
+	help
+	  Write to the specified MTD device, with bad blocks awareness
 config UBIATTACH
 	bool "ubiattach"
 	default n
