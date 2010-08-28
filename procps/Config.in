@@ -16,6 +16,11 @@ config MPSTAT
 	default y
 	help
 	  Per-processor statistics
+config PMAP
+       bool "pmap"
+       default y
+       help
+         Display processes' memory mappings.
 config SMEMCAP
 	bool "smemcap"
 	default y
