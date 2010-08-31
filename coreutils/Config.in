@@ -95,6 +95,11 @@ config FEATURE_TR_EQUIV
 	  replace all instances of 'a' with 'xyz'. This option is mainly
 	  useful for cases when no other way of expressing a character
 	  is possible.
+config BASE64
+	bool "base64"
+	default y
+	help
+	  Base64 encode and decode
 
 config CAL
 	bool "cal"
