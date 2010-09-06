@@ -259,13 +259,6 @@ config HUSH_MODE_X
 	  This instructs hush to print commands before execution.
 	  Adds ~300 bytes.
 
-config LASH
-	bool "lash (deprecated: aliased to hush)"
-	default n
-	select HUSH
-	help
-	  lash is deprecated and will be removed, please migrate to hush.
-
 config MSH
 	bool "msh (deprecated: aliased to hush)"
 	default n
