@@ -6,6 +6,11 @@
 
 menu "Linux System Utilities"
 
+config BLOCKDEV
+	bool "blockdev"
+	default y
+	help
+	  Performs some ioctls with block devices.
 config REV
 	bool "rev"
 	default y
