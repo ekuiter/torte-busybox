@@ -183,6 +183,13 @@ config HUSH_INTERACTIVE
 	  from stdin just like a shell script from a file.
 	  No prompt, no PS1/PS2 magic shell variables.
 
+config HUSH_SAVEHISTORY
+	bool "Save command history to .hush_history"
+	default y
+	depends on HUSH_INTERACTIVE && FEATURE_EDITING_SAVEHISTORY
+	help
+	  Enable history saving in hush.
+
 config HUSH_JOB
 	bool "Job control"
 	default y
