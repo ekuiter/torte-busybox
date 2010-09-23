@@ -6,6 +6,11 @@
 
 menu "Networking Utilities"
 
+config NBDCLIENT
+	bool "nbd-client"
+	default y
+	help
+	  Network block device client
 config NC
 	bool "nc"
 	default y
