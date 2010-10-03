@@ -166,6 +166,13 @@ config HUSH_BASH_COMPAT
 	help
 	  Enable bash-compatible extensions.
 
+config HUSH_BRACE_EXPANSION
+	bool "Brace expansion"
+	default y
+	depends on HUSH_BASH_COMPAT
+	help
+	  Enable {abc,def} extension.
+
 config HUSH_HELP
 	bool "help builtin"
 	default y
