@@ -156,8 +156,8 @@ config HUSH
 
 	  It will compile and work on no-mmu systems.
 
-	  It does not handle select, aliases, brace expansion,
-	  tilde expansion, &>file and >&file redirection of stdout+stderr.
+	  It does not handle select, aliases, tilde expansion,
+	  &>file and >&file redirection of stdout+stderr.
 
 config HUSH_BASH_COMPAT
 	bool "bash-compatible extensions"
