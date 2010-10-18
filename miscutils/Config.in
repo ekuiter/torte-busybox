@@ -21,6 +21,13 @@ config NANDWRITE
 	depends on PLATFORM_LINUX
 	help
 	  Write to the specified MTD device, with bad blocks awareness
+
+config NANDDUMP
+	bool "nanddump"
+	default n
+	depends on PLATFORM_LINUX
+	help
+	  Dump the content of raw NAND chip
 config UBIATTACH
 	bool "ubiattach"
 	default n
