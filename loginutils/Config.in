@@ -6,7 +6,17 @@
 
 menu "Login/Password Management Utilities"
 
+config ADD_SHELL
+       bool "add-shell"
+       default y if DESKTOP
+       help
+         Add shells to /etc/shells.
 
+config REMOVE_SHELL
+       bool "remove-shell"
+       default y if DESKTOP
+       help
+         Remove shells from /etc/shells.
 
 config FEATURE_SHADOWPASSWDS
 	bool "Support for shadow passwords"
