@@ -21,6 +21,11 @@ config PMAP
        default y
        help
          Display processes' memory mappings.
+config POWERTOP
+	bool "powertop"
+	default y
+	help
+	  Analyze power consumption on Intel-based laptops
 config SMEMCAP
 	bool "smemcap"
 	default y
