@@ -43,6 +43,28 @@ config NC_110_COMPAT
 	  The code is about 2.5k bigger. It enables
 	  -s ADDR, -n, -u, -v, -o FILE, -z options, but loses
 	  busybox-specific extensions: -f FILE and -ll.
+config PING
+	bool "ping"
+	default y
+	depends on PLATFORM_LINUX
+	help
+	  ping uses the ICMP protocol's mandatory ECHO_REQUEST datagram to
+	  elicit an ICMP ECHO_RESPONSE from a host or gateway.
+
+config PING6
+	bool "ping6"
+	default y
+	depends on FEATURE_IPV6 && PING
+	help
+	  This will give you a ping that can talk IPv6.
+
+config FEATURE_FANCY_PING
+	bool "Enable fancy ping output"
+	default y
+	depends on PING
+	help
+	  Make the output from the ping applet include statistics, and at the
+	  same time provide full support for ICMP packets.
 
 config FEATURE_IPV6
 	bool "Enable IPv6 support"
@@ -720,29 +742,6 @@ config FEATURE_NTPD_SERVER
 	help
 	  Make ntpd usable as a NTP server. If you disable this option
 	  ntpd will be usable only as a NTP client.
-
-config PING
-	bool "ping"
-	default y
-	depends on PLATFORM_LINUX
-	help
-	  ping uses the ICMP protocol's mandatory ECHO_REQUEST datagram to
-	  elicit an ICMP ECHO_RESPONSE from a host or gateway.
-
-config PING6
-	bool "ping6"
-	default y
-	depends on FEATURE_IPV6 && PING
-	help
-	  This will give you a ping that can talk IPv6.
-
-config FEATURE_FANCY_PING
-	bool "Enable fancy ping output"
-	default y
-	depends on PING
-	help
-	  Make the output from the ping applet include statistics, and at the
-	  same time provide full support for ICMP packets.
 
 config PSCAN
 	bool "pscan"
