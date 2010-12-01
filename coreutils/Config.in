@@ -71,6 +71,12 @@ config FEATURE_TEST_64
 	depends on TEST || ASH_BUILTIN_TEST || HUSH
 	help
 	  Enable 64-bit support in test.
+config TOUCH
+	bool "touch"
+	default y
+	help
+	  touch is used to create or change the access and/or
+	  modification timestamp of specified files.
 config TR
 	bool "tr"
 	default y
@@ -755,13 +761,6 @@ config FEATURE_TEE_USE_BLOCK_IO
 	depends on TEE
 	help
 	  Enable this option for a faster tee, at expense of size.
-
-config TOUCH
-	bool "touch"
-	default y
-	help
-	  touch is used to create or change the access and/or
-	  modification timestamp of specified files.
 
 config TRUE
 	bool "true"
