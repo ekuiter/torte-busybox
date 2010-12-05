@@ -26,6 +26,11 @@ config POWERTOP
 	default y
 	help
 	  Analyze power consumption on Intel-based laptops
+config PSTREE
+	bool "pstree"
+	default y
+	help
+	  Display a tree of processes.
 config SMEMCAP
 	bool "smemcap"
 	default y
