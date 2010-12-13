@@ -16,6 +16,11 @@ config MPSTAT
 	default y
 	help
 	  Per-processor statistics
+config NMETER
+	bool "nmeter"
+	default y
+	help
+	  Prints selected system stats continuously, one line per update.
 config PMAP
        bool "pmap"
        default y
@@ -76,12 +81,6 @@ config KILLALL5
 	bool "killall5"
 	default y
 	depends on KILL
-
-config NMETER
-	bool "nmeter"
-	default y
-	help
-	  Prints selected system stats continuously, one line per update.
 
 config PGREP
 	bool "pgrep"
