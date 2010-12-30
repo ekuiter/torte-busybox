@@ -6,7 +6,12 @@
 
 menu "Busybox Library Tuning"
 
-
+config FEATURE_RTMINMAX
+	bool "Support RTMIN[+n] and RTMAX[-n] signal names"
+	default y
+	help
+	  Support RTMIN[+n] and RTMAX[-n] signal names
+	  in kill, killall etc. This costs ~250 bytes.
 
 config PASSWORD_MINLEN
 	int "Minimum password length"
@@ -136,7 +141,7 @@ config FEATURE_NON_POSIX_CP
 	  and create a regular file. This does not conform to POSIX,
 	  but prevents a symlink attack.
 	  Similarly, "cp file device" will not send file's data
-	  to the device.
+	  to the device. (To do that, use "cat file >device")
 
 config FEATURE_VERBOSE_CP_MESSAGE
 	bool "Give more precise messages when copy fails (cp, mv etc)"
