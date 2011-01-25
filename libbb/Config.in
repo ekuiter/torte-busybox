@@ -6,6 +6,14 @@
 
 menu "Busybox Library Tuning"
 
+config FEATURE_SYSTEMD
+	bool "Enable systemd support"
+	default y
+	help
+	  If you plan to use busybox daemons on a system where daemons
+	  are controlled by systemd, enable this option.
+	  If you don't use systemd, it is still safe to enable it,
+	  but yhe downside is increased code size.
 config FEATURE_RTMINMAX
 	bool "Support RTMIN[+n] and RTMAX[-n] signal names"
 	default y
