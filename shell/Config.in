@@ -32,7 +32,7 @@ config ASH_JOB_CONTROL
 	  Enable job control in the ash shell.
 
 config ASH_ALIAS
-	bool "alias support"
+	bool "Alias support"
 	default y
 	depends on ASH
 	help
@@ -43,28 +43,28 @@ config ASH_GETOPTS
 	default y
 	depends on ASH
 	help
-	  Enable getopts builtin in the ash shell.
+	  Enable support for getopts builtin in ash.
 
 config ASH_BUILTIN_ECHO
 	bool "Builtin version of 'echo'"
 	default y
 	depends on ASH
 	help
-	  Enable support for echo, builtin to ash.
+	  Enable support for echo builtin in ash.
 
 config ASH_BUILTIN_PRINTF
 	bool "Builtin version of 'printf'"
 	default y
 	depends on ASH
 	help
-	  Enable support for printf, builtin to ash.
+	  Enable support for printf builtin in ash.
 
 config ASH_BUILTIN_TEST
 	bool "Builtin version of 'test'"
 	default y
 	depends on ASH
 	help
-	  Enable support for test, builtin to ash.
+	  Enable support for test builtin in ash.
 
 config ASH_CMDCMD
 	bool "'command' command to override shell builtins"
@@ -80,7 +80,7 @@ config ASH_MAIL
 	default n
 	depends on ASH
 	help
-	  Enable "check for new mail" in the ash shell.
+	  Enable "check for new mail" function in the ash shell.
 
 config ASH_OPTIMIZE_FOR_SIZE
 	bool "Optimize for size instead of speed"
