@@ -24,6 +24,14 @@ config ASH_BASH_COMPAT
 	help
 	  Enable bash-compatible extensions.
 
+config ASH_IDLE_TIMEOUT
+	bool "Idle timeout variable"
+	default n
+	depends on ASH
+	help
+	  Enables bash-like auto-logout after "$TMOUT" seconds
+	  of idle time.
+
 config ASH_JOB_CONTROL
 	bool "Job control"
 	default y
