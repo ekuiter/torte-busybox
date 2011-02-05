@@ -30,17 +30,38 @@ config NANDDUMP
 	  Dump the content of raw NAND chip
 config UBIATTACH
 	bool "ubiattach"
-	default n
+	default y
 	depends on PLATFORM_LINUX
 	help
 	  Attach MTD device to an UBI device.
 
 config UBIDETACH
 	bool "ubidetach"
-	default n
+	default y
 	depends on PLATFORM_LINUX
 	help
 	  Detach MTD device from an UBI device.
+
+config UBIMKVOL
+	bool "ubimkvol"
+	default y
+	depends on PLATFORM_LINUX
+	help
+	  Create a UBI volume.
+
+config UBIRMVOL
+	bool "ubirmvol"
+	default y
+	depends on PLATFORM_LINUX
+	help
+	  Delete a UBI volume.
+
+config UBIRSVOL
+	bool "ubirsvol"
+	default y
+	depends on PLATFORM_LINUX
+	help
+	  Resize a UBI volume.
 
 config ADJTIMEX
 	bool "adjtimex"
