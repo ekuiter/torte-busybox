@@ -29,8 +29,7 @@ config ASH_IDLE_TIMEOUT
 	default n
 	depends on ASH
 	help
-	  Enables bash-like auto-logout after "$TMOUT" seconds
-	  of idle time.
+	  Enables bash-like auto-logout after $TMOUT seconds of idle time.
 
 config ASH_JOB_CONTROL
 	bool "Job control"
