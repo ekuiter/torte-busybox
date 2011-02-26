@@ -38,7 +38,8 @@ config FEATURE_DATE_ISOFMT
 config FEATURE_DATE_NANO
 	bool "Support %[num]N nanosecond format specifier"
 	default n
-	depends on DATE && PLATFORM_LINUX # syscall(__NR_clock_gettime)
+	depends on DATE  # syscall(__NR_clock_gettime)
+	select PLATFORM_LINUX
 	help
 	  Support %[num]N format specifier. Adds ~250 bytes of code.
 
@@ -692,7 +693,7 @@ config FEATURE_SPLIT_FANCY
 config STAT
 	bool "stat"
 	default y
-	depends on PLATFORM_LINUX # statfs()
+	select PLATFORM_LINUX # statfs()
 	help
 	  display file or filesystem status.
 
