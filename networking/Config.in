@@ -65,6 +65,11 @@ config FEATURE_FANCY_PING
 	help
 	  Make the output from the ping applet include statistics, and at the
 	  same time provide full support for ICMP packets.
+config WHOIS
+	bool "whois"
+	default y
+	help
+	  whois is a client for the whois directory service
 
 config FEATURE_IPV6
 	bool "Enable IPv6 support"
