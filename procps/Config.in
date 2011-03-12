@@ -36,6 +36,11 @@ config PSTREE
 	default y
 	help
 	  Display a tree of processes.
+config PWDX
+	bool "pwdx"
+	default y
+	help
+	  Report current working directory of a process
 config SMEMCAP
 	bool "smemcap"
 	default y
