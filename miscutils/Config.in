@@ -63,6 +63,13 @@ config UBIRSVOL
 	help
 	  Resize a UBI volume.
 
+config UBIUPDATEVOL
+	bool "ubiupdatevol"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Update a UBI volume.
+
 config ADJTIMEX
 	bool "adjtimex"
 	default y
