@@ -28,6 +28,12 @@ config NANDDUMP
 	select PLATFORM_LINUX
 	help
 	  Dump the content of raw NAND chip
+config SETSERIAL
+	bool "setserial"
+	default y
+	depends on PLATFORM_LINUX
+	help
+	  Retrieve or set Linux serial port.
 config UBIATTACH
 	bool "ubiattach"
 	default y
