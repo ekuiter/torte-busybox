@@ -58,6 +58,16 @@ config FEATURE_DATE_COMPAT
 	  With this option off, 'date DATE' is 'date -s DATE' support
 	  the same format. With it on, 'date DATE' additionally supports
 	  MMDDhhmm[[YY]YY][.ss] format.
+config ID
+	bool "id"
+	default y
+	help
+	  id displays the current user and group ID names.
+config GROUPS
+	bool "groups"
+	default y
+	help
+	  Print the group names associated with current user id.
 config TEST
 	bool "test"
 	default y
@@ -377,12 +387,6 @@ config HOSTID
 	help
 	  hostid prints the numeric identifier (in hexadecimal) for
 	  the current host.
-
-config ID
-	bool "id"
-	default y
-	help
-	  id displays the current user and group ID names.
 
 config INSTALL
 	bool "install"
