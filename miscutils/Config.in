@@ -31,7 +31,7 @@ config NANDDUMP
 config SETSERIAL
 	bool "setserial"
 	default y
-	depends on PLATFORM_LINUX
+	select PLATFORM_LINUX
 	help
 	  Retrieve or set Linux serial port.
 config UBIATTACH
