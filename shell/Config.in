@@ -120,18 +120,22 @@ config CTTYHACK
 	bool "cttyhack"
 	default y
 	help
-	  One common problem reported on the mailing list is "can't access tty;
-	  job control turned off" error message which typically appears when
-	  one tries to use shell with stdin/stdout opened to /dev/console.
+	  One common problem reported on the mailing list is the "can't
+	  access tty; job control turned off" error message, which typically
+	  appears when one tries to use a shell with stdin/stdout on
+	  /dev/console.
 	  This device is special - it cannot be a controlling tty.
 
-	  Proper solution is to use correct device instead of /dev/console.
+	  The proper solution is to use the correct device instead of
+	  /dev/console.
 
-	  cttyhack provides "quick and dirty" solution to this problem.
+	  cttyhack provides a "quick and dirty" solution to this problem.
 	  It analyzes stdin with various ioctls, trying to determine whether
 	  it is a /dev/ttyN or /dev/ttySN (virtual terminal or serial line).
-	  If it detects one, it closes stdin/out/err and reopens that device.
-	  Then it executes given program. Opening the device will make
+	  On Linux it also checks sysfs for a pointer to the active console.
+	  If cttyhack is able to find the real console device, it closes
+	  stdin/out/err and reopens that device.
+	  Then it executes the given program. Opening the device will make
 	  that device a controlling tty. This may require cttyhack
 	  to be a session leader.
 
