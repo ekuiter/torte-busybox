@@ -47,6 +47,21 @@ config SMEMCAP
 	help
 	  smemcap is a tool for capturing process data for smem,
 	  a memory usage statistic tool.
+config UPTIME
+	bool "uptime"
+	default y
+	select PLATFORM_LINUX #sysinfo()
+	help
+	  uptime gives a one line display of the current time, how long
+	  the system has been running, how many users are currently logged
+	  on, and the system load averages for the past 1, 5, and 15 minutes.
+
+config FEATURE_UPTIME_UTMP_SUPPORT
+	bool "Support for showing the number of users"
+	default y
+	depends on UPTIME && FEATURE_UTMP
+	help
+	  Makes uptime display the number of users currently logged on.
 
 config FREE
 	bool "free"
@@ -234,15 +249,6 @@ config FEATURE_SHOW_THREADS
 	help
 	  Enables the ps -T option, showing of threads in pstree,
 	  and 'h' command in top.
-
-config UPTIME
-	bool "uptime"
-	default y
-	select PLATFORM_LINUX #sysinfo()
-	help
-	  uptime gives a one line display of the current time, how long
-	  the system has been running, how many users are currently logged
-	  on, and the system load averages for the past 1, 5, and 15 minutes.
 
 config WATCH
 	bool "watch"
