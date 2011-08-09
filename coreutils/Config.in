@@ -118,6 +118,18 @@ config BASE64
 	default y
 	help
 	  Base64 encode and decode
+config WHO
+      bool "who"
+      default y
+      depends on FEATURE_UTMP
+      help
+        who is used to show who is logged on.
+config USERS
+      bool "users"
+      default y
+      depends on FEATURE_UTMP
+      help
+        Print users currently logged on.
 
 config CAL
 	bool "cal"
@@ -836,13 +848,6 @@ config FEATURE_WC_LARGE
 	depends on WC
 	help
 	  Use "unsigned long long" in wc for counter variables.
-
-config WHO
-	bool "who"
-	default y
-	depends on FEATURE_UTMP
-	help
-	  who is used to show who is logged on.
 
 config WHOAMI
 	bool "whoami"
