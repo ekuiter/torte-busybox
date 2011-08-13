@@ -8,7 +8,7 @@ menu "Miscellaneous Utilities"
 
 config CONSPY
 	bool "conspy"
-	default n
+	default y
 	select PLATFORM_LINUX
 	help
 	  A text-mode VNC like program for Linux virtual terminals.
@@ -95,14 +95,14 @@ config FEATURE_LESS_LINENUMS
 	  Enables "-N" command.
 config NANDWRITE
 	bool "nandwrite"
-	default n
+	default y
 	select PLATFORM_LINUX
 	help
 	  Write to the specified MTD device, with bad blocks awareness
 
 config NANDDUMP
 	bool "nanddump"
-	default n
+	default y
 	select PLATFORM_LINUX
 	help
 	  Dump the content of raw NAND chip
