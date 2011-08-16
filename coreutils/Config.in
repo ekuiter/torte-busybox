@@ -58,6 +58,12 @@ config FEATURE_DATE_COMPAT
 	  With this option off, 'date DATE' is 'date -s DATE' support
 	  the same format. With it on, 'date DATE' additionally supports
 	  MMDDhhmm[[YY]YY][.ss] format.
+config HOSTID
+	bool "hostid"
+	default y
+	help
+	  hostid prints the numeric identifier (in hexadecimal) for
+	  the current host.
 config ID
 	bool "id"
 	default y
@@ -392,13 +398,6 @@ config FEATURE_FANCY_HEAD
 	depends on HEAD
 	help
 	  This enables the head options (-c, -q, and -v).
-
-config HOSTID
-	bool "hostid"
-	default y
-	help
-	  hostid prints the numeric identifier (in hexadecimal) for
-	  the current host.
 
 config INSTALL
 	bool "install"
