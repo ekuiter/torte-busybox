@@ -292,6 +292,7 @@ config MSH
 	  msh is deprecated and will be removed, please migrate to hush.
 
 
+
 choice
 	prompt "Choose which shell is aliased to 'sh' name"
 	default FEATURE_SH_IS_ASH

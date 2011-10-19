@@ -7,7 +7,6 @@
 menu "Console Utilities"
 
 
-
 config CHVT
 	bool "chvt"
 	default y

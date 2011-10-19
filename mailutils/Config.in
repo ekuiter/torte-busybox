@@ -2,7 +2,6 @@
 menu "Mail Utilities"
 
 
-
 config MAKEMIME
 	bool "makemime"
 	default y

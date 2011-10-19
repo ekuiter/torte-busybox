@@ -7,7 +7,6 @@
 menu "System Logging Utilities"
 
 
-
 config SYSLOGD
 	bool "syslogd"
 	default y

@@ -5,7 +5,6 @@
 #
 
 
-
 config UDHCPD
 	bool "udhcp server (udhcpd)"
 	default y

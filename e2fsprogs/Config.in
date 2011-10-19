@@ -7,7 +7,6 @@
 menu "Linux Ext2 FS Progs"
 
 
-
 config CHATTR
 	bool "chattr"
 	default y
