@@ -9,6 +9,7 @@ menu "Linux Module Utilities"
 config MODINFO
 	bool "modinfo"
 	default y
+	select PLATFORM_LINUX
 	help
 	  Show information about a Linux Kernel module
 
