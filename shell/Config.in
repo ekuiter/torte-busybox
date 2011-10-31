@@ -156,6 +156,9 @@ config CTTYHACK
 
 	  # exec setsid sh -c 'exec sh </dev/tty1 >/dev/tty1 2>&1'
 
+	  Starting getty on a controlling tty from a shell script:
+
+	  # getty 115200 $(cttyhack)
 config HUSH
 	bool "hush"
 	default y
