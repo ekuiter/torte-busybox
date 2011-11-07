@@ -4,6 +4,11 @@
 # see scripts/kbuild/config-language.txt.
 #
 
+config UDHCPC6
+       bool "udhcp client for DHCPv6 (udhcpc6)"
+       default n  # not yet ready
+       help
+         udhcpc6 is a DHCPv6 client
 
 config UDHCPD
 	bool "udhcp server (udhcpd)"
