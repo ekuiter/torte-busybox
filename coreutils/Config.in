@@ -94,6 +94,13 @@ config TOUCH
 	help
 	  touch is used to create or change the access and/or
 	  modification timestamp of specified files.
+
+config FEATURE_TOUCH_SUSV3
+	bool "Add support for SUSV3 features (-d -t -r)"
+	default y
+	depends on TOUCH
+	help
+	  Enable touch to use a reference file or a given date/time argument.
 config TR
 	bool "tr"
 	default y
