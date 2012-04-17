@@ -36,14 +36,11 @@ config FEATURE_LESS_BRACKETS
 	  brackets, facilitating programming.
 
 config FEATURE_LESS_FLAGS
-	bool "Enable extra flags"
+	bool "Enable -m/-M"
 	default y
 	depends on LESS
 	help
-	  The extra flags provided do the following:
-
-	  The -M flag enables a more sophisticated status line.
-	  The -m flag enables a simpler status line with a percentage.
+	  The -M/-m flag enables a more sophisticated status line.
 
 config FEATURE_LESS_MARKS
 	bool "Enable marks"
