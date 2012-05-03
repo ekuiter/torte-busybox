@@ -5,10 +5,11 @@
 #
 
 config UDHCPC6
-       bool "udhcp client for DHCPv6 (udhcpc6)"
-       default n  # not yet ready
-       help
-         udhcpc6 is a DHCPv6 client
+	bool "udhcp client for DHCPv6 (udhcpc6)"
+	default n  # not yet ready
+	depends on FEATURE_IPV6
+	help
+	  udhcpc6 is a DHCPv6 client
 
 config UDHCPD
 	bool "udhcp server (udhcpd)"
