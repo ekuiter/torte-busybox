@@ -55,7 +55,7 @@ config NC_SERVER
 	  Allow netcat to act as a server.
 
 config NC_EXTRA
-	bool "Netcat extensions (-eiw and filename)"
+	bool "Netcat extensions (-eiw and -f FILE)"
 	default y
 	depends on NC
 	help
