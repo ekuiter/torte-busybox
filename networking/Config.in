@@ -71,7 +71,7 @@ config NC_110_COMPAT
 	  This option makes nc closely follow original nc-1.10.
 	  The code is about 2.5k bigger. It enables
 	  -s ADDR, -n, -u, -v, -o FILE, -z options, but loses
-	  busybox-specific extensions: -f FILE and -ll.
+	  busybox-specific extensions: -f FILE.
 config PING
 	bool "ping"
 	default y
