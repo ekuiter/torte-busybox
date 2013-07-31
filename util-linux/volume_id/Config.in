@@ -107,7 +107,16 @@ config FEATURE_VOLUMEID_NILFS
 	default y
 	depends on VOLUMEID
 	help
-	  TODO
+	  NILFS is a New Implementation of a Log-Structured File System (LFS)
+	  that supports continuous snapshots. This provides features like
+	  versioning of the entire filesystem, restoration of files that
+	  were deleted a few minutes ago. NILFS keeps consistency like
+	  conventional LFS, so it provides quick recovery after system crashes.
+
+	  The possible use of NILFS includes versioning, tamper detection,
+	  SOX compliance logging, and so forth. It can serve as an alternative
+	  filesystem for Linux desktop environment, or as a basis of advanced
+	  storage appliances.
 
 
 config FEATURE_VOLUMEID_NTFS
