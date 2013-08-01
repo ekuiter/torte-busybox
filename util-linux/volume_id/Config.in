@@ -46,6 +46,17 @@ config FEATURE_VOLUMEID_EXT
 	  TODO
 
 
+config FEATURE_VOLUMEID_F2FS
+	bool "f2fs filesystem"
+	default y
+	depends on VOLUMEID
+	help
+	  F2FS (aka Flash-Friendly File System) is a log-structured file system,
+	  which is adapted to newer forms of storage. F2FS also remedies some
+	  known issues of the older log structured file systems, such as high
+	  cleaning overhead.
+
+
 config FEATURE_VOLUMEID_FAT
 	bool "fat filesystem"
 	default y
