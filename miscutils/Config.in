@@ -150,6 +150,12 @@ config UBIUPDATEVOL
 	select PLATFORM_LINUX
 	help
 	  Update a UBI volume.
+config WALL
+	bool "wall"
+	default y
+	depends on FEATURE_UTMP
+	help
+	  Write a message to all users that are logged in.
 
 config ADJTIMEX
 	bool "adjtimex"
@@ -734,13 +740,6 @@ config VOLNAME
 	default y
 	help
 	  Prints a CD-ROM volume name.
-
-config WALL
-	bool "wall"
-	default y
-	depends on FEATURE_UTMP
-	help
-	  Write a message to all users that are logged in.
 
 config WATCHDOG
 	bool "watchdog"
