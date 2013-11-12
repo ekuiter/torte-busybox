@@ -6,6 +6,31 @@
 
 menu "Editors"
 
+config AWK
+	bool "awk"
+	default y
+	help
+	  Awk is used as a pattern scanning and processing language. This is
+	  the BusyBox implementation of that programming language.
+
+config FEATURE_AWK_LIBM
+	bool "Enable math functions (requires libm)"
+	default y
+	depends on AWK
+	help
+	  Enable math functions of the Awk programming language.
+	  NOTE: This will require libm to be present for linking.
+
+config FEATURE_AWK_GNU_EXTENSIONS
+	bool "Enable a few GNU extensions"
+	default y
+	depends on AWK
+	help
+	  Enable a few features from gawk:
+	  * command line option -e AWK_PROGRAM
+	  * simultaneous use of -f and -e on the command line.
+	    This enables the use of awk library files.
+	    Ex: awk -f mylib.awk -e '{print myfunction($1);}' ...
 config PATCH
 	bool "patch"
 	default y
@@ -126,21 +151,6 @@ config FEATURE_VI_ASK_TERMINAL
 	  cursor position using "ESC [ 6 n" escape sequence, then read stdin.
 
 	  This is not clean but helps a lot on serial lines and such.
-
-config AWK
-	bool "awk"
-	default y
-	help
-	  Awk is used as a pattern scanning and processing language. This is
-	  the BusyBox implementation of that programming language.
-
-config FEATURE_AWK_LIBM
-	bool "Enable math functions (requires libm)"
-	default y
-	depends on AWK
-	help
-	  Enable math functions of the Awk programming language.
-	  NOTE: This will require libm to be present for linking.
 
 config CMP
 	bool "cmp"
