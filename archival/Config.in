@@ -6,7 +6,6 @@
 
 menu "Archival Utilities"
 
-
 config FEATURE_SEAMLESS_XZ
 	bool "Make tar, rpm, modprobe etc understand .xz data"
 	default y
@@ -76,7 +75,19 @@ config FEATURE_AR_CREATE
 	depends on AR
 	help
 	  This enables archive creation (-c and -r) with busybox ar.
-
+config UNCOMPRESS
+	bool "uncompress"
+	default n
+	help
+	  uncompress is used to decompress archives created by compress.
+	  Not much used anymore, replaced by gzip/gunzip.
+config GUNZIP
+	bool "gunzip"
+	default y
+	help
+	  gunzip is used to decompress archives created by gzip.
+	  You can use the `-t' option to test the integrity of
+	  an archive, without decompressing it.
 config BUNZIP2
 	bool "bunzip2"
 	default y
@@ -89,7 +100,46 @@ config BUNZIP2
 
 	  Unless you have a specific application which requires bunzip2, you
 	  should probably say N here.
+config UNLZMA
+	bool "unlzma"
+	default y
+	help
+	  unlzma is a compression utility using the Lempel-Ziv-Markov chain
+	  compression algorithm, and range coding. Compression
+	  is generally considerably better than that achieved by the bzip2
+	  compressors.
 
+	  The BusyBox unlzma applet is limited to decompression only.
+	  On an x86 system, this applet adds about 4K.
+
+config FEATURE_LZMA_FAST
+	bool "Optimize unlzma for speed"
+	default n
+	depends on UNLZMA
+	help
+	  This option reduces decompression time by about 25% at the cost of
+	  a 1K bigger binary.
+
+config LZMA
+	bool "Provide lzma alias which supports only unpacking"
+	default y
+	depends on UNLZMA
+	help
+	  Enable this option if you want commands like "lzma -d" to work.
+	  IOW: you'll get lzma applet, but it will always require -d option.
+config UNXZ
+	bool "unxz"
+	default y
+	help
+	  unxz is a unlzma successor.
+
+config XZ
+	bool "Provide xz alias which supports only unpacking"
+	default y
+	depends on UNXZ
+	help
+	  Enable this option if you want commands like "xz -d" to work.
+	  IOW: you'll get xz applet, but it will always require -d option.
 config BZIP2
 	bool "bzip2"
 	default y
@@ -102,7 +152,6 @@ config BZIP2
 
 	  Unless you have a specific application which requires bzip2, you
 	  should probably say N here.
-
 config CPIO
 	bool "cpio"
 	default y
@@ -131,7 +180,6 @@ config FEATURE_CPIO_P
 	depends on FEATURE_CPIO_O
 	help
 	  Passthrough mode. Rarely used.
-
 config DPKG
 	bool "dpkg"
 	default n
@@ -142,7 +190,6 @@ config DPKG
 
 	  This implementation of dpkg has a number of limitations,
 	  you should use the official dpkg if possible.
-
 config DPKG_DEB
 	bool "dpkg_deb"
 	default n
@@ -164,15 +211,6 @@ config FEATURE_DPKG_DEB_EXTRACT_ONLY
 	  "ar -p <deb> data.tar.gz | tar -zx". However it saves space as none
 	  of the extra dpkg-deb, ar or tar options are needed, they are linked
 	  to internally.
-
-config GUNZIP
-	bool "gunzip"
-	default y
-	help
-	  gunzip is used to decompress archives created by gzip.
-	  You can use the `-t' option to test the integrity of
-	  an archive, without decompressing it.
-
 config GZIP
 	bool "gzip"
 	default y
@@ -198,7 +236,6 @@ config GZIP_FAST
 	  1: larger buffers, larger hash-tables
 	  2: larger buffers, largest hash-tables
 	  Larger models may give slightly better compression
-
 config LZOP
 	bool "lzop"
 	default y
@@ -213,19 +250,16 @@ config LZOP_COMPR_HIGH
 	  High levels (7,8,9) of lzop compression. These levels
 	  are actually slower than gzip at equivalent compression ratios
 	  and take up 3.2K of code.
-
-config RPM2CPIO
-	bool "rpm2cpio"
-	default y
-	help
-	  Converts a RPM file into a CPIO archive.
-
 config RPM
 	bool "rpm"
 	default y
 	help
 	  Mini RPM applet - queries and extracts RPM packages.
-
+config RPM2CPIO
+	bool "rpm2cpio"
+	default y
+	help
+	  Converts a RPM file into a CPIO archive.
 config TAR
 	bool "tar"
 	default y
@@ -325,56 +359,6 @@ config FEATURE_TAR_SELINUX
 	help
 	  With this option busybox supports restoring SELinux labels
 	  when extracting files from tar archives.
-
-config UNCOMPRESS
-	bool "uncompress"
-	default n
-	help
-	  uncompress is used to decompress archives created by compress.
-	  Not much used anymore, replaced by gzip/gunzip.
-
-config UNLZMA
-	bool "unlzma"
-	default y
-	help
-	  unlzma is a compression utility using the Lempel-Ziv-Markov chain
-	  compression algorithm, and range coding. Compression
-	  is generally considerably better than that achieved by the bzip2
-	  compressors.
-
-	  The BusyBox unlzma applet is limited to decompression only.
-	  On an x86 system, this applet adds about 4K.
-
-config FEATURE_LZMA_FAST
-	bool "Optimize unlzma for speed"
-	default n
-	depends on UNLZMA
-	help
-	  This option reduces decompression time by about 25% at the cost of
-	  a 1K bigger binary.
-
-config LZMA
-	bool "Provide lzma alias which supports only unpacking"
-	default y
-	depends on UNLZMA
-	help
-	  Enable this option if you want commands like "lzma -d" to work.
-	  IOW: you'll get lzma applet, but it will always require -d option.
-
-config UNXZ
-	bool "unxz"
-	default y
-	help
-	  unxz is a unlzma successor.
-
-config XZ
-	bool "Provide xz alias which supports only unpacking"
-	default y
-	depends on UNXZ
-	help
-	  Enable this option if you want commands like "xz -d" to work.
-	  IOW: you'll get xz applet, but it will always require -d option.
-
 config UNZIP
 	bool "unzip"
 	default y
