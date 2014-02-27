@@ -249,4 +249,11 @@ config FEATURE_XARGS_SUPPORT_ZERO_TERM
 	  instead of whitespace, and the quotes and backslash
 	  are not special.
 
+config FEATURE_XARGS_SUPPORT_REPL_STR
+	bool "Enable -I STR: string to replace"
+	default y
+	depends on XARGS
+	help
+	  Support -I STR and -i[STR] options.
+
 endmenu
