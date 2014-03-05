@@ -74,6 +74,11 @@ config GROUPS
 	default y
 	help
 	  Print the group names associated with current user id.
+config SHUF
+	bool "shuf"
+	default y
+	help
+	  Generate random permutations
 config TEST
 	bool "test"
 	default y
