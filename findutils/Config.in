@@ -90,6 +90,16 @@ config FEATURE_FIND_EXEC
 	  Support the 'find -exec' option for executing commands based upon
 	  the files matched.
 
+config FEATURE_FIND_EXEC_PLUS
+	bool "Enable -exec ... {} +"
+	default y
+	depends on FEATURE_FIND_EXEC
+	help
+	  Support the 'find -exec ... {} +' option for executing commands
+	  for all matched files at once.
+	  Without this option, -exec + is a synonym for -exec ;
+	  (IOW: it works correctly, but without expected speedup)
+
 config FEATURE_FIND_USER
 	bool "Enable -user: username/uid matching"
 	default y
