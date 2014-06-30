@@ -11,6 +11,12 @@ config BLOCKDEV
 	default y
 	help
 	  Performs some ioctls with block devices.
+config FATATTR
+	bool "fatattr"
+	default y
+	select PLATFORM_LINUX
+	help
+	  fatattr lists or changes the file attributes on a fat file system.
 config FSTRIM
 	bool "fstrim"
 	default y
