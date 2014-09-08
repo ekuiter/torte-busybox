@@ -73,6 +73,13 @@ config ASH_BUILTIN_TEST
 	help
 	  Enable support for test builtin in ash.
 
+config ASH_HELP
+	bool "help builtin"
+	default y
+	depends on ASH
+	help
+	  Enable help builtin in ash.
+
 config ASH_CMDCMD
 	bool "'command' command to override shell builtins"
 	default y
