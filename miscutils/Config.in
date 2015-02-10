@@ -48,6 +48,34 @@ config FEATURE_CROND_DIR
 	depends on CROND || CRONTAB
 	help
 	  Location of crond spool.
+config I2CGET
+	bool "i2cget"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Read from I2C/SMBus chip registers.
+
+config I2CSET
+	bool "i2cset"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Set I2C registers.
+
+config I2CDUMP
+	bool "i2cdump"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Examine I2C registers.
+
+config I2CDETECT
+	bool "i2cdetect"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Detect I2C chips.
+
 config LESS
 	bool "less"
 	default y
