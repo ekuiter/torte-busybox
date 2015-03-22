@@ -183,6 +183,12 @@ config FEATURE_TR_EQUIV
 	  replace all instances of 'a' with 'xyz'. This option is mainly
 	  useful for cases when no other way of expressing a character
 	  is possible.
+config TRUNCATE
+	bool "truncate"
+	default y
+	help
+	  truncate truncates files to a given size. If a file does
+	  not exist, it is created unless told otherwise.
 config UNLINK
 	bool "unlink"
 	default y
