@@ -179,6 +179,13 @@ config REV
 	default y
 	help
 	  Reverse lines of a file or files.
+config UEVENT
+	bool "uevent"
+	default y
+	select PLATFORM_LINUX
+	help
+	  uevent is a netlink listener for kernel uevent notifications
+	  sent via netlink. It is usually used for dynamic device creation.
 
 config ACPID
 	bool "acpid"
