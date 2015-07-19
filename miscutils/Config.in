@@ -103,6 +103,14 @@ config FEATURE_LESS_FLAGS
 	help
 	  The -M/-m flag enables a more sophisticated status line.
 
+config FEATURE_LESS_TRUNCATE
+	bool "Enable -S"
+	default y
+	depends on LESS
+	help
+	  The -S flag causes long lines to be truncated rather than
+	  wrapped.
+
 config FEATURE_LESS_MARKS
 	bool "Enable marks"
 	default y
