@@ -123,6 +123,18 @@ config SHUF
 	default y
 	help
 	  Generate random permutations
+config SYNC
+	bool "sync"
+	default y
+	help
+	  sync is used to flush filesystem buffers.
+config FEATURE_SYNC_FANCY
+	bool "Enable -d and -f flags (requres syncfs(2) in libc)"
+	default y
+	depends on SYNC
+	help
+	  sync -d FILE... executes fdatasync() on each FILE.
+	  sync -f FILE... executes syncfs() on each FILE.
 config TEST
 	bool "test"
 	default y
@@ -775,12 +787,6 @@ config SUM
 	default y
 	help
 	  checksum and count the blocks in a file
-
-config SYNC
-	bool "sync"
-	default y
-	help
-	  sync is used to flush filesystem buffers.
 
 config TAC
 	bool "tac"
