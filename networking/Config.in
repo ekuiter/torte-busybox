@@ -136,10 +136,10 @@ config FEATURE_WGET_TIMEOUT
 	  FEATURE_WGET_LONG_OPTIONS is also enabled, the --timeout option
 	  will work in addition to -T.
 
-choice
-	prompt "Choose how to handle https:// URLs"
+config FEATURE_WGET_OPENSSL
+	bool "Try to connect to HTTPS using openssl"
+	default y
 	depends on WGET
-	default FEATURE_WGET_OPENSSL
 	help
 	  Choose how wget establishes SSL connection for https:// URLs.
 
@@ -159,19 +159,24 @@ choice
 	  openssl is also a big binary, often dynamically linked
 	  against ~15 libraries.
 
+config FEATURE_WGET_SSL_HELPER
+	bool "Try to connect to HTTPS using ssl_helper"
+	default y
+	depends on WGET
+	help
+	  Choose how wget establishes SSL connection for https:// URLs.
+
+	  Busybox itself contains no SSL code. wget will spawn
+	  a helper program to talk over HTTPS.
+
 	  ssl_helper is a tool which can be built statically
 	  from busybox sources against a small embedded SSL library.
 	  Please see networking/ssl_helper/README.
 	  It does not require double host resolution and emits
 	  error messages to stderr.
 
-config FEATURE_WGET_OPENSSL
-	bool "openssl"
-
-config FEATURE_WGET_SSL_HELPER
-	bool "ssl_helper"
-
-endchoice
+	  Precompiled static binary may be available at
+	  http://busybox.net/downloads/binaries/
 config WHOIS
 	bool "whois"
 	default y
