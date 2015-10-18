@@ -6,18 +6,6 @@
 
 menu "Login/Password Management Utilities"
 
-config ADD_SHELL
-       bool "add-shell"
-       default y if DESKTOP
-       help
-         Add shells to /etc/shells.
-
-config REMOVE_SHELL
-       bool "remove-shell"
-       default y if DESKTOP
-       help
-         Remove shells from /etc/shells.
-
 config FEATURE_SHADOWPASSWDS
 	bool "Support for shadow passwords"
 	default y
@@ -104,6 +92,38 @@ config USE_BB_CRYPT_SHA
 	  With this option off, login will fail password check for any
 	  user which has password encrypted with these algorithms.
 
+config ADD_SHELL
+       bool "add-shell"
+       default y if DESKTOP
+       help
+         Add shells to /etc/shells.
+
+config REMOVE_SHELL
+       bool "remove-shell"
+       default y if DESKTOP
+       help
+         Remove shells from /etc/shells.
+config ADDGROUP
+	bool "addgroup"
+	default y
+	help
+	  Utility for creating a new group account.
+
+config FEATURE_ADDGROUP_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on ADDGROUP && LONG_OPTS
+	help
+	  Support long options for the addgroup applet.
+
+config FEATURE_ADDUSER_TO_GROUP
+	bool "Support for adding users to groups"
+	default y
+	depends on ADDGROUP
+	help
+	  If  called  with two non-option arguments,
+	  addgroup will add an existing user to an
+	  existing group.
 config ADDUSER
 	bool "adduser"
 	default y
@@ -151,29 +171,26 @@ config LAST_SYSTEM_ID
 	default 999
 	help
 	  Last valid system uid or gid for adduser and addgroup
-
-config ADDGROUP
-	bool "addgroup"
+config CHPASSWD
+	bool "chpasswd"
 	default y
 	help
-	  Utility for creating a new group account.
+	  Reads a file of user name and password pairs from standard input
+	  and uses this information to update a group of existing users.
 
-config FEATURE_ADDGROUP_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on ADDGROUP && LONG_OPTS
+config FEATURE_DEFAULT_PASSWD_ALGO
+	string "Default password encryption method (passwd -a, cryptpw -m parameter)"
+	default "des"
+	depends on PASSWD || CRYPTPW
 	help
-	  Support long options for the addgroup applet.
-
-config FEATURE_ADDUSER_TO_GROUP
-	bool "Support for adding users to groups"
+	  Possible choices are "d[es]", "m[d5]", "s[ha256]" or "sha512".
+config CRYPTPW
+	bool "cryptpw"
 	default y
-	depends on ADDGROUP
 	help
-	  If  called  with two non-option arguments,
-	  addgroup will add an existing user to an
-	  existing group.
-
+	  Encrypts the given password with the crypt(3) libc function
+	  using the given salt. Debian has this utility under mkpasswd
+	  name. Busybox provides mkpasswd as an alias for cryptpw.
 config DELUSER
 	bool "deluser"
 	default y
@@ -193,7 +210,6 @@ config FEATURE_DEL_USER_FROM_GROUP
 	help
 	  If called with two non-option arguments, deluser
 	  or delgroup will remove an user from a specified group.
-
 config GETTY
 	bool "getty"
 	default y
@@ -212,7 +228,6 @@ config GETTY
 	  printf "%s login: " "`hostname`"
 	  read -r login
 	  exec /bin/login "$login"
-
 config LOGIN
 	bool "login"
 	default y
@@ -258,7 +273,6 @@ config FEATURE_SECURETTY
 	  The file /etc/securetty is used by (some versions of) login(1).
 	  The file contains the device names of tty lines (one per line,
 	  without leading /dev/) on which root is allowed to login.
-
 config PASSWD
 	bool "passwd"
 	default y
@@ -278,29 +292,6 @@ config FEATURE_PASSWD_WEAK_CHECK
 	depends on PASSWD
 	help
 	  With this option passwd will refuse new passwords which are "weak".
-
-config CRYPTPW
-	bool "cryptpw"
-	default y
-	help
-	  Encrypts the given password with the crypt(3) libc function
-	  using the given salt. Debian has this utility under mkpasswd
-	  name. Busybox provides mkpasswd as an alias for cryptpw.
-
-config CHPASSWD
-	bool "chpasswd"
-	default y
-	help
-	  Reads a file of user name and password pairs from standard input
-	  and uses this information to update a group of existing users.
-
-config FEATURE_DEFAULT_PASSWD_ALGO
-	string "Default password encryption method (passwd -a, cryptpw -m parameter)"
-	default "des"
-	depends on PASSWD || CRYPTPW
-	help
-	  Possible choices are "d[es]", "m[d5]", "s[ha256]" or "sha512".
-
 config SU
 	bool "su"
 	default y
@@ -321,7 +312,6 @@ config FEATURE_SU_CHECKS_SHELLS
 	bool "Enable su to check user's shell to be listed in /etc/shells"
 	depends on SU
 	default y
-
 config SULOGIN
 	bool "sulogin"
 	default y
@@ -329,7 +319,6 @@ config SULOGIN
 	help
 	  sulogin is invoked when the system goes into single user
 	  mode (this is done through an entry in inittab).
-
 config VLOCK
 	bool "vlock"
 	default y
