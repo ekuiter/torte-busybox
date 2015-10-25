@@ -41,23 +41,13 @@ config AR
 	default n  # needs to be improved to be able to replace binutils ar
 	help
 	  ar is an archival utility program used to create, modify, and
-	  extract contents from archives. An archive is a single file holding
-	  a collection of other files in a structure that makes it possible to
-	  retrieve the original individual files (called archive members).
-	  The original files' contents, mode (permissions), timestamp, owner,
-	  and group are preserved in the archive, and can be restored on
-	  extraction.
+	  extract contents from archives. In practice, it is used exclusively
+	  for object module archives used by compilers.
 
-	  The stored filename is limited to 15 characters. (for more information
-	  see long filename support).
-	  ar has 60 bytes of overheads for every stored file.
-
-	  This implementation of ar can extract archives, it cannot create or
-	  modify them.
 	  On an x86 system, the ar applet adds about 1K.
 
 	  Unless you have a specific application which requires ar, you should
-	  probably say N here.
+	  probably say N here: most compilers come with their own ar utility.
 
 config FEATURE_AR_LONG_FILENAMES
 	bool "Support for long filenames (not needed for debs)"
@@ -77,7 +67,7 @@ config FEATURE_AR_CREATE
 	  This enables archive creation (-c and -r) with busybox ar.
 config UNCOMPRESS
 	bool "uncompress"
-	default n
+	default n  # ancient
 	help
 	  uncompress is used to decompress archives created by compress.
 	  Not much used anymore, replaced by gzip/gunzip.
