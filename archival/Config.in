@@ -78,6 +78,13 @@ config GUNZIP
 	  gunzip is used to decompress archives created by gzip.
 	  You can use the `-t' option to test the integrity of
 	  an archive, without decompressing it.
+
+config FEATURE_GUNZIP_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on GUNZIP && LONG_OPTS
+	help
+	  Enable use of long options.
 config BUNZIP2
 	bool "bunzip2"
 	default y
