@@ -12,6 +12,14 @@ menu "Filesystem/Volume identification"
 	depends on VOLUMEID
 
 
+config FEATURE_VOLUMEID_BCACHE
+	bool "bcache filesystem"
+	default y
+	depends on VOLUMEID
+	help
+	  TODO
+
+
 config FEATURE_VOLUMEID_BTRFS
 	bool "btrfs filesystem"
 	default y
