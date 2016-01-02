@@ -6,6 +6,11 @@
 
 menu "Linux System Utilities"
 
+config BLKDISCARD
+	bool "blkdiscard"
+	default y
+	help
+	  blkdiscard discards sectors on a given device.
 config BLOCKDEV
 	bool "blockdev"
 	default y
