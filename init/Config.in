@@ -76,10 +76,21 @@ config INIT
 	help
 	  init is the first program run when the system boots.
 
+config LINUXRC
+	bool "Support running init from within an initrd (not initramfs)"
+	default y
+	select FEATURE_SYSLOG
+	help
+	  Legacy support for running init under the old-style initrd. Allows
+	  the name linuxrc to act as init, and it doesn't assume init is PID 1.
+
+	  This does not apply to initramfs, which runs /init as PID 1 and
+	  requires no special support.
+
 config FEATURE_USE_INITTAB
 	bool "Support reading an inittab file"
 	default y
-	depends on INIT
+	depends on INIT || LINUXRC
 	help
 	  Allow init to read an inittab file when the system boot.
 
@@ -106,7 +117,7 @@ config FEATURE_KILL_DELAY
 config FEATURE_INIT_SCTTY
 	bool "Run commands with leading dash with controlling tty"
 	default y
-	depends on INIT
+	depends on INIT || LINUXRC
 	help
 	  If this option is enabled, init will try to give a controlling
 	  tty to any command which has leading hyphen (often it's "-/bin/sh").
@@ -121,40 +132,29 @@ config FEATURE_INIT_SCTTY
 config FEATURE_INIT_SYSLOG
 	bool "Enable init to write to syslog"
 	default y
-	depends on INIT
+	depends on INIT || LINUXRC
 
 config FEATURE_EXTRA_QUIET
 	bool "Be _extra_ quiet on boot"
 	default y
-	depends on INIT
+	depends on INIT || LINUXRC
 	help
 	  Prevent init from logging some messages to the console during boot.
 
 config FEATURE_INIT_COREDUMPS
 	bool "Support dumping core for child processes (debugging only)"
 	default y
-	depends on INIT
+	depends on INIT || LINUXRC
 	help
 	  If this option is enabled and the file /.init_enable_core
 	  exists, then init will call setrlimit() to allow unlimited
 	  core file sizes. If this option is disabled, processes
 	  will not generate any core files.
 
-config FEATURE_INITRD
-	bool "Support running init from within an initrd (not initramfs)"
-	default y
-	depends on INIT
-	help
-	  Legacy support for running init under the old-style initrd. Allows
-	  the name linuxrc to act as init, and it doesn't assume init is PID 1.
-
-	  This does not apply to initramfs, which runs /init as PID 1 and
-	  requires no special support.
-
 config INIT_TERMINAL_TYPE
 	string "Initial terminal type"
 	default "linux"
-	depends on INIT
+	depends on INIT || LINUXRC
 	help
 	  This is the initial value set by init for the TERM environment
 	  variable. This variable is used by programs which make use of
@@ -166,7 +166,7 @@ config INIT_TERMINAL_TYPE
 config FEATURE_INIT_MODIFY_CMDLINE
 	bool "Modify the command-line to \"init\""
 	default y
-	depends on INIT
+	depends on INIT || LINUXRC
 	help
 	  When launched as PID 1 and after parsing its arguments, init
 	  wipes all the arguments but argv[0] and rewrites argv[0] to
