@@ -189,6 +189,13 @@ config CRYPTPW
 	default y
 	help
 	  Encrypts the given password with the crypt(3) libc function
+	  using the given salt.
+
+config MKPASSWD
+	bool "mkpasswd"
+	default y
+	help
+	  Encrypts the given password with the crypt(3) libc function
 	  using the given salt. Debian has this utility under mkpasswd
 	  name. Busybox provides mkpasswd as an alias for cryptpw.
 config DELUSER
