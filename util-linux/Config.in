@@ -179,6 +179,20 @@ config FEATURE_MOUNT_OTHERTAB
 	default y
 	help
 	  Support mount -T (specifying an alternate fstab)
+config NSENTER
+	bool "nsenter"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Run program with namespaces of other processes.
+
+config FEATURE_NSENTER_LONG_OPTS
+	bool "Enable long options"
+	default y
+	depends on NSENTER && LONG_OPTS
+	help
+	  Support long options for the nsenter applet. This makes
+	  the busybox implementation more compatible with upstream.
 config REV
 	bool "rev"
 	default y
