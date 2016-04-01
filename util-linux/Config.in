@@ -200,6 +200,13 @@ config UEVENT
 	help
 	  uevent is a netlink listener for kernel uevent notifications
 	  sent via netlink. It is usually used for dynamic device creation.
+config UNSHARE
+	bool "unshare"
+	default y
+	depends on LONG_OPTS && !NOMMU
+	select PLATFORM_LINUX
+	help
+	  Run program with some namespaces unshared from parent.
 
 config ACPID
 	bool "acpid"
