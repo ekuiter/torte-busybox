@@ -246,6 +246,12 @@ config UBIUPDATEVOL
 	select PLATFORM_LINUX
 	help
 	  Update a UBI volume.
+config UBIRENAME
+	bool "ubirename"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Utility to rename UBI volumes
 config WALL
 	bool "wall"
 	default y
