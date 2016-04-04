@@ -86,7 +86,7 @@ config FEATURE_ROTATE_LOGFILE
 	depends on SYSLOGD
 	help
 	  This enables syslogd to rotate the message files
-	  on his own. No need to use an external rotatescript.
+	  on his own. No need to use an external rotate script.
 
 config FEATURE_REMOTE_LOG
 	bool "Remote Log support"
