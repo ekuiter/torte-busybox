@@ -152,7 +152,7 @@ config SYNC
 	help
 	  sync is used to flush filesystem buffers.
 config FEATURE_SYNC_FANCY
-	bool "Enable -d and -f flags (requres syncfs(2) in libc)"
+	bool "Enable -d and -f flags (requires syncfs(2) in libc)"
 	default y
 	depends on SYNC
 	help
