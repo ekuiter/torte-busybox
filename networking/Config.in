@@ -147,9 +147,10 @@ config FEATURE_WGET_OPENSSL
 	  a helper program to talk over HTTPS.
 
 	  OpenSSL has a simple SSL client for debug purposes.
-	  If you select "openssl" helper, wget will effectively call
-	  "openssl s_client -quiet -connect IP:443 2>/dev/null"
-	  and pipe its data through it.
+	  If you select "openssl" helper, wget will effectively run:
+	  "openssl s_client -quiet -connect hostname:443
+	  -servername hostname 2>/dev/null" and pipe its data
+	  through it. -servername is not used if hostname is numeric.
 	  Note inconvenient API: host resolution is done twice,
 	  and there is no guarantee openssl's idea of IPv6 address
 	  format is the same as ours.
