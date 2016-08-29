@@ -146,7 +146,7 @@ config SHA3SUM
 	bool "sha3sum"
 	default y
 	help
-	  Compute and check SHA3 (512-bit) message digest
+	  Compute and check SHA3 message digest
 
 comment "Common options for md5sum, sha1sum, sha256sum, sha512sum, sha3sum"
 	depends on MD5SUM || SHA1SUM || SHA256SUM || SHA512SUM || SHA3SUM
