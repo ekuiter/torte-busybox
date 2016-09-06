@@ -189,6 +189,15 @@ config FEATURE_VOLUMEID_SYSV
 	  TODO
 
 
+config FEATURE_VOLUMEID_UBIFS
+	bool "UBIFS filesystem"
+	default y
+	depends on VOLUMEID
+	help
+	  UBIFS (Unsorted Block Image File System) is a file
+	  system for use with raw flash memory media.
+
+
 config FEATURE_VOLUMEID_UDF
 	bool "udf filesystem"
 	default y
