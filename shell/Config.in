@@ -17,6 +17,42 @@ config ASH
 	  shell (by Herbert Xu), which was created by porting the 'ash' shell
 	  (written by Kenneth Almquist) from NetBSD.
 
+config ASH_OPTIMIZE_FOR_SIZE
+	bool "Optimize for size instead of speed"
+	default y
+	depends on ASH
+	help
+	  Compile ash for reduced size at the price of speed.
+
+config ASH_INTERNAL_GLOB
+	bool "Use internal glob() implementation"
+	default n
+	depends on ASH
+	help
+	  Do not use glob() function from libc, use internal implementation.
+	  Use this if you are getting "glob.h: No such file or directory"
+	  or similar build errors.
+
+config ASH_RANDOM_SUPPORT
+	bool "Pseudorandom generator and $RANDOM variable"
+	default y
+	depends on ASH
+	help
+	  Enable pseudorandom generator and dynamic variable "$RANDOM".
+	  Each read of "$RANDOM" will generate a new pseudorandom value.
+	  You can reset the generator by using a specified start value.
+	  After "unset RANDOM" the generator will switch off and this
+	  variable will no longer have special treatment.
+
+config ASH_EXPAND_PRMT
+	bool "Expand prompt string"
+	default y
+	depends on ASH
+	help
+	  "PS#" may contain volatile content, such as backquote commands.
+	  This option recreates the prompt string from the environment
+	  variable each time it is displayed.
+
 config ASH_BASH_COMPAT
 	bool "bash-compatible extensions"
 	default y
@@ -95,33 +131,6 @@ config ASH_MAIL
 	depends on ASH
 	help
 	  Enable "check for new mail" function in the ash shell.
-
-config ASH_OPTIMIZE_FOR_SIZE
-	bool "Optimize for size instead of speed"
-	default y
-	depends on ASH
-	help
-	  Compile ash for reduced size at the price of speed.
-
-config ASH_RANDOM_SUPPORT
-	bool "Pseudorandom generator and $RANDOM variable"
-	default y
-	depends on ASH
-	help
-	  Enable pseudorandom generator and dynamic variable "$RANDOM".
-	  Each read of "$RANDOM" will generate a new pseudorandom value.
-	  You can reset the generator by using a specified start value.
-	  After "unset RANDOM" the generator will switch off and this
-	  variable will no longer have special treatment.
-
-config ASH_EXPAND_PRMT
-	bool "Expand prompt string"
-	default y
-	depends on ASH
-	help
-	  "PS#" may contain volatile content, such as backquote commands.
-	  This option recreates the prompt string from the environment
-	  variable each time it is displayed.
 
 config CTTYHACK
 	bool "cttyhack"
