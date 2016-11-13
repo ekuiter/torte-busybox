@@ -6,6 +6,17 @@
 
 menu "Networking Utilities"
 
+config HOSTNAME
+	bool "hostname"
+	default y
+	help
+	  Show or set the system's host name.
+
+config DNSDOMAINNAME
+	bool "dnsdomainname"
+	default y
+	help
+	  Alias to "hostname -d".
 config NAMEIF
 	bool "nameif"
 	default y
@@ -336,12 +347,6 @@ config FEATURE_FTPGETPUT_LONG_OPTIONS
 	depends on LONG_OPTS && (FTPGET || FTPPUT)
 	help
 	  Support long options for the ftpget/ftpput applet.
-
-config HOSTNAME
-	bool "hostname"
-	default y
-	help
-	  Show or set the system's host name.
 
 config HTTPD
 	bool "httpd"
