@@ -207,6 +207,20 @@ config SETARCH
 	  specified program (usually a shell). It only makes sense to have
 	  this util on a system that supports both 64bit and 32bit userland
 	  (like amd64/x86, ppc64/ppc, sparc64/sparc, etc...).
+
+config LINUX32
+	bool "linux32"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Alias to "setarch linux32".
+
+config LINUX64
+	bool "linux64"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Alias to "setarch linux64".
 config UEVENT
 	bool "uevent"
 	default y
