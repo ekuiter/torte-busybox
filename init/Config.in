@@ -45,15 +45,27 @@ config FEATURE_BOOTCHARTD_CONFIG_FILE
 	  Enable reading and parsing of $PWD/bootchartd.conf
 	  and /etc/bootchartd.conf files.
 config HALT
-	bool "poweroff, halt, and reboot"
+	bool "halt"
 	default y
 	help
-	  Stop all processes and either halt, reboot, or power off the system.
+	  Stop all processes and halt the system.
+
+config POWEROFF
+	bool "poweroff"
+	default y
+	help
+	  Stop all processes and power off the system.
+
+config REBOOT
+	bool "reboot"
+	default y
+	help
+	  Stop all processes and reboot the system.
 
 config FEATURE_CALL_TELINIT
 	bool "Call telinit on shutdown and reboot"
 	default y
-	depends on HALT && !INIT
+	depends on (HALT || POWEROFF || REBOOT) && !INIT
 	help
 	  Call an external program (normally telinit) to facilitate
 	  a switch to a proper runlevel.
