@@ -85,6 +85,19 @@ config FEATURE_MDEV_LOAD_FIRMWARE
 	  These devices will request userspace look up the files in
 	  /lib/firmware/ and if it exists, send it to the kernel for
 	  loading into the hardware.
+config MKE2FS
+	bool "mke2fs"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Utility to create EXT2 filesystems.
+
+config MKFS_EXT2
+	bool "mkfs.ext2"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Alias to "mke2fs".
 config MOUNT
 	bool "mount"
 	default y
@@ -508,13 +521,6 @@ config FSCK_MINIX
 	  power goes off in the middle of a write. This utility allows you to
 	  check for and attempt to repair any corruption that occurs to a minix
 	  filesystem.
-
-config MKFS_EXT2
-	bool "mkfs_ext2"
-	default y
-	select PLATFORM_LINUX
-	help
-	  Utility to create EXT2 filesystems.
 
 config MKFS_MINIX
 	bool "mkfs_minix"
