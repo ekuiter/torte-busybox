@@ -98,6 +98,19 @@ config MKFS_EXT2
 	select PLATFORM_LINUX
 	help
 	  Alias to "mke2fs".
+config MKDOSFS
+	bool "mkdosfs"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Utility to create FAT32 filesystems.
+
+config MKFS_VFAT
+	bool "mkfs.vfat"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Alias to "mkdosfs".
 config MOUNT
 	bool "mount"
 	default y
@@ -547,13 +560,6 @@ config MKFS_REISER
 	help
 	  Utility to create ReiserFS filesystems.
 	  Note: this applet needs a lot of testing and polishing.
-
-config MKFS_VFAT
-	bool "mkfs_vfat"
-	default y
-	select PLATFORM_LINUX
-	help
-	  Utility to create FAT32 filesystems.
 
 config GETOPT
 	bool "getopt"
