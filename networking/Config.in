@@ -1101,16 +1101,6 @@ config ZCIP
 	  See http://www.zeroconf.org for further details, and "zcip.script"
 	  in the busybox examples.
 
-#config TC
-#	bool "tc"
-#	default y
-#	help
-#	  show / manipulate traffic control settings
-#
-#config FEATURE_TC_INGRESS
-#	def_bool n
-#	depends on TC
-
 source networking/udhcp/Config.in
 
 config IFUPDOWN_UDHCPC_CMD_OPTIONS
