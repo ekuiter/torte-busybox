@@ -103,7 +103,7 @@ config FTPD
 	help
 	  simple FTP daemon. You have to run it via inetd.
 
-config FEATURE_FTP_WRITE
+config FEATURE_FTPD_WRITE
 	bool "Enable upload commands"
 	default y
 	depends on FTPD
@@ -121,7 +121,7 @@ config FEATURE_FTPD_ACCEPT_BROKEN_LIST
 	  it increases the code size by ~40 bytes.
 	  Most other ftp servers seem to behave similar to this.
 
-config FEATURE_FTP_AUTHENTICATION
+config FEATURE_FTPD_AUTHENTICATION
 	bool "Enable authentication"
 	default y
 	depends on FTPD
