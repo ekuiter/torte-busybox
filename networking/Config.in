@@ -752,14 +752,14 @@ config PING
 config PING6
 	bool "ping6"
 	default y
-	depends on FEATURE_IPV6 && PING
+	depends on FEATURE_IPV6
 	help
 	  This will give you a ping that can talk IPv6.
 
 config FEATURE_FANCY_PING
 	bool "Enable fancy ping output"
 	default y
-	depends on PING
+	depends on PING || PING6
 	help
 	  Make the output from the ping applet include statistics, and at the
 	  same time provide full support for ICMP packets.
@@ -961,14 +961,14 @@ config TRACEROUTE
 config TRACEROUTE6
 	bool "traceroute6"
 	default y
-	depends on FEATURE_IPV6 && TRACEROUTE
+	depends on FEATURE_IPV6
 	help
 	  Utility to trace the route of IPv6 packets.
 
 config FEATURE_TRACEROUTE_VERBOSE
 	bool "Enable verbose output"
 	default y
-	depends on TRACEROUTE
+	depends on TRACEROUTE || TRACEROUTE6
 	help
 	  Add some verbosity to traceroute. This includes among other things
 	  hostnames and ICMP response types.
@@ -976,7 +976,7 @@ config FEATURE_TRACEROUTE_VERBOSE
 config FEATURE_TRACEROUTE_USE_ICMP
 	bool "Enable -I option (use ICMP instead of UDP)"
 	default y
-	depends on TRACEROUTE
+	depends on TRACEROUTE || TRACEROUTE6
 	help
 	  Add option -I to use ICMP ECHO instead of UDP datagrams.
 config TUNCTL
