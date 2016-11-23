@@ -37,7 +37,6 @@ config KILL
 config KILLALL
 	bool "killall"
 	default y
-	depends on KILL
 	help
 	  killall sends a signal to all processes running any of the
 	  specified commands. If no signal name is specified, SIGTERM is
@@ -46,8 +45,11 @@ config KILLALL
 config KILLALL5
 	bool "killall5"
 	default y
-	depends on KILL
-
+	help
+	  The SystemV killall command. killall5 sends a signal
+	  to all processes except kernel threads and the processes
+	  in its own session, so it won't kill the shell that is running
+	  the script it was called from.
 config LSOF
 	bool "lsof"
 	default y
