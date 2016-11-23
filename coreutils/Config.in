@@ -724,10 +724,22 @@ config TEST
 	  returning an appropriate exit code. The bash shell
 	  has test built in, ash can build it in optionally.
 
+config TEST1
+	bool "test as ["
+	default y
+	help
+	  Provide test command in the "[ EXPR ]" form
+
+config TEST2
+	bool "test as [["
+	default y
+	help
+	  Provide test command in the "[[ EXPR ]]" form
+
 config FEATURE_TEST_64
 	bool "Extend test to 64 bit"
 	default y
-	depends on TEST || ASH_BUILTIN_TEST || HUSH
+	depends on TEST || TEST1 || TEST2 || ASH_BUILTIN_TEST || HUSH
 	help
 	  Enable 64-bit support in test.
 config TOUCH
