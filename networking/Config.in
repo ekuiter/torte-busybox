@@ -6,297 +6,6 @@
 
 menu "Networking Utilities"
 
-config HOSTNAME
-	bool "hostname"
-	default y
-	help
-	  Show or set the system's host name.
-
-config DNSDOMAINNAME
-	bool "dnsdomainname"
-	default y
-	help
-	  Alias to "hostname -d".
-config IFUP
-	bool "ifup"
-	default y
-	help
-	  Activate the specified interfaces. This applet makes use
-	  of either "ifconfig" and "route" or the "ip" command to actually
-	  configure network interfaces. Therefore, you will probably also want
-	  to enable either IFCONFIG and ROUTE, or enable
-	  FEATURE_IFUPDOWN_IP and the various IP options. Of
-	  course you could use non-busybox versions of these programs, so
-	  against my better judgement (since this will surely result in plenty
-	  of support questions on the mailing list), I do not force you to
-	  enable these additional options. It is up to you to supply either
-	  "ifconfig", "route" and "run-parts" or the "ip" command, either
-	  via busybox or via standalone utilities.
-
-config IFDOWN
-	bool "ifdown"
-	default y
-	help
-	  Deactivate the specified interfaces.
-
-config IFUPDOWN_IFSTATE_PATH
-	string "Absolute path to ifstate file"
-	default "/var/run/ifstate"
-	depends on IFUP || IFDOWN
-	help
-	  ifupdown keeps state information in a file called ifstate.
-	  Typically it is located in /var/run/ifstate, however
-	  some distributions tend to put it in other places
-	  (debian, for example, uses /etc/network/run/ifstate).
-	  This config option defines location of ifstate.
-
-config FEATURE_IFUPDOWN_IP
-	bool "Use ip applet"
-	default y
-	depends on IFUP || IFDOWN
-	help
-	  Use the iproute "ip" command to implement "ifup" and "ifdown", rather
-	  than the default of using the older 'ifconfig' and 'route' utilities.
-
-config FEATURE_IFUPDOWN_IP_BUILTIN
-	bool "Use busybox ip applet"
-	default y
-	depends on FEATURE_IFUPDOWN_IP
-	select PLATFORM_LINUX
-	select IP
-	select FEATURE_IP_ADDRESS
-	select FEATURE_IP_LINK
-	select FEATURE_IP_ROUTE
-	help
-	  Use the busybox iproute "ip" applet to implement "ifupdown".
-
-	  If left disabled, you must install the full-blown iproute2
-	  utility or the  "ifup" and "ifdown" applets will not work.
-
-config FEATURE_IFUPDOWN_IFCONFIG_BUILTIN
-	bool "Use busybox ifconfig and route applets"
-	default n
-	depends on (IFUP || IFDOWN) && !FEATURE_IFUPDOWN_IP
-	select IFCONFIG
-	select ROUTE
-	help
-	  Use the busybox iproute "ifconfig" and "route" applets to
-	  implement the "ifup" and "ifdown" utilities.
-
-	  If left disabled, you must install the full-blown ifconfig
-	  and route utilities, or the  "ifup" and "ifdown" applets will not
-	  work.
-
-config FEATURE_IFUPDOWN_IPV4
-	bool "Support for IPv4"
-	default y
-	depends on IFUP || IFDOWN
-	help
-	  If you want ifup/ifdown to talk IPv4, leave this on.
-
-config FEATURE_IFUPDOWN_IPV6
-	bool "Support for IPv6"
-	default y
-	depends on (IFUP || IFDOWN) && FEATURE_IPV6
-	help
-	  If you need support for IPv6, turn this option on.
-
-
-config FEATURE_IFUPDOWN_MAPPING
-	bool "Enable mapping support"
-	default y
-	depends on IFUP || IFDOWN
-	help
-	  This enables support for the "mapping" stanza, unless you have
-	  a weird network setup you don't need it.
-
-config FEATURE_IFUPDOWN_EXTERNAL_DHCP
-	bool "Support for external dhcp clients"
-	default n
-	depends on IFUP || IFDOWN
-	help
-	  This enables support for the external dhcp clients. Clients are
-	  tried in the following order: dhcpcd, dhclient, pump and udhcpc.
-	  Otherwise, if udhcpc applet is enabled, it is used.
-	  Otherwise, ifup/ifdown will have no support for DHCP.
-config NAMEIF
-	bool "nameif"
-	default y
-	select PLATFORM_LINUX
-	select FEATURE_SYSLOG
-	help
-	  nameif is used to rename network interface by its MAC address.
-	  Renamed interfaces MUST be in the down state.
-	  It is possible to use a file (default: /etc/mactab)
-	  with list of new interface names and MACs.
-	  Maximum interface name length: IFNAMSIZ = 16
-	  File fields are separated by space or tab.
-	  File format:
-	  # Comment
-	  new_interface_name    XX:XX:XX:XX:XX:XX
-
-config FEATURE_NAMEIF_EXTENDED
-	bool "Extended nameif"
-	default y
-	depends on NAMEIF
-	help
-	  This extends the nameif syntax to support the bus_info, driver,
-	  phyaddr selectors. The syntax is compatible to the normal nameif.
-	  File format:
-	    new_interface_name  driver=asix bus=usb-0000:00:08.2-3
-	    new_interface_name  bus=usb-0000:00:08.2-3 00:80:C8:38:91:B5
-	    new_interface_name  phy_address=2 00:80:C8:38:91:B5
-	    new_interface_name  mac=00:80:C8:38:91:B5
-	    new_interface_name  00:80:C8:38:91:B5
-config NBDCLIENT
-	bool "nbd-client"
-	default y
-	help
-	  Network block device client
-config NC
-	bool "nc"
-	default y
-	help
-	  A simple Unix utility which reads and writes data across network
-	  connections.
-
-config NC_SERVER
-	bool "Netcat server options (-l)"
-	default y
-	depends on NC
-	help
-	  Allow netcat to act as a server.
-
-config NC_EXTRA
-	bool "Netcat extensions (-eiw and -f FILE)"
-	default y
-	depends on NC
-	help
-	  Add -e (support for executing the rest of the command line after
-	  making or receiving a successful connection), -i (delay interval for
-	  lines sent), -w (timeout for initial connection).
-
-config NC_110_COMPAT
-	bool "Netcat 1.10 compatibility (+2.5k)"
-	default n  # off specially for Rob
-	depends on NC
-	help
-	  This option makes nc closely follow original nc-1.10.
-	  The code is about 2.5k bigger. It enables
-	  -s ADDR, -n, -u, -v, -o FILE, -z options, but loses
-	  busybox-specific extensions: -f FILE.
-config PING
-	bool "ping"
-	default y
-	select PLATFORM_LINUX
-	help
-	  ping uses the ICMP protocol's mandatory ECHO_REQUEST datagram to
-	  elicit an ICMP ECHO_RESPONSE from a host or gateway.
-
-config PING6
-	bool "ping6"
-	default y
-	depends on FEATURE_IPV6 && PING
-	help
-	  This will give you a ping that can talk IPv6.
-
-config FEATURE_FANCY_PING
-	bool "Enable fancy ping output"
-	default y
-	depends on PING
-	help
-	  Make the output from the ping applet include statistics, and at the
-	  same time provide full support for ICMP packets.
-config WGET
-	bool "wget"
-	default y
-	help
-	  wget is a utility for non-interactive download of files from HTTP
-	  and FTP servers.
-
-config FEATURE_WGET_STATUSBAR
-	bool "Enable a nifty process meter (+2k)"
-	default y
-	depends on WGET
-	help
-	  Enable the transfer progress bar for wget transfers.
-
-config FEATURE_WGET_AUTHENTICATION
-	bool "Enable HTTP authentication"
-	default y
-	depends on WGET
-	help
-	  Support authenticated HTTP transfers.
-
-config FEATURE_WGET_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on WGET && LONG_OPTS
-	help
-	  Support long options for the wget applet.
-
-config FEATURE_WGET_TIMEOUT
-	bool "Enable timeout option -T SEC"
-	default y
-	depends on WGET
-	help
-	  Supports network read and connect timeouts for wget,
-	  so that wget will give up and timeout, through the -T
-	  command line option.
-
-	  Currently only connect and network data read timeout are
-	  supported (i.e., timeout is not applied to the DNS query). When
-	  FEATURE_WGET_LONG_OPTIONS is also enabled, the --timeout option
-	  will work in addition to -T.
-
-config FEATURE_WGET_OPENSSL
-	bool "Try to connect to HTTPS using openssl"
-	default y
-	depends on WGET
-	help
-	  Choose how wget establishes SSL connection for https:// URLs.
-
-	  Busybox itself contains no SSL code. wget will spawn
-	  a helper program to talk over HTTPS.
-
-	  OpenSSL has a simple SSL client for debug purposes.
-	  If you select "openssl" helper, wget will effectively run:
-	  "openssl s_client -quiet -connect hostname:443
-	  -servername hostname 2>/dev/null" and pipe its data
-	  through it. -servername is not used if hostname is numeric.
-	  Note inconvenient API: host resolution is done twice,
-	  and there is no guarantee openssl's idea of IPv6 address
-	  format is the same as ours.
-	  Another problem is that s_client prints debug information
-	  to stderr, and it needs to be suppressed. This means
-	  all error messages get suppressed too.
-	  openssl is also a big binary, often dynamically linked
-	  against ~15 libraries.
-
-config FEATURE_WGET_SSL_HELPER
-	bool "Try to connect to HTTPS using ssl_helper"
-	default y
-	depends on WGET
-	help
-	  Choose how wget establishes SSL connection for https:// URLs.
-
-	  Busybox itself contains no SSL code. wget will spawn
-	  a helper program to talk over HTTPS.
-
-	  ssl_helper is a tool which can be built statically
-	  from busybox sources against a small embedded SSL library.
-	  Please see networking/ssl_helper/README.
-	  It does not require double host resolution and emits
-	  error messages to stderr.
-
-	  Precompiled static binary may be available at
-	  http://busybox.net/downloads/binaries/
-config WHOIS
-	bool "whois"
-	default y
-	help
-	  whois is a client for the whois directory service
-
 config FEATURE_IPV6
 	bool "Enable IPv6 support"
 	default y
@@ -344,7 +53,6 @@ config ARP
 	select PLATFORM_LINUX
 	help
 	  Manipulate the system ARP cache.
-
 config ARPING
 	bool "arping"
 	default y
@@ -378,28 +86,17 @@ config FEATURE_BRCTL_SHOW
 	help
 	  Add support for option which prints the current config:
 	    show
-
 config DNSD
 	bool "dnsd"
 	default y
 	help
 	  Small and static DNS server daemon.
-
 config ETHER_WAKE
 	bool "ether-wake"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Send a magic packet to wake up sleeping machines.
-
-config FAKEIDENTD
-	bool "fakeidentd"
-	default y
-	select FEATURE_SYSLOG
-	help
-	  fakeidentd listens on the ident port and returns a predefined
-	  fake value on any query.
-
 config FTPD
 	bool "ftpd"
 	default y
@@ -430,7 +127,6 @@ config FEATURE_FTP_AUTHENTICATION
 	depends on FTPD
 	help
 	  Enable basic system login as seen in telnet etc.
-
 config FTPGET
 	bool "ftpget"
 	default y
@@ -449,7 +145,17 @@ config FEATURE_FTPGETPUT_LONG_OPTIONS
 	depends on LONG_OPTS && (FTPGET || FTPPUT)
 	help
 	  Support long options for the ftpget/ftpput applet.
+config HOSTNAME
+	bool "hostname"
+	default y
+	help
+	  Show or set the system's host name.
 
+config DNSDOMAINNAME
+	bool "dnsdomainname"
+	default y
+	help
+	  Alias to "hostname -d".
 config HTTPD
 	bool "httpd"
 	default y
@@ -568,7 +274,6 @@ config FEATURE_HTTPD_GZIP
 	help
 	  Makes httpd send files using GZIP content encoding if the
 	  client supports it and a pre-compressed <file>.gz exists.
-
 config IFCONFIG
 	bool "ifconfig"
 	default y
@@ -616,7 +321,6 @@ config FEATURE_IFCONFIG_BROADCAST_PLUS
 	help
 	  Setting this will make ifconfig attempt to find the broadcast
 	  automatically if the value '+' is used.
-
 config IFENSLAVE
 	bool "ifenslave"
 	default y
@@ -624,14 +328,114 @@ config IFENSLAVE
 	help
 	  Userspace application to bind several interfaces
 	  to a logical interface (use with kernel bonding driver).
-
 config IFPLUGD
 	bool "ifplugd"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Network interface plug detection daemon.
+config IFUP
+	bool "ifup"
+	default y
+	help
+	  Activate the specified interfaces. This applet makes use
+	  of either "ifconfig" and "route" or the "ip" command to actually
+	  configure network interfaces. Therefore, you will probably also want
+	  to enable either IFCONFIG and ROUTE, or enable
+	  FEATURE_IFUPDOWN_IP and the various IP options. Of
+	  course you could use non-busybox versions of these programs, so
+	  against my better judgement (since this will surely result in plenty
+	  of support questions on the mailing list), I do not force you to
+	  enable these additional options. It is up to you to supply either
+	  "ifconfig", "route" and "run-parts" or the "ip" command, either
+	  via busybox or via standalone utilities.
 
+config IFDOWN
+	bool "ifdown"
+	default y
+	help
+	  Deactivate the specified interfaces.
+
+config IFUPDOWN_IFSTATE_PATH
+	string "Absolute path to ifstate file"
+	default "/var/run/ifstate"
+	depends on IFUP || IFDOWN
+	help
+	  ifupdown keeps state information in a file called ifstate.
+	  Typically it is located in /var/run/ifstate, however
+	  some distributions tend to put it in other places
+	  (debian, for example, uses /etc/network/run/ifstate).
+	  This config option defines location of ifstate.
+
+config FEATURE_IFUPDOWN_IP
+	bool "Use ip applet"
+	default y
+	depends on IFUP || IFDOWN
+	help
+	  Use the iproute "ip" command to implement "ifup" and "ifdown", rather
+	  than the default of using the older 'ifconfig' and 'route' utilities.
+
+config FEATURE_IFUPDOWN_IP_BUILTIN
+	bool "Use busybox ip applet"
+	default y
+	depends on FEATURE_IFUPDOWN_IP
+	select PLATFORM_LINUX
+	select IP
+	select FEATURE_IP_ADDRESS
+	select FEATURE_IP_LINK
+	select FEATURE_IP_ROUTE
+	help
+	  Use the busybox iproute "ip" applet to implement "ifupdown".
+
+	  If left disabled, you must install the full-blown iproute2
+	  utility or the  "ifup" and "ifdown" applets will not work.
+
+config FEATURE_IFUPDOWN_IFCONFIG_BUILTIN
+	bool "Use busybox ifconfig and route applets"
+	default n
+	depends on (IFUP || IFDOWN) && !FEATURE_IFUPDOWN_IP
+	select IFCONFIG
+	select ROUTE
+	help
+	  Use the busybox iproute "ifconfig" and "route" applets to
+	  implement the "ifup" and "ifdown" utilities.
+
+	  If left disabled, you must install the full-blown ifconfig
+	  and route utilities, or the  "ifup" and "ifdown" applets will not
+	  work.
+
+config FEATURE_IFUPDOWN_IPV4
+	bool "Support for IPv4"
+	default y
+	depends on IFUP || IFDOWN
+	help
+	  If you want ifup/ifdown to talk IPv4, leave this on.
+
+config FEATURE_IFUPDOWN_IPV6
+	bool "Support for IPv6"
+	default y
+	depends on (IFUP || IFDOWN) && FEATURE_IPV6
+	help
+	  If you need support for IPv6, turn this option on.
+
+
+config FEATURE_IFUPDOWN_MAPPING
+	bool "Enable mapping support"
+	default y
+	depends on IFUP || IFDOWN
+	help
+	  This enables support for the "mapping" stanza, unless you have
+	  a weird network setup you don't need it.
+
+config FEATURE_IFUPDOWN_EXTERNAL_DHCP
+	bool "Support for external dhcp clients"
+	default n
+	depends on IFUP || IFDOWN
+	help
+	  This enables support for the external dhcp clients. Clients are
+	  tried in the following order: dhcpcd, dhclient, pump and udhcpc.
+	  Otherwise, if udhcpc applet is enabled, it is used.
+	  Otherwise, ifup/ifdown will have no support for DHCP.
 config INETD
 	bool "inetd"
 	default y
@@ -681,7 +485,6 @@ config FEATURE_INETD_RPC
 	select FEATURE_HAVE_RPC
 	help
 	  Support Sun-RPC based services
-
 config IP
 	bool "ip"
 	default y
@@ -795,7 +598,6 @@ config IPNEIGH
 	bool
 	default y
 	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_NEIGH
-
 config IPCALC
 	bool "ipcalc"
 	default y
@@ -817,7 +619,79 @@ config FEATURE_IPCALC_LONG_OPTIONS
 	depends on IPCALC && LONG_OPTS
 	help
 	  Support long options for the ipcalc applet.
+config FAKEIDENTD
+	bool "fakeidentd"
+	default y
+	select FEATURE_SYSLOG
+	help
+	  fakeidentd listens on the ident port and returns a predefined
+	  fake value on any query.
+config NAMEIF
+	bool "nameif"
+	default y
+	select PLATFORM_LINUX
+	select FEATURE_SYSLOG
+	help
+	  nameif is used to rename network interface by its MAC address.
+	  Renamed interfaces MUST be in the down state.
+	  It is possible to use a file (default: /etc/mactab)
+	  with list of new interface names and MACs.
+	  Maximum interface name length: IFNAMSIZ = 16
+	  File fields are separated by space or tab.
+	  File format:
+	  # Comment
+	  new_interface_name    XX:XX:XX:XX:XX:XX
 
+config FEATURE_NAMEIF_EXTENDED
+	bool "Extended nameif"
+	default y
+	depends on NAMEIF
+	help
+	  This extends the nameif syntax to support the bus_info, driver,
+	  phyaddr selectors. The syntax is compatible to the normal nameif.
+	  File format:
+	    new_interface_name  driver=asix bus=usb-0000:00:08.2-3
+	    new_interface_name  bus=usb-0000:00:08.2-3 00:80:C8:38:91:B5
+	    new_interface_name  phy_address=2 00:80:C8:38:91:B5
+	    new_interface_name  mac=00:80:C8:38:91:B5
+	    new_interface_name  00:80:C8:38:91:B5
+config NBDCLIENT
+	bool "nbd-client"
+	default y
+	help
+	  Network block device client
+config NC
+	bool "nc"
+	default y
+	help
+	  A simple Unix utility which reads and writes data across network
+	  connections.
+
+config NC_SERVER
+	bool "Netcat server options (-l)"
+	default y
+	depends on NC
+	help
+	  Allow netcat to act as a server.
+
+config NC_EXTRA
+	bool "Netcat extensions (-eiw and -f FILE)"
+	default y
+	depends on NC
+	help
+	  Add -e (support for executing the rest of the command line after
+	  making or receiving a successful connection), -i (delay interval for
+	  lines sent), -w (timeout for initial connection).
+
+config NC_110_COMPAT
+	bool "Netcat 1.10 compatibility (+2.5k)"
+	default n  # off specially for Rob
+	depends on NC
+	help
+	  This option makes nc closely follow original nc-1.10.
+	  The code is about 2.5k bigger. It enables
+	  -s ADDR, -n, -u, -v, -o FILE, -z options, but loses
+	  busybox-specific extensions: -f FILE.
 config NETSTAT
 	bool "netstat"
 	default y
@@ -840,13 +714,11 @@ config FEATURE_NETSTAT_PRG
 	help
 	  Add support for -p flag to print out PID and program name.
 	  +700 bytes of code.
-
 config NSLOOKUP
 	bool "nslookup"
 	default y
 	help
 	  nslookup is a tool to query Internet name servers.
-
 config NTPD
 	bool "ntpd"
 	default y
@@ -869,20 +741,39 @@ config FEATURE_NTPD_CONF
 	help
 	  Make ntpd look in /etc/ntp.conf for peers. Only "server address"
 	  is supported.
+config PING
+	bool "ping"
+	default y
+	select PLATFORM_LINUX
+	help
+	  ping uses the ICMP protocol's mandatory ECHO_REQUEST datagram to
+	  elicit an ICMP ECHO_RESPONSE from a host or gateway.
 
+config PING6
+	bool "ping6"
+	default y
+	depends on FEATURE_IPV6 && PING
+	help
+	  This will give you a ping that can talk IPv6.
+
+config FEATURE_FANCY_PING
+	bool "Enable fancy ping output"
+	default y
+	depends on PING
+	help
+	  Make the output from the ping applet include statistics, and at the
+	  same time provide full support for ICMP packets.
 config PSCAN
 	bool "pscan"
 	default y
 	help
 	  Simple network port scanner.
-
 config ROUTE
 	bool "route"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Route displays or manipulates the kernel's IP routing tables.
-
 config SLATTACH
 	bool "slattach"
 	default y
@@ -890,17 +781,6 @@ config SLATTACH
 	help
 	  slattach is a small utility to attach network interfaces to serial
 	  lines.
-
-#config TC
-#	bool "tc"
-#	default y
-#	help
-#	  show / manipulate traffic control settings
-#
-#config FEATURE_TC_INGRESS
-#	def_bool n
-#	depends on TC
-
 config TCPSVD
 	bool "tcpsvd"
 	default y
@@ -908,6 +788,12 @@ config TCPSVD
 	  tcpsvd listens on a TCP port and runs a program for each new
 	  connection.
 
+config UDPSVD
+	bool "udpsvd"
+	default y
+	help
+	  udpsvd listens on an UDP port and runs a program for each new
+	  connection.
 config TELNET
 	bool "telnet"
 	default y
@@ -933,7 +819,6 @@ config FEATURE_TELNET_AUTOLOGIN
 	  remote host you are connecting to. This is useful when you need to
 	  log into a machine without telling the username (autologin). This
 	  option enables `-a' and `-l USER' arguments.
-
 config TELNETD
 	bool "telnetd"
 	default y
@@ -975,7 +860,6 @@ config TELNETD
 
 	  with all that done, telnetd _should_ work....
 
-
 config FEATURE_TELNETD_STANDALONE
 	bool "Support standalone telnetd (not inetd only)"
 	default y
@@ -1003,7 +887,6 @@ config FEATURE_TELNETD_INETD_WAIT
 	  This option is rarely used. "tcp nowait" is much more usual
 	  way of running tcp services, including telnetd.
 	  You most probably want to say N here.
-
 config TFTP
 	bool "tftp"
 	default y
@@ -1068,7 +951,6 @@ config TFTP_DEBUG
 	help
 	  Make tftp[d] print debugging messages on stderr.
 	  This is useful if you are diagnosing a bug in tftp[d].
-
 config TRACEROUTE
 	bool "traceroute"
 	default y
@@ -1097,7 +979,6 @@ config FEATURE_TRACEROUTE_USE_ICMP
 	depends on TRACEROUTE
 	help
 	  Add option -I to use ICMP ECHO instead of UDP datagrams.
-
 config TUNCTL
 	bool "tunctl"
 	default y
@@ -1112,32 +993,101 @@ config FEATURE_TUNCTL_UG
 	help
 	  Allow to specify owner and group of newly created interface.
 	  340 bytes of pure bloat. Say no here.
-
-source networking/udhcp/Config.in
-
-config IFUPDOWN_UDHCPC_CMD_OPTIONS
-	string "ifup udhcpc command line options"
-	default "-R -n"
-	depends on IFUPDOWN && UDHCPC
-	help
-	  Command line options to pass to udhcpc from ifup.
-	  Intended to alter options not available in /etc/network/interfaces.
-	  (IE: --syslog --background etc...)
-
-config UDPSVD
-	bool "udpsvd"
-	default y
-	help
-	  udpsvd listens on an UDP port and runs a program for each new
-	  connection.
-
 config VCONFIG
 	bool "vconfig"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Creates, removes, and configures VLAN interfaces
+config WGET
+	bool "wget"
+	default y
+	help
+	  wget is a utility for non-interactive download of files from HTTP
+	  and FTP servers.
 
+config FEATURE_WGET_STATUSBAR
+	bool "Enable a nifty process meter (+2k)"
+	default y
+	depends on WGET
+	help
+	  Enable the transfer progress bar for wget transfers.
+
+config FEATURE_WGET_AUTHENTICATION
+	bool "Enable HTTP authentication"
+	default y
+	depends on WGET
+	help
+	  Support authenticated HTTP transfers.
+
+config FEATURE_WGET_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on WGET && LONG_OPTS
+	help
+	  Support long options for the wget applet.
+
+config FEATURE_WGET_TIMEOUT
+	bool "Enable timeout option -T SEC"
+	default y
+	depends on WGET
+	help
+	  Supports network read and connect timeouts for wget,
+	  so that wget will give up and timeout, through the -T
+	  command line option.
+
+	  Currently only connect and network data read timeout are
+	  supported (i.e., timeout is not applied to the DNS query). When
+	  FEATURE_WGET_LONG_OPTIONS is also enabled, the --timeout option
+	  will work in addition to -T.
+
+config FEATURE_WGET_OPENSSL
+	bool "Try to connect to HTTPS using openssl"
+	default y
+	depends on WGET
+	help
+	  Choose how wget establishes SSL connection for https:// URLs.
+
+	  Busybox itself contains no SSL code. wget will spawn
+	  a helper program to talk over HTTPS.
+
+	  OpenSSL has a simple SSL client for debug purposes.
+	  If you select "openssl" helper, wget will effectively run:
+	  "openssl s_client -quiet -connect hostname:443
+	  -servername hostname 2>/dev/null" and pipe its data
+	  through it. -servername is not used if hostname is numeric.
+	  Note inconvenient API: host resolution is done twice,
+	  and there is no guarantee openssl's idea of IPv6 address
+	  format is the same as ours.
+	  Another problem is that s_client prints debug information
+	  to stderr, and it needs to be suppressed. This means
+	  all error messages get suppressed too.
+	  openssl is also a big binary, often dynamically linked
+	  against ~15 libraries.
+
+config FEATURE_WGET_SSL_HELPER
+	bool "Try to connect to HTTPS using ssl_helper"
+	default y
+	depends on WGET
+	help
+	  Choose how wget establishes SSL connection for https:// URLs.
+
+	  Busybox itself contains no SSL code. wget will spawn
+	  a helper program to talk over HTTPS.
+
+	  ssl_helper is a tool which can be built statically
+	  from busybox sources against a small embedded SSL library.
+	  Please see networking/ssl_helper/README.
+	  It does not require double host resolution and emits
+	  error messages to stderr.
+
+	  Precompiled static binary may be available at
+	  http://busybox.net/downloads/binaries/
+config WHOIS
+	bool "whois"
+	default y
+	help
+	  whois is a client for the whois directory service
 config ZCIP
 	bool "zcip"
 	default y
@@ -1150,5 +1100,26 @@ config ZCIP
 
 	  See http://www.zeroconf.org for further details, and "zcip.script"
 	  in the busybox examples.
+
+#config TC
+#	bool "tc"
+#	default y
+#	help
+#	  show / manipulate traffic control settings
+#
+#config FEATURE_TC_INGRESS
+#	def_bool n
+#	depends on TC
+
+source networking/udhcp/Config.in
+
+config IFUPDOWN_UDHCPC_CMD_OPTIONS
+	string "ifup udhcpc command line options"
+	default "-R -n"
+	depends on IFUPDOWN && UDHCPC
+	help
+	  Command line options to pass to udhcpc from ifup.
+	  Intended to alter options not available in /etc/network/interfaces.
+	  (IE: --syslog --background etc...)
 
 endmenu
