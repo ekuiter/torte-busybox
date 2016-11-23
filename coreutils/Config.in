@@ -196,16 +196,15 @@ config DIRNAME
 	  dirname is used to strip a non-directory suffix from
 	  a file name.
 config DOS2UNIX
-	bool "dos2unix/unix2dos"
+	bool "dos2unix"
 	default y
 	help
 	  dos2unix is used to convert a text file from DOS format to
 	  UNIX format, and vice versa.
 
 config UNIX2DOS
-	bool
+	bool "unix2dos"
 	default y
-	depends on DOS2UNIX
 	help
 	  unix2dos is used to convert a text file from UNIX format to
 	  DOS format, and vice versa.
