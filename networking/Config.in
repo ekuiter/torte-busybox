@@ -494,24 +494,72 @@ config IP
 	  utility. You generally don't need "ip" to use busybox with
 	  TCP/IP.
 
+config IPADDR
+	bool "ipaddr"
+	default y
+	select FEATURE_IP_ADDRESS
+	select PLATFORM_LINUX
+	help
+	  Support short form of ip addr: ipaddr
+
+config IPLINK
+	bool "iplink"
+	default y
+	select FEATURE_IP_LINK
+	select PLATFORM_LINUX
+	help
+	  Support short form of ip link: iplink
+
+config IPROUTE
+	bool "iproute"
+	default y
+	select FEATURE_IP_ROUTE
+	select PLATFORM_LINUX
+	help
+	  Support short form of ip route: iproute
+
+config IPTUNNEL
+	bool "iptunnel"
+	default y
+	select FEATURE_IP_TUNNEL
+	select PLATFORM_LINUX
+	help
+	  Support short form of ip tunnel: iptunnel
+
+config IPRULE
+	bool "iprule"
+	default y
+	select FEATURE_IP_RULE
+	select PLATFORM_LINUX
+	help
+	  Support short form of ip rule: iprule
+
+config IPNEIGH
+	bool "ipneigh"
+	default y
+	select FEATURE_IP_NEIGH
+	select PLATFORM_LINUX
+	help
+	  Support short form of ip neigh: ipneigh
+
 config FEATURE_IP_ADDRESS
 	bool "ip address"
 	default y
-	depends on IP
+	depends on IP || IPADDR
 	help
 	  Address manipulation support for the "ip" applet.
 
 config FEATURE_IP_LINK
 	bool "ip link"
 	default y
-	depends on IP
+	depends on IP || IPLINK
 	help
 	  Configure network devices with "ip".
 
 config FEATURE_IP_ROUTE
 	bool "ip route"
 	default y
-	depends on IP
+	depends on IP || IPROUTE
 	help
 	  Add support for routing table management to "ip".
 
@@ -525,79 +573,33 @@ config FEATURE_IP_ROUTE_DIR
 config FEATURE_IP_TUNNEL
 	bool "ip tunnel"
 	default y
-	depends on IP
+	depends on IP || IPTUNNEL
 	help
 	  Add support for tunneling commands to "ip".
 
 config FEATURE_IP_RULE
 	bool "ip rule"
 	default y
-	depends on IP
+	depends on IP || IPRULE
 	help
 	  Add support for rule commands to "ip".
 
 config FEATURE_IP_NEIGH
 	bool "ip neighbor"
 	default y
-	depends on IP
+	depends on IP || IPNEIGH
 	help
 	  Add support for neighbor commands to "ip".
-
-config FEATURE_IP_SHORT_FORMS
-	bool "Support short forms of ip commands"
-	default y
-	depends on IP
-	help
-	  Also support short-form of ip <OBJECT> commands:
-	  ip addr   -> ipaddr
-	  ip link   -> iplink
-	  ip route  -> iproute
-	  ip tunnel -> iptunnel
-	  ip rule   -> iprule
-	  ip neigh  -> ipneigh
-
-	  Say N unless you desparately need the short form of the ip
-	  object commands.
 
 config FEATURE_IP_RARE_PROTOCOLS
 	bool "Support displaying rarely used link types"
 	default n
-	depends on IP
+	depends on IP || IPADDR || IPLINK || IPROUTE || IPTUNNEL || IPRULE || IPNEIGH
 	help
 	  If you are not going to use links of type "frad", "econet",
 	  "bif" etc, you probably don't need to enable this.
 	  Ethernet, wireless, infrared, ppp/slip, ip tunnelling
 	  link types are supported without this option selected.
-
-config IPADDR
-	bool
-	default y
-	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_ADDRESS
-
-config IPLINK
-	bool
-	default y
-	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_LINK
-
-config IPROUTE
-	bool
-	default y
-	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_ROUTE
-
-config IPTUNNEL
-	bool
-	default y
-	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_TUNNEL
-
-config IPRULE
-	bool
-	default y
-	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_RULE
-
-config IPNEIGH
-	bool
-	default y
-	depends on FEATURE_IP_SHORT_FORMS && FEATURE_IP_NEIGH
 config IPCALC
 	bool "ipcalc"
 	default y
