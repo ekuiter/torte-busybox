@@ -155,7 +155,7 @@ config FEATURE_EXTRA_QUIET
 
 config FEATURE_INIT_COREDUMPS
 	bool "Support dumping core for child processes (debugging only)"
-	default y
+	default n	# not Y because this is a debug option
 	depends on INIT || LINUXRC
 	help
 	  If this option is enabled and the file /.init_enable_core

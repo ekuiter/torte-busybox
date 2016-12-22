@@ -26,7 +26,7 @@ config ASH_OPTIMIZE_FOR_SIZE
 
 config ASH_INTERNAL_GLOB
 	bool "Use internal glob() implementation"
-	default n
+	default y	# Y is bigger, but because of uclibc glob() bug, let Y be default for now
 	depends on ASH
 	help
 	  Do not use glob() function from libc, use internal implementation.
@@ -127,11 +127,10 @@ config ASH_CMDCMD
 
 config ASH_MAIL
 	bool "Check for new mail on interactive shells"
-	default n
+	default y
 	depends on ASH
 	help
 	  Enable "check for new mail" function in the ash shell.
-
 config CTTYHACK
 	bool "cttyhack"
 	default y
