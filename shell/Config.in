@@ -6,6 +6,57 @@
 
 menu "Shells"
 
+
+choice
+	prompt "Choose which shell is aliased to 'sh' name"
+	default SH_IS_ASH
+	help
+	  Choose which shell you want to be executed by 'sh' alias.
+	  The ash shell is the most bash compatible and full featured one.
+
+# note: cannot use "select ASH" here, it breaks "make allnoconfig"
+config SH_IS_ASH
+	depends on !NOMMU
+	bool "ash"
+
+config SH_IS_HUSH
+	bool "hush"
+
+config SH_IS_NONE
+	bool "none"
+
+endchoice
+
+choice
+	prompt "Choose which shell is aliased to 'bash' name"
+	default BASH_IS_NONE
+	help
+	  Choose which shell you want to be executed by 'bash' alias.
+	  The ash shell is the most bash compatible and full featured one.
+
+	  Note that selecting this option does not switch on any bash
+	  compatibility code. It merely makes it possible to install
+	  /bin/bash (sym)link and run scripts which start with
+	  #!/bin/bash line.
+
+	  Many systems use it in scripts which use bash-specific features,
+	  even simple ones like $RANDOM. Without this option, busybox
+	  can't be used for running them because it won't recongnize
+	  "bash" as a supported applet name.
+
+config BASH_IS_ASH
+	depends on !NOMMU
+	bool "ash"
+
+config BASH_IS_HUSH
+	bool "hush"
+
+config BASH_IS_NONE
+	bool "none"
+
+endchoice
+
+
 config ASH
 	bool "ash"
 	default y
@@ -20,14 +71,14 @@ config ASH
 config ASH_OPTIMIZE_FOR_SIZE
 	bool "Optimize for size instead of speed"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Compile ash for reduced size at the price of speed.
 
 config ASH_INTERNAL_GLOB
 	bool "Use internal glob() implementation"
 	default y	# Y is bigger, but because of uclibc glob() bug, let Y be default for now
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Do not use glob() function from libc, use internal implementation.
 	  Use this if you are getting "glob.h: No such file or directory"
@@ -36,7 +87,7 @@ config ASH_INTERNAL_GLOB
 config ASH_RANDOM_SUPPORT
 	bool "Pseudorandom generator and $RANDOM variable"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable pseudorandom generator and dynamic variable "$RANDOM".
 	  Each read of "$RANDOM" will generate a new pseudorandom value.
@@ -47,7 +98,7 @@ config ASH_RANDOM_SUPPORT
 config ASH_EXPAND_PRMT
 	bool "Expand prompt string"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  "PS#" may contain volatile content, such as backquote commands.
 	  This option recreates the prompt string from the environment
@@ -56,70 +107,70 @@ config ASH_EXPAND_PRMT
 config ASH_BASH_COMPAT
 	bool "bash-compatible extensions"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable bash-compatible extensions.
 
 config ASH_IDLE_TIMEOUT
 	bool "Idle timeout variable"
 	default n
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enables bash-like auto-logout after $TMOUT seconds of idle time.
 
 config ASH_JOB_CONTROL
 	bool "Job control"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable job control in the ash shell.
 
 config ASH_ALIAS
 	bool "Alias support"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable alias support in the ash shell.
 
 config ASH_GETOPTS
 	bool "Builtin getopt to parse positional parameters"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable support for getopts builtin in ash.
 
 config ASH_BUILTIN_ECHO
 	bool "Builtin version of 'echo'"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable support for echo builtin in ash.
 
 config ASH_BUILTIN_PRINTF
 	bool "Builtin version of 'printf'"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable support for printf builtin in ash.
 
 config ASH_BUILTIN_TEST
 	bool "Builtin version of 'test'"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable support for test builtin in ash.
 
 config ASH_HELP
 	bool "help builtin"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable help builtin in ash.
 
 config ASH_CMDCMD
 	bool "'command' command to override shell builtins"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable support for the ash 'command' builtin, which allows
 	  you to run the specified command with the specified arguments,
@@ -128,7 +179,7 @@ config ASH_CMDCMD
 config ASH_MAIL
 	bool "Check for new mail on interactive shells"
 	default y
-	depends on ASH
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable "check for new mail" function in the ash shell.
 config CTTYHACK
@@ -191,7 +242,7 @@ config HUSH
 config HUSH_BASH_COMPAT
 	bool "bash-compatible extensions"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable bash-compatible extensions.
 
@@ -205,14 +256,14 @@ config HUSH_BRACE_EXPANSION
 config HUSH_HELP
 	bool "help builtin"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable help builtin in hush. Code size + ~1 kbyte.
 
 config HUSH_INTERACTIVE
 	bool "Interactive mode"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable interactive mode (prompt and command editing).
 	  Without this, hush simply reads and executes commands
@@ -240,35 +291,35 @@ config HUSH_JOB
 config HUSH_TICK
 	bool "Process substitution"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable process substitution `command` and $(command) in hush.
 
 config HUSH_IF
 	bool "Support if/then/elif/else/fi"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable if/then/elif/else/fi in hush.
 
 config HUSH_LOOPS
 	bool "Support for, while and until loops"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable for, while and until loops in hush.
 
 config HUSH_CASE
 	bool "Support case ... esac statement"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable case ... esac statement in hush. +400 bytes.
 
 config HUSH_FUNCTIONS
 	bool "Support funcname() { commands; } syntax"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable support for shell functions in hush. +800 bytes.
 
@@ -282,7 +333,7 @@ config HUSH_LOCAL
 config HUSH_RANDOM_SUPPORT
 	bool "Pseudorandom generator and $RANDOM variable"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable pseudorandom generator and dynamic variable "$RANDOM".
 	  Each read of "$RANDOM" will generate a new pseudorandom value.
@@ -290,14 +341,14 @@ config HUSH_RANDOM_SUPPORT
 config HUSH_EXPORT_N
 	bool "Support 'export -n' option"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  export -n unexports variables. It is a bash extension.
 
 config HUSH_MODE_X
 	bool "Support 'hush -x' option and 'set -x' command"
 	default y
-	depends on HUSH
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  This instructs hush to print commands before execution.
 	  Adds ~300 bytes.
@@ -310,72 +361,17 @@ config MSH
 	  msh is deprecated and will be removed, please migrate to hush.
 
 
-
-choice
-	prompt "Choose which shell is aliased to 'sh' name"
-	default FEATURE_SH_IS_ASH
-	help
-	  Choose which shell you want to be executed by 'sh' alias.
-	  The ash shell is the most bash compatible and full featured one.
-
-# note: cannot use "select ASH" here, it breaks "make allnoconfig"
-config FEATURE_SH_IS_ASH
-	depends on ASH
-	bool "ash"
-	depends on !NOMMU
-
-config FEATURE_SH_IS_HUSH
-	depends on HUSH
-	bool "hush"
-
-config FEATURE_SH_IS_NONE
-	bool "none"
-
-endchoice
-
-choice
-	prompt "Choose which shell is aliased to 'bash' name"
-	default FEATURE_BASH_IS_NONE
-	help
-	  Choose which shell you want to be executed by 'bash' alias.
-	  The ash shell is the most bash compatible and full featured one.
-
-	  Note that selecting this option does not switch on any bash
-	  compatibility code. It merely makes it possible to install
-	  /bin/bash (sym)link and run scripts which start with
-	  #!/bin/bash line.
-
-	  Many systems use it in scripts which use bash-specific features,
-	  even simple ones like $RANDOM. Without this option, busybox
-	  can't be used for running them because it won't recongnize
-	  "bash" as a supported applet name.
-
-config FEATURE_BASH_IS_ASH
-	depends on ASH
-	bool "ash"
-	depends on !NOMMU
-
-config FEATURE_BASH_IS_HUSH
-	depends on HUSH
-	bool "hush"
-
-config FEATURE_BASH_IS_NONE
-	bool "none"
-
-endchoice
-
-
-config SH_MATH_SUPPORT
+config FEATURE_SH_MATH
 	bool "POSIX math support"
 	default y
-	depends on ASH || HUSH
+	depends on ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable math support in the shell via $((...)) syntax.
 
-config SH_MATH_SUPPORT_64
+config FEATURE_SH_MATH_64
 	bool "Extend POSIX math support to 64 bit"
 	default y
-	depends on SH_MATH_SUPPORT
+	depends on FEATURE_SH_MATH
 	help
 	  Enable 64-bit math support in the shell. This will make the shell
 	  slightly larger, but will allow computation with very large numbers.
@@ -384,14 +380,14 @@ config SH_MATH_SUPPORT_64
 config FEATURE_SH_EXTRA_QUIET
 	bool "Hide message on interactive shell startup"
 	default y
-	depends on HUSH || ASH
+	depends on ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Remove the busybox introduction when starting a shell.
 
 config FEATURE_SH_STANDALONE
 	bool "Standalone shell"
 	default n
-	depends on (HUSH || ASH)
+	depends on ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  This option causes busybox shells to use busybox applets
 	  in preference to executables in the PATH whenever possible. For
@@ -424,7 +420,7 @@ config FEATURE_SH_STANDALONE
 config FEATURE_SH_NOFORK
 	bool "Run 'nofork' applets directly"
 	default n
-	depends on (HUSH || ASH)
+	depends on ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  This option causes busybox shells to not execute typical
 	  fork/exec/wait sequence, but call <applet>_main directly,
@@ -442,7 +438,7 @@ config FEATURE_SH_NOFORK
 config FEATURE_SH_HISTFILESIZE
 	bool "Use $HISTFILESIZE"
 	default y
-	depends on HUSH || ASH
+	depends on ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  This option makes busybox shells to use $HISTFILESIZE variable
 	  to set shell history size. Note that its max value is capped
