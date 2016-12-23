@@ -47,7 +47,7 @@ config DEPMOD
 	  for modprobe.
 config INSMOD
 	bool "insmod"
-	default n
+	default y
 	select PLATFORM_LINUX
 	help
 	  insmod is used to load specified modules in the running kernel.
