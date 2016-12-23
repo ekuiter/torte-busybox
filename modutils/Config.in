@@ -39,8 +39,7 @@ config MODPROBE_SMALL
 
 config DEPMOD
 	bool "depmod"
-	default n
-	depends on !MODPROBE_SMALL
+	default y
 	select PLATFORM_LINUX
 	help
 	  depmod generates modules.dep (and potentially modules.alias
@@ -49,22 +48,20 @@ config DEPMOD
 config INSMOD
 	bool "insmod"
 	default n
-	depends on !MODPROBE_SMALL
 	select PLATFORM_LINUX
 	help
 	  insmod is used to load specified modules in the running kernel.
 config LSMOD
 	bool "lsmod"
-	default n
-	depends on !MODPROBE_SMALL
+	default y
 	select PLATFORM_LINUX
 	help
 	  lsmod is used to display a list of loaded modules.
 
 config FEATURE_LSMOD_PRETTY_2_6_OUTPUT
 	bool "Pretty output"
-	default n
-	depends on LSMOD
+	default y
+	depends on LSMOD && !MODPROBE_SMALL
 	select PLATFORM_LINUX
 	help
 	  This option makes output format of lsmod adjusted to
@@ -92,8 +89,7 @@ config FEATURE_MODPROBE_SMALL_CHECK_ALREADY_LOADED
 	  Check if the module is already loaded.
 config MODPROBE
 	bool "modprobe"
-	default n
-	depends on !MODPROBE_SMALL
+	default y
 	select PLATFORM_LINUX
 	help
 	  Handle the loading of modules, and their dependencies on a high
@@ -101,8 +97,8 @@ config MODPROBE
 
 config FEATURE_MODPROBE_BLACKLIST
 	bool "Blacklist support"
-	default n
-	depends on MODPROBE
+	default y
+	depends on MODPROBE && !MODPROBE_SMALL
 	select PLATFORM_LINUX
 	help
 	  Say 'y' here to enable support for the 'blacklist' command in
@@ -113,7 +109,6 @@ config FEATURE_MODPROBE_BLACKLIST
 config RMMOD
 	bool "rmmod"
 	default n
-	depends on !MODPROBE_SMALL
 	select PLATFORM_LINUX
 	help
 	  rmmod is used to unload specified modules from the kernel.
