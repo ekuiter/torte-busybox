@@ -368,41 +368,19 @@ config IFUPDOWN_IFSTATE_PATH
 	  This config option defines location of ifstate.
 
 config FEATURE_IFUPDOWN_IP
-	bool "Use ip applet"
+	bool "Use ip tool (else ifconfig/route is used)"
 	default y
 	depends on IFUP || IFDOWN
 	help
 	  Use the iproute "ip" command to implement "ifup" and "ifdown", rather
-	  than the default of using the older 'ifconfig' and 'route' utilities.
+	  than the default of using the older "ifconfig" and "route" utilities.
 
-config FEATURE_IFUPDOWN_IP_BUILTIN
-	bool "Use busybox ip applet"
-	default y
-	depends on FEATURE_IFUPDOWN_IP
-	select PLATFORM_LINUX
-	select IP
-	select FEATURE_IP_ADDRESS
-	select FEATURE_IP_LINK
-	select FEATURE_IP_ROUTE
-	help
-	  Use the busybox iproute "ip" applet to implement "ifupdown".
+	  If Y: you must install either the full-blown iproute2 package
+	  or enable "ip" applet in Busybox, or the "ifup" and "ifdown" applets
+	  will not work.
 
-	  If left disabled, you must install the full-blown iproute2
-	  utility or the  "ifup" and "ifdown" applets will not work.
-
-config FEATURE_IFUPDOWN_IFCONFIG_BUILTIN
-	bool "Use busybox ifconfig and route applets"
-	default n
-	depends on (IFUP || IFDOWN) && !FEATURE_IFUPDOWN_IP
-	select IFCONFIG
-	select ROUTE
-	help
-	  Use the busybox iproute "ifconfig" and "route" applets to
-	  implement the "ifup" and "ifdown" utilities.
-
-	  If left disabled, you must install the full-blown ifconfig
-	  and route utilities, or the  "ifup" and "ifdown" applets will not
-	  work.
+	  If N: you must install either the full-blown ifconfig and route
+	  utilities, or enable these applets in Busybox.
 
 config FEATURE_IFUPDOWN_IPV4
 	bool "Support for IPv4"
