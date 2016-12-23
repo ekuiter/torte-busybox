@@ -207,7 +207,7 @@ config FEATURE_CPIO_P
 	  Passthrough mode. Rarely used.
 config DPKG
 	bool "dpkg"
-	default n
+	default y
 	select FEATURE_SEAMLESS_GZ
 	help
 	  dpkg is a medium-level tool to install, build, remove and manage
@@ -217,7 +217,7 @@ config DPKG
 	  you should use the official dpkg if possible.
 config DPKG_DEB
 	bool "dpkg_deb"
-	default n
+	default y
 	select FEATURE_SEAMLESS_GZ
 	help
 	  dpkg-deb unpacks and provides information about Debian archives.
