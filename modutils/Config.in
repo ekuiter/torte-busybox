@@ -108,7 +108,7 @@ config FEATURE_MODPROBE_BLACKLIST
 	  buffer drivers etc.
 config RMMOD
 	bool "rmmod"
-	default n
+	default y
 	select PLATFORM_LINUX
 	help
 	  rmmod is used to unload specified modules from the kernel.
