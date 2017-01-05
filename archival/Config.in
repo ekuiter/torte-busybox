@@ -411,7 +411,7 @@ config FEATURE_UNZIP_CDF
 	depends on UNZIP
 	help
 	  If you know that you only need to deal with simple
-	  ZIP files without deleted/updated files, SFX archves etc,
+	  ZIP files without deleted/updated files, SFX archives etc,
 	  you can reduce code size by unselecting this option.
 	  To support less trivial ZIPs, say Y.
 
