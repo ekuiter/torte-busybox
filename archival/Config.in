@@ -403,7 +403,16 @@ config UNZIP
 	  unzip will list or extract files from a ZIP archive,
 	  commonly found on DOS/WIN systems. The default behavior
 	  (with no options) is to extract the archive into the
-	  current directory. Use the `-d' option to extract to a
-	  directory of your choice.
+	  current directory.
+
+config FEATURE_UNZIP_CDF
+	bool "Read and use Central Directory data"
+	default y
+	depends on UNZIP
+	help
+	  If you know that you only need to deal with simple
+	  ZIP files without deleted/updated files, SFX archves etc,
+	  you can reduce code size by unselecting this option.
+	  To support less trivial ZIPs, say Y.
 
 endmenu
