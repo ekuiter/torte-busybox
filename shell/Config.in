@@ -89,6 +89,11 @@ config ASH
 	  shell (by Herbert Xu), which was created by porting the 'ash' shell
 	  (written by Kenneth Almquist) from NetBSD.
 
+# ash options
+# note: Don't remove !NOMMU part in the next line; it would break
+# menuconfig's indenting.
+if !NOMMU && (ASH || SH_IS_ASH || BASH_IS_ASH)
+
 config ASH_OPTIMIZE_FOR_SIZE
 	bool "Optimize for size instead of speed"
 	default y
@@ -203,6 +208,8 @@ config ASH_MAIL
 	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 	help
 	  Enable "check for new mail" function in the ash shell.
+
+endif # ash options
 config CTTYHACK
 	bool "cttyhack"
 	default y
@@ -382,6 +389,9 @@ config MSH
 	  msh is deprecated and will be removed, please migrate to hush.
 
 
+comment "Options common to all shells"
+if ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
+
 config FEATURE_SH_MATH
 	bool "POSIX math support"
 	default y
@@ -465,5 +475,6 @@ config FEATURE_SH_HISTFILESIZE
 	  to set shell history size. Note that its max value is capped
 	  by "History size" setting in library tuning section.
 
+endif # Options common to all shells
 
 endmenu
