@@ -444,6 +444,13 @@ config HUSH_UNSET
 	help
 	  Enable unset builtin in hush.
 
+config HUSH_UMASK
+	bool "umask builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable umask builtin in hush.
+
 config MSH
 	bool "msh (deprecated: aliased to hush)"
 	default n
