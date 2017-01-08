@@ -359,13 +359,6 @@ config HUSH_RANDOM_SUPPORT
 	  Enable pseudorandom generator and dynamic variable "$RANDOM".
 	  Each read of "$RANDOM" will generate a new pseudorandom value.
 
-config HUSH_EXPORT_N
-	bool "Support 'export -n' option"
-	default y
-	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
-	help
-	  export -n unexports variables. It is a bash extension.
-
 config HUSH_MODE_X
 	bool "Support 'hush -x' option and 'set -x' command"
 	default y
@@ -373,6 +366,20 @@ config HUSH_MODE_X
 	help
 	  This instructs hush to print commands before execution.
 	  Adds ~300 bytes.
+
+config HUSH_EXPORT
+	bool "export builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable export builtin in hush.
+
+config HUSH_EXPORT_N
+	bool "Support 'export -n' option"
+	default y
+	depends on HUSH_EXPORT
+	help
+	  export -n unexports variables. It is a bash extension.
 
 config HUSH_HELP
 	bool "help builtin"
