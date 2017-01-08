@@ -288,6 +288,34 @@ config HUSH_HELP
 	help
 	  Enable help builtin in hush. Code size + ~1 kbyte.
 
+config HUSH_PRINTF
+	bool "printf builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable printf builtin in hush.
+
+config HUSH_KILL
+	bool "kill builtin (for kill %jobspec)"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable kill builtin in hush.
+
+config HUSH_WAIT
+	bool "wait builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable wait builtin in hush.
+
+config HUSH_TYPE
+	bool "type builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable type builtin in hush.
+
 config HUSH_INTERACTIVE
 	bool "Interactive mode"
 	default y
