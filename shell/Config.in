@@ -430,6 +430,20 @@ config HUSH_READ
 	help
 	  Enable read builtin in hush.
 
+config HUSH_SET
+	bool "set builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable set builtin in hush.
+
+config HUSH_UNSET
+	bool "unset builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+	help
+	  Enable unset builtin in hush.
+
 config MSH
 	bool "msh (deprecated: aliased to hush)"
 	default n
