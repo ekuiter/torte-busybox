@@ -74,6 +74,7 @@ config UNCOMPRESS
 config GUNZIP
 	bool "gunzip"
 	default y
+	select FEATURE_GZIP_DECOMPRESS
 	help
 	  gunzip is used to decompress archives created by gzip.
 	  You can use the `-t' option to test the integrity of
@@ -82,6 +83,7 @@ config GUNZIP
 config ZCAT
 	bool "zcat"
 	default y
+	select FEATURE_GZIP_DECOMPRESS
 	help
 	  Alias to "gunzip -c".
 
@@ -94,6 +96,7 @@ config FEATURE_GUNZIP_LONG_OPTIONS
 config BUNZIP2
 	bool "bunzip2"
 	default y
+	select FEATURE_BZIP2_DECOMPRESS
 	help
 	  bunzip2 is a compression utility using the Burrows-Wheeler block
 	  sorting text compression algorithm, and Huffman coding. Compression
@@ -107,6 +110,7 @@ config BUNZIP2
 config BZCAT
 	bool "bzcat"
 	default y
+	select FEATURE_BZIP2_DECOMPRESS
 	help
 	  Alias to "bunzip2 -c".
 config UNLZMA
@@ -177,6 +181,15 @@ config BZIP2
 
 	  Unless you have a specific application which requires bzip2, you
 	  should probably say N here.
+
+config FEATURE_BZIP2_DECOMPRESS
+	bool "Enable decompression"
+	default y
+	depends on BZIP2 || BUNZIP2 || BZCAT
+	help
+	  Enable -d (--decompress) and -t (--test) options for bzip2.
+	  This will be automatically selected if bunzip2 or bzcat is
+	  enabled.
 config CPIO
 	bool "cpio"
 	default y
@@ -261,6 +274,15 @@ config FEATURE_GZIP_LEVELS
 	  is 6. If levels 1-3 are specified, 4 is used.
 	  If this option is not selected, -N options are ignored and -9
 	  is used.
+
+config FEATURE_GZIP_DECOMPRESS
+	bool "Enable decompression"
+	default y
+	depends on GZIP || GUNZIP || ZCAT
+	help
+	  Enable -d (--decompress) and -t (--test) options for gzip.
+	  This will be automatically selected if gunzip or zcat is
+	  enabled.
 config LZOP
 	bool "lzop"
 	default y
