@@ -447,4 +447,9 @@ config FEATURE_UNZIP_LZMA
 	default y
 	depends on FEATURE_UNZIP_CDF && DESKTOP
 
+config FEATURE_UNZIP_XZ
+	bool "Support compression method 95 (xz)"
+	default y
+	depends on FEATURE_UNZIP_CDF && DESKTOP
+
 endmenu
