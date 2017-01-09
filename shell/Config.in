@@ -463,7 +463,7 @@ config HUSH_MEMLEAK
 	default n
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
-	  Enable umask builtin in hush.
+	  Enable memleak builtin in hush.
 
 config MSH
 	bool "msh (deprecated: aliased to hush)"
