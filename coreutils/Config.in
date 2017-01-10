@@ -227,7 +227,7 @@ config ECHO
 config FEATURE_FANCY_ECHO
 	bool "Enable -n and -e options"
 	default y
-	depends on ECHO || ASH_BUILTIN_ECHO || HUSH_ECHO
+	depends on ECHO || ASH_ECHO || HUSH_ECHO
 config ENV
 	bool "env"
 	default y
@@ -711,7 +711,7 @@ config TEST2
 config FEATURE_TEST_64
 	bool "Extend test to 64 bit"
 	default y
-	depends on TEST || TEST1 || TEST2 || ASH_BUILTIN_TEST || HUSH
+	depends on TEST || TEST1 || TEST2 || ASH_TEST || HUSH_TEST
 	help
 	  Enable 64-bit support in test.
 config TOUCH

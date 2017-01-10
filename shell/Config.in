@@ -162,17 +162,17 @@ config ASH_MAIL
 	  are checked for mtime changes, and "you have mail"
 	  message is printed if change is detected.
 
-config ASH_BUILTIN_ECHO
+config ASH_ECHO
 	bool "echo builtin"
 	default y
 	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 
-config ASH_BUILTIN_PRINTF
+config ASH_PRINTF
 	bool "printf builtin"
 	default y
 	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 
-config ASH_BUILTIN_TEST
+config ASH_TEST
 	bool "test builtin"
 	default y
 	depends on ASH || SH_IS_ASH || BASH_IS_ASH
@@ -353,6 +353,11 @@ config HUSH_ECHO
 
 config HUSH_PRINTF
 	bool "printf builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+
+config HUSH_TEST
+	bool "test builtin"
 	default y
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 
