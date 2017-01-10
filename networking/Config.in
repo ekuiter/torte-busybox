@@ -101,7 +101,7 @@ config FTPD
 	bool "ftpd"
 	default y
 	help
-	  simple FTP daemon. You have to run it via inetd.
+	  Simple FTP daemon. You have to run it via inetd.
 
 config FEATURE_FTPD_WRITE
 	bool "Enable upload commands"
@@ -143,8 +143,6 @@ config FEATURE_FTPGETPUT_LONG_OPTIONS
 	bool "Enable long options in ftpget/ftpput"
 	default y
 	depends on LONG_OPTS && (FTPGET || FTPPUT)
-	help
-	  Support long options for the ftpget/ftpput applet.
 config HOSTNAME
 	bool "hostname"
 	default y
@@ -160,7 +158,7 @@ config HTTPD
 	bool "httpd"
 	default y
 	help
-	  Serve web pages via an HTTP server.
+	  HTTP server.
 
 config FEATURE_HTTPD_RANGES
 	bool "Support 'Ranges:' header"
@@ -214,7 +212,7 @@ config FEATURE_HTTPD_CGI
 	  when specific URLs are requested.
 
 config FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR
-	bool "Support for running scripts through an interpreter"
+	bool "Support running scripts through an interpreter"
 	default y
 	depends on FEATURE_HTTPD_CGI
 	help
@@ -243,7 +241,7 @@ config FEATURE_HTTPD_ENCODE_URL_STR
 	  "&#60Hello&#32World&#62".
 
 config FEATURE_HTTPD_ERROR_PAGES
-	bool "Support for custom error pages"
+	bool "Support custom error pages"
 	default y
 	depends on HTTPD
 	help
@@ -256,7 +254,7 @@ config FEATURE_HTTPD_ERROR_PAGES
 	  message.
 
 config FEATURE_HTTPD_PROXY
-	bool "Support for reverse proxy"
+	bool "Support reverse proxy"
 	default y
 	depends on HTTPD
 	help
@@ -268,7 +266,7 @@ config FEATURE_HTTPD_PROXY
 	  http://hostname[:port]/new/path/myfile.
 
 config FEATURE_HTTPD_GZIP
-	bool "Support for GZIP content encoding"
+	bool "Support GZIP content encoding"
 	default y
 	depends on HTTPD
 	help
@@ -383,14 +381,14 @@ config FEATURE_IFUPDOWN_IP
 	  utilities, or enable these applets in Busybox.
 
 config FEATURE_IFUPDOWN_IPV4
-	bool "Support for IPv4"
+	bool "Support IPv4"
 	default y
 	depends on IFUP || IFDOWN
 	help
 	  If you want ifup/ifdown to talk IPv4, leave this on.
 
 config FEATURE_IFUPDOWN_IPV6
-	bool "Support for IPv6"
+	bool "Support IPv6"
 	default y
 	depends on (IFUP || IFDOWN) && FEATURE_IPV6
 	help
@@ -406,7 +404,7 @@ config FEATURE_IFUPDOWN_MAPPING
 	  a weird network setup you don't need it.
 
 config FEATURE_IFUPDOWN_EXTERNAL_DHCP
-	bool "Support for external dhcp clients"
+	bool "Support external DHCP clients"
 	default n
 	depends on IFUP || IFDOWN
 	help
@@ -585,6 +583,11 @@ config IPCALC
 	  ipcalc takes an IP address and netmask and calculates the
 	  resulting broadcast, network, and host range.
 
+config FEATURE_IPCALC_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on IPCALC && LONG_OPTS
+
 config FEATURE_IPCALC_FANCY
 	bool "Fancy IPCALC, more options, adds 1 kbyte"
 	default y
@@ -592,13 +595,6 @@ config FEATURE_IPCALC_FANCY
 	help
 	  Adds the options hostname, prefix and silent to the output of
 	  "ipcalc".
-
-config FEATURE_IPCALC_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on IPCALC && LONG_OPTS
-	help
-	  Support long options for the ipcalc applet.
 config FAKEIDENTD
 	bool "fakeidentd"
 	default y
@@ -680,7 +676,7 @@ config NETSTAT
 	  netstat prints information about the Linux networking subsystem.
 
 config FEATURE_NETSTAT_WIDE
-	bool "Enable wide netstat output"
+	bool "Enable wide output"
 	default y
 	depends on NETSTAT
 	help
@@ -918,11 +914,9 @@ config FEATURE_TFTP_BLOCKSIZE
 	  "blksize" and "tsize" options.
 
 config FEATURE_TFTP_PROGRESS_BAR
-	bool "Enable tftp progress meter"
+	bool "Enable progress bar"
 	default y
 	depends on TFTP && FEATURE_TFTP_BLOCKSIZE
-	help
-	  Show progress bar.
 
 config TFTP_DEBUG
 	bool "Enable debug"
@@ -957,8 +951,6 @@ config FEATURE_TRACEROUTE_USE_ICMP
 	bool "Enable -I option (use ICMP instead of UDP)"
 	default y
 	depends on TRACEROUTE || TRACEROUTE6
-	help
-	  Add option -I to use ICMP ECHO instead of UDP datagrams.
 config TUNCTL
 	bool "tunctl"
 	default y
@@ -986,12 +978,15 @@ config WGET
 	  wget is a utility for non-interactive download of files from HTTP
 	  and FTP servers.
 
+config FEATURE_WGET_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on WGET && LONG_OPTS
+
 config FEATURE_WGET_STATUSBAR
-	bool "Enable a nifty process meter (+2k)"
+	bool "Enable progress bar (+2k)"
 	default y
 	depends on WGET
-	help
-	  Enable the transfer progress bar for wget transfers.
 
 config FEATURE_WGET_AUTHENTICATION
 	bool "Enable HTTP authentication"
@@ -999,13 +994,6 @@ config FEATURE_WGET_AUTHENTICATION
 	depends on WGET
 	help
 	  Support authenticated HTTP transfers.
-
-config FEATURE_WGET_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on WGET && LONG_OPTS
-	help
-	  Support long options for the wget applet.
 
 config FEATURE_WGET_TIMEOUT
 	bool "Enable timeout option -T SEC"

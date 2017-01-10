@@ -7,7 +7,7 @@
 menu "Login/Password Management Utilities"
 
 config FEATURE_SHADOWPASSWDS
-	bool "Support for shadow passwords"
+	bool "Support shadow passwords"
 	default y
 	help
 	  Build support for shadow password in /etc/shadow. This file is only
@@ -113,15 +113,13 @@ config FEATURE_ADDGROUP_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on ADDGROUP && LONG_OPTS
-	help
-	  Support long options for the addgroup applet.
 
 config FEATURE_ADDUSER_TO_GROUP
-	bool "Support for adding users to groups"
+	bool "Support adding users to groups"
 	default y
 	depends on ADDGROUP
 	help
-	  If  called  with two non-option arguments,
+	  If called with two non-option arguments,
 	  addgroup will add an existing user to an
 	  existing group.
 config ADDUSER
@@ -134,8 +132,6 @@ config FEATURE_ADDUSER_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on ADDUSER && LONG_OPTS
-	help
-	  Support long options for the adduser applet.
 
 config FEATURE_CHECK_NAMES
 	bool "Enable sanity check on user/group names in adduser and addgroup"
@@ -211,7 +207,7 @@ config DELGROUP
 	  Utility for deleting a group account.
 
 config FEATURE_DEL_USER_FROM_GROUP
-	bool "Support for removing users from groups"
+	bool "Support removing users from groups"
 	default y
 	depends on DELGROUP
 	help
@@ -257,7 +253,7 @@ config LOGIN_SESSION_AS_CHILD
 	  will not be cleaned up.
 
 config LOGIN_SCRIPTS
-	bool "Support for login scripts"
+	bool "Support login scripts"
 	depends on LOGIN
 	default y
 	help
@@ -265,7 +261,7 @@ config LOGIN_SCRIPTS
 	  just prior to switching from root to logged-in user.
 
 config FEATURE_NOLOGIN
-	bool "Support for /etc/nologin"
+	bool "Support /etc/nologin"
 	default y
 	depends on LOGIN
 	help
@@ -273,7 +269,7 @@ config FEATURE_NOLOGIN
 	  If it exists, non-root logins are prohibited.
 
 config FEATURE_SECURETTY
-	bool "Support for /etc/securetty"
+	bool "Support /etc/securetty"
 	default y
 	depends on LOGIN
 	help
@@ -306,19 +302,18 @@ config SU
 	help
 	  su is used to become another user during a login session.
 	  Invoked without a username, su defaults to becoming the super user.
-
-	  Note that Busybox binary must be setuid root for this applet to
+	  Note that busybox binary must be setuid root for this applet to
 	  work properly.
 
 config FEATURE_SU_SYSLOG
-	bool "Enable su to write to syslog"
+	bool "Log to syslog all attempts to use su"
 	default y
 	depends on SU
 
 config FEATURE_SU_CHECKS_SHELLS
-	bool "Enable su to check user's shell to be listed in /etc/shells"
-	depends on SU
+	bool "If user's shell is not in /etc/shells, disallow -s PROG"
 	default y
+	depends on SU
 config SULOGIN
 	bool "sulogin"
 	default y

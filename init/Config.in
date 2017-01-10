@@ -176,13 +176,13 @@ config INIT_TERMINAL_TYPE
 	  sets TERM to "vt102" if one is found.
 
 config FEATURE_INIT_MODIFY_CMDLINE
-	bool "Modify the command-line to \"init\""
+	bool "Clear init's command line"
 	default y
 	depends on INIT || LINUXRC
 	help
 	  When launched as PID 1 and after parsing its arguments, init
 	  wipes all the arguments but argv[0] and rewrites argv[0] to
-	  contain only "init", so that its command-line appears solely as
+	  contain only "init", so that its command line appears solely as
 	  "init" in tools such as ps.
 	  If this option is set to Y, init will keep its original behavior,
 	  otherwise, all the arguments including argv[0] will be preserved,

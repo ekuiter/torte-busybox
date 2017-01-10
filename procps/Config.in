@@ -85,18 +85,18 @@ config PIDOF
 	  those id's on the standard output.
 
 config FEATURE_PIDOF_SINGLE
-	bool "Enable argument for single shot (-s)"
+	bool "Enable single shot (-s)"
 	default y
 	depends on PIDOF
 	help
-	  Support argument '-s' for returning only the first pid found.
+	  Support '-s' for returning only the first pid found.
 
 config FEATURE_PIDOF_OMIT
-	bool "Enable argument for omitting pids (-o)"
+	bool "Enable omitting pids (-o PID)"
 	default y
 	depends on PIDOF
 	help
-	  Support argument '-o' for omitting the given pids in output.
+	  Support '-o PID' for omitting the given pid(s) in output.
 	  The special pid %PPID can be used to name the parent process
 	  of the pidof, in other words the calling shell or shell script.
 config PMAP
@@ -133,19 +133,10 @@ config FEATURE_PS_LONG
 	  Adds fields PPID, RSS, START, TIME & TTY
 
 config FEATURE_PS_TIME
-	bool "Enable time and elapsed time output"
+	bool "Support -o time and -o etime output specifiers"
 	default y
 	depends on PS && DESKTOP
 	select PLATFORM_LINUX
-	help
-	  Support -o time and -o etime output specifiers.
-
-config FEATURE_PS_ADDITIONAL_COLUMNS
-	bool "Enable additional ps columns"
-	default y
-	depends on PS && DESKTOP
-	help
-	  Support -o rgroup, -o ruser, -o nice output specifiers.
 
 config FEATURE_PS_UNUSUAL_SYSTEMS
 	bool "Support Linux prior to 2.4.0 and non-ELF systems"
@@ -154,6 +145,11 @@ config FEATURE_PS_UNUSUAL_SYSTEMS
 	help
 	  Include support for measuring HZ on old kernels and non-ELF systems
 	  (if you are on Linux 2.4.0+ and use ELF, you don't need this)
+
+config FEATURE_PS_ADDITIONAL_COLUMNS
+	bool "Support -o rgroup, -o ruser, -o nice specifiers"
+	default y
+	depends on PS && DESKTOP
 config PSTREE
 	bool "pstree"
 	default y
@@ -244,11 +240,11 @@ config UPTIME
 	  on, and the system load averages for the past 1, 5, and 15 minutes.
 
 config FEATURE_UPTIME_UTMP_SUPPORT
-	bool "Support for showing the number of users"
+	bool "Show the number of users"
 	default y
 	depends on UPTIME && FEATURE_UTMP
 	help
-	  Makes uptime display the number of users currently logged on.
+	  Display the number of users currently logged on.
 config WATCH
 	bool "watch"
 	default y
@@ -257,7 +253,7 @@ config WATCH
 	  output to the screen.
 
 config FEATURE_SHOW_THREADS
-	bool "Support for showing threads in ps/pstree/top"
+	bool "Support thread display in ps/pstree/top"
 	default y
 	depends on PS || TOP || PSTREE
 	help

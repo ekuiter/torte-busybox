@@ -51,8 +51,6 @@ config FEATURE_CHOWN_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on CHOWN && LONG_OPTS
-	help
-	  Enable use of long options
 config CHROOT
 	bool "chroot"
 	default y
@@ -77,11 +75,11 @@ config CP
 	  cp is used to copy files and directories.
 
 config FEATURE_CP_LONG_OPTIONS
-	bool "Enable long options for cp"
+	bool "Enable long options"
 	default y
 	depends on CP && LONG_OPTS
 	help
-	  Enable long options for cp.
+	  Enable long options.
 	  Also add support for --parents option.
 config CUT
 	bool "cut"
@@ -163,7 +161,7 @@ config FEATURE_DD_IBS_OBS
 	default y
 	depends on DD
 	help
-	  Enables support for writing a certain number of bytes in and out,
+	  Enable support for writing a certain number of bytes in and out,
 	  at a time, and performing conversions on the data stream.
 
 config FEATURE_DD_STATUS
@@ -171,7 +169,7 @@ config FEATURE_DD_STATUS
 	default y
 	depends on DD
 	help
-	  Enables support for status=noxfer/none option.
+	  Enable support for status=noxfer/none option.
 config DF
 	bool "df"
 	default y
@@ -184,11 +182,9 @@ config FEATURE_DF_FANCY
 	default y
 	depends on DF
 	help
-	  This option enables -a, -i and -B.
-
-	    -a Show all filesystems
-	    -i Inodes
-	    -B <SIZE> Blocksize
+	  -a Show all filesystems
+	  -i Inodes
+	  -B <SIZE> Blocksize
 config DIRNAME
 	bool "dirname"
 	default y
@@ -229,11 +225,9 @@ config ECHO
 
 # this entry also appears in shell/Config.in, next to the echo builtin
 config FEATURE_FANCY_ECHO
-	bool "Enable echo options (-n and -e)"
+	bool "Enable -n and -e options"
 	default y
-	depends on ECHO || ASH_BUILTIN_ECHO || HUSH
-	help
-	  This adds options (-n and -e) to echo.
+	depends on ECHO || ASH_BUILTIN_ECHO || HUSH_ECHO
 config ENV
 	bool "env"
 	default y
@@ -246,8 +240,6 @@ config FEATURE_ENV_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on ENV && LONG_OPTS
-	help
-	  Support long options for the env applet.
 config EXPAND
 	bool "expand"
 	default y
@@ -258,8 +250,6 @@ config FEATURE_EXPAND_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on EXPAND && LONG_OPTS
-	help
-	  Support long options for the expand applet.
 
 config UNEXPAND
 	bool "unexpand"
@@ -271,8 +261,6 @@ config FEATURE_UNEXPAND_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on UNEXPAND && LONG_OPTS
-	help
-	  Support long options for the unexpand applet.
 config EXPR
 	bool "expr"
 	default y
@@ -311,11 +299,9 @@ config HEAD
 	  from files.
 
 config FEATURE_FANCY_HEAD
-	bool "Enable head options (-c, -q, and -v)"
+	bool "Enable -c, -q, and -v"
 	default y
 	depends on HEAD
-	help
-	  This enables the head options (-c, -q, and -v).
 config HOSTID
 	bool "hostid"
 	default y
@@ -343,8 +329,6 @@ config FEATURE_INSTALL_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on INSTALL && LONG_OPTS
-	help
-	  Support long options for the install applet.
 config LN
 	bool "ln"
 	default y
@@ -365,22 +349,16 @@ config FEATURE_LS_FILETYPES
 	bool "Enable filetyping options (-p and -F)"
 	default y
 	depends on LS
-	help
-	  Enable the ls options (-p and -F).
 
 config FEATURE_LS_FOLLOWLINKS
 	bool "Enable symlinks dereferencing (-L)"
 	default y
 	depends on LS
-	help
-	  Enable the ls option (-L).
 
 config FEATURE_LS_RECURSIVE
 	bool "Enable recursion (-R)"
 	default y
 	depends on LS
-	help
-	  Enable the ls option (-R).
 
 config FEATURE_LS_SORTFILES
 	bool "Sort the file names"
@@ -460,7 +438,6 @@ config FEATURE_MD5_SHA1_SUM_CHECK
 	help
 	  Enabling the -c options allows files to be checked
 	  against pre-calculated hash values.
-
 	  -s and -w are useful options when verifying checksums.
 config MKDIR
 	bool "mkdir"
@@ -472,8 +449,6 @@ config FEATURE_MKDIR_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on MKDIR && LONG_OPTS
-	help
-	  Support long options for the mkdir applet.
 config MKFIFO
 	bool "mkfifo"
 	default y
@@ -496,8 +471,6 @@ config FEATURE_MV_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on MV && LONG_OPTS
-	help
-	  Support long options for the mv applet.
 config NICE
 	bool "nice"
 	default y
@@ -624,7 +597,7 @@ config SPLIT
 	bool "split"
 	default y
 	help
-	  split a file into pieces.
+	  Split a file into pieces.
 
 config FEATURE_SPLIT_FANCY
 	bool "Fancy extensions"
@@ -692,13 +665,12 @@ config TAIL
 	  from files.
 
 config FEATURE_FANCY_TAIL
-	bool "Enable extra tail options (-q, -s, -v, and -F)"
+	bool "Enable -q, -s, -v, and -F options"
 	default y
 	depends on TAIL
 	help
-	  The options (-q, -s, -v and -F) are provided by GNU tail, but
-	  are not specific in the SUSv3 standard.
-
+	  These options are provided by GNU tail, but
+	  are not specific in the SUSv3 standard:
 	    -q      Never output headers giving file names
 	    -s SEC  Wait SEC seconds between reads with -f
 	    -v      Always output headers giving file names
@@ -856,11 +828,11 @@ config WC
 	  in specified files.
 
 config FEATURE_WC_LARGE
-	bool "Support very large files in wc"
+	bool "Support very large counts"
 	default y
 	depends on WC
 	help
-	  Use "unsigned long long" in wc for counter variables.
+	  Use "unsigned long long" for counter variables.
 config WHO
       bool "who"
       default y
@@ -907,25 +879,11 @@ config FEATURE_PRESERVE_HARDLINKS
 	help
 	  Allow cp and mv to preserve hard links.
 
-comment "Common options for ls, more and telnet"
-	depends on LS || MORE || TELNET
-
-config FEATURE_AUTOWIDTH
-	bool "Calculate terminal & column widths"
-	default y
-	depends on LS || MORE || TELNET
-	help
-	  This option allows utilities such as 'ls', 'more' and 'telnet'
-	  to determine the width of the screen, which can allow them to
-	  display additional text or avoid wrapping text onto the next line.
-	  If you leave this disabled, your utilities will be especially
-	  primitive and will be unable to determine the current screen width.
-
 comment "Common options for df, du, ls"
 	depends on DF || DU || LS
 
 config FEATURE_HUMAN_READABLE
-	bool "Support for human readable output (example 13k, 23M, 235G)"
+	bool "Support human readable output (example 13k, 23M, 235G)"
 	default y
 	depends on DF || DU || LS
 	help

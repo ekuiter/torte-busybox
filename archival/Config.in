@@ -9,32 +9,22 @@ menu "Archival Utilities"
 config FEATURE_SEAMLESS_XZ
 	bool "Make tar, rpm, modprobe etc understand .xz data"
 	default y
-	help
-	  Make tar, rpm, modprobe etc understand .xz data.
 
 config FEATURE_SEAMLESS_LZMA
 	bool "Make tar, rpm, modprobe etc understand .lzma data"
 	default y
-	help
-	  Make tar, rpm, modprobe etc understand .lzma data.
 
 config FEATURE_SEAMLESS_BZ2
 	bool "Make tar, rpm, modprobe etc understand .bz2 data"
 	default y
-	help
-	  Make tar, rpm, modprobe etc understand .bz2 data.
 
 config FEATURE_SEAMLESS_GZ
 	bool "Make tar, rpm, modprobe etc understand .gz data"
 	default y
-	help
-	  Make tar, rpm, modprobe etc understand .gz data.
 
 config FEATURE_SEAMLESS_Z
 	bool "Make tar, rpm, modprobe etc understand .Z data"
 	default n  # it is ancient
-	help
-	  Make tar, rpm, modprobe etc understand .Z data.
 
 config AR
 	bool "ar"
@@ -50,7 +40,7 @@ config AR
 	  probably say N here: most compilers come with their own ar utility.
 
 config FEATURE_AR_LONG_FILENAMES
-	bool "Support for long filenames (not needed for debs)"
+	bool "Support long filenames (not needed for debs)"
 	default y
 	depends on AR
 	help
@@ -91,8 +81,6 @@ config FEATURE_GUNZIP_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on (GUNZIP || ZCAT) && LONG_OPTS
-	help
-	  Enable use of long options.
 config BUNZIP2
 	bool "bunzip2"
 	default y
@@ -145,7 +133,7 @@ config LZMA
 	  IOW: you'll get lzma applet, but it will always require -d option.
 
 config FEATURE_LZMA_FAST
-	bool "Optimize unlzma for speed"
+	bool "Optimize for speed"
 	default n
 	depends on UNLZMA || LZCAT || LZMA
 	help
@@ -205,7 +193,7 @@ config CPIO
 	  should probably say N here.
 
 config FEATURE_CPIO_O
-	bool "Support for archive creation"
+	bool "Support archive creation"
 	default y
 	depends on CPIO
 	help
@@ -213,7 +201,7 @@ config FEATURE_CPIO_O
 	  format only.
 
 config FEATURE_CPIO_P
-	bool "Support for passthrough mode"
+	bool "Support passthrough mode"
 	default y
 	depends on FEATURE_CPIO_O
 	help
@@ -250,11 +238,9 @@ config FEATURE_GZIP_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on GZIP && LONG_OPTS
-	help
-	  Enable use of long options, increases size by about 106 Bytes
 
 config GZIP_FAST
-	int "Trade memory for gzip speed (0:small,slow - 2:fast,big)"
+	int "Trade memory for speed (0:small,slow - 2:fast,big)"
 	default 0
 	range 0 2
 	depends on GZIP
@@ -327,13 +313,15 @@ config TAR
 	  create compressed archives. It's probably the most widely used
 	  UNIX archive program.
 
+config FEATURE_TAR_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on TAR && LONG_OPTS
+
 config FEATURE_TAR_CREATE
-	bool "Enable archive creation"
+	bool "Enable -c (archive creation)"
 	default y
 	depends on TAR
-	help
-	  If you enable this option you'll be able to create
-	  tar archives using the `-c' option.
 
 config FEATURE_TAR_AUTODETECT
 	bool "Autodetect compressed tarballs"
@@ -352,7 +340,7 @@ config FEATURE_TAR_FROM
 	  a list of files to include or exclude from an archive.
 
 config FEATURE_TAR_OLDGNU_COMPATIBILITY
-	bool "Support for old tar header format"
+	bool "Support old tar header format"
 	default y
 	depends on TAR || DPKG
 	help
@@ -371,22 +359,12 @@ config FEATURE_TAR_OLDSUN_COMPATIBILITY
 	  tarballs still exist.
 
 config FEATURE_TAR_GNU_EXTENSIONS
-	bool "Support for GNU tar extensions (long filenames)"
+	bool "Support GNU tar extensions (long filenames)"
 	default y
 	depends on TAR || DPKG
-	help
-	  With this option busybox supports GNU long filenames and
-	  linknames.
-
-config FEATURE_TAR_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on TAR && LONG_OPTS
-	help
-	  Enable use of long options, increases size by about 400 Bytes
 
 config FEATURE_TAR_TO_COMMAND
-	bool "Support for writing to an external program"
+	bool "Support writing to an external program (--to-command)"
 	default y
 	depends on TAR && FEATURE_TAR_LONG_OPTIONS
 	help
@@ -399,20 +377,17 @@ config FEATURE_TAR_UNAME_GNAME
 	default y
 	depends on TAR
 	help
-	  Enables use of user and group names in tar. This affects contents
+	  Enable use of user and group names in tar. This affects contents
 	  listings (-t) and preserving permissions when unpacking (-p).
 	  +200 bytes.
 
 config FEATURE_TAR_NOPRESERVE_TIME
-	bool "Enable -m (do not preserve time) option"
+	bool "Enable -m (do not preserve time) GNU option"
 	default y
 	depends on TAR
-	help
-	  With this option busybox supports GNU tar -m
-	  (do not preserve time) option.
 
 config FEATURE_TAR_SELINUX
-	bool "Support for extracting SELinux labels"
+	bool "Support extracting SELinux labels"
 	default n
 	depends on TAR && SELINUX
 	help

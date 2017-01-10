@@ -18,8 +18,6 @@ config FEATURE_CHCON_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on CHCON && LONG_OPTS
-	help
-	  Support long options for the chcon applet.
 config GETENFORCE
 	bool "getenforce"
 	default n
@@ -56,8 +54,6 @@ config FEATURE_RUNCON_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on RUNCON && LONG_OPTS
-	help
-	  Support long options for the runcon applet.
 config SELINUXENABLED
 	bool "selinuxenabled"
 	default n

@@ -42,8 +42,6 @@ config FEATURE_FIND_PERM
 	bool "Enable -perm: permissions matching"
 	default y
 	depends on FIND
-	help
-	  Enable searching based on file permissions.
 
 config FEATURE_FIND_TYPE
 	bool "Enable -type: file type matching (file/dir/link/...)"
@@ -57,15 +55,11 @@ config FEATURE_FIND_XDEV
 	bool "Enable -xdev: 'stay in filesystem'"
 	default y
 	depends on FIND
-	help
-	  This option allows find to restrict searches to a single filesystem.
 
 config FEATURE_FIND_MAXDEPTH
 	bool "Enable -mindepth N and -maxdepth N"
 	default y
 	depends on FIND
-	help
-	  This option enables -mindepth N and -maxdepth N option.
 
 config FEATURE_FIND_NEWER
 	bool "Enable -newer: compare file modification times"
@@ -79,8 +73,6 @@ config FEATURE_FIND_INUM
 	bool "Enable -inum: inode number matching"
 	default y
 	depends on FIND
-	help
-	  Support the 'find -inum' option for searching by inode number.
 
 config FEATURE_FIND_EXEC
 	bool "Enable -exec: execute commands"
@@ -104,15 +96,11 @@ config FEATURE_FIND_USER
 	bool "Enable -user: username/uid matching"
 	default y
 	depends on FIND
-	help
-	  Support the 'find -user' option for searching by username or uid.
 
 config FEATURE_FIND_GROUP
 	bool "Enable -group: group/gid matching"
 	default y
 	depends on FIND
-	help
-	  Support the 'find -group' option for searching by group name or gid.
 
 config FEATURE_FIND_NOT
 	bool "Enable the 'not' (!) operator"
@@ -141,8 +129,6 @@ config FEATURE_FIND_SIZE
 	bool "Enable -size: file size matching"
 	default y
 	depends on FIND
-	help
-	  Support the 'find -size' option for searching by file size.
 
 config FEATURE_FIND_PRUNE
 	bool "Enable -prune: exclude subdirectories"
