@@ -89,7 +89,7 @@ config INIT
 	  init is the first program run when the system boots.
 
 config LINUXRC
-	bool "Support running init from within an initrd (not initramfs)"
+	bool "linuxrc: support running init from initrd (not initramfs)"
 	default y
 	select FEATURE_SYSLOG
 	help
@@ -146,12 +146,10 @@ config FEATURE_INIT_SYSLOG
 	default y
 	depends on INIT || LINUXRC
 
-config FEATURE_EXTRA_QUIET
-	bool "Be _extra_ quiet on boot"
+config FEATURE_INIT_QUIET
+	bool "Be quiet on boot (no 'init started:' message)"
 	default y
 	depends on INIT || LINUXRC
-	help
-	  Prevent init from logging some messages to the console during boot.
 
 config FEATURE_INIT_COREDUMPS
 	bool "Support dumping core for child processes (debugging only)"
