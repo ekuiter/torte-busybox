@@ -360,6 +360,11 @@ config FEATURE_LS_RECURSIVE
 	default y
 	depends on LS
 
+config FEATURE_LS_WIDTH
+	bool "Enable -w WIDTH and window size autodetection"
+	default y
+	depends on LS
+
 config FEATURE_LS_SORTFILES
 	bool "Sort the file names"
 	default y

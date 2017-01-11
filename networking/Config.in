@@ -795,6 +795,11 @@ config FEATURE_TELNET_AUTOLOGIN
 	  remote host you are connecting to. This is useful when you need to
 	  log into a machine without telling the username (autologin). This
 	  option enables `-a' and `-l USER' arguments.
+
+config FEATURE_TELNET_WIDTH
+	bool "Enable window size autodetection"
+	default y
+	depends on TELNET
 config TELNETD
 	bool "telnetd"
 	default y
