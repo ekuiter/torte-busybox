@@ -109,6 +109,14 @@ config POWERTOP
 	default y
 	help
 	  Analyze power consumption on Intel-based laptops
+
+config FEATURE_POWERTOP_INTERACTIVE
+	bool "Accept keyboard commands"
+	default y
+	depends on POWERTOP
+	help
+	  Without this, powertop will only refresh display every 10 seconds.
+	  No keyboard commands will work, only ^C to terminate.
 config PS
 	bool "ps"
 	default y
@@ -183,6 +191,14 @@ config TOP
 	help
 	  The top program provides a dynamic real-time view of a running
 	  system.
+
+config FEATURE_TOP_INTERACTIVE
+	bool "Accept keyboard commands"
+	default y
+	depends on TOP
+	help
+	  Without this, top will only refresh display every 5 seconds.
+	  No keyboard commands will work, only ^C to terminate.
 
 config FEATURE_TOP_CPU_USAGE_PERCENTAGE
 	bool "Show CPU per-process usage percentage"
