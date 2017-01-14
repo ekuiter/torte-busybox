@@ -930,6 +930,9 @@ config TFTP_DEBUG
 	help
 	  Make tftp[d] print debugging messages on stderr.
 	  This is useful if you are diagnosing a bug in tftp[d].
+config TLS
+	bool "tls (debugging)"
+	default n
 config TRACEROUTE
 	bool "traceroute"
 	default y
