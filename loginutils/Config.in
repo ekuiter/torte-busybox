@@ -175,9 +175,9 @@ config CHPASSWD
 	  and uses this information to update a group of existing users.
 
 config FEATURE_DEFAULT_PASSWD_ALGO
-	string "Default password encryption method (passwd -a, cryptpw -m parameter)"
+	string "Default encryption method (passwd -a, cryptpw -m, chpasswd -c ALG)"
 	default "des"
-	depends on PASSWD || CRYPTPW
+	depends on PASSWD || CRYPTPW || CHPASSWD
 	help
 	  Possible choices are "d[es]", "m[d5]", "s[ha256]" or "sha512".
 config CRYPTPW
