@@ -757,6 +757,12 @@ config SLATTACH
 	help
 	  slattach is a small utility to attach network interfaces to serial
 	  lines.
+config SSL_CLIENT
+	bool "ssl_client"
+	default y
+	select TLS
+	help
+	  This tool pipes data to/from a socket, TLS-encrypting it.
 config TCPSVD
 	bool "tcpsvd"
 	default y
@@ -931,7 +937,7 @@ config TFTP_DEBUG
 	  Make tftp[d] print debugging messages on stderr.
 	  This is useful if you are diagnosing a bug in tftp[d].
 config TLS
-	bool "tls (debugging)"
+	bool #No description makes it a hidden option
 	default n
 config TRACEROUTE
 	bool "traceroute"
@@ -1017,18 +1023,26 @@ config FEATURE_WGET_TIMEOUT
 	  FEATURE_WGET_LONG_OPTIONS is also enabled, the --timeout option
 	  will work in addition to -T.
 
+config FEATURE_WGET_HTTPS
+	bool "Support HTTPS using internal TLS code"
+	default y
+	depends on WGET
+	select TLS
+	help
+	  wget will use internal TLS code to connect to https:// URLs.
+	  Note:
+	  On NOMMU machines, ssl_helper applet should be available
+	  in the $PATH for this to work. Make sure to select that applet.
+
 config FEATURE_WGET_OPENSSL
 	bool "Try to connect to HTTPS using openssl"
 	default y
 	depends on WGET
 	help
-	  Choose how wget establishes SSL connection for https:// URLs.
-
-	  Busybox itself contains no SSL code. wget will spawn
-	  a helper program to talk over HTTPS.
+	  Try to use openssl to handle HTTPS.
 
 	  OpenSSL has a simple SSL client for debug purposes.
-	  If you select "openssl" helper, wget will effectively run:
+	  If you select this option, wget will effectively run:
 	  "openssl s_client -quiet -connect hostname:443
 	  -servername hostname 2>/dev/null" and pipe its data
 	  through it. -servername is not used if hostname is numeric.
@@ -1041,24 +1055,9 @@ config FEATURE_WGET_OPENSSL
 	  openssl is also a big binary, often dynamically linked
 	  against ~15 libraries.
 
-config FEATURE_WGET_SSL_HELPER
-	bool "Try to connect to HTTPS using ssl_helper"
-	default y
-	depends on WGET
-	help
-	  Choose how wget establishes SSL connection for https:// URLs.
-
-	  Busybox itself contains no SSL code. wget will spawn
-	  a helper program to talk over HTTPS.
-
-	  ssl_helper is a tool which can be built statically
-	  from busybox sources against a small embedded SSL library.
-	  Please see networking/ssl_helper/README.
-	  It does not require double host resolution and emits
-	  error messages to stderr.
-
-	  Precompiled static binary may be available at
-	  http://busybox.net/downloads/binaries/
+	  If openssl can't be executed, internal TLS code will be used
+	  (if you enabled it); if openssl can be executed but fails later,
+	  wget can't detect this, and download will fail.
 config WHOIS
 	bool "whois"
 	default y
