@@ -329,6 +329,11 @@ config FEATURE_INSTALL_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on INSTALL && LONG_OPTS
+config LINK
+	bool "link"
+	default y
+	help
+	  link creates hard links between files.
 config LN
 	bool "ln"
 	default y
