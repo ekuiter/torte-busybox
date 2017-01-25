@@ -294,6 +294,12 @@ config HD
 	default y
 	help
 	  hd is an alias to hexdump -C.
+config XXD
+	bool "xxd"
+	default y
+	help
+	  The xxd utility is used to display binary data in a readable
+	  way that is comparable to the output from most hex editors.
 config HWCLOCK
 	bool "hwclock"
 	default y
