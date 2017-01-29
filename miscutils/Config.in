@@ -642,7 +642,7 @@ config STRINGS
 	  specified.
 config TASKSET
 	bool "taskset"
-	default n  # doesn't build on some non-x86 targets (m68k)
+	default y
 	help
 	  Retrieve or set a processes's CPU affinity.
 	  This requires sched_{g,s}etaffinity support in your libc.
@@ -652,9 +652,9 @@ config FEATURE_TASKSET_FANCY
 	default y
 	depends on TASKSET
 	help
-	  Add code for fancy output. This merely silences a compiler-warning
-	  and adds about 135 Bytes. May be needed for machines with alot
-	  of CPUs.
+	  Needed for machines with more than 32-64 CPUs:
+	  affinity parameter 0xHHHHHHHHHHHHHHHHHHHH can be arbitrarily long
+	  in this case. Otherwise, it is limited to sizeof(long).
 config TIME
 	bool "time"
 	default y
