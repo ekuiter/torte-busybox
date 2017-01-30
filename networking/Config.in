@@ -1034,6 +1034,39 @@ config FEATURE_WGET_HTTPS
 	  On NOMMU machines, ssl_helper applet should be available
 	  in the $PATH for this to work. Make sure to select that applet.
 
+	  Note: currently, TLS code only makes TLS I/O work, it
+	  does *not* check that the peer is who it claims to be, etc.
+	  IOW: it uses peer-supplied public keys to establish encryption
+	  and signing keys, then encrypts and signs outgoing data and
+	  decrypts incoming data.
+	  It does not check signature hashes on the incoming data:
+	  this means that attackers manipulating TCP packets can
+	  send altered data and we unknowingly receive garbage.
+	  (This check might be relatively easy to add).
+	  It does not check public key's certificate:
+	  this means that the peer may be an attacker impersonating
+	  the server we think we are talking to.
+
+	  If you think this is unacceptable, consider this. As more and more
+	  servers switch to HTTPS-only operation, without such "crippled"
+	  TLS code it is *impossible* to simply download a kernel source
+	  from kernel.org. Which can in real world translate into
+	  "my small automatic tooling to build cross-compilers from sources
+	  no longer works, I need to additionally keep a local copy
+	  of ~4 megabyte source tarball of a SSL library and ~2 megabyte
+	  source of wget, need to compile and built both before I can
+	  download anything. All this despite the fact that the build
+	  is done in a QEMU sandbox on a machine with absolutely nothing
+	  worth stealing, so I don't care if someone would go to a lot
+	  of trouble to intercept my HTTPS download to send me an altered
+	  kernel tarball".
+
+	  If you still think this is unacceptable, send patches.
+
+	  If you still think this is unacceptable, do not want to send
+	  patches, but do want to waste bandwidth expaining how wrong
+	  it is, you will be ignored.
+
 config FEATURE_WGET_OPENSSL
 	bool "Try to connect to HTTPS using openssl"
 	default y
