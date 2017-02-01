@@ -69,13 +69,6 @@ config MODINFO
 	select PLATFORM_LINUX
 	help
 	  Show information about a Linux Kernel module
-config FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE
-	bool "Accept module options on modprobe command line"
-	default y
-	depends on MODPROBE_SMALL && (INSMOD || MODPROBE)
-	help
-	  Allow insmod and modprobe take module options from command line.
-
 config FEATURE_MODPROBE_SMALL_CHECK_ALREADY_LOADED
 	bool "Skip loading of already loaded modules"
 	default y
@@ -108,6 +101,14 @@ config RMMOD
 	  rmmod is used to unload specified modules from the kernel.
 
 comment "Options common to multiple modutils"
+
+config FEATURE_CMDLINE_MODULE_OPTIONS
+	bool "Accept module options on modprobe command line"
+	default y
+	depends on INSMOD || MODPROBE
+	help
+	  Allow insmod and modprobe take module options from the applets'
+	  command line.
 
 config FEATURE_2_4_MODULES
 	bool "Support version 2.2/2.4 Linux kernels"
