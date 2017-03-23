@@ -496,6 +496,12 @@ config OD
 	default y
 	help
 	  od is used to dump binary files in octal and other formats.
+config PASTE
+	bool "paste"
+	default y
+	help
+	  paste is used to paste lines of different files together
+	  and write the result to stdout
 config PRINTENV
 	bool "printenv"
 	default y
