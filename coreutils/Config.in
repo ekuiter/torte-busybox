@@ -486,6 +486,11 @@ config NICE
 	default y
 	help
 	  nice runs a program with modified scheduling priority.
+config NL
+	bool "nl"
+	default y
+	help
+	  nl is used to number lines of files.
 config NOHUP
 	bool "nohup"
 	default y
