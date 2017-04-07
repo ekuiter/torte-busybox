@@ -145,6 +145,10 @@ config FEATURE_INIT_SYSLOG
 	bool "Enable init to write to syslog"
 	default y
 	depends on INIT || LINUXRC
+	help
+	  If selected, some init messages are sent to syslog.
+	  Otherwise, they are sent to VT #5 if linux virtual tty is detected
+	  (if not, no separate logging is done).
 
 config FEATURE_INIT_QUIET
 	bool "Be quiet on boot (no 'init started:' message)"
