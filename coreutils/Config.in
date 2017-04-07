@@ -565,6 +565,11 @@ config SEQ
 	default y
 	help
 	  print a sequence of numbers
+config SHRED
+	bool "shred"
+	default y
+	help
+	  Overwrite a file to hide its contents, and optionally delete it
 config SHUF
 	bool "shuf"
 	default y
