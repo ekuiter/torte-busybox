@@ -276,6 +276,11 @@ config EXPR_MATH_SUPPORT_64
 	  Enable 64-bit math support in the expr applet. This will make
 	  the applet slightly larger, but will allow computation with very
 	  large numbers.
+config FACTOR
+	bool "factor"
+	default y
+	help
+	  factor factorizes integers
 config FALSE
 	bool "false"
 	default y
