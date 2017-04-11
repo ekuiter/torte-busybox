@@ -876,6 +876,13 @@ config WHO
       help
         who is used to show who is logged on.
 
+config W
+      bool "w"
+      default y
+      depends on FEATURE_UTMP
+      help
+        w is used to show who is logged on.
+
 config USERS
       bool "users"
       default y
