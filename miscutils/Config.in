@@ -572,6 +572,12 @@ config NANDDUMP
 	select PLATFORM_LINUX
 	help
 	  Dump the content of raw NAND chip
+config PARTPROBE
+	bool "partprobe"
+	default y
+	select PLATFORM_LINUX
+	help
+	  Ask kernel to rescan partition table.
 config RAIDAUTORUN
 	bool "raidautorun"
 	default y
