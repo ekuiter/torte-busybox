@@ -249,6 +249,13 @@ config FSCK_MINIX
 	  power goes off in the middle of a write. This utility allows you to
 	  check for and attempt to repair any corruption that occurs to a minix
 	  filesystem.
+config FSFREEZE
+	bool "fsfreeze"
+	default y
+	select PLATFORM_LINUX
+	select LONG_OPTS
+	help
+	  Halt new accesses and flush writes on a mounted filesystem.
 config FSTRIM
 	bool "fstrim"
 	default y
