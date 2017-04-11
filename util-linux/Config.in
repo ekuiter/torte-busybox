@@ -87,6 +87,11 @@ config FEATURE_DMESG_PRETTY
 	    <5>Linux version 2.6.17.4 .....
 	    <6>BIOS-provided physical RAM map:
 	    <6> BIOS-e820: 0000000000000000 - 000000000009f000 (usable)
+config FALLOCATE
+	bool "fallocate"
+	default y
+	help
+	  Preallocate space for files.
 config FATATTR
 	bool "fatattr"
 	default y
