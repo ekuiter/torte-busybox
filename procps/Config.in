@@ -168,12 +168,6 @@ config PWDX
 	default y
 	help
 	  Report current working directory of a process
-config RENICE
-	bool "renice"
-	default y
-	help
-	  Renice alters the scheduling priority of one or more running
-	  processes.
 config SMEMCAP
 	bool "smemcap"
 	default y

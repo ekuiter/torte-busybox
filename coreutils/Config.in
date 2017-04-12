@@ -13,11 +13,6 @@ config BASENAME
 	  basename is used to strip the directory and suffix from filenames,
 	  leaving just the filename itself. Enable this option if you wish
 	  to enable the 'basename' utility.
-config CAL
-	bool "cal"
-	default y
-	help
-	  cal is used to display a monthly calendar.
 config CAT
 	bool "cat"
 	default y
@@ -476,6 +471,11 @@ config MKNOD
 	help
 	  mknod is used to create FIFOs or block/character special
 	  files with the specified names.
+config MKTEMP
+	bool "mktemp"
+	default y
+	help
+	  mktemp is used to create unique temporary files
 config MV
 	bool "mv"
 	default y

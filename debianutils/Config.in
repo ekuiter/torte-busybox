@@ -6,11 +6,6 @@
 
 menu "Debian Utilities"
 
-config MKTEMP
-	bool "mktemp"
-	default y
-	help
-	  mktemp is used to create unique temporary files
 config PIPE_PROGRESS
 	bool "pipe_progress"
 	default y

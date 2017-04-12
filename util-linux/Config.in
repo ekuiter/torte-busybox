@@ -54,6 +54,11 @@ config BLOCKDEV
 	default y
 	help
 	  Performs some ioctls with block devices.
+config CAL
+	bool "cal"
+	default y
+	help
+	  cal is used to display a monthly calendar.
 config CHRT
 	bool "chrt"
 	default y
@@ -476,6 +481,24 @@ config FEATURE_MDEV_LOAD_FIRMWARE
 	  These devices will request userspace look up the files in
 	  /lib/firmware/ and if it exists, send it to the kernel for
 	  loading into the hardware.
+config MESG
+	bool "mesg"
+	default y
+	help
+	  Mesg controls access to your terminal by others. It is typically
+	  used to allow or disallow other users to write to your terminal
+
+config FEATURE_MESG_ENABLE_ONLY_GROUP
+	bool "Enable writing to tty only by group, not by everybody"
+	default y
+	depends on MESG
+	help
+	  Usually, ttys are owned by group "tty", and "write" tool is
+	  setgid to this group. This way, "mesg y" only needs to enable
+	  "write by owning group" bit in tty mode.
+
+	  If you set this option to N, "mesg y" will enable writing
+	  by anybody at all. This is not recommended.
 config MKE2FS
 	bool "mke2fs"
 	default y
@@ -698,6 +721,12 @@ config READPROFILE
 	#select PLATFORM_LINUX
 	help
 	  This allows you to parse /proc/profile for basic profiling.
+config RENICE
+	bool "renice"
+	default y
+	help
+	  Renice alters the scheduling priority of one or more running
+	  processes.
 config REV
 	bool "rev"
 	default y
