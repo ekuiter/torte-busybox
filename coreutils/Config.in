@@ -19,12 +19,13 @@ config CAT
 	help
 	  cat is used to concatenate files and print them to the standard
 	  output. Enable this option if you wish to enable the 'cat' utility.
-config CATV
-	bool "catv"
+
+config FEATURE_CATV
+	bool "cat -v[etA]"
 	default y
+	depends on CAT
 	help
-	  Display nonprinting characters as escape sequences (like some
-	  implementations' cat -v option).
+	  Display nonprinting characters as escape sequences
 config CHGRP
 	bool "chgrp"
 	default y
