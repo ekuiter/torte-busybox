@@ -195,7 +195,7 @@ config FGREP
 config FEATURE_GREP_CONTEXT
 	bool "Enable before and after context flags (-A, -B and -C)"
 	default y
-	depends on GREP || EGREP
+	depends on GREP || EGREP || FGREP
 	help
 	  Print the specified number of leading (-B) and/or trailing (-A)
 	  context surrounding our matching lines.
