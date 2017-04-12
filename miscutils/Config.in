@@ -121,12 +121,6 @@ config FEATURE_CHAT_CLR_ABORT
 	default y
 	help
 	  Support CLR_ABORT directive.
-config CHRT
-	bool "chrt"
-	default y
-	help
-	  manipulate real-time attributes of a process.
-	  This requires sched_{g,s}etparam support in your libc.
 config CONSPY
 	bool "conspy"
 	default y
@@ -253,20 +247,6 @@ config DEVMEM
 	help
 	  devmem is a small program that reads and writes from physical
 	  memory using /dev/mem.
-config EJECT
-	bool "eject"
-	default y
-	select PLATFORM_LINUX
-	help
-	  Used to eject cdroms. (defaults to /dev/cdrom)
-
-config FEATURE_EJECT_SCSI
-	bool "SCSI support"
-	default y
-	depends on EJECT
-	help
-	  Add the -s option to eject, this allows to eject SCSI-Devices and
-	  usb-storage devices.
 config FBSPLASH
 	bool "fbsplash"
 	default y
@@ -405,27 +385,6 @@ config INOTIFYD
 	help
 	  Simple inotify daemon. Reports filesystem changes. Requires
 	  kernel >= 2.6.13
-config IONICE
-	bool "ionice"
-	default y
-	select PLATFORM_LINUX
-	help
-	  Set/set program io scheduling class and priority
-	  Requires kernel >= 2.6.13
-config LAST
-	bool "last"
-	default y
-	depends on FEATURE_WTMP
-	help
-	  'last' displays a list of the last users that logged into the system.
-
-config FEATURE_LAST_FANCY
-	bool "Output extra information"
-	default y
-	depends on LAST
-	help
-	  'last' displays detailed information about the last users that
-	  logged into the system (mimics sysvinit last). +900 bytes.
 config LESS
 	bool "less"
 	default y
@@ -547,11 +506,6 @@ config MICROCOM
 	default y
 	help
 	  The poor man's minicom utility for chatting with serial port devices.
-config MOUNTPOINT
-	bool "mountpoint"
-	default y
-	help
-	  mountpoint checks if the directory is a mountpoint.
 config MT
 	bool "mt"
 	default y
@@ -635,32 +589,12 @@ config SETSERIAL
 	select PLATFORM_LINUX
 	help
 	  Retrieve or set Linux serial port.
-config SETSID
-	bool "setsid"
-	default y
-	help
-	  setsid runs a program in a new session
 config STRINGS
 	bool "strings"
 	default y
 	help
 	  strings prints the printable character sequences for each file
 	  specified.
-config TASKSET
-	bool "taskset"
-	default y
-	help
-	  Retrieve or set a processes's CPU affinity.
-	  This requires sched_{g,s}etaffinity support in your libc.
-
-config FEATURE_TASKSET_FANCY
-	bool "Fancy output"
-	default y
-	depends on TASKSET
-	help
-	  Needed for machines with more than 32-64 CPUs:
-	  affinity parameter 0xHHHHHHHHHHHHHHHHHHHH can be arbitrarily long
-	  in this case. Otherwise, it is limited to sizeof(long).
 config TIME
 	bool "time"
 	default y
@@ -668,12 +602,6 @@ config TIME
 	  The time command runs the specified program with the given arguments.
 	  When the command finishes, time writes a message to standard output
 	  giving timing statistics about this program run.
-config TIMEOUT
-	bool "timeout"
-	default y
-	help
-	  Runs a program and watches it. If it does not terminate in
-	  specified number of seconds, it is sent a signal.
 config TTYSIZE
 	bool "ttysize"
 	default y
@@ -734,12 +662,6 @@ config VOLNAME
 	default y
 	help
 	  Prints a CD-ROM volume name.
-config WALL
-	bool "wall"
-	default y
-	depends on FEATURE_UTMP
-	help
-	  Write a message to all users that are logged in.
 config WATCHDOG
 	bool "watchdog"
 	default y

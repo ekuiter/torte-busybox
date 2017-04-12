@@ -750,6 +750,12 @@ config FEATURE_TEST_64
 	depends on TEST || TEST1 || TEST2 || ASH_TEST || HUSH_TEST
 	help
 	  Enable 64-bit support in test.
+config TIMEOUT
+	bool "timeout"
+	default y
+	help
+	  Runs a program and watches it. If it does not terminate in
+	  specified number of seconds, it is sent a signal.
 config TOUCH
 	bool "touch"
 	default y
