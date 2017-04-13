@@ -314,6 +314,11 @@ config FEATURE_SU_CHECKS_SHELLS
 	bool "If user's shell is not in /etc/shells, disallow -s PROG"
 	default y
 	depends on SU
+
+config FEATURE_SU_BLANK_PW_NEEDS_SECURE_TTY
+	bool "Disallow blank passwords from TTYs other than specified in /etc/securetty"
+	default n
+	depends on SU
 config SULOGIN
 	bool "sulogin"
 	default y
