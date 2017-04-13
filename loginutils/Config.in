@@ -316,7 +316,7 @@ config FEATURE_SU_CHECKS_SHELLS
 	depends on SU
 
 config FEATURE_SU_BLANK_PW_NEEDS_SECURE_TTY
-	bool "Disallow blank passwords from TTYs other than specified in /etc/securetty"
+	bool "Allow blank passwords only on TTYs in /etc/securetty"
 	default n
 	depends on SU
 config SULOGIN
