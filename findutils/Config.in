@@ -135,7 +135,7 @@ config FEATURE_FIND_PRUNE
 	default y
 	depends on FIND
 	help
-	  If the file is a directory, dont descend into it. Useful for
+	  If the file is a directory, don't descend into it. Useful for
 	  exclusion .svn and CVS directories.
 
 config FEATURE_FIND_DELETE
