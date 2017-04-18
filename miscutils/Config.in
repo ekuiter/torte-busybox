@@ -465,6 +465,15 @@ config FEATURE_LESS_LINENUMS
 	bool "Enable -N (dynamic switching of line numbers)"
 	default y
 	depends on FEATURE_LESS_DASHCMD
+config LSSCSI
+	bool "lsscsi"
+	default y
+	#select PLATFORM_LINUX
+	help
+	  lsscsi is a utility for displaying information about SCSI buses in the
+	  system and devices connected to them.
+
+	  This version uses sysfs (/sys/bus/scsi/devices) only.
 config MAKEDEVS
 	bool "makedevs"
 	default y
