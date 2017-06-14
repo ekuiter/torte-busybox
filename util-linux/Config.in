@@ -772,6 +772,14 @@ config LINUX64
 	select PLATFORM_LINUX
 	help
 	  Alias to "setarch linux64".
+config SETPRIV
+	bool "setpriv"
+	default y
+	select PLATFORM_LINUX
+	select LONG_OPTS
+	help
+	  Run a program with different Linux privilege settings.
+	  Requires kernel >= 3.5
 config SETSID
 	bool "setsid"
 	default y
