@@ -879,8 +879,9 @@ config FEATURE_UMOUNT_ALL
 config UNSHARE
 	bool "unshare"
 	default y
-	depends on LONG_OPTS && !NOMMU
+	depends on !NOMMU
 	select PLATFORM_LINUX
+	select LONG_OPTS
 	help
 	  Run program with some namespaces unshared from parent.
 config WALL
