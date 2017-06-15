@@ -277,13 +277,13 @@ config LZOP
 
 config UNLZOP
 	bool "unlzop"
-	default y
+	default n  # INCOMPAT: upstream lzop does not provide such tool
 	help
 	  Lzop decompresion.
 
 config LZOPCAT
 	bool "lzopcat"
-	default y
+	default n  # INCOMPAT: upstream lzop does not provide such tool
 	help
 	  Alias to "unlzop -c".
 
