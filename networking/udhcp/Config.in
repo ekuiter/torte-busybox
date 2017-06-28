@@ -5,11 +5,35 @@
 #
 
 config UDHCPC6
-	bool "udhcpc6 (DHCPv6 client, NOT READY)"
+	bool "udhcpc6 (DHCPv6 client, EXPERIMENTAL)"
 	default n  # not yet ready
 	depends on FEATURE_IPV6
 	help
 	  udhcpc6 is a DHCPv6 client
+
+config FEATURE_UDHCPC6_RFC3646
+	bool "Support RFC 3646 (DNS server and search list)"
+	default y
+	depends on UDHCPC6
+	help
+	  List of DNS servers and domain search list can be requested with
+	  "-O dns" and "-O search". If server gives these values,
+	  they will be set in environment variables "dns" and "search".
+
+config FEATURE_UDHCPC6_RFC4704
+	bool "Support RFC 4704 (Client FQDN)"
+	default y
+	depends on UDHCPC6
+	help
+	  You can request FQDN to be given by server using "-O fqdn".
+
+config FEATURE_UDHCPC6_RFC4833
+	bool "Support RFC 4833 (Timezones)"
+	default y
+	depends on UDHCPC6
+	help
+	  You can request POSIX timezone with "-O tz" and timezone name
+	  with "-O timezone".
 
 config UDHCPD
 	bool "udhcpd (DHCP server)"
