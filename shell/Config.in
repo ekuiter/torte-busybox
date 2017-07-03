@@ -428,13 +428,6 @@ config HUSH_MEMLEAK
 	default n
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 
-config MSH
-	bool "msh (deprecated: aliased to hush)"
-	default n
-	select HUSH
-	help
-	  msh is deprecated and will be removed, please migrate to hush.
-
 
 comment "Options common to all shells"
 if ASH || HUSH || SH_IS_ASH || BASH_IS_ASH || SH_IS_HUSH || BASH_IS_HUSH
