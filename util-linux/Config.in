@@ -780,6 +780,14 @@ config SETPRIV
 	help
 	  Run a program with different Linux privilege settings.
 	  Requires kernel >= 3.5
+
+config FEATURE_SETPRIV_DUMP
+	bool "Support dumping current privilege state"
+	default y
+	depends on SETPRIV
+	help
+	  Enables the "--dump" switch to print out the current privilege
+	  state. This is helpful for diagnosing problems.
 config SETSID
 	bool "setsid"
 	default y
