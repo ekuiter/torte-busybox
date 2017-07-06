@@ -788,6 +788,26 @@ config FEATURE_SETPRIV_DUMP
 	help
 	  Enables the "--dump" switch to print out the current privilege
 	  state. This is helpful for diagnosing problems.
+
+config FEATURE_SETPRIV_CAPABILITIES
+	bool "Support capabilities"
+	default y
+	depends on SETPRIV
+	help
+	  Capabilities can be used to grant processes additional rights
+	  without the necessity to always execute as the root user.
+	  Enabling this option enables "--dump" to show information on
+	  capabilities.
+
+config FEATURE_SETPRIV_CAPABILITY_NAMES
+	bool "Support capability names"
+	default y
+	depends on SETPRIV && FEATURE_SETPRIV_CAPABILITIES
+	help
+	  Capabilities can be either referenced via a human-readble name,
+	  e.g. "net_admin", or using their index, e.g. "cap_12". Enabling
+	  this option allows using the human-readable names in addition to
+	  the index-based names.
 config SETSID
 	bool "setsid"
 	default y
