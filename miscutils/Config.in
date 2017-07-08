@@ -42,7 +42,7 @@ config BEEP
 
 config FEATURE_BEEP_FREQ
 	int "default frequency"
-	range 0 2147483647
+	range 20 50000	# allowing 0 here breaks the build
 	default 4000
 	depends on BEEP
 	help
