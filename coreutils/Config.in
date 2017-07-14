@@ -20,6 +20,13 @@ config CAT
 	  cat is used to concatenate files and print them to the standard
 	  output. Enable this option if you wish to enable the 'cat' utility.
 
+config FEATURE_CATN
+	bool "Enable -n and -b options"
+	default y
+	depends on CAT
+	help
+	  -n numbers all output lines while -b numbers nonempty output lines.
+
 config FEATURE_CATV
 	bool "cat -v[etA]"
 	default y
