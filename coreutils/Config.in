@@ -840,6 +840,12 @@ config UNAME_OSNAME
 	help
 	  Sets the operating system name reported by uname -o.  The
 	  default is "GNU/Linux".
+
+config BBARCH
+	bool "arch"
+	default y
+	help
+	  Same as uname -m.
 config UNIQ
 	bool "uniq"
 	default y
