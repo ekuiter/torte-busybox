@@ -378,6 +378,12 @@ config HUSH_EXPORT_N
 	help
 	  export -n unexports variables. It is a bash extension.
 
+config HUSH_READONLY
+	bool "readonly builtin"
+	default y
+	help
+	  Enable support for read-only variables.
+
 config HUSH_KILL
 	bool "kill builtin (supports kill %jobspec)"
 	default y
