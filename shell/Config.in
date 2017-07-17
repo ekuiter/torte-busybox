@@ -381,6 +381,7 @@ config HUSH_EXPORT_N
 config HUSH_READONLY
 	bool "readonly builtin"
 	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
 	  Enable support for read-only variables.
 
