@@ -7,7 +7,7 @@
 menu "Init Utilities"
 
 config BOOTCHARTD
-	bool "bootchartd"
+	bool "bootchartd (10 kb)"
 	default y
 	help
 	  bootchartd is commonly used to profile the boot process
@@ -45,19 +45,19 @@ config FEATURE_BOOTCHARTD_CONFIG_FILE
 	  Enable reading and parsing of $PWD/bootchartd.conf
 	  and /etc/bootchartd.conf files.
 config HALT
-	bool "halt"
+	bool "halt (3.7 kb)"
 	default y
 	help
 	  Stop all processes and halt the system.
 
 config POWEROFF
-	bool "poweroff"
+	bool "poweroff (3.7 kb)"
 	default y
 	help
 	  Stop all processes and power off the system.
 
 config REBOOT
-	bool "reboot"
+	bool "reboot (3.7 kb)"
 	default y
 	help
 	  Stop all processes and reboot the system.
@@ -82,7 +82,7 @@ config TELINIT_PATH
 	  to facilitate proper shutdown, this path is to be used when
 	  locating telinit executable.
 config INIT
-	bool "init"
+	bool "init (9.3 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help

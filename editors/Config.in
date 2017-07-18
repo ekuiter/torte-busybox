@@ -7,7 +7,7 @@
 menu "Editors"
 
 config AWK
-	bool "awk"
+	bool "awk (22 kb)"
 	default y
 	help
 	  Awk is used as a pattern scanning and processing language. This is
@@ -32,13 +32,13 @@ config FEATURE_AWK_GNU_EXTENSIONS
 	    This enables the use of awk library files.
 	    Ex: awk -f mylib.awk -e '{print myfunction($1);}' ...
 config CMP
-	bool "cmp"
+	bool "cmp (5.4 kb)"
 	default y
 	help
 	  cmp is used to compare two files and returns the result
 	  to standard output.
 config DIFF
-	bool "diff"
+	bool "diff (13 kb)"
 	default y
 	help
 	  diff compares two files or directories and outputs the
@@ -58,25 +58,25 @@ config FEATURE_DIFF_DIR
 	  This option enables support for directory and subdirectory
 	  comparison.
 config ED
-	bool "ed"
+	bool "ed (25 kb)"
 	default y
 	help
 	  The original 1970's Unix text editor, from the days of teletypes.
 	  Small, simple, evil. Part of SUSv3. If you're not already using
 	  this, you don't need it.
 config PATCH
-	bool "patch"
+	bool "patch (9.1 kb)"
 	default y
 	help
 	  Apply a unified diff formatted patch.
 config SED
-	bool "sed"
+	bool "sed (12 kb)"
 	default y
 	help
 	  sed is used to perform text transformations on a file
 	  or input from a pipeline.
 config VI
-	bool "vi"
+	bool "vi (22 kb)"
 	default y
 	help
 	  'vi' is a text editor. More specifically, it is the One True

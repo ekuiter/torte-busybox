@@ -27,7 +27,7 @@ config FEATURE_SEAMLESS_Z
 	default n  # it is ancient
 
 config AR
-	bool "ar"
+	bool "ar (9.5 kb)"
 	default n  # needs to be improved to be able to replace binutils ar
 	help
 	  ar is an archival utility program used to create, modify, and
@@ -56,13 +56,13 @@ config FEATURE_AR_CREATE
 	help
 	  This enables archive creation (-c and -r) with busybox ar.
 config UNCOMPRESS
-	bool "uncompress"
+	bool "uncompress (7.1 kb)"
 	default n  # ancient
 	help
 	  uncompress is used to decompress archives created by compress.
 	  Not much used anymore, replaced by gzip/gunzip.
 config GUNZIP
-	bool "gunzip"
+	bool "gunzip (12 kb)"
 	default y
 	select FEATURE_GZIP_DECOMPRESS
 	help
@@ -71,7 +71,7 @@ config GUNZIP
 	  an archive, without decompressing it.
 
 config ZCAT
-	bool "zcat"
+	bool "zcat (25 kb)"
 	default y
 	select FEATURE_GZIP_DECOMPRESS
 	help
@@ -82,7 +82,7 @@ config FEATURE_GUNZIP_LONG_OPTIONS
 	default y
 	depends on (GUNZIP || ZCAT) && LONG_OPTS
 config BUNZIP2
-	bool "bunzip2"
+	bool "bunzip2 (8.8 kb)"
 	default y
 	select FEATURE_BZIP2_DECOMPRESS
 	help
@@ -96,13 +96,13 @@ config BUNZIP2
 	  should probably say N here.
 
 config BZCAT
-	bool "bzcat"
+	bool "bzcat (8.8 kb)"
 	default y
 	select FEATURE_BZIP2_DECOMPRESS
 	help
 	  Alias to "bunzip2 -c".
 config UNLZMA
-	bool "unlzma"
+	bool "unlzma (8.6 kb)"
 	default y
 	help
 	  unlzma is a compression utility using the Lempel-Ziv-Markov chain
@@ -114,7 +114,7 @@ config UNLZMA
 	  On an x86 system, this applet adds about 4K.
 
 config LZCAT
-	bool "lzcat"
+	bool "lzcat (8.5 kb)"
 	default y
 	help
 	  unlzma is a compression utility using the Lempel-Ziv-Markov chain
@@ -140,13 +140,13 @@ config FEATURE_LZMA_FAST
 	  This option reduces decompression time by about 25% at the cost of
 	  a 1K bigger binary.
 config UNXZ
-	bool "unxz"
+	bool "unxz (13 kb)"
 	default y
 	help
 	  unxz is a unlzma successor.
 
 config XZCAT
-	bool "xzcat"
+	bool "xzcat (13 kb)"
 	default y
 	help
 	  Alias to "unxz -c".
@@ -158,7 +158,7 @@ config XZ
 	  Enable this option if you want commands like "xz -d" to work.
 	  IOW: you'll get xz applet, but it will always require -d option.
 config BZIP2
-	bool "bzip2"
+	bool "bzip2 (18 kb)"
 	default y
 	help
 	  bzip2 is a compression utility using the Burrows-Wheeler block
@@ -179,7 +179,7 @@ config FEATURE_BZIP2_DECOMPRESS
 	  This will be automatically selected if bunzip2 or bzcat is
 	  enabled.
 config CPIO
-	bool "cpio"
+	bool "cpio (14 kb)"
 	default y
 	help
 	  cpio is an archival utility program used to create, modify, and
@@ -207,7 +207,7 @@ config FEATURE_CPIO_P
 	help
 	  Passthrough mode. Rarely used.
 config DPKG
-	bool "dpkg"
+	bool "dpkg (44 kb)"
 	default y
 	select FEATURE_SEAMLESS_GZ
 	help
@@ -228,7 +228,7 @@ config DPKG_DEB
 	  Unless you have a specific application which requires dpkg-deb,
 	  say N here.
 config GZIP
-	bool "gzip"
+	bool "gzip (19 kb)"
 	default y
 	help
 	  gzip is used to compress files.
@@ -270,19 +270,19 @@ config FEATURE_GZIP_DECOMPRESS
 	  This will be automatically selected if gunzip or zcat is
 	  enabled.
 config LZOP
-	bool "lzop"
+	bool "lzop (13 kb)"
 	default y
 	help
 	  Lzop compression/decompresion.
 
 config UNLZOP
-	bool "unlzop"
+	bool "unlzop (13 kb)"
 	default n  # INCOMPAT: upstream lzop does not provide such tool
 	help
 	  Lzop decompresion.
 
 config LZOPCAT
-	bool "lzopcat"
+	bool "lzopcat (13 kb)"
 	default n  # INCOMPAT: upstream lzop does not provide such tool
 	help
 	  Alias to "unlzop -c".
@@ -296,17 +296,17 @@ config LZOP_COMPR_HIGH
 	  are actually slower than gzip at equivalent compression ratios
 	  and take up 3.2K of code.
 config RPM
-	bool "rpm"
+	bool "rpm (33 kb)"
 	default y
 	help
 	  Mini RPM applet - queries and extracts RPM packages.
 config RPM2CPIO
-	bool "rpm2cpio"
+	bool "rpm2cpio (20 kb)"
 	default y
 	help
 	  Converts a RPM file into a CPIO archive.
 config TAR
-	bool "tar"
+	bool "tar (40 kb)"
 	default y
 	help
 	  tar is an archiving program. It's commonly used with gzip to
@@ -394,7 +394,7 @@ config FEATURE_TAR_SELINUX
 	  With this option busybox supports restoring SELinux labels
 	  when extracting files from tar archives.
 config UNZIP
-	bool "unzip"
+	bool "unzip (24 kb)"
 	default y
 	help
 	  unzip will list or extract files from a ZIP archive,

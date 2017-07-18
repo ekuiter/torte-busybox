@@ -2,12 +2,12 @@
 menu "Mail Utilities"
 
 config MAKEMIME
-	bool "makemime"
+	bool "makemime (5.9 kb)"
 	default y
 	help
 	  Create MIME-formatted messages.
 config POPMAILDIR
-	bool "popmaildir"
+	bool "popmaildir (10 kb)"
 	default y
 	help
 	  Simple yet powerful POP3 mail popper. Delivers content
@@ -23,7 +23,7 @@ config FEATURE_POPMAILDIR_DELIVERY
 	  Allow to use a custom program for message actual delivery
 	  (-M "prog [args...]").
 config REFORMIME
-	bool "reformime"
+	bool "reformime (7.5 kb)"
 	default y
 	help
 	  Parse MIME-formatted messages.
@@ -36,7 +36,7 @@ config FEATURE_REFORMIME_COMPAT
 	  Accept (for compatibility only) and ignore options
 	  other than -x and -X.
 config SENDMAIL
-	bool "sendmail"
+	bool "sendmail (14 kb)"
 	default y
 	help
 	  Barebones sendmail.

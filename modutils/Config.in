@@ -35,7 +35,7 @@ config MODPROBE_SMALL
 	  /etc/modules/$module_name files.
 
 config DEPMOD
-	bool "depmod"
+	bool "depmod (26 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -43,13 +43,13 @@ config DEPMOD
 	  and modules.symbols) that contain dependency information
 	  for modprobe.
 config INSMOD
-	bool "insmod"
+	bool "insmod (22 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  insmod is used to load specified modules in the running kernel.
 config LSMOD
-	bool "lsmod"
+	bool "lsmod (4.3 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -64,13 +64,13 @@ config FEATURE_LSMOD_PRETTY_2_6_OUTPUT
 	  the format of module-init-tools for Linux kernel 2.6.
 	  Increases size somewhat.
 config MODINFO
-	bool "modinfo"
+	bool "modinfo (25 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Show information about a Linux Kernel module
 config MODPROBE
-	bool "modprobe"
+	bool "modprobe (29 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -88,7 +88,7 @@ config FEATURE_MODPROBE_BLACKLIST
 	  hardware autodetection scripts to load modules like evdev, frame
 	  buffer drivers etc.
 config RMMOD
-	bool "rmmod"
+	bool "rmmod (3.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help

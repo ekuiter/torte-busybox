@@ -7,7 +7,7 @@
 menu "Miscellaneous Utilities"
 
 config ADJTIMEX
-	bool "adjtimex"
+	bool "adjtimex (4.5 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -56,7 +56,7 @@ config FEATURE_BEEP_LENGTH_MS
 	help
 	  Length in ms for default beep.
 config CHAT
-	bool "chat"
+	bool "chat (6.6 kb)"
 	default y
 	help
 	  Simple chat utility.
@@ -122,7 +122,7 @@ config FEATURE_CHAT_CLR_ABORT
 	help
 	  Support CLR_ABORT directive.
 config CONSPY
-	bool "conspy"
+	bool "conspy (10 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -131,7 +131,7 @@ config CONSPY
 	  or        conspy -nd NUM  screenshot of console num
 	  or        conspy -cs NUM  poor man's GNU screen like
 config CROND
-	bool "crond"
+	bool "crond (13 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help
@@ -180,7 +180,7 @@ config FEATURE_CROND_DIR
 	help
 	  Location of crond spool.
 config CRONTAB
-	bool "crontab"
+	bool "crontab (9.7 kb)"
 	default y
 	help
 	  Crontab manipulates the crontab for a particular user. Only
@@ -188,7 +188,7 @@ config CRONTAB
 	  Note that Busybox binary must be setuid root for this applet to
 	  work properly.
 config DC
-	bool "dc"
+	bool "dc (4.2 kb)"
 	default y
 	help
 	  Dc is a reverse-polish desk calculator which supports unlimited
@@ -258,13 +258,13 @@ config FEATURE_DEVFS
 	  /dev/loop0. If your /dev directory has normal names instead of
 	  devfs names, you don't want this.
 config DEVMEM
-	bool "devmem"
+	bool "devmem (2.5 kb)"
 	default y
 	help
 	  devmem is a small program that reads and writes from physical
 	  memory using /dev/mem.
 config FBSPLASH
-	bool "fbsplash"
+	bool "fbsplash (27 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -285,32 +285,32 @@ config FBSPLASH
 	    "NN" (ASCII decimal number) - percentage to show on progress bar
 	    "exit" - well you guessed it
 config FLASH_ERASEALL
-	bool "flash_eraseall"
+	bool "flash_eraseall (5.5 kb)"
 	default n  # doesn't build on Ubuntu 8.04
 	help
 	  The flash_eraseall binary from mtd-utils as of git head c4c6a59eb.
 	  This utility is used to erase the whole MTD device.
 config FLASH_LOCK
-	bool "flash_lock"
+	bool "flash_lock (2.1 kb)"
 	default n  # doesn't build on Ubuntu 8.04
 	help
 	  The flash_lock binary from mtd-utils as of git head 5ec0c10d0. This
 	  utility locks part or all of the flash device.
 
 config FLASH_UNLOCK
-	bool "flash_unlock"
+	bool "flash_unlock (1.3 kb)"
 	default n  # doesn't build on Ubuntu 8.04
 	help
 	  The flash_unlock binary from mtd-utils as of git head 5ec0c10d0. This
 	  utility unlocks part or all of the flash device.
 config FLASHCP
-	bool "flashcp"
+	bool "flashcp (5.4 kb)"
 	default n  # doesn't build on Ubuntu 8.04
 	help
 	  The flashcp binary, inspired by mtd-utils as of git head 5eceb74f7.
 	  This utility is used to copy images into a MTD device.
 config HDPARM
-	bool "hdparm"
+	bool "hdparm (23 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -368,41 +368,41 @@ config FEATURE_HDPARM_HDIO_GETSET_DMA
 	help
 	  Enable the 'hdparm -d' option to get/set using_dma flag.
 config I2CGET
-	bool "i2cget"
+	bool "i2cget (5.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Read from I2C/SMBus chip registers.
 
 config I2CSET
-	bool "i2cset"
+	bool "i2cset (6.9 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Set I2C registers.
 
 config I2CDUMP
-	bool "i2cdump"
+	bool "i2cdump (7.2 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Examine I2C registers.
 
 config I2CDETECT
-	bool "i2cdetect"
+	bool "i2cdetect (7.2 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Detect I2C chips.
 
 config INOTIFYD
-	bool "inotifyd"
+	bool "inotifyd (3.5 kb)"
 	default n  # doesn't build on Knoppix 5
 	help
 	  Simple inotify daemon. Reports filesystem changes. Requires
 	  kernel >= 2.6.13
 config LESS
-	bool "less"
+	bool "less (15 kb)"
 	default y
 	help
 	  'less' is a pager, meaning that it displays text files. It possesses
@@ -482,7 +482,7 @@ config FEATURE_LESS_LINENUMS
 	default y
 	depends on FEATURE_LESS_DASHCMD
 config LSSCSI
-	bool "lsscsi"
+	bool "lsscsi (2.4 kb)"
 	default y
 	#select PLATFORM_LINUX
 	help
@@ -491,7 +491,7 @@ config LSSCSI
 
 	  This version uses sysfs (/sys/bus/scsi/devices) only.
 config MAKEDEVS
-	bool "makedevs"
+	bool "makedevs (9.3 kb)"
 	default y
 	help
 	  'makedevs' is a utility used to create a batch of devices with
@@ -522,17 +522,17 @@ config FEATURE_MAKEDEVS_TABLE
 
 endchoice
 config MAN
-	bool "man"
+	bool "man (27 kb)"
 	default y
 	help
 	  Format and display manual pages.
 config MICROCOM
-	bool "microcom"
+	bool "microcom (5.6 kb)"
 	default y
 	help
 	  The poor man's minicom utility for chatting with serial port devices.
 config MT
-	bool "mt"
+	bool "mt (2.6 kb)"
 	default y
 	help
 	  mt is used to control tape devices. You can use the mt utility
@@ -552,13 +552,13 @@ config NANDDUMP
 	help
 	  Dump the content of raw NAND chip
 config PARTPROBE
-	bool "partprobe"
+	bool "partprobe (3.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Ask kernel to rescan partition table.
 config RAIDAUTORUN
-	bool "raidautorun"
+	bool "raidautorun (1.4 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -594,7 +594,7 @@ config RFKILL
 	  rfkill block|unblock wlan : block/unblock all wlan(wifi) devices
 
 config RUNLEVEL
-	bool "runlevel"
+	bool "runlevel (518 bytes)"
 	default y
 	depends on FEATURE_UTMP
 	help
@@ -603,32 +603,32 @@ config RUNLEVEL
 	  This applet uses utmp but does not rely on busybox supporing
 	  utmp on purpose. It is used by e.g. emdebian via /etc/init.d/rc.
 config RX
-	bool "rx"
+	bool "rx (2.9 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Receive files using the Xmodem protocol.
 config SETSERIAL
-	bool "setserial"
+	bool "setserial (6.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Retrieve or set Linux serial port.
 config STRINGS
-	bool "strings"
+	bool "strings (4.3 kb)"
 	default y
 	help
 	  strings prints the printable character sequences for each file
 	  specified.
 config TIME
-	bool "time"
+	bool "time (7 kb)"
 	default y
 	help
 	  The time command runs the specified program with the given arguments.
 	  When the command finishes, time writes a message to standard output
 	  giving timing statistics about this program run.
 config TTYSIZE
-	bool "ttysize"
+	bool "ttysize (372 bytes)"
 	default y
 	help
 	  A replacement for "stty size". Unlike stty, can report only width,
@@ -636,59 +636,59 @@ config TTYSIZE
 	  error, but returns default 80x24.
 	  Usage in shell scripts: width=`ttysize w`.
 config UBIATTACH
-	bool "ubiattach"
+	bool "ubiattach (4.7 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Attach MTD device to an UBI device.
 
 config UBIDETACH
-	bool "ubidetach"
+	bool "ubidetach (4.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Detach MTD device from an UBI device.
 
 config UBIMKVOL
-	bool "ubimkvol"
+	bool "ubimkvol (5.8 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Create a UBI volume.
 
 config UBIRMVOL
-	bool "ubirmvol"
+	bool "ubirmvol (5.2 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Delete a UBI volume.
 
 config UBIRSVOL
-	bool "ubirsvol"
+	bool "ubirsvol (4.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Resize a UBI volume.
 
 config UBIUPDATEVOL
-	bool "ubiupdatevol"
+	bool "ubiupdatevol (5.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Update a UBI volume.
 config UBIRENAME
-	bool "ubirename"
+	bool "ubirename (2.2 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Utility to rename UBI volumes
 config VOLNAME
-	bool "volname"
+	bool "volname (1.7 kb)"
 	default y
 	help
 	  Prints a CD-ROM volume name.
 config WATCHDOG
-	bool "watchdog"
+	bool "watchdog (5.1 kb)"
 	default y
 	select PLATFORM_LINUX
 	help

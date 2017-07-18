@@ -48,20 +48,20 @@ config VERBOSE_RESOLUTION_ERRORS
 	  This may increase size of your executable a bit.
 
 config ARP
-	bool "arp"
+	bool "arp (11 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Manipulate the system ARP cache.
 config ARPING
-	bool "arping"
+	bool "arping (9.3 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Ping hosts by ARP packets.
 
 config BRCTL
-	bool "brctl"
+	bool "brctl (4.7 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -87,7 +87,7 @@ config FEATURE_BRCTL_SHOW
 	  Add support for option which prints the current config:
 	    show
 config DNSD
-	bool "dnsd"
+	bool "dnsd (9.8 kb)"
 	default y
 	help
 	  Small and static DNS server daemon.
@@ -98,7 +98,7 @@ config ETHER_WAKE
 	help
 	  Send a magic packet to wake up sleeping machines.
 config FTPD
-	bool "ftpd"
+	bool "ftpd (30 kb)"
 	default y
 	help
 	  Simple FTP daemon. You have to run it via inetd.
@@ -128,13 +128,13 @@ config FEATURE_FTPD_AUTHENTICATION
 	help
 	  Enable basic system login as seen in telnet etc.
 config FTPGET
-	bool "ftpget"
+	bool "ftpget (8 kb)"
 	default y
 	help
 	  Retrieve a remote file via FTP.
 
 config FTPPUT
-	bool "ftpput"
+	bool "ftpput (7.7 kb)"
 	default y
 	help
 	  Store a remote file via FTP.
@@ -144,18 +144,18 @@ config FEATURE_FTPGETPUT_LONG_OPTIONS
 	default y
 	depends on LONG_OPTS && (FTPGET || FTPPUT)
 config HOSTNAME
-	bool "hostname"
+	bool "hostname (5.6 kb)"
 	default y
 	help
 	  Show or set the system's host name.
 
 config DNSDOMAINNAME
-	bool "dnsdomainname"
+	bool "dnsdomainname (3.6 kb)"
 	default y
 	help
 	  Alias to "hostname -d".
 config HTTPD
-	bool "httpd"
+	bool "httpd (32 kb)"
 	default y
 	help
 	  HTTP server.
@@ -273,7 +273,7 @@ config FEATURE_HTTPD_GZIP
 	  Makes httpd send files using GZIP content encoding if the
 	  client supports it and a pre-compressed <file>.gz exists.
 config IFCONFIG
-	bool "ifconfig"
+	bool "ifconfig (12 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -320,14 +320,14 @@ config FEATURE_IFCONFIG_BROADCAST_PLUS
 	  Setting this will make ifconfig attempt to find the broadcast
 	  automatically if the value '+' is used.
 config IFENSLAVE
-	bool "ifenslave"
+	bool "ifenslave (13 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Userspace application to bind several interfaces
 	  to a logical interface (use with kernel bonding driver).
 config IFPLUGD
-	bool "ifplugd"
+	bool "ifplugd (9.9 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -413,7 +413,7 @@ config FEATURE_IFUPDOWN_EXTERNAL_DHCP
 	  Otherwise, if udhcpc applet is enabled, it is used.
 	  Otherwise, ifup/ifdown will have no support for DHCP.
 config INETD
-	bool "inetd"
+	bool "inetd (18 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help
@@ -462,7 +462,7 @@ config FEATURE_INETD_RPC
 	help
 	  Support Sun-RPC based services
 config IP
-	bool "ip"
+	bool "ip (34 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -471,7 +471,7 @@ config IP
 	  TCP/IP.
 
 config IPADDR
-	bool "ipaddr"
+	bool "ipaddr (14 kb)"
 	default y
 	select FEATURE_IP_ADDRESS
 	select PLATFORM_LINUX
@@ -479,7 +479,7 @@ config IPADDR
 	  Support short form of ip addr: ipaddr
 
 config IPLINK
-	bool "iplink"
+	bool "iplink (16 kb)"
 	default y
 	select FEATURE_IP_LINK
 	select PLATFORM_LINUX
@@ -487,7 +487,7 @@ config IPLINK
 	  Support short form of ip link: iplink
 
 config IPROUTE
-	bool "iproute"
+	bool "iproute (15 kb)"
 	default y
 	select FEATURE_IP_ROUTE
 	select PLATFORM_LINUX
@@ -495,7 +495,7 @@ config IPROUTE
 	  Support short form of ip route: iproute
 
 config IPTUNNEL
-	bool "iptunnel"
+	bool "iptunnel (9.6 kb)"
 	default y
 	select FEATURE_IP_TUNNEL
 	select PLATFORM_LINUX
@@ -503,7 +503,7 @@ config IPTUNNEL
 	  Support short form of ip tunnel: iptunnel
 
 config IPRULE
-	bool "iprule"
+	bool "iprule (10 kb)"
 	default y
 	select FEATURE_IP_RULE
 	select PLATFORM_LINUX
@@ -511,7 +511,7 @@ config IPRULE
 	  Support short form of ip rule: iprule
 
 config IPNEIGH
-	bool "ipneigh"
+	bool "ipneigh (8.3 kb)"
 	default y
 	select FEATURE_IP_NEIGH
 	select PLATFORM_LINUX
@@ -577,7 +577,7 @@ config FEATURE_IP_RARE_PROTOCOLS
 	  Ethernet, wireless, infrared, ppp/slip, ip tunnelling
 	  link types are supported without this option selected.
 config IPCALC
-	bool "ipcalc"
+	bool "ipcalc (4.3 kb)"
 	default y
 	help
 	  ipcalc takes an IP address and netmask and calculates the
@@ -596,14 +596,14 @@ config FEATURE_IPCALC_FANCY
 	  Adds the options hostname, prefix and silent to the output of
 	  "ipcalc".
 config FAKEIDENTD
-	bool "fakeidentd"
+	bool "fakeidentd (8.9 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help
 	  fakeidentd listens on the ident port and returns a predefined
 	  fake value on any query.
 config NAMEIF
-	bool "nameif"
+	bool "nameif (6.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	select FEATURE_SYSLOG
@@ -632,12 +632,12 @@ config FEATURE_NAMEIF_EXTENDED
 	    new_interface_name  mac=00:80:C8:38:91:B5
 	    new_interface_name  00:80:C8:38:91:B5
 config NBDCLIENT
-	bool "nbd-client"
+	bool "nbd-client (4.6 kb)"
 	default y
 	help
 	  Network block device client
 config NC
-	bool "nc"
+	bool "nc (11 kb)"
 	default y
 	help
 	  A simple Unix utility which reads and writes data across network
@@ -669,7 +669,7 @@ config NC_110_COMPAT
 	  -s ADDR, -n, -u, -v, -o FILE, -z options, but loses
 	  busybox-specific extensions: -f FILE.
 config NETSTAT
-	bool "netstat"
+	bool "netstat (10 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -696,7 +696,7 @@ config NSLOOKUP
 	help
 	  nslookup is a tool to query Internet name servers.
 config NTPD
-	bool "ntpd"
+	bool "ntpd (17 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -718,7 +718,7 @@ config FEATURE_NTPD_CONF
 	  Make ntpd look in /etc/ntp.conf for peers. Only "server address"
 	  is supported.
 config PING
-	bool "ping"
+	bool "ping (9.5 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -726,7 +726,7 @@ config PING
 	  elicit an ICMP ECHO_RESPONSE from a host or gateway.
 
 config PING6
-	bool "ping6"
+	bool "ping6 (10 kb)"
 	default y
 	depends on FEATURE_IPV6
 	help
@@ -740,44 +740,44 @@ config FEATURE_FANCY_PING
 	  Make the output from the ping applet include statistics, and at the
 	  same time provide full support for ICMP packets.
 config PSCAN
-	bool "pscan"
+	bool "pscan (6.6 kb)"
 	default y
 	help
 	  Simple network port scanner.
 config ROUTE
-	bool "route"
+	bool "route (8.9 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Route displays or manipulates the kernel's IP routing tables.
 config SLATTACH
-	bool "slattach"
+	bool "slattach (6.1 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  slattach is a small utility to attach network interfaces to serial
 	  lines.
 config SSL_CLIENT
-	bool "ssl_client"
+	bool "ssl_client (23 kb)"
 	default y
 	select TLS
 	help
 	  This tool pipes data to/from a socket, TLS-encrypting it.
 config TCPSVD
-	bool "tcpsvd"
+	bool "tcpsvd (13 kb)"
 	default y
 	help
 	  tcpsvd listens on a TCP port and runs a program for each new
 	  connection.
 
 config UDPSVD
-	bool "udpsvd"
+	bool "udpsvd (13 kb)"
 	default y
 	help
 	  udpsvd listens on an UDP port and runs a program for each new
 	  connection.
 config TELNET
-	bool "telnet"
+	bool "telnet (8.7 kb)"
 	default y
 	help
 	  Telnet is an interface to the TELNET protocol, but is also commonly
@@ -807,7 +807,7 @@ config FEATURE_TELNET_WIDTH
 	default y
 	depends on TELNET
 config TELNETD
-	bool "telnetd"
+	bool "telnetd (12 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help
@@ -875,7 +875,7 @@ config FEATURE_TELNETD_INETD_WAIT
 	  way of running tcp services, including telnetd.
 	  You most probably want to say N here.
 config TFTP
-	bool "tftp"
+	bool "tftp (12 kb)"
 	default y
 	help
 	  This enables the Trivial File Transfer Protocol client program. TFTP
@@ -883,7 +883,7 @@ config TFTP
 	  for a network-enabled bootloader.
 
 config TFTPD
-	bool "tftpd"
+	bool "tftpd (10 kb)"
 	default y
 	help
 	  This enables the Trivial File Transfer Protocol server program.
@@ -940,14 +940,14 @@ config TLS
 	bool #No description makes it a hidden option
 	default n
 config TRACEROUTE
-	bool "traceroute"
+	bool "traceroute (11 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Utility to trace the route of IP packets.
 
 config TRACEROUTE6
-	bool "traceroute6"
+	bool "traceroute6 (12 kb)"
 	default y
 	depends on FEATURE_IPV6
 	help
@@ -966,7 +966,7 @@ config FEATURE_TRACEROUTE_USE_ICMP
 	default y
 	depends on TRACEROUTE || TRACEROUTE6
 config TUNCTL
-	bool "tunctl"
+	bool "tunctl (6.4 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -980,13 +980,13 @@ config FEATURE_TUNCTL_UG
 	  Allow to specify owner and group of newly created interface.
 	  340 bytes of pure bloat. Say no here.
 config VCONFIG
-	bool "vconfig"
+	bool "vconfig (2.5 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Creates, removes, and configures VLAN interfaces
 config WGET
-	bool "wget"
+	bool "wget (35 kb)"
 	default y
 	help
 	  wget is a utility for non-interactive download of files from HTTP
@@ -1092,12 +1092,12 @@ config FEATURE_WGET_OPENSSL
 	  (if you enabled it); if openssl can be executed but fails later,
 	  wget can't detect this, and download will fail.
 config WHOIS
-	bool "whois"
+	bool "whois (6.6 kb)"
 	default y
 	help
 	  whois is a client for the whois directory service
 config ZCIP
-	bool "zcip"
+	bool "zcip (7.8 kb)"
 	default y
 	select PLATFORM_LINUX
 	select FEATURE_SYSLOG

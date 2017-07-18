@@ -7,7 +7,7 @@
 menu "System Logging Utilities"
 
 config KLOGD
-	bool "klogd"
+	bool "klogd (5.5 kb)"
 	default y
 	help
 	  klogd is a utility which intercepts and logs all
@@ -36,7 +36,7 @@ config FEATURE_KLOGD_KLOGCTL
 
 	  If in doubt, say 'Y'.
 config LOGGER
-	bool "logger"
+	bool "logger (6.4 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help
@@ -65,7 +65,7 @@ config FEATURE_LOGREAD_REDUCED_LOCKING
 	  contention at some minor memory expense.
 
 config SYSLOGD
-	bool "syslogd"
+	bool "syslogd (12 kb)"
 	default y
 	help
 	  The syslogd utility is used to record logs of all the

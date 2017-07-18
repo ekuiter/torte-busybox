@@ -7,7 +7,7 @@
 menu "Process Utilities"
 
 config FREE
-	bool "free"
+	bool "free (2.4 kb)"
 	default y
 	select PLATFORM_LINUX #sysinfo()
 	help
@@ -15,19 +15,19 @@ config FREE
 	  memory in the system, as well as the buffers used by the kernel.
 	  The shared memory column should be ignored; it is obsolete.
 config FUSER
-	bool "fuser"
+	bool "fuser (7 kb)"
 	default y
 	help
 	  fuser lists all PIDs (Process IDs) that currently have a given
 	  file open. fuser can also list all PIDs that have a given network
 	  (TCP or UDP) port open.
 config IOSTAT
-	bool "iostat"
+	bool "iostat (7.4 kb)"
 	default y
 	help
 	  Report CPU and I/O statistics
 config KILL
-	bool "kill"
+	bool "kill (2.6 kb)"
 	default y
 	help
 	  The command kill sends the specified signal to the specified
@@ -35,7 +35,7 @@ config KILL
 	  signal is sent.
 
 config KILLALL
-	bool "killall"
+	bool "killall (5.6 kb)"
 	default y
 	help
 	  killall sends a signal to all processes running any of the
@@ -43,7 +43,7 @@ config KILLALL
 	  sent.
 
 config KILLALL5
-	bool "killall5"
+	bool "killall5 (5.3 kb)"
 	default y
 	help
 	  The SystemV killall command. killall5 sends a signal
@@ -51,34 +51,34 @@ config KILLALL5
 	  in its own session, so it won't kill the shell that is running
 	  the script it was called from.
 config LSOF
-	bool "lsof"
+	bool "lsof (3.6 kb)"
 	default y
 	help
 	  Show open files in the format of:
 	  PID <TAB> /path/to/executable <TAB> /path/to/opened/file
 config MPSTAT
-	bool "mpstat"
+	bool "mpstat (10 kb)"
 	default y
 	help
 	  Per-processor statistics
 config NMETER
-	bool "nmeter"
+	bool "nmeter (10 kb)"
 	default y
 	help
 	  Prints selected system stats continuously, one line per update.
 config PGREP
-	bool "pgrep"
+	bool "pgrep (6.8 kb)"
 	default y
 	help
 	  Look for processes by name.
 
 config PKILL
-	bool "pkill"
+	bool "pkill (7.6 kb)"
 	default y
 	help
 	  Send signals to processes by name.
 config PIDOF
-	bool "pidof"
+	bool "pidof (6.6 kb)"
 	default y
 	help
 	  Pidof finds the process id's (pids) of the named programs. It prints
@@ -100,12 +100,12 @@ config FEATURE_PIDOF_OMIT
 	  The special pid %PPID can be used to name the parent process
 	  of the pidof, in other words the calling shell or shell script.
 config PMAP
-       bool "pmap"
+       bool "pmap (6 kb)"
        default y
        help
          Display processes' memory mappings.
 config POWERTOP
-	bool "powertop"
+	bool "powertop (9.1 kb)"
 	default y
 	help
 	  Analyze power consumption on Intel-based laptops
@@ -118,7 +118,7 @@ config FEATURE_POWERTOP_INTERACTIVE
 	  Without this, powertop will only refresh display every 10 seconds.
 	  No keyboard commands will work, only ^C to terminate.
 config PS
-	bool "ps"
+	bool "ps (11 kb)"
 	default y
 	help
 	  ps gives a snapshot of the current processes.
@@ -159,28 +159,28 @@ config FEATURE_PS_ADDITIONAL_COLUMNS
 	default y
 	depends on PS && DESKTOP
 config PSTREE
-	bool "pstree"
+	bool "pstree (9.4 kb)"
 	default y
 	help
 	  Display a tree of processes.
 config PWDX
-	bool "pwdx"
+	bool "pwdx (3.5 kb)"
 	default y
 	help
 	  Report current working directory of a process
 config SMEMCAP
-	bool "smemcap"
+	bool "smemcap (2.5 kb)"
 	default y
 	help
 	  smemcap is a tool for capturing process data for smem,
 	  a memory usage statistic tool.
 config BB_SYSCTL
-	bool "sysctl"
+	bool "sysctl (6.9 kb)"
 	default y
 	help
 	  Configure kernel parameters at runtime.
 config TOP
-	bool "top"
+	bool "top (17 kb)"
 	default y
 	help
 	  The top program provides a dynamic real-time view of a running
@@ -241,7 +241,7 @@ config FEATURE_TOPMEM
 	help
 	  Enable 's' in top (gives lots of memory info).
 config UPTIME
-	bool "uptime"
+	bool "uptime (632 bytes)"
 	default y
 	select PLATFORM_LINUX #sysinfo()
 	help
@@ -256,7 +256,7 @@ config FEATURE_UPTIME_UTMP_SUPPORT
 	help
 	  Display the number of users currently logged on.
 config WATCH
-	bool "watch"
+	bool "watch (4.1 kb)"
 	default y
 	help
 	  watch is used to execute a program periodically, showing

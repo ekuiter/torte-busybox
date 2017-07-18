@@ -7,25 +7,25 @@
 menu "Linux Ext2 FS Progs"
 
 config CHATTR
-	bool "chattr"
+	bool "chattr (3.2 kb)"
 	default y
 	help
 	  chattr changes the file attributes on a second extended file system.
 config FSCK
-	bool "fsck"
+	bool "fsck (6.7 kb)"
 	default y
 	help
 	  fsck is used to check and optionally repair one or more filesystems.
 	  In actuality, fsck is simply a front-end for the various file system
 	  checkers (fsck.fstype) available under Linux.
 config LSATTR
-	bool "lsattr"
+	bool "lsattr (5 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  lsattr lists the file attributes on a second extended file system.
 config TUNE2FS
-	bool "tune2fs"
+	bool "tune2fs (4.4 kb)"
 	default n  # off: it is too limited compared to upstream version
 	help
 	  tune2fs allows the system administrator to adjust various tunable
