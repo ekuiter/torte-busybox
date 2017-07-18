@@ -83,8 +83,7 @@ config ASH
 	default y
 	depends on !NOMMU
 	help
-	  Tha 'ash' shell adds about 60k in the default configuration and is
-	  the most complete and most pedantically correct shell included with
+	  The most complete and most pedantically correct shell included with
 	  busybox. This shell is actually a derivative of the Debian 'dash'
 	  shell (by Herbert Xu), which was created by porting the 'ash' shell
 	  (written by Kenneth Almquist) from NetBSD.
