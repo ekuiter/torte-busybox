@@ -315,8 +315,7 @@ config HDPARM
 	select PLATFORM_LINUX
 	help
 	  Get/Set hard drive parameters. Primarily intended for ATA
-	  drives. Adds about 13k (or around 30k if you enable the
-	  FEATURE_HDPARM_GET_IDENTITY option)....
+	  drives.
 
 config FEATURE_HDPARM_GET_IDENTITY
 	bool "Support obtaining detailed information directly from drives"
