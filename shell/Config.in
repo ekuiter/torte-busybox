@@ -244,7 +244,7 @@ config HUSH
 	bool "hush (64 kb)"
 	default y
 	help
-	  hush is a small shell (25k). It handles the normal flow control
+	  hush is a small shell. It handles the normal flow control
 	  constructs such as if/then/elif/else/fi, for/in/do/done, while loops,
 	  case/esac. Redirections, here documents, $((arithmetic))
 	  and functions are supported.
