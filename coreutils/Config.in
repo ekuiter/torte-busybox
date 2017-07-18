@@ -841,7 +841,7 @@ config UNAME_OSNAME
 	  Sets the operating system name reported by uname -o.  The
 	  default is "GNU/Linux".
 
-config BBARCH
+config BB_ARCH
 	bool "arch"
 	default y
 	help
