@@ -14,7 +14,7 @@ config ADJTIMEX
 	  Adjtimex reads and optionally sets adjustment parameters for
 	  the Linux clock adjustment algorithm.
 config BBCONFIG
-	bool "bbconfig"
+	bool "bbconfig (9.7 kb)"
 	default n
 	help
 	  The bbconfig applet will print the config file with which
@@ -34,7 +34,7 @@ config FEATURE_COMPRESS_BBCONFIG
 	  and have very little memory, this might not be a win. Otherwise,
 	  you probably want this.
 config BEEP
-	bool "beep"
+	bool "beep (3 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -538,14 +538,14 @@ config MT
 	  to advance or rewind a tape past a specified number of archive
 	  files on the tape.
 config NANDWRITE
-	bool "nandwrite"
+	bool "nandwrite (5.9 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
 	  Write to the specified MTD device, with bad blocks awareness
 
 config NANDDUMP
-	bool "nanddump"
+	bool "nanddump (6.3 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -564,7 +564,7 @@ config RAIDAUTORUN
 	  raidautorun tells the kernel md driver to
 	  search and start RAID arrays.
 config READAHEAD
-	bool "readahead"
+	bool "readahead (2 kb)"
 	default y
 	depends on LFS
 	select PLATFORM_LINUX
@@ -581,7 +581,7 @@ config READAHEAD
 	  As readahead(2) blocks until each file has been read, it is best to
 	  run this applet as a background job.
 config RFKILL
-	bool "rfkill"
+	bool "rfkill (5.3 kb)"
 	default n # doesn't build on Ubuntu 9.04
 	select PLATFORM_LINUX
 	help

@@ -29,7 +29,7 @@ config FEATURE_ACPID_COMPAT
 	help
 	  Accept and ignore compatibility options -g -m -s -S -v.
 config BLKDISCARD
-	bool "blkdiscard"
+	bool "blkdiscard (5.3 kb)"
 	default y
 	help
 	  blkdiscard discards sectors on a given device.
@@ -113,7 +113,7 @@ config FEATURE_EJECT_SCSI
 	  Add the -s option to eject, this allows to eject SCSI-Devices and
 	  usb-storage devices.
 config FALLOCATE
-	bool "fallocate"
+	bool "fallocate (5 kb)"
 	default y
 	help
 	  Preallocate space for files.
@@ -677,7 +677,7 @@ config MOUNTPOINT
 	help
 	  mountpoint checks if the directory is a mountpoint.
 config NSENTER
-	bool "nsenter"
+	bool "nsenter (8.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -905,7 +905,7 @@ config FEATURE_UMOUNT_ALL
 	help
 	  Support -a option to unmount all currently mounted filesystems.
 config UNSHARE
-	bool "unshare"
+	bool "unshare (9.2 kb)"
 	default y
 	depends on !NOMMU
 	select PLATFORM_LINUX

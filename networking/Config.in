@@ -92,7 +92,7 @@ config DNSD
 	help
 	  Small and static DNS server daemon.
 config ETHER_WAKE
-	bool "ether-wake"
+	bool "ether-wake (6.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
@@ -333,7 +333,7 @@ config IFPLUGD
 	help
 	  Network interface plug detection daemon.
 config IFUP
-	bool "ifup"
+	bool "ifup (17 kb)"
 	default y
 	help
 	  Activate the specified interfaces. This applet makes use
@@ -349,7 +349,7 @@ config IFUP
 	  via busybox or via standalone utilities.
 
 config IFDOWN
-	bool "ifdown"
+	bool "ifdown (15 kb)"
 	default y
 	help
 	  Deactivate the specified interfaces.
@@ -691,7 +691,7 @@ config FEATURE_NETSTAT_PRG
 	  Add support for -p flag to print out PID and program name.
 	  +700 bytes of code.
 config NSLOOKUP
-	bool "nslookup"
+	bool "nslookup (4.5 kb)"
 	default y
 	help
 	  nslookup is a tool to query Internet name servers.

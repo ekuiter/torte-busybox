@@ -45,7 +45,7 @@ config LOGGER
 	    they can be logged. This is generally used to help locate
 	    problems that occur within programs and scripts.
 config LOGREAD
-	bool "logread"
+	bool "logread (6 kb)"
 	default y
 	help
 	  If you enabled Circular Buffer support, you almost

@@ -842,7 +842,7 @@ config UNAME_OSNAME
 	  default is "GNU/Linux".
 
 config BB_ARCH
-	bool "arch"
+	bool "arch (1.6 kb)"
 	default y
 	help
 	  Same as uname -m.

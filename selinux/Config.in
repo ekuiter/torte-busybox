@@ -8,7 +8,7 @@ menu "SELinux Utilities"
 	depends on SELINUX
 
 config CHCON
-	bool "chcon"
+	bool "chcon (8.9 kb)"
 	default n
 	depends on SELINUX
 	help
@@ -19,32 +19,32 @@ config FEATURE_CHCON_LONG_OPTIONS
 	default y
 	depends on CHCON && LONG_OPTS
 config GETENFORCE
-	bool "getenforce"
+	bool "getenforce (1.7 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support to get the current mode of SELinux.
 config GETSEBOOL
-	bool "getsebool"
+	bool "getsebool (5.5 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support to get SELinux boolean values.
 config LOAD_POLICY
-	bool "load_policy"
+	bool "load_policy (1.6 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support to load SELinux policy.
 config MATCHPATHCON
-	bool "matchpathcon"
+	bool "matchpathcon (6.1 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support to get default security context of the
 	  specified path from the file contexts configuration.
 config RUNCON
-	bool "runcon"
+	bool "runcon (6.6 kb)"
 	default n
 	depends on SELINUX
 	help
@@ -55,26 +55,26 @@ config FEATURE_RUNCON_LONG_OPTIONS
 	default y
 	depends on RUNCON && LONG_OPTS
 config SELINUXENABLED
-	bool "selinuxenabled"
+	bool "selinuxenabled (321 bytes)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support for this command to be used within shell scripts
 	  to determine if selinux is enabled.
 config SESTATUS
-	bool "sestatus"
+	bool "sestatus (12 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Displays the status of SELinux.
 config SETENFORCE
-	bool "setenforce"
+	bool "setenforce (2.1 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support to modify the mode SELinux is running in.
 config SETFILES
-	bool "setfiles"
+	bool "setfiles (13 kb)"
 	default n
 	depends on SELINUX
 	help
@@ -92,14 +92,14 @@ config FEATURE_SETFILES_CHECK_OPTION
 	  the specified binary policy) for setfiles. Requires libsepol.
 
 config RESTORECON
-	bool "restorecon"
+	bool "restorecon (12 kb)"
 	default n
 	depends on SELINUX
 	help
 	  Enable support to relabel files. The feature is almost
 	  the same as setfiles, but usage is a little different.
 config SETSEBOOL
-	bool "setsebool"
+	bool "setsebool (1.7 kb)"
 	default n
 	depends on SELINUX
 	help
