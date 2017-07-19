@@ -818,7 +818,6 @@ config SWAPON
 	default y
 	select PLATFORM_LINUX
 	help
-	  This option enables the 'swapon' utility.
 	  Once you have created some swap space using 'mkswap', you also need
 	  to enable your swap space with the 'swapon' utility. The 'swapoff'
 	  utility is used, typically at system shutdown, to disable any swap
@@ -845,8 +844,6 @@ config SWAPOFF
 	bool "swapoff (4.3 kb)"
 	default y
 	select PLATFORM_LINUX
-	help
-	  This option enables the 'swapoff' utility.
 config SWITCH_ROOT
 	bool "switch_root (5.2 kb)"
 	default y
