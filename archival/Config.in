@@ -34,8 +34,6 @@ config AR
 	  extract contents from archives. In practice, it is used exclusively
 	  for object module archives used by compilers.
 
-	  On an x86 system, the ar applet adds about 1K.
-
 	  Unless you have a specific application which requires ar, you should
 	  probably say N here: most compilers come with their own ar utility.
 
@@ -110,20 +108,11 @@ config UNLZMA
 	  is generally considerably better than that achieved by the bzip2
 	  compressors.
 
-	  The BusyBox unlzma applet is limited to decompression only.
-	  On an x86 system, this applet adds about 4K.
-
 config LZCAT
 	bool "lzcat (8.5 kb)"
 	default y
 	help
-	  unlzma is a compression utility using the Lempel-Ziv-Markov chain
-	  compression algorithm, and range coding. Compression
-	  is generally considerably better than that achieved by the bzip2
-	  compressors.
-
-	  The BusyBox unlzma applet is limited to decompression only.
-	  On an x86 system, this applet adds about 4K.
+	  Alias to "unlzma -c".
 
 config LZMA
 	bool "lzma -d"
@@ -131,14 +120,6 @@ config LZMA
 	help
 	  Enable this option if you want commands like "lzma -d" to work.
 	  IOW: you'll get lzma applet, but it will always require -d option.
-
-config FEATURE_LZMA_FAST
-	bool "Optimize for speed"
-	default n
-	depends on UNLZMA || LZCAT || LZMA
-	help
-	  This option reduces decompression time by about 25% at the cost of
-	  a 1K bigger binary.
 config UNXZ
 	bool "unxz (13 kb)"
 	default y
@@ -285,7 +266,7 @@ config LZOPCAT
 	bool "lzopcat (13 kb)"
 	default n  # INCOMPAT: upstream lzop does not provide such tool
 	help
-	  Alias to "unlzop -c".
+	  Alias to "lzop -dc".
 
 config LZOP_COMPR_HIGH
 	bool "lzop compression levels 7,8,9 (not very useful)"
@@ -426,5 +407,13 @@ config FEATURE_UNZIP_XZ
 	bool "Support compression method 95 (xz)"
 	default y
 	depends on FEATURE_UNZIP_CDF && DESKTOP
+
+config FEATURE_LZMA_FAST
+	bool "Optimize lzma for speed"
+	default n
+	depends on UNLZMA || LZCAT || LZMA || FEATURE_SEAMLESS_LZMA
+	help
+	  This option reduces decompression time by about 25% at the cost of
+	  a 1K bigger binary.
 
 endmenu

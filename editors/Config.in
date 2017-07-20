@@ -19,7 +19,7 @@ config FEATURE_AWK_LIBM
 	depends on AWK
 	help
 	  Enable math functions of the Awk programming language.
-	  NOTE: This will require libm to be present for linking.
+	  NOTE: This requires libm to be present for linking.
 
 config FEATURE_AWK_GNU_EXTENSIONS
 	bool "Enable a few GNU extensions"
@@ -116,7 +116,7 @@ config FEATURE_VI_YANKMARK
 	default y
 	depends on VI
 	help
-	  This will enable you to use yank and put, as well as mark.
+	  This enables you to use yank and put, as well as mark.
 
 config FEATURE_VI_SEARCH
 	bool "Enable search and replace cmds"

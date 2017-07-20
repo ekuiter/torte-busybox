@@ -730,7 +730,7 @@ config PING6
 	default y
 	depends on FEATURE_IPV6
 	help
-	  This will give you a ping that can talk IPv6.
+	  Alias to "ping -6".
 
 config FEATURE_FANCY_PING
 	bool "Enable fancy ping output"
