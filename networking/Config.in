@@ -737,8 +737,9 @@ config FEATURE_FANCY_PING
 	default y
 	depends on PING || PING6
 	help
-	Make the output from the ping applet include statistics, and at the
-	same time provide full support for ICMP packets.
+	With this option off, ping will say "HOST is alive!"
+	or terminate with SIGALRM in 5 seconds otherwise.
+	No command-line options will be recognized.
 config PSCAN
 	bool "pscan (6.6 kb)"
 	default y
