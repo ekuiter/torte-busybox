@@ -11,66 +11,66 @@ config CHVT
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program is used to change to another terminal.
-	  Example: chvt 4 (change to terminal /dev/tty4)
+	This program is used to change to another terminal.
+	Example: chvt 4 (change to terminal /dev/tty4)
 config CLEAR
 	bool "clear (tiny)"
 	default y
 	help
-	  This program clears the terminal screen.
+	This program clears the terminal screen.
 config DEALLOCVT
 	bool "deallocvt (1.9 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program deallocates unused virtual consoles.
+	This program deallocates unused virtual consoles.
 config DUMPKMAP
 	bool "dumpkmap (1.3 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program dumps the kernel's keyboard translation table to
-	  stdout, in binary format. You can then use loadkmap to load it.
+	This program dumps the kernel's keyboard translation table to
+	stdout, in binary format. You can then use loadkmap to load it.
 config FGCONSOLE
 	bool "fgconsole (1.6 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program prints active (foreground) console number.
+	This program prints active (foreground) console number.
 config KBD_MODE
 	bool "kbd_mode (4 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program reports and sets keyboard mode.
+	This program reports and sets keyboard mode.
 config LOADFONT
 	bool "loadfont (5.4 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program loads a console font from standard input.
+	This program loads a console font from standard input.
 
 config SETFONT
 	bool "setfont (26 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  Allows to load console screen map. Useful for i18n.
+	Allows to load console screen map. Useful for i18n.
 
 config FEATURE_SETFONT_TEXTUAL_MAP
 	bool "Support reading textual screen maps"
 	default y
 	depends on SETFONT
 	help
-	  Support reading textual screen maps.
+	Support reading textual screen maps.
 
 config DEFAULT_SETFONT_DIR
 	string "Default directory for console-tools files"
 	default ""
 	depends on SETFONT
 	help
-	  Directory to use if setfont's params are simple filenames
-	  (not /path/to/file or ./file). Default is "" (no default directory).
+	Directory to use if setfont's params are simple filenames
+	(not /path/to/file or ./file). Default is "" (no default directory).
 
 comment "Common options for loadfont and setfont"
 	depends on LOADFONT || SETFONT
@@ -89,44 +89,44 @@ config LOADKMAP
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program loads a keyboard translation table from
-	  standard input.
+	This program loads a keyboard translation table from
+	standard input.
 config OPENVT
 	bool "openvt (7 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program is used to start a command on an unused
-	  virtual terminal.
+	This program is used to start a command on an unused
+	virtual terminal.
 config RESET
 	bool "reset (275 bytes)"
 	default y
 	help
-	  This program is used to reset the terminal screen, if it
-	  gets messed up.
+	This program is used to reset the terminal screen, if it
+	gets messed up.
 config RESIZE
 	bool "resize (756 bytes)"
 	default y
 	help
-	  This program is used to (re)set the width and height of your current
-	  terminal.
+	This program is used to (re)set the width and height of your current
+	terminal.
 
 config FEATURE_RESIZE_PRINT
 	bool "Print environment variables"
 	default y
 	depends on RESIZE
 	help
-	  Prints the newly set size (number of columns and rows) of
-	  the terminal.
-	  E.g.:
-	  COLUMNS=80;LINES=44;export COLUMNS LINES;
+	Prints the newly set size (number of columns and rows) of
+	the terminal.
+	E.g.:
+	COLUMNS=80;LINES=44;export COLUMNS LINES;
 config SETCONSOLE
 	bool "setconsole (3.7 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program redirects the system console to another device,
-	  like the current tty while logged in via telnet.
+	This program redirects the system console to another device,
+	like the current tty while logged in via telnet.
 
 config FEATURE_SETCONSOLE_LONG_OPTIONS
 	bool "Enable long options"
@@ -137,19 +137,19 @@ config SETKEYCODES
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program loads entries into the kernel's scancode-to-keycode
-	  map, allowing unusual keyboards to generate usable keycodes.
+	This program loads entries into the kernel's scancode-to-keycode
+	map, allowing unusual keyboards to generate usable keycodes.
 config SETLOGCONS
 	bool "setlogcons (1.8 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  This program redirects the output console of kernel messages.
+	This program redirects the output console of kernel messages.
 config SHOWKEY
 	bool "showkey (4.7 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
-	  Shows keys pressed.
+	Shows keys pressed.
 
 endmenu
