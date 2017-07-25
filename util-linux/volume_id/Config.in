@@ -72,6 +72,10 @@ config FEATURE_VOLUMEID_LUKS
 	bool "luks filesystem"
 	default y
 	depends on VOLUMEID
+config FEATURE_VOLUMEID_MINIX
+	bool "minix filesystem"
+	default y
+	depends on VOLUMEID
 config FEATURE_VOLUMEID_NILFS
 	bool "nilfs filesystem"
 	default y
@@ -149,10 +153,6 @@ config FEATURE_VOLUMEID_UDF
 ###	depends on VOLUMEID
 ### config FEATURE_VOLUMEID_MAC
 ###	bool "mac filesystem"
-###	default y
-###	depends on VOLUMEID
-### config FEATURE_VOLUMEID_MINIX
-###	bool "minix filesystem"
 ###	default y
 ###	depends on VOLUMEID
 ### config FEATURE_VOLUMEID_MSDOS
