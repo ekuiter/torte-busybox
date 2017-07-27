@@ -238,7 +238,7 @@ config LOGIN
 	help
 	login is used when signing onto a system.
 
-	Note that Busybox binary must be setuid root for this applet to
+	Note that busybox binary must be setuid root for this applet to
 	work properly.
 
 config LOGIN_SESSION_AS_CHILD
@@ -286,7 +286,7 @@ config PASSWD
 	may change the password for any account. The administrator of a group
 	may change the password for the group.
 
-	Note that Busybox binary must be setuid root for this applet to
+	Note that busybox binary must be setuid root for this applet to
 	work properly.
 
 config FEATURE_PASSWD_WEAK_CHECK
@@ -332,7 +332,7 @@ config VLOCK
 	help
 	Build the "vlock" applet which allows you to lock (virtual) terminals.
 
-	Note that Busybox binary must be setuid root for this applet to
+	Note that busybox binary must be setuid root for this applet to
 	work properly.
 
 endmenu

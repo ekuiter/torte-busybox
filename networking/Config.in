@@ -104,11 +104,12 @@ config FTPD
 	Simple FTP daemon. You have to run it via inetd.
 
 config FEATURE_FTPD_WRITE
-	bool "Enable upload commands"
+	bool "Enable -w (upload commands)"
 	default y
 	depends on FTPD
 	help
-	Enable all kinds of FTP upload commands (-w option)
+	Enable -w option. "ftpd -w" will accept upload commands
+	such as STOR, STOU, APPE, DELE, MKD, RMD, rename commands.
 
 config FEATURE_FTPD_ACCEPT_BROKEN_LIST
 	bool "Enable workaround for RFC-violating clients"
@@ -126,7 +127,13 @@ config FEATURE_FTPD_AUTHENTICATION
 	default y
 	depends on FTPD
 	help
-	Enable basic system login as seen in telnet etc.
+	Require login, and change to logged in user's UID:GID before
+	accessing any files. Option "-a USER" allows "anonymous"
+	logins (treats them as if USER logged in).
+
+	If this option is not selected, ftpd runs with the rights
+	of the user it was started under, and does not require login.
+	Take care to not launch it under root.
 config FTPGET
 	bool "ftpget (8 kb)"
 	default y
@@ -374,11 +381,11 @@ config FEATURE_IFUPDOWN_IP
 	than the default of using the older "ifconfig" and "route" utilities.
 
 	If Y: you must install either the full-blown iproute2 package
-	or enable "ip" applet in Busybox, or the "ifup" and "ifdown" applets
+	or enable "ip" applet in busybox, or the "ifup" and "ifdown" applets
 	will not work.
 
 	If N: you must install either the full-blown ifconfig and route
-	utilities, or enable these applets in Busybox.
+	utilities, or enable these applets in busybox.
 
 config FEATURE_IFUPDOWN_IPV4
 	bool "Support IPv4"
@@ -467,8 +474,10 @@ config IP
 	select PLATFORM_LINUX
 	help
 	The "ip" applet is a TCP/IP interface configuration and routing
-	utility. You generally don't need "ip" to use busybox with
-	TCP/IP.
+	utility.
+	Short forms (enabled below) are busybox-specific extensions.
+	The standard "ip" utility does not provide them. If you are
+	trying to be portable, it's better to use "ip CMD" forms.
 
 config IPADDR
 	bool "ipaddr (14 kb)"
@@ -476,7 +485,7 @@ config IPADDR
 	select FEATURE_IP_ADDRESS
 	select PLATFORM_LINUX
 	help
-	Support short form of ip addr: ipaddr
+	Short form of "ip addr"
 
 config IPLINK
 	bool "iplink (16 kb)"
@@ -484,7 +493,7 @@ config IPLINK
 	select FEATURE_IP_LINK
 	select PLATFORM_LINUX
 	help
-	Support short form of ip link: iplink
+	Short form of "ip link"
 
 config IPROUTE
 	bool "iproute (15 kb)"
@@ -492,7 +501,7 @@ config IPROUTE
 	select FEATURE_IP_ROUTE
 	select PLATFORM_LINUX
 	help
-	Support short form of ip route: iproute
+	Short form of "ip route"
 
 config IPTUNNEL
 	bool "iptunnel (9.6 kb)"
@@ -500,7 +509,7 @@ config IPTUNNEL
 	select FEATURE_IP_TUNNEL
 	select PLATFORM_LINUX
 	help
-	Support short form of ip tunnel: iptunnel
+	Short form of "ip tunnel"
 
 config IPRULE
 	bool "iprule (10 kb)"
@@ -508,7 +517,7 @@ config IPRULE
 	select FEATURE_IP_RULE
 	select PLATFORM_LINUX
 	help
-	Support short form of ip rule: iprule
+	Short form of "ip rule"
 
 config IPNEIGH
 	bool "ipneigh (8.3 kb)"
@@ -516,7 +525,7 @@ config IPNEIGH
 	select FEATURE_IP_NEIGH
 	select PLATFORM_LINUX
 	help
-	Support short form of ip neigh: ipneigh
+	Short form of "ip neigh"
 
 config FEATURE_IP_ADDRESS
 	bool "ip address"
@@ -841,7 +850,7 @@ config TELNETD
 
 	You need to be sure that busybox has LOGIN and
 	FEATURE_SUID enabled. And finally, you should make
-	certain that Busybox has been installed setuid root:
+	certain that busybox has been installed setuid root:
 
 		chown root.root /bin/busybox
 		chmod 4755 /bin/busybox
@@ -879,15 +888,20 @@ config TFTP
 	bool "tftp (12 kb)"
 	default y
 	help
-	This enables the Trivial File Transfer Protocol client program. TFTP
-	is usually used for simple, small transfers such as a root image
+	Trivial File Transfer Protocol client. TFTP is usually used
+	for simple, small transfers such as a root image
 	for a network-enabled bootloader.
+
+config FEATURE_TFTP_PROGRESS_BAR
+	bool "Enable progress bar"
+	default y
+	depends on TFTP
 
 config TFTPD
 	bool "tftpd (10 kb)"
 	default y
 	help
-	This enables the Trivial File Transfer Protocol server program.
+	Trivial File Transfer Protocol server.
 	It expects that stdin is a datagram socket and a packet
 	is already pending on it. It will exit after one transfer.
 	In other words: it should be run from inetd in nowait mode,
@@ -924,11 +938,6 @@ config FEATURE_TFTP_BLOCKSIZE
 	help
 	Allow tftp to specify block size, and tftpd to understand
 	"blksize" and "tsize" options.
-
-config FEATURE_TFTP_PROGRESS_BAR
-	bool "Enable progress bar"
-	default y
-	depends on TFTP && FEATURE_TFTP_BLOCKSIZE
 
 config TFTP_DEBUG
 	bool "Enable debug"

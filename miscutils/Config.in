@@ -185,7 +185,7 @@ config CRONTAB
 	help
 	Crontab manipulates the crontab for a particular user. Only
 	the superuser may specify a different user and/or crontab directory.
-	Note that Busybox binary must be setuid root for this applet to
+	Note that busybox binary must be setuid root for this applet to
 	work properly.
 config DC
 	bool "dc (4.2 kb)"

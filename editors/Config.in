@@ -10,8 +10,7 @@ config AWK
 	bool "awk (22 kb)"
 	default y
 	help
-	Awk is used as a pattern scanning and processing language. This is
-	the BusyBox implementation of that programming language.
+	Awk is used as a pattern scanning and processing language.
 
 config FEATURE_AWK_LIBM
 	bool "Enable math functions (requires libm)"
