@@ -620,7 +620,6 @@ config FEATURE_MOUNT_LABEL
 	help
 	This allows for specifying a device by label or uuid, rather than by
 	name. This feature utilizes the same functionality as blkid/findfs.
-	This also enables label or uuid support for swapon.
 
 config FEATURE_MOUNT_NFS
 	bool "Support mounting NFS file systems on Linux < 2.6.23"
@@ -839,6 +838,15 @@ config SWAPOFF
 	bool "swapoff (4.3 kb)"
 	default y
 	select PLATFORM_LINUX
+
+config FEATURE_SWAPONOFF_LABEL
+	bool "Support specifying devices by label or UUID"
+	default y
+	depends on SWAPON || SWAPOFF
+	select VOLUMEID
+	help
+	This allows for specifying a device by label or uuid, rather than by
+	name. This feature utilizes the same functionality as blkid/findfs.
 config SWITCH_ROOT
 	bool "switch_root (5.2 kb)"
 	default y
