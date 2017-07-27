@@ -187,7 +187,7 @@ config FEATURE_HTTPD_SETUID
 	different user.
 
 config FEATURE_HTTPD_BASIC_AUTH
-	bool "Enable Basic http Authentication"
+	bool "Enable HTTP authentication"
 	default y
 	depends on HTTPD
 	help
@@ -197,7 +197,7 @@ config FEATURE_HTTPD_BASIC_AUTH
 	/adm:toor:PaSsWd
 
 config FEATURE_HTTPD_AUTH_MD5
-	bool "Support MD5 crypted passwords for http Authentication"
+	bool "Support MD5-encrypted passwords in HTTP authentication"
 	default y
 	depends on FEATURE_HTTPD_BASIC_AUTH
 	help
@@ -427,39 +427,57 @@ config INETD
 	Internet superserver daemon
 
 config FEATURE_INETD_SUPPORT_BUILTIN_ECHO
-	bool "Support echo service"
+	bool "Support echo service on port 7"
 	default y
 	depends on INETD
 	help
-	Echo received data internal inetd service
+	Internal service which echoes data back.
+	Activated by configuration lines like these:
+		echo stream tcp nowait root internal
+		echo dgram  udp wait   root internal
 
 config FEATURE_INETD_SUPPORT_BUILTIN_DISCARD
-	bool "Support discard service"
+	bool "Support discard service on port 8"
 	default y
 	depends on INETD
 	help
-	Internet /dev/null internal inetd service
+	Internal service which discards all input.
+	Activated by configuration lines like these:
+		discard stream tcp nowait root internal
+		discard dgram  udp wait   root internal
 
 config FEATURE_INETD_SUPPORT_BUILTIN_TIME
-	bool "Support time service"
+	bool "Support time service on port 37"
 	default y
 	depends on INETD
 	help
-	Return 32 bit time since 1900 internal inetd service
+	Internal service which returns big-endian 32-bit number
+	of seconds passed since 1900-01-01. The number wraps around
+	on overflow.
+	Activated by configuration lines like these:
+		time stream tcp nowait root internal
+		time dgram  udp wait   root internal
 
 config FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME
-	bool "Support daytime service"
+	bool "Support daytime service on port 13"
 	default y
 	depends on INETD
 	help
-	Return human-readable time internal inetd service
+	Internal service which returns human-readable time.
+	Activated by configuration lines like these:
+		daytime stream tcp nowait root internal
+		daytime dgram  udp wait   root internal
 
 config FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN
-	bool "Support chargen service"
+	bool "Support chargen service on port 19"
 	default y
 	depends on INETD
 	help
-	Familiar character generator internal inetd service
+	Internal service which generates endless stream
+	of all ASCII chars beetween space and char 126.
+	Activated by configuration lines like these:
+		chargen stream tcp nowait root internal
+		chargen dgram  udp wait   root internal
 
 config FEATURE_INETD_RPC
 	bool "Support RPC services"
