@@ -300,7 +300,7 @@ config GETOPT
 	wisely leave this disabled.
 
 config FEATURE_GETOPT_LONG
-	bool "Support option -l"
+	bool "Support -l LONGOPTs"
 	default y if LONG_OPTS
 	depends on GETOPT
 	help
@@ -585,14 +585,14 @@ config MOUNT
 	NFS filesystems.
 
 config FEATURE_MOUNT_FAKE
-	bool "Support option -f"
+	bool "Support -f (fake mount)"
 	default y
 	depends on MOUNT
 	help
 	Enable support for faking a file system mount.
 
 config FEATURE_MOUNT_VERBOSE
-	bool "Support option -v"
+	bool "Support -v (verbose)"
 	default y
 	depends on MOUNT
 	help
@@ -654,7 +654,7 @@ config FEATURE_MOUNT_FLAGS
 
 config FEATURE_MOUNT_FSTAB
 	depends on MOUNT
-	bool "Support /etc/fstab and -a"
+	bool "Support /etc/fstab and -a (mount all)"
 	default y
 	help
 	Support mount all and looking for files in /etc/fstab.
@@ -899,7 +899,7 @@ config UMOUNT
 	utility, you almost certainly also want to enable 'umount'.
 
 config FEATURE_UMOUNT_ALL
-	bool "Support option -a"
+	bool "Support -a (unmount all)"
 	default y
 	depends on UMOUNT
 	help

@@ -144,7 +144,7 @@ config CROND
 		40 4 * * * /etc/cron/daily > /dev/null 2>&1
 
 config FEATURE_CROND_D
-	bool "Support option -d to redirect output to stderr"
+	bool "Support -d (redirect output to stderr)"
 	depends on CROND
 	default y
 	help
