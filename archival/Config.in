@@ -65,7 +65,7 @@ config GUNZIP
 	select FEATURE_GZIP_DECOMPRESS
 	help
 	gunzip is used to decompress archives created by gzip.
-	You can use the `-t' option to test the integrity of
+	You can use the '-t' option to test the integrity of
 	an archive, without decompressing it.
 
 config ZCAT

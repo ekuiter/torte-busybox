@@ -828,7 +828,7 @@ config FEATURE_TELNET_AUTOLOGIN
 	Setting this option will forward the USER environment variable to the
 	remote host you are connecting to. This is useful when you need to
 	log into a machine without telling the username (autologin). This
-	option enables `-a' and `-l USER' arguments.
+	option enables '-a' and '-l USER' arguments.
 
 config FEATURE_TELNET_WIDTH
 	bool "Enable window size autodetection"

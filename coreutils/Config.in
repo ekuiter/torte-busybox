@@ -59,7 +59,7 @@ config CHROOT
 	default y
 	help
 	chroot is used to change the root directory and run a command.
-	The default command is `/bin/sh'.
+	The default command is '/bin/sh'.
 config CKSUM
 	bool "cksum (4.2 kb)"
 	default y
@@ -142,7 +142,7 @@ config FEATURE_DD_SIGNAL_HANDLING
 	default y
 	depends on DD
 	help
-	Sending a SIGUSR1 signal to a running `dd' process makes it
+	Sending a SIGUSR1 signal to a running 'dd' process makes it
 	print to standard error the number of records read and written
 	so far, then to resume copying.
 
@@ -535,7 +535,7 @@ config PRINTF
 	default y
 	help
 	printf is used to format and print specified strings.
-	It's similar to `echo' except it has more options.
+	It's similar to 'echo' except it has more options.
 config PWD
 	bool "pwd (3.4 kb)"
 	default y
@@ -920,7 +920,7 @@ config YES
 	default y
 	help
 	yes is used to repeatedly output a specific string, or
-	the default string `y'.
+	the default string 'y'.
 
 comment "Common options"
 
