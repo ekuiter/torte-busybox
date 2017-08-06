@@ -783,8 +783,7 @@ config SLATTACH
 	default y
 	select PLATFORM_LINUX
 	help
-	slattach is a small utility to attach network interfaces to serial
-	lines.
+	slattach configures serial line as SLIP network interface.
 config SSL_CLIENT
 	bool "ssl_client (23 kb)"
 	default y
