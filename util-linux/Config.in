@@ -43,7 +43,7 @@ config BLKID
 
 config FEATURE_BLKID_TYPE
 	bool "Print filesystem type"
-	default n
+	default y
 	depends on BLKID
 	help
 	Show TYPE="filesystem type"
