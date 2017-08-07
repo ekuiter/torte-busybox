@@ -125,8 +125,10 @@ config SETCONSOLE
 	default y
 	select PLATFORM_LINUX
 	help
-	This program redirects the system console to another device,
+	Redirect writes to /dev/console to another device,
 	like the current tty while logged in via telnet.
+	This does not redirect kernel log, only writes
+	from user space.
 
 config FEATURE_SETCONSOLE_LONG_OPTIONS
 	bool "Enable long options"
