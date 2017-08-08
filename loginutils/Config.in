@@ -106,13 +106,9 @@ config REMOVE_SHELL
 config ADDGROUP
 	bool "addgroup (8.2 kb)"
 	default y
+	select LONG_OPTS
 	help
 	Utility for creating a new group account.
-
-config FEATURE_ADDGROUP_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on ADDGROUP && LONG_OPTS
 
 config FEATURE_ADDUSER_TO_GROUP
 	bool "Support adding users to groups"
@@ -125,13 +121,9 @@ config FEATURE_ADDUSER_TO_GROUP
 config ADDUSER
 	bool "adduser (15 kb)"
 	default y
+	select LONG_OPTS
 	help
 	Utility for creating a new user account.
-
-config FEATURE_ADDUSER_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on ADDUSER && LONG_OPTS
 
 config FEATURE_CHECK_NAMES
 	bool "Enable sanity check on user/group names in adduser and addgroup"

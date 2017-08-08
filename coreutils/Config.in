@@ -238,32 +238,17 @@ config ENV
 	env is used to set an environment variable and run
 	a command; without options it displays the current
 	environment.
-
-config FEATURE_ENV_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on ENV && LONG_OPTS
 config EXPAND
 	bool "expand (5.8 kb)"
 	default y
 	help
 	By default, convert all tabs to spaces.
 
-config FEATURE_EXPAND_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on EXPAND && LONG_OPTS
-
 config UNEXPAND
 	bool "unexpand (6 kb)"
 	default y
 	help
 	By default, convert only leading sequences of blanks to tabs.
-
-config FEATURE_UNEXPAND_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on UNEXPAND && LONG_OPTS
 config EXPR
 	bool "expr (6.1 kb)"
 	default y
@@ -462,11 +447,6 @@ config MKDIR
 	default y
 	help
 	mkdir is used to create directories with the specified names.
-
-config FEATURE_MKDIR_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on MKDIR && LONG_OPTS
 config MKFIFO
 	bool "mkfifo (3.7 kb)"
 	default y
@@ -489,11 +469,6 @@ config MV
 	default y
 	help
 	mv is used to move or rename files or directories.
-
-config FEATURE_MV_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on MV && LONG_OPTS
 config NICE
 	bool "nice (1.8 kb)"
 	default y
@@ -570,14 +545,6 @@ config RMDIR
 	default y
 	help
 	rmdir is used to remove empty directories.
-
-config FEATURE_RMDIR_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on RMDIR && LONG_OPTS
-	help
-	Support long options for the rmdir applet, including
-	--ignore-fail-on-non-empty for compatibility with GNU rmdir.
 config SEQ
 	bool "seq (3.6 kb)"
 	default y

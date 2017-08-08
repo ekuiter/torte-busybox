@@ -13,11 +13,6 @@ config CHCON
 	depends on SELINUX
 	help
 	Enable support to change the security context of file.
-
-config FEATURE_CHCON_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on CHCON && LONG_OPTS
 config GETENFORCE
 	bool "getenforce (1.7 kb)"
 	default n
@@ -49,11 +44,6 @@ config RUNCON
 	depends on SELINUX
 	help
 	Enable support to run command in specified security context.
-
-config FEATURE_RUNCON_LONG_OPTIONS
-	bool "Enable long options"
-	default y
-	depends on RUNCON && LONG_OPTS
 config SELINUXENABLED
 	bool "selinuxenabled (321 bytes)"
 	default n

@@ -301,8 +301,8 @@ config GETOPT
 
 config FEATURE_GETOPT_LONG
 	bool "Support -l LONGOPTs"
-	default y if LONG_OPTS
-	depends on GETOPT
+	default y
+	depends on GETOPT && LONG_OPTS
 	help
 	Enable support for long options (option -l).
 config HEXDUMP
@@ -342,11 +342,6 @@ config HWCLOCK
 	on a system. This is primarily used to set the current time on
 	shutdown in the hardware clock, so the hardware will keep the
 	correct time when Linux is _not_ running.
-
-config FEATURE_HWCLOCK_LONG_OPTIONS
-	bool "Support long options (--hctosys,...)"
-	default y
-	depends on HWCLOCK && LONG_OPTS
 
 config FEATURE_HWCLOCK_ADJTIME_FHS
 	bool "Use FHS /var/lib/hwclock/adjtime"
@@ -676,14 +671,6 @@ config NSENTER
 	select PLATFORM_LINUX
 	help
 	Run program with namespaces of other processes.
-
-config FEATURE_NSENTER_LONG_OPTS
-	bool "Enable long options"
-	default y
-	depends on NSENTER && LONG_OPTS
-	help
-	Support long options for the nsenter applet. This makes
-	the busybox implementation more compatible with upstream.
 config PIVOT_ROOT
 	bool "pivot_root (898 bytes)"
 	default y
