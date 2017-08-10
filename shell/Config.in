@@ -434,6 +434,11 @@ config HUSH_UMASK
 	default y
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 
+config HUSH_GETOPTS
+	bool "getopts builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+
 config HUSH_MEMLEAK
 	bool "memleak builtin (debugging)"
 	default n
