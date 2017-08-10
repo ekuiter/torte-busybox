@@ -404,6 +404,11 @@ config HUSH_TYPE
 	default y
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 
+config HUSH_TIMES
+	bool "times builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+
 config HUSH_READ
 	bool "read builtin"
 	default y
