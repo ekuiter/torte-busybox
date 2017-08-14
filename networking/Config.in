@@ -483,7 +483,6 @@ config FEATURE_INETD_RPC
 	bool "Support RPC services"
 	default n  # very rarely used, and needs Sun RPC support in libc
 	depends on INETD
-	select FEATURE_HAVE_RPC
 	help
 	Support Sun-RPC based services
 config IP

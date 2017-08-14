@@ -620,7 +620,6 @@ config FEATURE_MOUNT_NFS
 	bool "Support mounting NFS file systems on Linux < 2.6.23"
 	default n
 	depends on MOUNT
-	select FEATURE_HAVE_RPC
 	select FEATURE_SYSLOG
 	help
 	Enable mounting of NFS file systems on Linux kernels prior
