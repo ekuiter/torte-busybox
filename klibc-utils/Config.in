@@ -1,0 +1,25 @@
+# DO NOT EDIT. This file is generated from Config.src
+#
+# For a description of the syntax of this configuration file,
+# see scripts/kbuild/config-language.txt.
+#
+
+menu "klibc-utils"
+
+config MINIPS
+	bool "minips (11 kb)"
+	default n  # for god's sake, just use "ps" name in your scripts
+	help
+	Alias to "ps".
+config NUKE
+	bool "nuke"
+	default y
+	help
+	Alias to "rm -rf".
+config RESUME
+	bool "resume"
+	default y
+	help
+	Resume from saved "suspend-to-disk" image
+
+endmenu
