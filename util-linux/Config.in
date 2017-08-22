@@ -852,6 +852,7 @@ config SWITCH_ROOT
 	* Because the Linux kernel uses rootfs internally as the starting
 	and ending point for searching through the kernel's doubly linked
 	list of active mount points. That's why.
+
 config TASKSET
 	bool "taskset (4.1 kb)"
 	default y
