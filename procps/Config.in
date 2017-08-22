@@ -126,7 +126,7 @@ config PS
 config FEATURE_PS_WIDE
 	bool "Enable wide output (-w)"
 	default y
-	depends on PS && !DESKTOP
+	depends on (PS || MINIPS) && !DESKTOP
 	help
 	Support argument 'w' for wide output.
 	If given once, 132 chars are printed, and if given more
@@ -135,7 +135,7 @@ config FEATURE_PS_WIDE
 config FEATURE_PS_LONG
 	bool "Enable long output (-l)"
 	default y
-	depends on PS && !DESKTOP
+	depends on (PS || MINIPS) && !DESKTOP
 	help
 	Support argument 'l' for long output.
 	Adds fields PPID, RSS, START, TIME & TTY
@@ -143,13 +143,8 @@ config FEATURE_PS_LONG
 config FEATURE_PS_TIME
 	bool "Enable -o time and -o etime specifiers"
 	default y
-	depends on PS && DESKTOP
+	depends on (PS || MINIPS) && DESKTOP
 	select PLATFORM_LINUX
-
-config FEATURE_PS_ADDITIONAL_COLUMNS
-	bool "Enable -o rgroup, -o ruser, -o nice specifiers"
-	default y
-	depends on PS && DESKTOP
 
 config FEATURE_PS_UNUSUAL_SYSTEMS
 	bool "Support Linux prior to 2.4.0 and non-ELF systems"
@@ -158,6 +153,11 @@ config FEATURE_PS_UNUSUAL_SYSTEMS
 	help
 	Include support for measuring HZ on old kernels and non-ELF systems
 	(if you are on Linux 2.4.0+ and use ELF, you don't need this)
+
+config FEATURE_PS_ADDITIONAL_COLUMNS
+	bool "Enable -o rgroup, -o ruser, -o nice specifiers"
+	default y
+	depends on (PS || MINIPS) && DESKTOP
 config PSTREE
 	bool "pstree (9.4 kb)"
 	default y
