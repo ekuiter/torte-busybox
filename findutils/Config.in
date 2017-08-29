@@ -251,4 +251,9 @@ config FEATURE_XARGS_SUPPORT_PARALLEL
 	default y
 	depends on XARGS
 
+config FEATURE_XARGS_SUPPORT_ARGS_FILE
+	bool "Enable -a FILE: use FILE instead of stdin"
+	default y
+	depends on XARGS
+
 endmenu
