@@ -606,6 +606,11 @@ config RX
 	select PLATFORM_LINUX
 	help
 	Receive files using the Xmodem protocol.
+config SETFATTR
+	bool "setfattr"
+	default y
+	help
+	Set/delete extended attributes on files
 config SETSERIAL
 	bool "setserial (6.6 kb)"
 	default y
