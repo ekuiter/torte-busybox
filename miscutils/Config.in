@@ -365,6 +365,11 @@ config FEATURE_HDPARM_HDIO_GETSET_DMA
 	depends on HDPARM
 	help
 	Enable the 'hdparm -d' option to get/set using_dma flag.
+config HEXEDIT
+	bool "hexedit"
+	default y
+	help
+	Edit file in hexadecimal.
 config I2CGET
 	bool "i2cget (5.6 kb)"
 	default y
