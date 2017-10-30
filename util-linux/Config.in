@@ -31,6 +31,7 @@ config FEATURE_ACPID_COMPAT
 config BLKDISCARD
 	bool "blkdiscard (5.3 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	blkdiscard discards sectors on a given device.
 config BLKID
