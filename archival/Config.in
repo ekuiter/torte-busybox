@@ -313,7 +313,7 @@ config FEATURE_TAR_AUTODETECT
 	tarballs. Currently it works only on files (not pipes etc).
 
 config FEATURE_TAR_FROM
-	bool "Enable -X (exclude from) and -T (include from) options)"
+	bool "Enable -X (exclude from) and -T (include from) options"
 	default y
 	depends on TAR
 	help
