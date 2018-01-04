@@ -795,6 +795,16 @@ config SSL_CLIENT
 	select TLS
 	help
 	This tool pipes data to/from a socket, TLS-encrypting it.
+config TC
+	bool "tc (3.1 kb)"
+	default y
+	help
+	Show / manipulate traffic control settings
+
+config FEATURE_TC_INGRESS
+	bool "Enable ingress"
+	default y
+	depends on TC
 config TCPSVD
 	bool "tcpsvd (13 kb)"
 	default y
