@@ -394,6 +394,11 @@ config HUSH_WAIT
 	default y
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 
+config HUSH_COMMAND
+	bool "command builtin"
+	default y
+	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
+
 config HUSH_TRAP
 	bool "trap builtin"
 	default y
