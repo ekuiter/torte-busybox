@@ -366,7 +366,7 @@ config FEATURE_HDPARM_HDIO_GETSET_DMA
 	help
 	Enable the 'hdparm -d' option to get/set using_dma flag.
 config HEXEDIT
-	bool "hexedit"
+	bool "hexedit (20 kb)"
 	default y
 	help
 	Edit file in hexadecimal.
@@ -612,7 +612,7 @@ config RX
 	help
 	Receive files using the Xmodem protocol.
 config SETFATTR
-	bool "setfattr"
+	bool "setfattr (3.6 kb)"
 	default y
 	help
 	Set/delete extended attributes on files
