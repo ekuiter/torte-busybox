@@ -484,6 +484,22 @@ config FEATURE_LESS_LINENUMS
 	bool "Enable -N (dynamic switching of line numbers)"
 	default y
 	depends on FEATURE_LESS_DASHCMD
+
+config FEATURE_LESS_RAW
+	bool "Enable -R ('raw control characters')"
+	default y
+	depends on FEATURE_LESS_DASHCMD
+	help
+	This is essential for less applet to work with tools that use colors
+	and paging, such as git, systemd tools or nmcli.
+
+config FEATURE_LESS_ENV
+	bool "Take options from $LESS environment variable"
+	default y
+	depends on FEATURE_LESS_DASHCMD
+	help
+	This is essential for less applet to work with tools that use colors
+	and paging, such as git, systemd tools or nmcli.
 config LSSCSI
 	bool "lsscsi (2.4 kb)"
 	default y
