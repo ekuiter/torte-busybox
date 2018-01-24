@@ -114,6 +114,15 @@ config ASH_BASH_COMPAT
 	default y
 	depends on ASH || SH_IS_ASH || BASH_IS_ASH
 
+config ASH_BASH_NOT_FOUND_HOOK
+	bool "command_not_found_handle hook support"
+	default y
+	depends ASH_BASH_COMPAT
+	help
+	Enable support for the 'command_not_found_handle' hook function,
+	from GNU bash, which allows for alternative command not found
+	handling.
+
 config ASH_JOB_CONTROL
 	bool "Job control"
 	default y
