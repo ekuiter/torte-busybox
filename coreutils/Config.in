@@ -160,7 +160,7 @@ config FEATURE_DD_THIRD_STATUS_LINE
 	elapsed time and speed.
 
 config FEATURE_DD_IBS_OBS
-	bool "Enable ibs, obs and conv options"
+	bool "Enable ibs, obs, iflag and conv options"
 	default y
 	depends on DD
 	help
