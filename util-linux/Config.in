@@ -62,7 +62,7 @@ config CHRT
 	bool "chrt (4.4 kb)"
 	default y
 	help
-	manipulate real-time attributes of a process.
+	Manipulate real-time attributes of a process.
 	This requires sched_{g,s}etparam support in your libc.
 config DMESG
 	bool "dmesg (3.5 kb)"
