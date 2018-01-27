@@ -117,14 +117,14 @@ config ASH_BASH_COMPAT
 config ASH_BASH_SOURCE_CURDIR
 	bool "'source' and '.' builtins search current directory after $PATH"
 	default n   # do not encourage non-standard behavior
-	depends ASH_BASH_COMPAT
+	depends on ASH_BASH_COMPAT
 	help
 	This is not compliant with standards. Avoid if possible.
 
 config ASH_BASH_NOT_FOUND_HOOK
 	bool "command_not_found_handle hook support"
 	default y
-	depends ASH_BASH_COMPAT
+	depends on ASH_BASH_COMPAT
 	help
 	Enable support for the 'command_not_found_handle' hook function,
 	from GNU bash, which allows for alternative command not found
@@ -280,6 +280,13 @@ config HUSH_BRACE_EXPANSION
 	depends on HUSH_BASH_COMPAT
 	help
 	Enable {abc,def} extension.
+
+config HUSH_BASH_SOURCE_CURDIR
+	bool "'source' and '.' builtins search current directory after $PATH"
+	default n   # do not encourage non-standard behavior
+	depends on HUSH_BASH_COMPAT
+	help
+	This is not compliant with standards. Avoid if possible.
 
 config HUSH_INTERACTIVE
 	bool "Interactive mode"
