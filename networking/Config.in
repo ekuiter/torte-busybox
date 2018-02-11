@@ -59,7 +59,6 @@ config ARPING
 	select PLATFORM_LINUX
 	help
 	Ping hosts by ARP packets.
-
 config BRCTL
 	bool "brctl (4.7 kb)"
 	default y
