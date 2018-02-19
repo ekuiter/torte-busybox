@@ -62,6 +62,17 @@ config REBOOT
 	help
 	Stop all processes and reboot the system.
 
+config FEATURE_WAIT_FOR_INIT
+	bool "Before signaling init, make sure it is ready for it"
+	default y
+	depends on HALT || POWEROFF || REBOOT
+	help
+	In rare cases, poweroff may be commanded by firmware to OS
+	even before init process exists. On Linux, this spawns
+	"/sbin/poweroff" very early. This option adds code
+	which checks that init is ready to receive poweroff
+	commands. Code size increase of ~80 bytes.
+
 config FEATURE_CALL_TELINIT
 	bool "Call telinit on shutdown and reboot"
 	default y
