@@ -405,7 +405,7 @@ config MD5SUM
 	bool "md5sum (6.8 kb)"
 	default y
 	help
-	md5sum is used to print or check MD5 checksums.
+	Compute and check MD5 message digest
 
 config SHA1SUM
 	bool "sha1sum (6 kb)"
