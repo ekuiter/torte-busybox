@@ -69,7 +69,7 @@ config SV
 config SV_DEFAULT_SERVICE_DIR
 	string "Default directory for services"
 	default "/var/service"
-	depends on SV
+	depends on SV || SVC || SVOK
 	help
 	Default directory for services.
 	Defaults to "/var/service"
@@ -79,7 +79,14 @@ config SVC
 	default y
 	help
 	svc controls the state of services monitored by the runsv supervisor.
-	It is comaptible with daemontools command with the same name.
+	It is compatible with daemontools command with the same name.
+
+config SVOK
+	bool "svok"
+	default y
+	help
+	svok checks whether runsv supervisor is running.
+	It is compatible with daemontools command with the same name.
 config SVLOGD
 	bool "svlogd (15 kb)"
 	default y
