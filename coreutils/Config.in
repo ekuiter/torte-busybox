@@ -594,16 +594,24 @@ config SORT
 	sort is used to sort lines of text in specified files.
 
 config FEATURE_SORT_BIG
-	bool "Full SuSv3 compliant sort (support -ktcsbdfiozgM)"
+	bool "Full SuSv3 compliant sort (support -ktcbdfiozgM)"
 	default y
 	depends on SORT
 	help
-	Without this, sort only supports -r, -u, and an integer version
+	Without this, sort only supports -r, -u, -s, and an integer version
 	of -n. Selecting this adds sort keys, floating point support, and
 	more. This adds a little over 3k to a nonstatic build on x86.
 
 	The SuSv3 sort standard is available at:
 	http://www.opengroup.org/onlinepubs/007904975/utilities/sort.html
+
+config FEATURE_SORT_OPTIMIZE_MEMORY
+	bool "Use less memory (but might be slower)"
+	default n   # defaults to N since we are size-paranoid tribe
+	depends on SORT
+	help
+	Attempt to use less memory (by storing only one copy
+	of duplicated lines, and such). Useful if you work on huge files.
 config SPLIT
 	bool "split (5.4 kb)"
 	default y
