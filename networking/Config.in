@@ -726,6 +726,16 @@ config NSLOOKUP
 	default y
 	help
 	nslookup is a tool to query Internet name servers.
+
+config NSLOOKUP_BIG
+	bool "Use internal resolver code instead of libc"
+	depends on NSLOOKUP
+	default y
+
+config FEATURE_NSLOOKUP_LONG_OPTIONS
+	bool "Enable long options"
+	default y
+	depends on NSLOOKUP_BIG && LONG_OPTS
 config NTPD
 	bool "ntpd (17 kb)"
 	default y
