@@ -133,6 +133,14 @@ config FEATURE_UDHCPC6_RFC4833
 	You can request POSIX timezone with "-O tz" and timezone name
 	with "-O timezone".
 
+config FEATURE_UDHCPC6_RFC5970
+	bool "Support RFC 5970 (Network Boot)"
+	default y
+	depends on UDHCPC6
+	help
+	You can request bootfile-url with "-O bootfile_url" and
+	bootfile-params with "-O bootfile_params".
+
 comment "Common options for DHCP applets"
         depends on UDHCPD || UDHCPC || UDHCPC6 || DHCPRELAY
 
