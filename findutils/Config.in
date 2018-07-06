@@ -51,6 +51,11 @@ config FEATURE_FIND_TYPE
 	Enable searching based on file type (file,
 	directory, socket, device, etc.).
 
+config FEATURE_FIND_EXECUTABLE
+	bool "Enable -executable: file is executable"
+	default y
+	depends on FIND
+
 config FEATURE_FIND_XDEV
 	bool "Enable -xdev: 'stay in filesystem'"
 	default y
