@@ -138,6 +138,13 @@ config FEATURE_FIND_PRUNE
 	If the file is a directory, don't descend into it. Useful for
 	exclusion .svn and CVS directories.
 
+config FEATURE_FIND_QUIT
+	bool "Enable -quit: exit"
+	default y
+	depends on FIND
+	help
+	If this action is reached, 'find' exits.
+
 config FEATURE_FIND_DELETE
 	bool "Enable -delete: delete files/dirs"
 	default y
