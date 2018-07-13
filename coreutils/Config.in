@@ -84,6 +84,11 @@ config FEATURE_CP_LONG_OPTIONS
 	help
 	Enable long options.
 	Also add support for --parents option.
+
+config FEATURE_CP_REFLINK
+	bool "Enable --reflink[=auto]
+	default y
+	depends on FEATURE_CP_LONG_OPTIONS
 config CUT
 	bool "cut (5.3 kb)"
 	default y
