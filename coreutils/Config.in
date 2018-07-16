@@ -86,7 +86,7 @@ config FEATURE_CP_LONG_OPTIONS
 	Also add support for --parents option.
 
 config FEATURE_CP_REFLINK
-	bool "Enable --reflink[=auto]
+	bool "Enable --reflink[=auto]"
 	default y
 	depends on FEATURE_CP_LONG_OPTIONS
 config CUT
