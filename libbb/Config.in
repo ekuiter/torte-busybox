@@ -39,6 +39,11 @@ config FEATURE_USE_BSS_TAIL
 	If you are getting a build error like this:
 		appletlib.c:(.text.main+0xd): undefined reference to '_end'
 	disable this option.
+config FLOAT_DURATION
+	bool "Enable fractional duration arguments"
+	default y
+	help
+	Allow sleep N.NNN, top -d N.NNN etc.
 config FEATURE_RTMINMAX
 	bool "Support RTMIN[+n] and RTMAX[-n] signal names"
 	default y

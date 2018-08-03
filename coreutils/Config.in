@@ -585,13 +585,6 @@ config FEATURE_FANCY_SLEEP
 	depends on SLEEP
 	help
 	Allow sleep to pause for specified minutes, hours, and days.
-
-config FEATURE_FLOAT_SLEEP
-	bool "Enable fractional arguments"
-	default y
-	depends on FEATURE_FANCY_SLEEP
-	help
-	Allow for fractional numeric parameters.
 config SORT
 	bool "sort (7.4 kb)"
 	default y
