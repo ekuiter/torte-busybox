@@ -758,9 +758,10 @@ config FEATURE_NTPD_CONF
 	help
 	Make ntpd look in /etc/ntp.conf for peers. Only "server address"
 	is supported.
+
 config FEATURE_NTP_AUTH
 	bool "Support md5/sha1 message authentication codes"
-	default n
+	default y
 	depends on NTPD
 config PING
 	bool "ping (9.5 kb)"
