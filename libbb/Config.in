@@ -51,6 +51,18 @@ config FEATURE_RTMINMAX
 	Support RTMIN[+n] and RTMAX[-n] signal names
 	in kill, killall etc. This costs ~250 bytes.
 
+config FEATURE_RTMINMAX_USE_LIBC_DEFINITIONS
+	bool "Use the definitions of SIGRTMIN/SIGRTMAX provided by libc"
+	default y
+	depends on FEATURE_RTMINMAX
+	help
+	Some C libraries reserve a few real-time signals for internal
+	use, and adjust the values of SIGRTMIN/SIGRTMAX seen by
+	applications accordingly. Saying yes here means that a signal
+	name RTMIN+n will be interpreted according to the libc definition
+	of SIGRTMIN, and not the raw definition provided by the kernel.
+	This behavior matches "kill -l RTMIN+n" from bash.
+
 choice
 	prompt "Buffer allocation policy"
 	default FEATURE_BUFFERS_USE_MALLOC
