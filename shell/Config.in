@@ -211,6 +211,21 @@ config ASH_CMDCMD
 	you to run the specified command or builtin,
 	even when there is a function with the same name.
 
+config ASH_EMBEDDED_SCRIPTS
+	bool "Embed scripts in the binary"
+	default y
+	depends on ASH || SH_IS_ASH || BASH_IS_ASH
+	help
+	Allow scripts to be compressed and embedded in the BusyBox
+	binary. The scripts should be placed in the 'embed' directory
+	at build time. In standalone shell mode such scripts can be
+	run directly and are subject to tab completion; otherwise they
+	can be run by giving their name as an argument to the shell.
+	For convenience shell aliases are created. The '-L' shell
+	argument lists the names of the scripts. Like applets scripts
+	can be run as 'busybox name ...' or by linking their name to
+	the binary.
+
 endif # ash options
 config CTTYHACK
 	bool "cttyhack (2.5 kb)"
