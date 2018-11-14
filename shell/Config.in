@@ -330,7 +330,7 @@ config HUSH_JOB
 	but no separate process group is formed.
 
 config HUSH_TICK
-	bool "Support process substitution"
+	bool "Support command substitution"
 	default y
 	depends on HUSH || SH_IS_HUSH || BASH_IS_HUSH
 	help
