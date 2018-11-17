@@ -665,6 +665,26 @@ config MOUNTPOINT
 	default y
 	help
 	mountpoint checks if the directory is a mountpoint.
+config NOLOGIN
+	bool "nologin"
+	default y
+	depends on ASH_EMBEDDED_SCRIPTS
+	help
+	Politely refuse a login
+
+config NOLOGIN_DEPENDENCIES
+	bool "Dependencies for nologin"
+	default y
+	depends on NOLOGIN
+	select CAT
+	select ECHO
+	select SLEEP
+	help
+	nologin is implemented as a shell script. It requires the
+	following in the runtime environment:
+		cat echo sleep
+	If you know these will be available externally you can
+	disable this option.
 config NSENTER
 	bool "nsenter (8.6 kb)"
 	default y
