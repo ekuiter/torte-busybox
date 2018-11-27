@@ -668,7 +668,7 @@ config MOUNTPOINT
 config NOLOGIN
 	bool "nologin"
 	default y
-	depends on ASH_EMBEDDED_SCRIPTS
+	depends on FEATURE_SH_EMBEDDED_SCRIPTS
 	help
 	Politely refuse a login
 
