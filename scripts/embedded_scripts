@@ -20,7 +20,7 @@ if [ -d "$custom_loc" ]
 then
 	custom_scripts=$(cd $custom_loc; ls * 2>/dev/null)
 fi
-all_scripts=$(applets/busybox.mkscripts)
+all_scripts=$($srctree/applets/busybox.mkscripts)
 
 # all_scripts includes applet scripts and custom scripts, sort them out
 applet_scripts=""
@@ -81,21 +81,15 @@ exec >"$target.$$"
 if [ $n -ne 0 ]
 then
 	printf '#ifdef DEFINE_SCRIPT_DATA\n'
-	if [ $n -ne 0 ]
-	then
-		printf 'const uint16_t applet_numbers[] = {\n'
-		for i in $custom_scripts $applet_scripts
-		do
-			# TODO support applets with names including invalid characters
-			printf '\tAPPLET_NO_%s,\n' $i
-		done
-		printf '};\n'
-	fi
+	printf 'const uint16_t applet_numbers[] = {\n'
+	for i in $custom_scripts $applet_scripts
+	do
+		# TODO support applets with names including invalid characters
+		printf '\tAPPLET_NO_%s,\n' $i
+	done
+	printf '};\n'
 	printf '#else\n'
-	if [ $n -ne 0 ]
-	then
-		printf 'extern const uint16_t applet_numbers[];\n'
-	fi
+	printf 'extern const uint16_t applet_numbers[];\n'
 	printf '#endif\n'
 fi
 

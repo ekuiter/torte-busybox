@@ -673,7 +673,7 @@ config NOLOGIN
 	Politely refuse a login
 
 config NOLOGIN_DEPENDENCIES
-	bool "Dependencies for nologin"
+	bool "Enable dependencies for nologin"
 	default y
 	depends on NOLOGIN
 	select CAT
