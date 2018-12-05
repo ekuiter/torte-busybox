@@ -33,6 +33,107 @@ config FEATURE_COMPRESS_BBCONFIG
 	be noticeable. Also, if you run executables directly from ROM
 	and have very little memory, this might not be a win. Otherwise,
 	you probably want this.
+config BC
+	bool "bc (45 kb; 49 kb when combined with dc)"
+	default y
+	help
+	bc is a command-line, arbitrary-precision calculator with a
+	Turing-complete language. See the GNU bc manual
+	(https://www.gnu.org/software/bc/manual/bc.html) and bc spec
+	(http://pubs.opengroup.org/onlinepubs/9699919799/utilities/bc.html)
+	for details.
+
+	This bc has four differences to the GNU bc:
+
+	  1) The period (.) can also be used as a shortcut for "last", as in
+	     the BSD bc.
+	  2) Arrays are copied before being passed as arguments to
+	     functions. This behavior is required by the bc spec.
+	  3) Arrays can be passed to the builtin "length" function to get
+	     the number of elements currently in the array. The following
+	     example prints "1":
+
+	       a[0] = 0
+	       length(a[])
+
+	  4) The precedence of the boolean "not" operator (!) is equal to
+	     that of the unary minus (-), or negation, operator. This still
+	     allows POSIX-compliant scripts to work while somewhat
+	     preserving expected behavior (versus C) and making parsing
+	     easier.
+
+	Options:
+
+	  -i  --interactive  force interactive mode
+	  -l  --mathlib      use predefined math routines:
+
+	                       s(expr)  =  sine of expr in radians
+	                       c(expr)  =  cosine of expr in radians
+	                       a(expr)  =  arctangent of expr, returning
+	                                   radians
+	                       l(expr)  =  natural log of expr
+	                       e(expr)  =  raises e to the power of expr
+	                       j(n, x)  =  Bessel function of integer order
+	                                   n of x
+
+	  -q  --quiet        don't print version and copyright.
+	  -s  --standard     error if any non-POSIX extensions are used.
+	  -w  --warn         warn if any non-POSIX extensions are used.
+	  -v  --version      print version and copyright and exit.
+
+	Long options are only available if FEATURE_BC_LONG_OPTIONS is
+	enabled.
+
+config DC
+	bool "dc (38 kb; 49 kb when combined with bc)"
+	default y
+	help
+	dc is a reverse-polish notation command-line calculator which
+	supports unlimited precision arithmetic. See the FreeBSD man page
+	(https://www.unix.com/man-page/FreeBSD/1/dc/) and GNU dc manual
+	(https://www.gnu.org/software/bc/manual/dc-1.05/html_mono/dc.html)
+	for details.
+
+	This dc has a few differences from the two above:
+
+	  1) When printing a byte stream (command "P"), this bc follows what
+	     the FreeBSD dc does.
+	  2) This dc implements the GNU extensions for divmod ("~") and
+	     modular exponentiation ("|").
+	  3) This dc implements all FreeBSD extensions, except for "J" and
+	     "M".
+	  4) Like the FreeBSD dc, this dc supports extended registers.
+	     However, they are implemented differently. When it encounters
+	     whitespace where a register should be, it skips the whitespace.
+	     If the character following is not a lowercase letter, an error
+	     is issued. Otherwise, the register name is parsed by the
+	     following regex:
+
+	       [a-z][a-z0-9_]*
+
+	     This generally means that register names will be surrounded by
+	     whitespace.
+
+	     Examples:
+
+	       l idx s temp L index S temp2 < do_thing
+
+	     Also note that, like the FreeBSD dc, extended registers are not
+	     allowed unless the "-x" option is given.
+
+config FEATURE_BC_SIGNALS
+	bool "Enable bc/dc signal handling"
+	default y
+	depends on BC || DC
+	help
+	Enable signal handling for bc and dc.
+
+config FEATURE_BC_LONG_OPTIONS
+	bool "Enable bc/dc long options"
+	default y
+	depends on BC || DC
+	help
+	Enable long options for bc and dc.
 config BEEP
 	bool "beep (3 kb)"
 	default y
@@ -187,20 +288,6 @@ config CRONTAB
 	the superuser may specify a different user and/or crontab directory.
 	Note that busybox binary must be setuid root for this applet to
 	work properly.
-config DC
-	bool "dc (4.2 kb)"
-	default y
-	help
-	Dc is a reverse-polish desk calculator which supports unlimited
-	precision arithmetic.
-
-config FEATURE_DC_LIBM
-	bool "Enable power and exp functions (requires libm)"
-	default y
-	depends on DC
-	help
-	Enable power and exp functions.
-	NOTE: This will require libm to be present for linking.
 config DEVFSD
 	bool "devfsd (obsolete)"
 	default n
