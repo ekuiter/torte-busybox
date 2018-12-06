@@ -121,17 +121,30 @@ config DC
 	     Also note that, like the FreeBSD dc, extended registers are not
 	     allowed unless the "-x" option is given.
 
+config FEATURE_DC_SMALL
+	bool "Minimal dc implementation (4.2 kb), not using bc code base"
+	depends on DC && !BC
+	default y
+
+config FEATURE_DC_LIBM
+	bool "Enable power and exp functions (requires libm)"
+	default y
+	depends on FEATURE_DC_SMALL
+	help
+	Enable power and exp functions.
+	NOTE: This will require libm to be present for linking.
+
 config FEATURE_BC_SIGNALS
 	bool "Enable bc/dc signal handling"
 	default y
-	depends on BC || DC
+	depends on (BC || DC) && !FEATURE_DC_SMALL
 	help
 	Enable signal handling for bc and dc.
 
 config FEATURE_BC_LONG_OPTIONS
 	bool "Enable bc/dc long options"
 	default y
-	depends on BC || DC
+	depends on (BC || DC) && !FEATURE_DC_SMALL
 	help
 	Enable long options for bc and dc.
 config BEEP
