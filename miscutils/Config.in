@@ -124,7 +124,7 @@ config DC
 config FEATURE_DC_SMALL
 	bool "Minimal dc implementation (4.2 kb), not using bc code base"
 	depends on DC && !BC
-	default y
+	default n
 
 config FEATURE_DC_LIBM
 	bool "Enable power and exp functions (requires libm)"
