@@ -187,19 +187,19 @@ config FEATURE_FIND_LINKS
 	help
 	Support the 'find -links' option for matching number of links.
 config GREP
-	bool "grep (8.5 kb)"
+	bool "grep (8.6 kb)"
 	default y
 	help
 	grep is used to search files for a specified pattern.
 
 config EGREP
-	bool "egrep (7.6 kb)"
+	bool "egrep (7.8 kb)"
 	default y
 	help
 	Alias to "grep -E".
 
 config FGREP
-	bool "fgrep (7.6 kb)"
+	bool "fgrep (7.8 kb)"
 	default y
 	help
 	Alias to "grep -F".
@@ -213,7 +213,7 @@ config FEATURE_GREP_CONTEXT
 	context surrounding our matching lines.
 	Print the specified number of context lines (-C).
 config XARGS
-	bool "xargs (6.7 kb)"
+	bool "xargs (7.2 kb)"
 	default y
 	help
 	xargs is used to execute a specified command for

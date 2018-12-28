@@ -7,7 +7,7 @@
 menu "Coreutils"
 
 config BASENAME
-	bool "basename (371 bytes)"
+	bool "basename (438 bytes)"
 	default y
 	help
 	basename is used to strip the directory and suffix from filenames,
@@ -34,17 +34,17 @@ config FEATURE_CATV
 	help
 	Display nonprinting characters as escape sequences
 config CHGRP
-	bool "chgrp (7.2 kb)"
+	bool "chgrp (7.6 kb)"
 	default y
 	help
 	chgrp is used to change the group ownership of files.
 config CHMOD
-	bool "chmod (5.1 kb)"
+	bool "chmod (5.5 kb)"
 	default y
 	help
 	chmod is used to change the access permission of files.
 config CHOWN
-	bool "chown (7.2 kb)"
+	bool "chown (7.6 kb)"
 	default y
 	help
 	chown is used to change the user and/or group ownership
@@ -61,18 +61,18 @@ config CHROOT
 	chroot is used to change the root directory and run a command.
 	The default command is '/bin/sh'.
 config CKSUM
-	bool "cksum (4.2 kb)"
+	bool "cksum (4.1 kb)"
 	default y
 	help
 	cksum is used to calculate the CRC32 checksum of a file.
 config COMM
-	bool "comm (3.9 kb)"
+	bool "comm (4.2 kb)"
 	default y
 	help
 	comm is used to compare two files line by line and return
 	a three-column output.
 config CP
-	bool "cp (9.7 kb)"
+	bool "cp (10 kb)"
 	default y
 	help
 	cp is used to copy files and directories.
@@ -90,13 +90,13 @@ config FEATURE_CP_REFLINK
 	default y
 	depends on FEATURE_CP_LONG_OPTIONS
 config CUT
-	bool "cut (5.3 kb)"
+	bool "cut (5.8 kb)"
 	default y
 	help
 	cut is used to print selected parts of lines from
 	each file to stdout.
 config DATE
-	bool "date (7.1 kb)"
+	bool "date (7 kb)"
 	default y
 	help
 	date is used to set the system date or display the
@@ -135,7 +135,7 @@ config FEATURE_DATE_COMPAT
 	the same format. With it on, 'date DATE' additionally supports
 	MMDDhhmm[[YY]YY][.ss] format.
 config DD
-	bool "dd (7.1 kb)"
+	bool "dd (7.5 kb)"
 	default y
 	help
 	dd copies a file (from standard input to standard output,
@@ -179,7 +179,7 @@ config FEATURE_DD_STATUS
 	help
 	Enable support for status=noxfer/none option.
 config DF
-	bool "df (7.5 kb)"
+	bool "df (6.8 kb)"
 	default y
 	help
 	df reports the amount of disk space used and available
@@ -194,20 +194,20 @@ config FEATURE_DF_FANCY
 	-i Inodes
 	-B <SIZE> Blocksize
 config DIRNAME
-	bool "dirname (289 bytes)"
+	bool "dirname (329 bytes)"
 	default y
 	help
 	dirname is used to strip a non-directory suffix from
 	a file name.
 config DOS2UNIX
-	bool "dos2unix (5.1 kb)"
+	bool "dos2unix (5.2 kb)"
 	default y
 	help
 	dos2unix is used to convert a text file from DOS format to
 	UNIX format, and vice versa.
 
 config UNIX2DOS
-	bool "unix2dos (5.1 kb)"
+	bool "unix2dos (5.2 kb)"
 	default y
 	help
 	unix2dos is used to convert a text file from UNIX format to
@@ -237,25 +237,25 @@ config FEATURE_FANCY_ECHO
 	default y
 	depends on ECHO || ASH_ECHO || HUSH_ECHO
 config ENV
-	bool "env (3.8 kb)"
+	bool "env (4 kb)"
 	default y
 	help
 	env is used to set an environment variable and run
 	a command; without options it displays the current
 	environment.
 config EXPAND
-	bool "expand (5.8 kb)"
+	bool "expand (5.1 kb)"
 	default y
 	help
 	By default, convert all tabs to spaces.
 
 config UNEXPAND
-	bool "unexpand (6 kb)"
+	bool "unexpand (5.3 kb)"
 	default y
 	help
 	By default, convert only leading sequences of blanks to tabs.
 config EXPR
-	bool "expr (6.1 kb)"
+	bool "expr (6.6 kb)"
 	default y
 	help
 	expr is used to calculate numbers and print the result
@@ -270,7 +270,7 @@ config EXPR_MATH_SUPPORT_64
 	the applet slightly larger, but will allow computation with very
 	large numbers.
 config FACTOR
-	bool "factor (2.6 kb)"
+	bool "factor (2.7 kb)"
 	default y
 	help
 	factor factorizes integers
@@ -285,12 +285,12 @@ config FOLD
 	help
 	Wrap text to fit a specific width.
 config FSYNC
-	bool "fsync (3.7 kb)"
+	bool "fsync (3.6 kb)"
 	default y
 	help
 	fsync is used to flush file-related cached blocks to disk.
 config HEAD
-	bool "head (3.7 kb)"
+	bool "head (3.8 kb)"
 	default y
 	help
 	head is used to print the first specified number of lines
@@ -301,19 +301,19 @@ config FEATURE_FANCY_HEAD
 	default y
 	depends on HEAD
 config HOSTID
-	bool "hostid (247 bytes)"
+	bool "hostid (286 bytes)"
 	default y
 	help
 	hostid prints the numeric identifier (in hexadecimal) for
 	the current host.
 config ID
-	bool "id (6.7 kb)"
+	bool "id (7 kb)"
 	default y
 	help
 	id displays the current user and group ID names.
 
 config GROUPS
-	bool "groups (6.5 kb)"
+	bool "groups (6.7 kb)"
 	default y
 	help
 	Print the group names associated with current user id.
@@ -328,17 +328,17 @@ config FEATURE_INSTALL_LONG_OPTIONS
 	default y
 	depends on INSTALL && LONG_OPTS
 config LINK
-	bool "link (3.1 kb)"
+	bool "link (3.2 kb)"
 	default y
 	help
 	link creates hard links between files.
 config LN
-	bool "ln (4.5 kb)"
+	bool "ln (4.9 kb)"
 	default y
 	help
 	ln is used to create hard or soft links between files.
 config LOGNAME
-	bool "logname (894 bytes)"
+	bool "logname (1.1 kb)"
 	default y
 	help
 	logname is used to print the current user's login name.
@@ -407,31 +407,31 @@ config FEATURE_LS_COLOR_IS_DEFAULT
 	configurable, and the output may not be legible on
 	many output screens.
 config MD5SUM
-	bool "md5sum (6.8 kb)"
+	bool "md5sum (6.5 kb)"
 	default y
 	help
 	Compute and check MD5 message digest
 
 config SHA1SUM
-	bool "sha1sum (6 kb)"
+	bool "sha1sum (5.9 kb)"
 	default y
 	help
 	Compute and check SHA1 message digest
 
 config SHA256SUM
-	bool "sha256sum (7.1 kb)"
+	bool "sha256sum (7 kb)"
 	default y
 	help
 	Compute and check SHA256 message digest
 
 config SHA512SUM
-	bool "sha512sum (7.6 kb)"
+	bool "sha512sum (7.4 kb)"
 	default y
 	help
 	Compute and check SHA512 message digest
 
 config SHA3SUM
-	bool "sha3sum (6.3 kb)"
+	bool "sha3sum (6.1 kb)"
 	default y
 	help
 	Compute and check SHA3 message digest
@@ -448,39 +448,39 @@ config FEATURE_MD5_SHA1_SUM_CHECK
 	against pre-calculated hash values.
 	-s and -w are useful options when verifying checksums.
 config MKDIR
-	bool "mkdir (4.4 kb)"
+	bool "mkdir (4.5 kb)"
 	default y
 	help
 	mkdir is used to create directories with the specified names.
 config MKFIFO
-	bool "mkfifo (3.7 kb)"
+	bool "mkfifo (3.8 kb)"
 	default y
 	help
 	mkfifo is used to create FIFOs (named pipes).
 	The 'mknod' program can also create FIFOs.
 config MKNOD
-	bool "mknod (4 kb)"
+	bool "mknod (4.5 kb)"
 	default y
 	help
 	mknod is used to create FIFOs or block/character special
 	files with the specified names.
 config MKTEMP
-	bool "mktemp (4 kb)"
+	bool "mktemp (4.2 kb)"
 	default y
 	help
 	mktemp is used to create unique temporary files
 config MV
-	bool "mv (9.8 kb)"
+	bool "mv (10 kb)"
 	default y
 	help
 	mv is used to move or rename files or directories.
 config NICE
-	bool "nice (1.8 kb)"
+	bool "nice (2.1 kb)"
 	default y
 	help
 	nice runs a program with modified scheduling priority.
 config NL
-	bool "nl (4.3 kb)"
+	bool "nl (4.6 kb)"
 	default y
 	help
 	nl is used to number lines of files.
@@ -490,7 +490,7 @@ config NOHUP
 	help
 	run a command immune to hangups, with output to a non-tty.
 config NPROC
-	bool "nproc (248 bytes)"
+	bool "nproc (3.7 kb)"
 	default y
 	help
 	Print number of CPUs
@@ -500,29 +500,29 @@ config OD
 	help
 	od is used to dump binary files in octal and other formats.
 config PASTE
-	bool "paste (4.5 kb)"
+	bool "paste (4.9 kb)"
 	default y
 	help
 	paste is used to paste lines of different files together
 	and write the result to stdout
 config PRINTENV
-	bool "printenv (1 kb)"
+	bool "printenv (1.3 kb)"
 	default y
 	help
 	printenv is used to print all or part of environment.
 config PRINTF
-	bool "printf (3.3 kb)"
+	bool "printf (3.8 kb)"
 	default y
 	help
 	printf is used to format and print specified strings.
 	It's similar to 'echo' except it has more options.
 config PWD
-	bool "pwd (3.4 kb)"
+	bool "pwd (3.7 kb)"
 	default y
 	help
 	pwd is used to print the current directory.
 config READLINK
-	bool "readlink (3.6 kb)"
+	bool "readlink (4 kb)"
 	default y
 	help
 	This program reads a symbolic link and returns the name
@@ -535,28 +535,28 @@ config FEATURE_READLINK_FOLLOW
 	help
 	Enable the readlink option (-f).
 config REALPATH
-	bool "realpath (1.1 kb)"
+	bool "realpath (1.6 kb)"
 	default y
 	help
 	Return the canonicalized absolute pathname.
 	This isn't provided by GNU shellutils, but where else does it belong.
 config RM
-	bool "rm (4.9 kb)"
+	bool "rm (5.4 kb)"
 	default y
 	help
 	rm is used to remove files or directories.
 config RMDIR
-	bool "rmdir (3.4 kb)"
+	bool "rmdir (3.5 kb)"
 	default y
 	help
 	rmdir is used to remove empty directories.
 config SEQ
-	bool "seq (3.6 kb)"
+	bool "seq (3.8 kb)"
 	default y
 	help
 	print a sequence of numbers
 config SHRED
-	bool "shred (5 kb)"
+	bool "shred (4.9 kb)"
 	default y
 	help
 	Overwrite a file to hide its contents, and optionally delete it
@@ -566,7 +566,7 @@ config SHUF
 	help
 	Generate random permutations
 config SLEEP
-	bool "sleep (1.7 kb)"
+	bool "sleep (2 kb)"
 	default y
 	help
 	sleep is used to pause for a specified number of seconds.
@@ -586,7 +586,7 @@ config FEATURE_FANCY_SLEEP
 	help
 	Allow sleep to pause for specified minutes, hours, and days.
 config SORT
-	bool "sort (7.4 kb)"
+	bool "sort (7.7 kb)"
 	default y
 	help
 	sort is used to sort lines of text in specified files.
@@ -611,7 +611,7 @@ config FEATURE_SORT_OPTIMIZE_MEMORY
 	Attempt to use less memory (by storing only one copy
 	of duplicated lines, and such). Useful if you work on huge files.
 config SPLIT
-	bool "split (5.4 kb)"
+	bool "split (5 kb)"
 	default y
 	help
 	Split a file into pieces.
@@ -625,7 +625,7 @@ config FEATURE_SPLIT_FANCY
 	Supports additional suffixes 'b' for 512 bytes,
 	'g' for 1GiB for the -b option.
 config STAT
-	bool "stat (10 kb)"
+	bool "stat (11 kb)"
 	default y
 	help
 	display file or filesystem status.
@@ -648,17 +648,17 @@ config FEATURE_STAT_FILESYSTEM
 	Without this, stat will not support the '-f' option to display
 	information about filesystem status.
 config STTY
-	bool "stty (8.6 kb)"
+	bool "stty (8.9 kb)"
 	default y
 	help
 	stty is used to change and print terminal line settings.
 config SUM
-	bool "sum (4.3 kb)"
+	bool "sum (4 kb)"
 	default y
 	help
 	checksum and count the blocks in a file
 config SYNC
-	bool "sync (769 bytes)"
+	bool "sync (3.8 kb)"
 	default y
 	help
 	sync is used to flush filesystem buffers.
@@ -670,12 +670,12 @@ config FEATURE_SYNC_FANCY
 	sync -d FILE... executes fdatasync() on each FILE.
 	sync -f FILE... executes syncfs() on each FILE.
 config TAC
-	bool "tac (4.1 kb)"
+	bool "tac (3.9 kb)"
 	default y
 	help
 	tac is used to concatenate and print files in reverse.
 config TAIL
-	bool "tail (7.1 kb)"
+	bool "tail (6.8 kb)"
 	default y
 	help
 	tail is used to print the last specified number of lines
@@ -693,7 +693,7 @@ config FEATURE_FANCY_TAIL
 		-v      Always output headers giving file names
 		-F      Same as -f, but keep retrying
 config TEE
-	bool "tee (4.3 kb)"
+	bool "tee (4.2 kb)"
 	default y
 	help
 	tee is used to read from standard input and write
@@ -706,7 +706,7 @@ config FEATURE_TEE_USE_BLOCK_IO
 	help
 	Enable this option for a faster tee, at expense of size.
 config TEST
-	bool "test (3.6 kb)"
+	bool "test (4.1 kb)"
 	default y
 	help
 	test is used to check file types and compare values,
@@ -732,13 +732,13 @@ config FEATURE_TEST_64
 	help
 	Enable 64-bit support in test.
 config TIMEOUT
-	bool "timeout (5.5 kb)"
+	bool "timeout (6 kb)"
 	default y
 	help
 	Runs a program and watches it. If it does not terminate in
 	specified number of seconds, it is sent a signal.
 config TOUCH
-	bool "touch (5.8 kb)"
+	bool "touch (5.9 kb)"
 	default y
 	help
 	touch is used to create or change the access and/or
@@ -759,7 +759,7 @@ config FEATURE_TOUCH_SUSV3
 	help
 	Enable touch to use a reference file or a given date/time argument.
 config TR
-	bool "tr (5.5 kb)"
+	bool "tr (5.1 kb)"
 	default y
 	help
 	tr is used to squeeze, and/or delete characters from standard
@@ -789,19 +789,19 @@ config TRUE
 	help
 	true returns an exit code of TRUE (0).
 config TRUNCATE
-	bool "truncate (4.7 kb)"
+	bool "truncate (4.2 kb)"
 	default y
 	help
 	truncate truncates files to a given size. If a file does
 	not exist, it is created unless told otherwise.
 config TTY
-	bool "tty (3.3 kb)"
+	bool "tty (3.6 kb)"
 	default y
 	help
 	tty is used to print the name of the current terminal to
 	standard output.
 config UNAME
-	bool "uname (3.7 kb)"
+	bool "uname (3.9 kb)"
 	default y
 	help
 	uname is used to print system information.
@@ -815,42 +815,42 @@ config UNAME_OSNAME
 	default is "GNU/Linux".
 
 config BB_ARCH
-	bool "arch (1.6 kb)"
+	bool "arch (1.1 kb)"
 	default y
 	help
 	Same as uname -m.
 config UNIQ
-	bool "uniq (4.8 kb)"
+	bool "uniq (4.9 kb)"
 	default y
 	help
 	uniq is used to remove duplicate lines from a sorted file.
 config UNLINK
-	bool "unlink (3.5 kb)"
+	bool "unlink (3.2 kb)"
 	default y
 	help
 	unlink deletes a file by calling unlink()
 config USLEEP
-	bool "usleep (1.1 kb)"
+	bool "usleep (1.3 kb)"
 	default y
 	help
 	usleep is used to pause for a specified number of microseconds.
 config UUDECODE
-	bool "uudecode (5.9 kb)"
+	bool "uudecode (5.8 kb)"
 	default y
 	help
 	uudecode is used to decode a uuencoded file.
 config BASE64
-	bool "base64 (5 kb)"
+	bool "base64 (4.9 kb)"
 	default y
 	help
 	Base64 encode and decode
 config UUENCODE
-	bool "uuencode (4.6 kb)"
+	bool "uuencode (4.4 kb)"
 	default y
 	help
 	uuencode is used to uuencode a file.
 config WC
-	bool "wc (4.4 kb)"
+	bool "wc (4.5 kb)"
 	default y
 	help
 	wc is used to print the number of bytes, words, and lines,
@@ -863,33 +863,33 @@ config FEATURE_WC_LARGE
 	help
 	Use "unsigned long long" for counter variables.
 config WHO
-	bool "who (3.7 kb)"
+	bool "who (3.9 kb)"
 	default y
 	depends on FEATURE_UTMP
 	help
 	Print users currently logged on.
 
 config W
-	bool "w (3.7 kb)"
+	bool "w (3.8 kb)"
 	default y
 	depends on FEATURE_UTMP
 	help
 	Print users currently logged on.
 
 config USERS
-	bool "users (3.2 kb)"
+	bool "users (3.4 kb)"
 	default y
 	depends on FEATURE_UTMP
 	help
 	Print users currently logged on.
 config WHOAMI
-	bool "whoami (2.9 kb)"
+	bool "whoami (3.2 kb)"
 	default y
 	help
 	whoami is used to print the username of the current
 	user id (same as id -un).
 config YES
-	bool "yes (956 bytes)"
+	bool "yes (1.2 kb)"
 	default y
 	help
 	yes is used to repeatedly output a specific string, or

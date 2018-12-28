@@ -45,19 +45,19 @@ config FEATURE_BOOTCHARTD_CONFIG_FILE
 	Enable reading and parsing of $PWD/bootchartd.conf
 	and /etc/bootchartd.conf files.
 config HALT
-	bool "halt (3.7 kb)"
+	bool "halt (4 kb)"
 	default y
 	help
 	Stop all processes and halt the system.
 
 config POWEROFF
-	bool "poweroff (3.7 kb)"
+	bool "poweroff (4 kb)"
 	default y
 	help
 	Stop all processes and power off the system.
 
 config REBOOT
-	bool "reboot (3.7 kb)"
+	bool "reboot (4 kb)"
 	default y
 	help
 	Stop all processes and reboot the system.
@@ -93,7 +93,7 @@ config TELINIT_PATH
 	to facilitate proper shutdown, this path is to be used when
 	locating telinit executable.
 config INIT
-	bool "init (9.3 kb)"
+	bool "init (10 kb)"
 	default y
 	select FEATURE_SYSLOG
 	help

@@ -7,18 +7,18 @@
 menu "Print Utilities"
 
 config LPD
-	bool "lpd (5.3 kb)"
+	bool "lpd (5.5 kb)"
 	default y
 	help
 	lpd is a print spooling daemon.
 config LPR
-	bool "lpr (10 kb)"
+	bool "lpr (9.9 kb)"
 	default y
 	help
 	lpr sends files (or standard input) to a print spooling daemon.
 
 config LPQ
-	bool "lpq (10 kb)"
+	bool "lpq (9.9 kb)"
 	default y
 	help
 	lpq is a print spool queue examination and manipulation program.

@@ -79,7 +79,7 @@ endchoice
 
 
 config ASH
-	bool "ash (77 kb)"
+	bool "ash (78 kb)"
 	default y
 	depends on !NOMMU
 	help
@@ -213,7 +213,7 @@ config ASH_CMDCMD
 
 endif # ash options
 config CTTYHACK
-	bool "cttyhack (2.5 kb)"
+	bool "cttyhack (2.4 kb)"
 	default y
 	help
 	One common problem reported on the mailing list is the "can't
@@ -256,7 +256,7 @@ config CTTYHACK
 
 	# getty 115200 $(cttyhack)
 config HUSH
-	bool "hush (64 kb)"
+	bool "hush (68 kb)"
 	default y
 	help
 	hush is a small shell. It handles the normal flow control

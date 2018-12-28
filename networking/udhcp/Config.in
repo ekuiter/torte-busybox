@@ -103,7 +103,7 @@ config UDHCPC_DEFAULT_SCRIPT
 
 # udhcpc6 config is inserted here:
 config UDHCPC6
-	bool "udhcpc6"
+	bool "udhcpc6 (21 kb)"
 	default n  # not yet ready
 	depends on FEATURE_IPV6
 	help
