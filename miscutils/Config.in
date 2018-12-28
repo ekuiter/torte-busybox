@@ -56,19 +56,6 @@ config BC
 	     easier.
 	  5) "read()" accepts expressions, not only numeric literals.
 
-	Options:
-	  -i  --interactive  force interactive mode
-	  -q  --quiet        don't print version and copyright
-	  -s  --standard     error if any non-POSIX extensions are used
-	  -w  --warn         warn if any non-POSIX extensions are used
-	  -l  --mathlib      use predefined math routines:
-		s(expr) sine in radians
-		c(expr) cosine in radians
-		a(expr) arctangent, returning radians
-		l(expr) natural log
-		e(expr) raises e to the power of expr
-		j(n, x) Bessel function of integer order n of x
-
 config DC
 	bool "dc (36 kb)"
 	default y
@@ -89,31 +76,32 @@ config DC
 	     whitespace where a register should be, it skips the whitespace.
 	     If the character following is not a lowercase letter, an error
 	     is issued. Otherwise, the register name is parsed by the
-	     following regex:
-		[a-z][a-z0-9_]*
+	     following regex: [a-z][a-z0-9_]*
 	     This generally means that register names will be surrounded by
 	     whitespace. Examples:
 		l idx s temp L index S temp2 < do_thing
 	     Also note that, like the FreeBSD dc, extended registers are not
 	     allowed unless the "-x" option is given.
 
-config FEATURE_DC_SMALL
-	bool "Minimal dc implementation (4.2 kb), not using bc code base"
+if BC || DC  # for menuconfig indenting
+
+config FEATURE_DC_BIG
+	bool "Use bc code base for dc (larger, more features)"
 	depends on DC && !BC
-	default n
+	default y
 
 config FEATURE_DC_LIBM
 	bool "Enable power and exp functions (requires libm)"
 	default y
-	depends on FEATURE_DC_SMALL
+	depends on DC && !BC && !FEATURE_DC_BIG
 	help
 	Enable power and exp functions.
 	NOTE: This will require libm to be present for linking.
 
-config FEATURE_BC_SIGNALS
+config FEATURE_BC_INTERACTIVE
 	bool "Interactive mode (+4kb)"
 	default y
-	depends on (BC || DC) && !FEATURE_DC_SMALL
+	depends on BC || (DC && FEATURE_DC_BIG)
 	help
 	Enable interactive mode: when started on a tty,
 	^C interrupts execution and returns to command line,
@@ -128,9 +116,9 @@ config FEATURE_BC_SIGNALS
 config FEATURE_BC_LONG_OPTIONS
 	bool "Enable bc/dc long options"
 	default y
-	depends on (BC || DC) && !FEATURE_DC_SMALL
-	help
-	Enable long options for bc and dc.
+	depends on BC || (DC && FEATURE_DC_BIG)
+
+endif
 config BEEP
 	bool "beep (2.4 kb)"
 	default y
