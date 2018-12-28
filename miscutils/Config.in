@@ -689,7 +689,7 @@ config RUNLEVEL
 	default y
 	depends on FEATURE_UTMP
 	help
-	find the current and previous system runlevel.
+	Find the current and previous system runlevel.
 
 	This applet uses utmp but does not rely on busybox supporing
 	utmp on purpose. It is used by e.g. emdebian via /etc/init.d/rc.

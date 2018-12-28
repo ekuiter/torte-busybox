@@ -213,23 +213,21 @@ config UNIX2DOS
 	unix2dos is used to convert a text file from UNIX format to
 	DOS format, and vice versa.
 config DU
-	bool "du (default blocksize of 512 bytes)"
+	bool "du (6.3 kb)"
 	default y
 	help
 	du is used to report the amount of disk space used
 	for specified files.
 
 config FEATURE_DU_DEFAULT_BLOCKSIZE_1K
-	bool "Use a default blocksize of 1024 bytes (1K)"
+	bool "Use default blocksize of 1024 bytes (else it's 512 bytes)"
 	default y
 	depends on DU
-	help
-	Use a blocksize of (1K) instead of the default 512b.
 config ECHO
-	bool "echo (basic SuSv3 version taking no options)"
+	bool "echo (1.8 kb)"
 	default y
 	help
-	echo is used to print a specified string to stdout.
+	echo prints a specified string to stdout.
 
 # this entry also appears in shell/Config.in, next to the echo builtin
 config FEATURE_FANCY_ECHO

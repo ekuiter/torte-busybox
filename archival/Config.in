@@ -215,7 +215,7 @@ config DPKG
 	This implementation of dpkg has a number of limitations,
 	you should use the official dpkg if possible.
 config DPKG_DEB
-	bool "dpkg_deb"
+	bool "dpkg_deb (30 kb)"
 	default y
 	select FEATURE_SEAMLESS_GZ
 	help

@@ -27,7 +27,7 @@ config FEATURE_BOOTCHARTD_BLOATED_HEADER
 	help
 	Create extended header file compatible with "big" bootchartd.
 	"Big" bootchartd is a shell script and it dumps some
-	"convenient" info int the header, such as:
+	"convenient" info into the header, such as:
 		title = Boot chart for `hostname` (`date`)
 		system.uname = `uname -srvm`
 		system.release = `cat /etc/DISTRO-release`
