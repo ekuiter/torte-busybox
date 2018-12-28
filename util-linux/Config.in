@@ -267,7 +267,7 @@ config FREERAMDISK
 	ramdisk. If you have no use for freeing memory from a ramdisk, leave
 	this disabled.
 config FSCK_MINIX
-	bool "fsck_minix"
+	bool "fsck.minix (13 kb)"
 	default y
 	help
 	The minix filesystem is a nice, small, compact, read-write filesystem
@@ -505,7 +505,7 @@ config MKFS_EXT2
 	help
 	Alias to "mke2fs".
 config MKFS_MINIX
-	bool "mkfs_minix"
+	bool "mkfs.minix (10 kb)"
 	default y
 	select PLATFORM_LINUX
 	help
