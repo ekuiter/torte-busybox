@@ -131,7 +131,7 @@ config FEATURE_DATE_COMPAT
 	date -s (and other commands like touch -d) use more sensible
 	formats (for one, ISO format YYYY-MM-DD hh:mm:ss.ssssss).
 
-	With this option off, 'date DATE' is 'date -s DATE' support
+	With this option off, 'date DATE' and 'date -s DATE' support
 	the same format. With it on, 'date DATE' additionally supports
 	MMDDhhmm[[YY]YY][.ss] format.
 config DD
