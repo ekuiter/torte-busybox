@@ -470,6 +470,13 @@ config I2CDETECT
 	help
 	Detect I2C chips.
 
+config I2CTRANSFER
+	bool "i2ctransfer (4.0 kb)"
+	default y
+	select PLATFORM_LINUX
+	help
+	Send user-defined I2C messages in one transfer.
+
 config INOTIFYD
 	bool "inotifyd (3.6 kb)"
 	default n  # doesn't build on Knoppix 5
