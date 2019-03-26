@@ -730,6 +730,9 @@ config TIME
 	The time command runs the specified program with the given arguments.
 	When the command finishes, time writes a message to standard output
 	giving timing statistics about this program run.
+config TS
+	bool "ts (450 bytes)"
+	default y
 config TTYSIZE
 	bool "ttysize (432 bytes)"
 	default y
