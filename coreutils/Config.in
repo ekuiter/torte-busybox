@@ -282,11 +282,6 @@ config FOLD
 	default y
 	help
 	Wrap text to fit a specific width.
-config FSYNC
-	bool "fsync (3.6 kb)"
-	default y
-	help
-	fsync is used to flush file-related cached blocks to disk.
 config HEAD
 	bool "head (3.8 kb)"
 	default y
@@ -667,6 +662,11 @@ config FEATURE_SYNC_FANCY
 	help
 	sync -d FILE... executes fdatasync() on each FILE.
 	sync -f FILE... executes syncfs() on each FILE.
+config FSYNC
+	bool "fsync (3.6 kb)"
+	default y
+	help
+	fsync is used to flush file-related cached blocks to disk.
 config TAC
 	bool "tac (3.9 kb)"
 	default y
