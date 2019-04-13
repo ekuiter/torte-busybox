@@ -104,7 +104,7 @@ config UDHCPC_DEFAULT_SCRIPT
 # udhcpc6 config is inserted here:
 config UDHCPC6
 	bool "udhcpc6 (21 kb)"
-	default n  # not yet ready
+	default y
 	depends on FEATURE_IPV6
 	help
 	udhcpc6 is a DHCPv6 client
