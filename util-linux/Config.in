@@ -473,6 +473,17 @@ config FEATURE_MDEV_LOAD_FIRMWARE
 	These devices will request userspace look up the files in
 	/lib/firmware/ and if it exists, send it to the kernel for
 	loading into the hardware.
+
+config FEATURE_MDEV_DAEMON
+	bool "Support daemon mode"
+	default y
+	depends on MDEV
+	help
+	Adds the -d option to run mdev in daemon mode handling hotplug
+	events from the kernel like udev. If the system generates many
+	hotplug events this mode of operation will consume less
+	resources than registering mdev as hotplug helper or using the
+	uevent applet.
 config MESG
 	bool "mesg (1.4 kb)"
 	default y
