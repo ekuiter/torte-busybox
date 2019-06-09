@@ -954,6 +954,11 @@ config FEATURE_TFTP_PROGRESS_BAR
 	default y
 	depends on TFTP
 
+config FEATURE_TFTP_HPA_COMPAT
+	bool "tftp-hpa compat (support -c get/put FILE)"
+	default y
+	depends on TFTP
+
 config TFTPD
 	bool "tftpd (10 kb)"
 	default y
