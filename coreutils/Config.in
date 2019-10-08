@@ -113,7 +113,7 @@ config FEATURE_DATE_ISOFMT
 # defaults to "no": stat's nanosecond field is a bit non-portable
 config FEATURE_DATE_NANO
 	bool "Support %[num]N nanosecond format specifier"
-	default n  # syscall(__NR_clock_gettime)
+	default n  # syscall(__NR_clock_gettime) or syscall(__NR_clock_gettime64)
 	depends on DATE
 	select PLATFORM_LINUX
 	help
