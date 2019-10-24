@@ -110,10 +110,9 @@ config FEATURE_DATE_ISOFMT
 	Enable option (-I) to output an ISO-8601 compliant
 	date/time string.
 
-# defaults to "no": stat's nanosecond field is a bit non-portable
 config FEATURE_DATE_NANO
 	bool "Support %[num]N nanosecond format specifier"
-	default n  # syscall(__NR_clock_gettime) or syscall(__NR_clock_gettime64)
+	default n # stat's nanosecond field is a bit non-portable
 	depends on DATE
 	select PLATFORM_LINUX
 	help
