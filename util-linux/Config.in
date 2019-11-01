@@ -900,6 +900,14 @@ config FEATURE_TASKSET_FANCY
 	Needed for machines with more than 32-64 CPUs:
 	affinity parameter 0xHHHHHHHHHHHHHHHHHHHH can be arbitrarily long
 	in this case. Otherwise, it is limited to sizeof(long).
+
+config FEATURE_TASKSET_CPULIST
+	bool "CPU list support (-c option)"
+	default y
+	depends on FEATURE_TASKSET_FANCY
+	help
+	Add support for taking/printing affinity as CPU list when '-c'
+	option is used. For example, it prints '0-3,7' instead of mask '8f'.
 config UEVENT
 	bool "uevent (3.1 kb)"
 	default y
