@@ -116,6 +116,14 @@ config FEATURE_SYSLOGD_CFG
 	help
 	Supports restricted syslogd config. See docs/syslog.conf.txt
 
+config FEATURE_SYSLOGD_PRECISE_TIMESTAMPS
+	bool "Include milliseconds in timestamps"
+	default n
+	depends on SYSLOGD
+	help
+	Includes milliseconds (HH:MM:SS.mmm) in timestamp when
+	timestamps are added.
+
 config FEATURE_SYSLOGD_READ_BUFFER_SIZE
 	int "Read buffer size in bytes"
 	default 256
