@@ -629,6 +629,13 @@ config MICROCOM
 	default y
 	help
 	The poor man's minicom utility for chatting with serial port devices.
+config MIM
+	bool "mim (0.5 kb)"
+	default y
+	depends on FEATURE_SH_EMBEDDED_SCRIPTS
+	help
+	Run a script from a Makefile-like specification file.
+	Unlike 'make' dependencies aren't supported.
 config MT
 	bool "mt (2.5 kb)"
 	default y
