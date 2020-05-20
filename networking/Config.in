@@ -1136,6 +1136,9 @@ config FEATURE_WGET_HTTPS
 	patches, but do want to waste bandwidth expaining how wrong
 	it is, you will be ignored.
 
+	FEATURE_WGET_OPENSSL does implement TLS verification
+	using the certificates available to OpenSSL.
+
 config FEATURE_WGET_OPENSSL
 	bool "Try to connect to HTTPS using openssl"
 	default y
@@ -1160,6 +1163,9 @@ config FEATURE_WGET_OPENSSL
 	If openssl can't be executed, internal TLS code will be used
 	(if you enabled it); if openssl can be executed but fails later,
 	wget can't detect this, and download will fail.
+
+	By default TLS verification is performed, unless
+	--no-check-certificate option is passed.
 config WHOIS
 	bool "whois (6.3 kb)"
 	default y
