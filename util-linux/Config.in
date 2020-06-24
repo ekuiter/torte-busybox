@@ -685,7 +685,7 @@ config NOLOGIN
 
 config NOLOGIN_DEPENDENCIES
 	bool "Enable dependencies for nologin"
-	default y
+	default n  # Y default makes it harder to select single-applet test
 	depends on NOLOGIN
 	select CAT
 	select ECHO
