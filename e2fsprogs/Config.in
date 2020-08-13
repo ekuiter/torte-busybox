@@ -21,7 +21,6 @@ config FSCK
 config LSATTR
 	bool "lsattr (5.5 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	lsattr lists the file attributes on a second extended file system.
 config TUNE2FS

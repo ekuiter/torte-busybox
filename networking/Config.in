@@ -61,19 +61,16 @@ config FEATURE_TLS_SHA1
 config ARP
 	bool "arp (10 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Manipulate the system ARP cache.
 config ARPING
 	bool "arping (9 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Ping hosts by ARP packets.
 config BRCTL
 	bool "brctl (4.7 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Manage ethernet bridges.
 	Supports addbr/delbr and addif/delif.
@@ -104,7 +101,6 @@ config DNSD
 config ETHER_WAKE
 	bool "ether-wake (4.9 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Send a magic packet to wake up sleeping machines.
 config FTPD
@@ -292,7 +288,6 @@ config FEATURE_HTTPD_GZIP
 config IFCONFIG
 	bool "ifconfig (12 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Ifconfig is used to configure the kernel-resident network interfaces.
 
@@ -339,14 +334,12 @@ config FEATURE_IFCONFIG_BROADCAST_PLUS
 config IFENSLAVE
 	bool "ifenslave (13 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Userspace application to bind several interfaces
 	to a logical interface (use with kernel bonding driver).
 config IFPLUGD
 	bool "ifplugd (10 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Network interface plug detection daemon.
 config IFUP
@@ -498,7 +491,6 @@ config FEATURE_INETD_RPC
 config IP
 	bool "ip (35 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The "ip" applet is a TCP/IP interface configuration and routing
 	utility.
@@ -510,7 +502,6 @@ config IPADDR
 	bool "ipaddr (14 kb)"
 	default y
 	select FEATURE_IP_ADDRESS
-	select PLATFORM_LINUX
 	help
 	Short form of "ip addr"
 
@@ -518,7 +509,6 @@ config IPLINK
 	bool "iplink (17 kb)"
 	default y
 	select FEATURE_IP_LINK
-	select PLATFORM_LINUX
 	help
 	Short form of "ip link"
 
@@ -526,7 +516,6 @@ config IPROUTE
 	bool "iproute (15 kb)"
 	default y
 	select FEATURE_IP_ROUTE
-	select PLATFORM_LINUX
 	help
 	Short form of "ip route"
 
@@ -534,7 +523,6 @@ config IPTUNNEL
 	bool "iptunnel (9.6 kb)"
 	default y
 	select FEATURE_IP_TUNNEL
-	select PLATFORM_LINUX
 	help
 	Short form of "ip tunnel"
 
@@ -542,7 +530,6 @@ config IPRULE
 	bool "iprule (10 kb)"
 	default y
 	select FEATURE_IP_RULE
-	select PLATFORM_LINUX
 	help
 	Short form of "ip rule"
 
@@ -550,7 +537,6 @@ config IPNEIGH
 	bool "ipneigh (8.3 kb)"
 	default y
 	select FEATURE_IP_NEIGH
-	select PLATFORM_LINUX
 	help
 	Short form of "ip neigh"
 
@@ -641,7 +627,6 @@ config FAKEIDENTD
 config NAMEIF
 	bool "nameif (6.6 kb)"
 	default y
-	select PLATFORM_LINUX
 	select FEATURE_SYSLOG
 	help
 	nameif is used to rename network interface by its MAC address.
@@ -713,7 +698,6 @@ config NC_110_COMPAT
 config NETSTAT
 	bool "netstat (10 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	netstat prints information about the Linux networking subsystem.
 
@@ -750,7 +734,6 @@ config FEATURE_NSLOOKUP_LONG_OPTIONS
 config NTPD
 	bool "ntpd (22 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The NTP client/server daemon.
 
@@ -777,7 +760,6 @@ config FEATURE_NTP_AUTH
 config PING
 	bool "ping (10 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	ping uses the ICMP protocol's mandatory ECHO_REQUEST datagram to
 	elicit an ICMP ECHO_RESPONSE from a host or gateway.
@@ -805,13 +787,11 @@ config PSCAN
 config ROUTE
 	bool "route (8.7 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Route displays or manipulates the kernel's IP routing tables.
 config SLATTACH
 	bool "slattach (6.2 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	slattach configures serial line as SLIP network interface.
 config SSL_CLIENT
@@ -1011,7 +991,6 @@ config TLS
 config TRACEROUTE
 	bool "traceroute (11 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Utility to trace the route of IP packets.
 
@@ -1037,7 +1016,6 @@ config FEATURE_TRACEROUTE_USE_ICMP
 config TUNCTL
 	bool "tunctl (6.2 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	tunctl creates or deletes tun devices.
 
@@ -1051,7 +1029,6 @@ config FEATURE_TUNCTL_UG
 config VCONFIG
 	bool "vconfig (2.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Creates, removes, and configures VLAN interfaces
 config WGET
@@ -1174,7 +1151,6 @@ config WHOIS
 config ZCIP
 	bool "zcip (8.4 kb)"
 	default y
-	select PLATFORM_LINUX
 	select FEATURE_SYSLOG
 	help
 	ZCIP provides ZeroConf IPv4 address selection, according to RFC 3927.
