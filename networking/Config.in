@@ -286,6 +286,16 @@ config FEATURE_HTTPD_GZIP
 	Makes httpd send files using GZIP content encoding if the
 	client supports it and a pre-compressed <file>.gz exists.
 
+config FEATURE_HTTPD_LAST_MODIFIED
+	bool "Add Last-Modified header to response"
+	default y
+	depends on HTTPD
+	help
+	The Last-Modified header is used for cache validation.
+	The client sends last seen mtime to server in If-Modified-Since.
+	Both headers MUST be an RFC 1123 formatted, which is hard to parse.
+	Use ETag header instead.
+
 config FEATURE_HTTPD_DATE
 	bool "Add Date header to response"
 	default y
