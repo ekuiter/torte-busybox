@@ -286,6 +286,19 @@ config FEATURE_HTTPD_GZIP
 	Makes httpd send files using GZIP content encoding if the
 	client supports it and a pre-compressed <file>.gz exists.
 
+config FEATURE_HTTPD_ETAG
+	bool "Support caching via ETag header"
+	default y
+	depends on HTTPD
+	help
+	If server responds with ETag then next time client (browser)
+	resend it via If-None-Match header.
+	Then httpd will check if file wasn't modified and if not,
+	return 304 Not Modified status code.
+	The ETag value is constructed from last modification date
+	in unix epoch, and size: "hex(last_mod)-hex(file_size)".
+	It's not completely reliable as hash functions but fair enough.
+
 config FEATURE_HTTPD_LAST_MODIFIED
 	bool "Add Last-Modified header to response"
 	default y
