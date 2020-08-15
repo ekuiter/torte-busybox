@@ -285,6 +285,14 @@ config FEATURE_HTTPD_GZIP
 	help
 	Makes httpd send files using GZIP content encoding if the
 	client supports it and a pre-compressed <file>.gz exists.
+
+config FEATURE_HTTPD_DATE
+	bool "Add Date header to response"
+	default y
+	depends on HTTPD
+	help
+	RFC2616 says that server MUST add Date header to response.
+	But it is almost useless and can be omitted.
 config IFCONFIG
 	bool "ifconfig (12 kb)"
 	default y
