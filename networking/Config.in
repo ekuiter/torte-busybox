@@ -316,6 +316,13 @@ config FEATURE_HTTPD_DATE
 	help
 	RFC2616 says that server MUST add Date header to response.
 	But it is almost useless and can be omitted.
+
+config FEATURE_HTTPD_ACL_IP
+	bool "ACL IP"
+	default y
+	depends on HTTPD
+	help
+	Support IP deny/allow rules
 config IFCONFIG
 	bool "ifconfig (12 kb)"
 	default y
