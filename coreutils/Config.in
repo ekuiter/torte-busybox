@@ -834,6 +834,11 @@ config UUDECODE
 	default y
 	help
 	uudecode is used to decode a uuencoded file.
+config BASE32
+	bool "base32 (4.9 kb)"
+	default y
+	help
+	Base32 encode and decode
 config BASE64
 	bool "base64 (4.9 kb)"
 	default y
