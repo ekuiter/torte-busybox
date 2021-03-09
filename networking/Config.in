@@ -1086,6 +1086,13 @@ config FEATURE_WGET_STATUSBAR
 	default y
 	depends on WGET
 
+config FEATURE_WGET_FTP
+	bool "Enable FTP protocol (+1k)"
+	default y
+	depends on WGET
+	help
+	To support FTPS, enable FEATURE_WGET_HTTPS as well.
+
 config FEATURE_WGET_AUTHENTICATION
 	bool "Enable HTTP authentication"
 	default y
@@ -1114,6 +1121,7 @@ config FEATURE_WGET_HTTPS
 	select TLS
 	help
 	wget will use internal TLS code to connect to https:// URLs.
+	It also enables FTPS support, but it's not well tested yet.
 	Note:
 	On NOMMU machines, ssl_helper applet should be available
 	in the $PATH for this to work. Make sure to select that applet.
