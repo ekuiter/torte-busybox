@@ -299,17 +299,17 @@ config HUSH_BRACE_EXPANSION
 	help
 	Enable {abc,def} extension.
 
-config HUSH_LINENO_VAR
-	bool "$LINENO variable"
-	default y
-	depends on HUSH_BASH_COMPAT
-
 config HUSH_BASH_SOURCE_CURDIR
 	bool "'source' and '.' builtins search current directory after $PATH"
 	default n   # do not encourage non-standard behavior
 	depends on HUSH_BASH_COMPAT
 	help
 	This is not compliant with standards. Avoid if possible.
+
+config HUSH_LINENO_VAR
+	bool "$LINENO variable (bashism)"
+	default y
+	depends on SHELL_HUSH
 
 config HUSH_INTERACTIVE
 	bool "Interactive mode"
