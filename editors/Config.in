@@ -217,6 +217,14 @@ config FEATURE_VI_UNDO_QUEUE_MAX
 	Unless you want more (or less) frequent "undo points" while typing,
 	you should probably leave this unchanged.
 
+config FEATURE_VI_VERBOSE_STATUS
+	bool "Enable verbose status reporting"
+	default y
+	depends on VI
+	help
+	Enable more verbose reporting of the results of yank, change,
+	delete, undo and substitution commands.
+
 config FEATURE_ALLOW_EXEC
 	bool "Allow vi and awk to execute shell commands"
 	default y
