@@ -748,7 +748,7 @@ config FEATURE_TOUCH_NODEREF
 	This requires libc support for lutimes() function.
 
 config FEATURE_TOUCH_SUSV3
-	bool "Add support for SUSV3 features (-d -t -r)"
+	bool "Add support for SUSV3 features (-a -d -m -t -r)"
 	default y
 	depends on TOUCH
 	help
