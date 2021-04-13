@@ -739,13 +739,6 @@ config TOUCH
 	touch is used to create or change the access and/or
 	modification timestamp of specified files.
 
-config FEATURE_TOUCH_NODEREF
-	bool "Add support for -h"
-	default y
-	depends on TOUCH
-	help
-	Enable touch to have the -h option.
-
 config FEATURE_TOUCH_SUSV3
 	bool "Add support for SUSV3 features (-a -d -m -t -r)"
 	default y
