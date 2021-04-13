@@ -745,7 +745,6 @@ config FEATURE_TOUCH_NODEREF
 	depends on TOUCH
 	help
 	Enable touch to have the -h option.
-	This requires libc support for lutimes() function.
 
 config FEATURE_TOUCH_SUSV3
 	bool "Add support for SUSV3 features (-a -d -m -t -r)"
