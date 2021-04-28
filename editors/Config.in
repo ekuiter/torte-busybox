@@ -110,6 +110,14 @@ config FEATURE_VI_COLON
 	Enable a limited set of colon commands. This does not
 	provide an "ex" mode.
 
+config FEATURE_VI_COLON_EXPAND
+	bool "Expand \"%\" and \"#\" in colon commands"
+	default y
+	depends on FEATURE_VI_COLON
+	help
+	Expand the special characters \"%\" (current filename)
+	and \"#\" (alternate filename) in colon commands.
+
 config FEATURE_VI_YANKMARK
 	bool "Enable yank/put commands and mark cmds"
 	default y
