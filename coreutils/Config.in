@@ -63,8 +63,10 @@ config CHROOT
 config CKSUM
 	bool "cksum (4.1 kb)"
 	default y
-	help
-	cksum is used to calculate the CRC32 checksum of a file.
+
+config CRC32
+	bool "crc32 (4.1 kb)"
+	default y
 config COMM
 	bool "comm (4.2 kb)"
 	default y
