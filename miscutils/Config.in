@@ -12,6 +12,12 @@ config ADJTIMEX
 	help
 	Adjtimex reads and optionally sets adjustment parameters for
 	the Linux clock adjustment algorithm.
+config ASCII
+	bool "ascii"
+	default y
+	help
+	Print ascii table.
+
 config BBCONFIG
 	bool "bbconfig (9.7 kb)"
 	default n
