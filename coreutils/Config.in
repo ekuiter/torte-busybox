@@ -97,6 +97,13 @@ config CUT
 	help
 	cut is used to print selected parts of lines from
 	each file to stdout.
+
+config FEATURE_CUT_REGEX
+	bool "cut -F"
+	default y
+	depends on CUT
+	help
+	Allow regex based delimiters.
 config DATE
 	bool "date (7 kb)"
 	default y
