@@ -173,6 +173,11 @@ config HTTPD
 	help
 	HTTP server.
 
+config FEATURE_HTTPD_PORT_DEFAULT
+	int "Default port"
+	default 80
+	range 1 65535
+
 config FEATURE_HTTPD_RANGES
 	bool "Support 'Ranges:' header"
 	default y
@@ -938,6 +943,12 @@ config FEATURE_TELNETD_STANDALONE
 	depends on TELNETD
 	help
 	Selecting this will make telnetd able to run standalone.
+
+config FEATURE_TELNETD_PORT_DEFAULT
+	int "Default port"
+	default 23
+	range 1 65535
+	depends on FEATURE_TELNETD_STANDALONE
 
 config FEATURE_TELNETD_INETD_WAIT
 	bool "Support -w SEC option (inetd wait mode)"
