@@ -177,6 +177,7 @@ config FEATURE_HTTPD_PORT_DEFAULT
 	int "Default port"
 	default 80
 	range 1 65535
+	depends on HTTPD
 
 config FEATURE_HTTPD_RANGES
 	bool "Support 'Ranges:' header"
