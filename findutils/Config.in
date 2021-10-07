@@ -23,7 +23,7 @@ config FEATURE_FIND_PRINT0
 	interpreted by other programs.
 
 config FEATURE_FIND_MTIME
-	bool "Enable -mtime: modified time matching"
+	bool "Enable -mtime: modification time matching"
 	default y
 	depends on FIND
 	help
@@ -31,7 +31,7 @@ config FEATURE_FIND_MTIME
 	files, in days.
 
 config FEATURE_FIND_MMIN
-	bool "Enable -mmin: modified time matching by minutes"
+	bool "Enable -mmin: modification time matching by minutes"
 	default y
 	depends on FIND
 	help
