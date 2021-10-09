@@ -30,12 +30,44 @@ config FEATURE_FIND_MTIME
 	Allow searching based on the modification time of
 	files, in days.
 
+config FEATURE_FIND_ATIME
+	bool "Enable -atime: access time matching"
+	default y
+	depends on FEATURE_FIND_MTIME
+	help
+	Allow searching based on the access time of
+	files, in days.
+
+config FEATURE_FIND_CTIME
+	bool "Enable -ctime: status change timestamp matching"
+	default y
+	depends on FEATURE_FIND_MTIME
+	help
+	Allow searching based on the status change timestamp of
+	files, in days.
+
 config FEATURE_FIND_MMIN
 	bool "Enable -mmin: modification time matching by minutes"
 	default y
 	depends on FIND
 	help
 	Allow searching based on the modification time of
+	files, in minutes.
+
+config FEATURE_FIND_AMIN
+	bool "Enable -amin: access time matching by minutes"
+	default y
+	depends on FEATURE_FIND_MMIN
+	help
+	Allow searching based on the access time of
+	files, in minutes.
+
+config FEATURE_FIND_CMIN
+	bool "Enable -cmin: status change timestamp matching by minutes"
+	default y
+	depends on FEATURE_FIND_MMIN
+	help
+	Allow searching based on the status change timestamp of
 	files, in minutes.
 
 config FEATURE_FIND_PERM
