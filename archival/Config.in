@@ -211,6 +211,13 @@ config FEATURE_CPIO_IGNORE_DEVNO
 	depends on FEATURE_CPIO_O && LONG_OPTS
 	help
 	Optionally ignore device numbers when creating archives.
+
+config FEATURE_CPIO_RENUMBER_INODES
+	bool "Support --renumber-inodes like GNU cpio"
+	default y
+	depends on FEATURE_CPIO_O && LONG_OPTS
+	help
+	Optionally renumber inodes when creating archives.
 config DPKG
 	bool "dpkg (43 kb)"
 	default y
