@@ -653,7 +653,7 @@ config SORT
 	sort is used to sort lines of text in specified files.
 
 config FEATURE_SORT_BIG
-	bool "Full SuSv3 compliant sort (support -ktcbdfiogM)"
+	bool "Full SuSv3 compliant sort (support -ktcbdfioghM)"
 	default y
 	depends on SORT
 	help
