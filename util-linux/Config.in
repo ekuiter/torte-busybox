@@ -720,7 +720,7 @@ config SCRIPTREPLAY
 	This program replays a typescript, using timing information
 	given by script -t.
 config SEEDRNG
-	bool "seedrng (3.8 kb)"
+	bool "seedrng (2.6 kb)"
 	default y
 	help
 	Seed the kernel RNG from seed files, meant to be called
