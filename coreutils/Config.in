@@ -851,6 +851,11 @@ config TRUNCATE
 	help
 	truncate truncates files to a given size. If a file does
 	not exist, it is created unless told otherwise.
+config TSORT
+	bool "tsort (0.7 kb)"
+	default y
+	help
+	tsort performs a topological sort.
 config TTY
 	bool "tty (3.6 kb)"
 	default y
