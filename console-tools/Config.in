@@ -41,7 +41,6 @@ config KBD_MODE
 config LOADFONT
 	bool "loadfont (5.2 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	This program loads a console font from standard input.
 
@@ -87,7 +86,6 @@ config LOADKMAP
 config OPENVT
 	bool "openvt (7.2 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	This program is used to start a command on an unused
 	virtual terminal.

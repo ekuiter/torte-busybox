@@ -9,7 +9,6 @@ menu "System Logging Utilities"
 config KLOGD
 	bool "klogd (5.7 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	klogd is a utility which intercepts and logs all
 	messages from the Linux kernel and sends the messages

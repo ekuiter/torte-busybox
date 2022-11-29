@@ -9,7 +9,6 @@ menu "Linux System Utilities"
 config ACPID
 	bool "acpid (9 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	acpid listens to ACPI events coming either in textual form from
 	/proc/acpi/event (though it is marked deprecated it is still widely
@@ -31,13 +30,11 @@ config FEATURE_ACPID_COMPAT
 config BLKDISCARD
 	bool "blkdiscard (4.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	blkdiscard discards sectors on a given device.
 config BLKID
 	bool "blkid (12 kb)"
 	default y
-	select PLATFORM_LINUX
 	select VOLUMEID
 	help
 	Lists labels and UUIDs of all filesystems.
@@ -67,7 +64,6 @@ config CHRT
 config DMESG
 	bool "dmesg (3.7 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	dmesg is used to examine or control the kernel ring buffer. When the
 	Linux kernel prints messages to the system log, they are stored in
@@ -155,7 +151,6 @@ config FDFORMAT
 config FDISK
 	bool "fdisk (37 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The fdisk utility is used to divide hard disks into one or more
 	logical disks, which are generally called partitions. This utility
@@ -229,7 +224,6 @@ config FEATURE_FDISK_ADVANCED
 config FINDFS
 	bool "findfs (12 kb)"
 	default y
-	select PLATFORM_LINUX
 	select VOLUMEID
 	help
 	Prints the name of a filesystem with given label or UUID.
@@ -241,7 +235,6 @@ config FLOCK
 config FDFLUSH
 	bool "fdflush (1.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	fdflush is only needed when changing media on slightly-broken
 	removable media drives. It is used to make Linux believe that a
@@ -254,7 +247,6 @@ config FDFLUSH
 config FREERAMDISK
 	bool "freeramdisk (1.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Linux allows you to create ramdisks. This utility allows you to
 	delete them and completely free all memory that was used for the
@@ -275,14 +267,12 @@ config FSCK_MINIX
 config FSFREEZE
 	bool "fsfreeze (3.5 kb)"
 	default y
-	select PLATFORM_LINUX
 	select LONG_OPTS
 	help
 	Halt new accesses and flush writes on a mounted filesystem.
 config FSTRIM
 	bool "fstrim (4.4 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Discard unused blocks on a mounted filesystem.
 config GETOPT
@@ -323,7 +313,6 @@ config XXD
 config HWCLOCK
 	bool "hwclock (5.8 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The hwclock utility is used to read and set the hardware clock
 	on a system. This is primarily used to set the current time on
@@ -344,7 +333,6 @@ config FEATURE_HWCLOCK_ADJTIME_FHS
 config IONICE
 	bool "ionice (3.8 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Set/set program io scheduling class and priority
 	Requires kernel >= 2.6.13
@@ -378,7 +366,6 @@ config FEATURE_LAST_FANCY
 config LOSETUP
 	bool "losetup (5.5 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	losetup is used to associate or detach a loop device with a regular
 	file or block device, and to query the status of a loop device. This
@@ -402,7 +389,6 @@ config LSUSB
 config MDEV
 	bool "mdev (17 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	mdev is a mini-udev implementation for dynamically creating device
 	nodes in the /dev directory.
@@ -488,7 +474,6 @@ config FEATURE_MESG_ENABLE_ONLY_GROUP
 config MKE2FS
 	bool "mke2fs (10 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Utility to create EXT2 filesystems.
 
@@ -522,7 +507,6 @@ config MKFS_REISER
 config MKDOSFS
 	bool "mkdosfs (7.2 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Utility to create FAT32 filesystems.
 
@@ -562,7 +546,6 @@ config MORE
 config MOUNT
 	bool "mount (23 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	All files and filesystems in Unix are arranged into one big directory
 	tree. The 'mount' utility is used to graft a filesystem onto a
@@ -678,13 +661,11 @@ config NOLOGIN_DEPENDENCIES
 config NSENTER
 	bool "nsenter (6.5 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Run program with namespaces of other processes.
 config PIVOT_ROOT
 	bool "pivot_root (1.1 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The pivot_root utility swaps the mount points for the root filesystem
 	with some other mounted filesystem. This allows you to do all sorts
@@ -741,7 +722,6 @@ config SCRIPTREPLAY
 config SETARCH
 	bool "setarch (3.6 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The linux32 utility is used to create a 32bit environment for the
 	specified program (usually a shell). It only makes sense to have
@@ -751,20 +731,17 @@ config SETARCH
 config LINUX32
 	bool "linux32 (3.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Alias to "setarch linux32".
 
 config LINUX64
 	bool "linux64 (3.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Alias to "setarch linux64".
 config SETPRIV
 	bool "setpriv (6.6 kb)"
 	default y
-	select PLATFORM_LINUX
 	select LONG_OPTS
 	help
 	Run a program with different Linux privilege settings.
@@ -805,7 +782,6 @@ config SETSID
 config SWAPON
 	bool "swapon (15 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Once you have created some swap space using 'mkswap', you also need
 	to enable your swap space with the 'swapon' utility. The 'swapoff'
@@ -832,7 +808,6 @@ config FEATURE_SWAPON_PRI
 config SWAPOFF
 	bool "swapoff (14 kb)"
 	default y
-	select PLATFORM_LINUX
 
 config FEATURE_SWAPONOFF_LABEL
 	bool "Support specifying devices by label or UUID"
@@ -845,7 +820,6 @@ config FEATURE_SWAPONOFF_LABEL
 config SWITCH_ROOT
 	bool "switch_root (5.5 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	The switch_root utility is used from initramfs to select a new
 	root device. Under initramfs, you have to use this instead of
@@ -888,7 +862,6 @@ config FEATURE_TASKSET_CPULIST
 config UEVENT
 	bool "uevent (3.1 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	uevent is a netlink listener for kernel uevent notifications
 	sent via netlink. It is usually used for dynamic device creation.
@@ -910,7 +883,6 @@ config FEATURE_UMOUNT_ALL
 config UNSHARE
 	bool "unshare (7.2 kb)"
 	default y
-	select PLATFORM_LINUX
 	depends on !NOMMU
 	select LONG_OPTS
 	help

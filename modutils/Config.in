@@ -9,7 +9,6 @@ menu "Linux Module Utilities"
 config MODPROBE_SMALL
 	bool "Simplified modutils"
 	default y
-	select PLATFORM_LINUX
 	help
 	Build smaller (~1.5 kbytes), simplified module tools.
 
@@ -38,7 +37,6 @@ config MODPROBE_SMALL
 config DEPMOD
 	bool "depmod (27 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	depmod generates modules.dep (and potentially modules.alias
 	and modules.symbols) that contain dependency information
@@ -46,13 +44,11 @@ config DEPMOD
 config INSMOD
 	bool "insmod (22 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	insmod is used to load specified modules in the running kernel.
 config LSMOD
 	bool "lsmod (1.9 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	lsmod is used to display a list of loaded modules.
 
@@ -67,13 +63,11 @@ config FEATURE_LSMOD_PRETTY_2_6_OUTPUT
 config MODINFO
 	bool "modinfo (24 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Show information about a Linux Kernel module
 config MODPROBE
 	bool "modprobe (28 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	Handle the loading of modules, and their dependencies on a high
 	level.
@@ -91,7 +85,6 @@ config FEATURE_MODPROBE_BLACKLIST
 config RMMOD
 	bool "rmmod (3.3 kb)"
 	default y
-	select PLATFORM_LINUX
 	help
 	rmmod is used to unload specified modules from the kernel.
 
