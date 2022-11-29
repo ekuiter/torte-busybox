@@ -87,16 +87,19 @@ config FEATURE_TLS_SHA1
 config ARP
 	bool "arp (10 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Manipulate the system ARP cache.
 config ARPING
 	bool "arping (9 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Ping hosts by ARP packets.
 config BRCTL
 	bool "brctl (4.7 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Manage ethernet bridges.
 	Supports addbr/delbr and addif/delif.
@@ -358,6 +361,7 @@ config FEATURE_HTTPD_ACL_IP
 config IFCONFIG
 	bool "ifconfig (12 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Ifconfig is used to configure the kernel-resident network interfaces.
 
@@ -410,6 +414,7 @@ config IFENSLAVE
 config IFPLUGD
 	bool "ifplugd (10 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Network interface plug detection daemon.
 config IFUP
@@ -561,6 +566,7 @@ config FEATURE_INETD_RPC
 config IP
 	bool "ip (35 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	The "ip" applet is a TCP/IP interface configuration and routing
 	utility.
@@ -571,6 +577,7 @@ config IP
 config IPADDR
 	bool "ipaddr (14 kb)"
 	default y
+	select PLATFORM_LINUX
 	select FEATURE_IP_ADDRESS
 	help
 	Short form of "ip addr"
@@ -578,6 +585,7 @@ config IPADDR
 config IPLINK
 	bool "iplink (17 kb)"
 	default y
+	select PLATFORM_LINUX
 	select FEATURE_IP_LINK
 	help
 	Short form of "ip link"
@@ -585,6 +593,7 @@ config IPLINK
 config IPROUTE
 	bool "iproute (15 kb)"
 	default y
+	select PLATFORM_LINUX
 	select FEATURE_IP_ROUTE
 	help
 	Short form of "ip route"
@@ -599,6 +608,7 @@ config IPTUNNEL
 config IPRULE
 	bool "iprule (10 kb)"
 	default y
+	select PLATFORM_LINUX
 	select FEATURE_IP_RULE
 	help
 	Short form of "ip rule"
@@ -606,6 +616,7 @@ config IPRULE
 config IPNEIGH
 	bool "ipneigh (8.3 kb)"
 	default y
+	select PLATFORM_LINUX
 	select FEATURE_IP_NEIGH
 	help
 	Short form of "ip neigh"
@@ -697,6 +708,7 @@ config FAKEIDENTD
 config NAMEIF
 	bool "nameif (6.6 kb)"
 	default y
+	select PLATFORM_LINUX
 	select FEATURE_SYSLOG
 	help
 	nameif is used to rename network interface by its MAC address.
@@ -857,6 +869,7 @@ config PSCAN
 config ROUTE
 	bool "route (8.7 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Route displays or manipulates the kernel's IP routing tables.
 config SLATTACH
@@ -873,6 +886,7 @@ config SSL_CLIENT
 config TC
 	bool "tc (8.3 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Show / manipulate traffic control settings
 
@@ -1092,6 +1106,7 @@ config FEATURE_TRACEROUTE_USE_ICMP
 config TUNCTL
 	bool "tunctl (6.2 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	tunctl creates or deletes tun devices.
 

@@ -24,6 +24,7 @@ config FEATURE_SHOW_THREADS
 config FREE
 	bool "free (3.1 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	free displays the total amount of free and used physical and swap
 	memory in the system, as well as the buffers used by the kernel.
@@ -256,6 +257,7 @@ config FEATURE_TOPMEM
 config UPTIME
 	bool "uptime (3.7 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	uptime gives a one line display of the current time, how long
 	the system has been running, how many users are currently logged

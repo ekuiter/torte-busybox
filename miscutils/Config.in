@@ -9,6 +9,7 @@ menu "Miscellaneous Utilities"
 config ADJTIMEX
 	bool "adjtimex (4.7 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Adjtimex reads and optionally sets adjustment parameters for
 	the Linux clock adjustment algorithm.
@@ -444,30 +445,35 @@ config HEXEDIT
 config I2CGET
 	bool "i2cget (5.5 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Read from I2C/SMBus chip registers.
 
 config I2CSET
 	bool "i2cset (6.7 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Set I2C registers.
 
 config I2CDUMP
 	bool "i2cdump (7.1 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Examine I2C registers.
 
 config I2CDETECT
 	bool "i2cdetect (7.1 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Detect I2C chips.
 
 config I2CTRANSFER
 	bool "i2ctransfer (4.0 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Send user-defined I2C messages in one transfer.
 
@@ -650,6 +656,7 @@ config NANDDUMP
 config PARTPROBE
 	bool "partprobe (3.5 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Ask kernel to rescan partition table.
 config RAIDAUTORUN
@@ -783,6 +790,7 @@ config UBIUPDATEVOL
 config UBIRENAME
 	bool "ubirename (2.4 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	Utility to rename UBI volumes
 config VOLNAME
@@ -793,6 +801,7 @@ config VOLNAME
 config WATCHDOG
 	bool "watchdog (5.3 kb)"
 	default y
+	select PLATFORM_LINUX
 	help
 	The watchdog utility is used with hardware or software watchdog
 	device drivers. It opens the specified watchdog device special file
