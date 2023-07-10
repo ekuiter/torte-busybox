@@ -7,7 +7,7 @@
 menu "Finding Utilities"
 
 config FIND
-	bool "find (14 kb)"
+	bool "find (16 kb)"
 	default y
 	help
 	find is used to search your system to find specified files.
@@ -241,19 +241,19 @@ config FEATURE_FIND_LINKS
 	help
 	Support the 'find -links' option for matching number of links.
 config GREP
-	bool "grep (8.6 kb)"
+	bool "grep (8.9 kb)"
 	default y
 	help
 	grep is used to search files for a specified pattern.
 
 config EGREP
-	bool "egrep (7.8 kb)"
+	bool "egrep (8 kb)"
 	default y
 	help
 	Alias to "grep -E".
 
 config FGREP
-	bool "fgrep (7.8 kb)"
+	bool "fgrep (8 kb)"
 	default y
 	help
 	Alias to "grep -F".
@@ -267,7 +267,7 @@ config FEATURE_GREP_CONTEXT
 	context surrounding our matching lines.
 	Print the specified number of context lines (-C).
 config XARGS
-	bool "xargs (7.2 kb)"
+	bool "xargs (7.6 kb)"
 	default y
 	help
 	xargs is used to execute a specified command for

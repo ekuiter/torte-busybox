@@ -87,7 +87,7 @@ config SHELL_ASH
 	depends on !NOMMU
 
 config ASH
-	bool "ash (78 kb)"
+	bool "ash (80 kb)"
 	default y
 	depends on !NOMMU
 	select SHELL_ASH
@@ -222,7 +222,7 @@ config ASH_CMDCMD
 
 endif # ash options
 config CTTYHACK
-	bool "cttyhack (2.4 kb)"
+	bool "cttyhack (2.7 kb)"
 	default y
 	help
 	One common problem reported on the mailing list is the "can't
@@ -265,7 +265,7 @@ config CTTYHACK
 
 	# getty 115200 $(cttyhack)
 config HUSH
-	bool "hush (68 kb)"
+	bool "hush (70 kb)"
 	default y
 	select SHELL_HUSH
 	help
