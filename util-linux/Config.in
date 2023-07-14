@@ -313,6 +313,7 @@ config XXD
 config HWCLOCK
 	bool "hwclock (5.9 kb)"
 	default y
+	select LONG_OPTS
 	help
 	The hwclock utility is used to read and set the hardware clock
 	on a system. This is primarily used to set the current time on
