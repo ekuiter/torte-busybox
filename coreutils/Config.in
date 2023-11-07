@@ -631,14 +631,15 @@ config SLEEP
 	default y
 	help
 	sleep is used to pause for a specified number of seconds.
-	It comes in 3 versions:
+	It comes in 2 versions:
 	- small: takes one integer parameter
-	- fancy: takes multiple integer arguments with suffixes:
-		sleep 1d 2h 3m 15s
-	- fancy with fractional numbers:
-		sleep 2.3s 4.5h sleeps for 16202.3 seconds
-	Last one is "the most compatible" with coreutils sleep,
-	but it adds around 1k of code.
+	- fancy:
+		* takes multiple integer arguments with suffixes:
+			sleep 1d 2h 3m 15s
+		* allows fractional numbers:
+			sleep 2.3s 4.5h sleeps for 16202.3 seconds
+	fancy is more compatible with coreutils sleep, but it adds around
+	1k of code.
 
 config FEATURE_FANCY_SLEEP
 	bool "Enable multiple arguments and s/m/h/d suffixes"
