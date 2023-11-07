@@ -60,6 +60,7 @@ config FEATURE_START_STOP_DAEMON_FANCY
 	-o|--oknodo ignored since we exit with 0 anyway
 	-v|--verbose
 	-N|--nicelevel N
+	-O|--output FILE
 config WHICH
 	bool "which (4 kb)"
 	default y
