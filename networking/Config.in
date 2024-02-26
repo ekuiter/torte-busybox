@@ -624,6 +624,12 @@ config FEATURE_IP_LINK
 	help
 	Configure network devices with "ip".
 
+config FEATURE_IP_LINK_CAN
+	bool "ip link set type can"
+	default y
+	help
+	Configure CAN devices with "ip".
+
 config FEATURE_IP_ROUTE
 	bool "ip route"
 	default y
