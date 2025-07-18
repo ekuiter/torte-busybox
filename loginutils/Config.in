@@ -182,7 +182,7 @@ config FEATURE_DEFAULT_PASSWD_ALGO
 	default "des"
 	depends on PASSWD || CRYPTPW || CHPASSWD
 	help
-	Possible choices are "d[es]", "m[d5]", "s[ha256]" or "sha512".
+	Possible choices: "d[es]", "m[d5]", "s[ha256]", "sha512", "yescrypt"
 config CRYPTPW
 	bool "cryptpw (15 kb)"
 	default y
