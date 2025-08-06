@@ -287,6 +287,11 @@ config SHELL_HUSH
 # It's only needed to get "nice" menuconfig indenting.
 if SHELL_HUSH || HUSH || SH_IS_HUSH || BASH_IS_HUSH
 
+config HUSH_NEED_FOR_SPEED
+	bool "Faster, but larger code"
+	default y
+	depends on SHELL_HUSH
+
 config HUSH_BASH_COMPAT
 	bool "bash-compatible extensions"
 	default y
