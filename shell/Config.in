@@ -276,7 +276,7 @@ config HUSH
 
 	It will compile and work on no-mmu systems.
 
-	It does not handle select, aliases, tilde expansion,
+	It does not handle select, tilde expansion,
 	&>file and >&file redirection of stdout+stderr.
 
 config SHELL_HUSH
