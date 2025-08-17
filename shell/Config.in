@@ -380,6 +380,13 @@ config HUSH_FUNCTIONS
 	help
 	Enable support for shell functions. +800 bytes.
 
+config HUSH_FUNCTION_KEYWORD
+	bool "Support function keyword"
+	default y
+	depends on HUSH_FUNCTIONS
+	help
+	Support "function FUNCNAME { CMD; }" syntax.
+
 config HUSH_LOCAL
 	bool "local builtin"
 	default y
