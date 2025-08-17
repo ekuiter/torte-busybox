@@ -366,6 +366,13 @@ config HUSH_CASE
 	help
 	Enable case ... esac statement. +400 bytes.
 
+config HUSH_ALIAS
+	bool "Support aliases"
+	default y
+	depends on SHELL_HUSH
+	help
+	Enable aliases.
+
 config HUSH_FUNCTIONS
 	bool "Support funcname() { commands; } syntax"
 	default y
