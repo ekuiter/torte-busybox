@@ -267,6 +267,11 @@ config FEATURE_UPTIME_UTMP_SUPPORT
 	depends on UPTIME && FEATURE_UTMP
 	help
 	Display the number of users currently logged on.
+config VMSTAT
+	bool "vmstat (3 kb)"
+	default y
+	help
+	Report virtual memory statistics
 config WATCH
 	bool "watch (5.2 kb)"
 	default y
