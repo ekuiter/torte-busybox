@@ -143,6 +143,11 @@ config ASH_JOB_CONTROL
 	bool "Job control"
 	default y
 	depends on SHELL_ASH
+	help
+	Enable 'fg', 'bg', 'jobs' and 'kill' builtins.
+	Shell will track whether backgrounded pipes are stopped
+	by signals, and allow to restart them by 'fg' or 'bg'.
+	Otherwise, it will only track whether they have terminated.
 
 config ASH_ALIAS
 	bool "Alias support"
