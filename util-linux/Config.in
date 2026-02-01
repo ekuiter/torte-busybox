@@ -893,6 +893,11 @@ config UNSHARE
 	select LONG_OPTS
 	help
 	Run program with some namespaces unshared from parent.
+config UUIDGEN
+	bool "uuidgen (1.1 kb)"
+	default y
+	help
+	Generate a UUID (Universally Unique Identifier) in RFC 4122 format.
 config WALL
 	bool "wall (2.9 kb)"
 	default y
