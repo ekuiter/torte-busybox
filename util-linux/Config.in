@@ -163,6 +163,11 @@ config FDISK_SUPPORT_LARGE_DISKS
 	depends on FDISK
 	depends on !LFS   # with LFS no special code is needed
 
+config FEATURE_FDISK_BLKSIZE
+	bool "Support -s option to list sizes"
+	default y
+	depends on FDISK
+
 config FEATURE_FDISK_WRITABLE
 	bool "Write support"
 	default y
