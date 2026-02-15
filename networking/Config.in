@@ -876,6 +876,13 @@ config SSL_CLIENT
 	select TLS
 	help
 	This tool pipes data to/from a socket, TLS-encrypting it.
+config SSL_SERVER
+	bool "ssl_server (test TLS server)"
+	default y
+	select TLS
+	help
+	inetd-style TLS server. Stdin/stdout are already connected
+	to an accepted TCP socket.
 config TC
 	bool "tc (8.3 kb)"
 	default y
