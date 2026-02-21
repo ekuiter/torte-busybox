@@ -977,6 +977,14 @@ config TELNETD
 
 	with all that done, telnetd _should_ work....
 
+config FEATURE_TELNETD_SELFTEST_DEBUG
+	bool "Include self-test (telnetd -@)"
+	default n
+	depends on TELNETD
+	help
+	  Include self-test code for pty/vhangup() behavior.
+	  Useful for development and validation on new platforms.
+
 config FEATURE_TELNETD_STANDALONE
 	bool "Support standalone telnetd (not inetd only)"
 	default y
