@@ -388,6 +388,11 @@ config FEATURE_INSTALL_LONG_OPTIONS
 	bool "Enable long options"
 	default y
 	depends on INSTALL && LONG_OPTS
+config JOIN
+	bool "join (6.6 kb)"
+	default y
+	help
+	Equality join on two files
 config LINK
 	bool "link (3.5 kb)"
 	default y
