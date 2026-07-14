@@ -132,6 +132,11 @@ config FEATURE_CP_REFLINK
 	bool "Enable --reflink[=auto]"
 	default y
 	depends on FEATURE_CP_LONG_OPTIONS
+
+config FEATURE_CP_SPARSE
+	bool "Enable --sparse=WHEN"
+	default y
+	depends on FEATURE_CP_LONG_OPTIONS
 config CUT
 	bool "cut (6.7 kb)"
 	default y
