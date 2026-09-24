@@ -116,6 +116,11 @@ config FATATTR
 	default y
 	help
 	fatattr lists or changes the file attributes on a fat file system.
+config FATLABEL
+	bool "fatlabel (1 kb)"
+	default y
+	help
+	fatlabel shows or sets FAT33 label.
 config FBSET
 	bool "fbset (6.2 kb)"
 	default y
