@@ -790,6 +790,11 @@ config SETSID
 	default y
 	help
 	setsid runs a program in a new session
+config SWAPLABEL
+	bool "swaplabel (1 kb)"
+	default y
+	help
+	swaplabel shows or sets swap's label.
 config SWAPON
 	bool "swapon (15 kb)"
 	default y
