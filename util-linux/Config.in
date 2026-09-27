@@ -190,22 +190,6 @@ config FEATURE_AIX_LABEL
 	Enabling this option allows you to create or change AIX disklabels.
 	Most people can safely leave this option disabled.
 
-config FEATURE_SGI_LABEL
-	bool "Support SGI disklabels"
-	default n
-	depends on FDISK && FEATURE_FDISK_WRITABLE
-	help
-	Enabling this option allows you to create or change SGI disklabels.
-	Most people can safely leave this option disabled.
-
-config FEATURE_SUN_LABEL
-	bool "Support SUN disklabels"
-	default n
-	depends on FDISK && FEATURE_FDISK_WRITABLE
-	help
-	Enabling this option allows you to create or change SUN disklabels.
-	Most people can safely leave this option disabled.
-
 config FEATURE_OSF_LABEL
 	bool "Support BSD disklabels"
 	default n
@@ -213,6 +197,7 @@ config FEATURE_OSF_LABEL
 	help
 	Enabling this option allows you to create or change BSD disklabels
 	and define and edit BSD disk slices.
+	Most people can safely leave this option disabled.
 
 config FEATURE_GPT_LABEL
 	bool "Support GPT disklabels"
