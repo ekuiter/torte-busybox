@@ -120,7 +120,7 @@ config FATLABEL
 	bool "fatlabel (1 kb)"
 	default y
 	help
-	fatlabel shows or sets FAT33 label.
+	fatlabel shows or sets FAT32 label.
 config FBSET
 	bool "fbset (6.2 kb)"
 	default y
