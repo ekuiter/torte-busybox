@@ -18,6 +18,15 @@ config FSCK
 	fsck is used to check and optionally repair one or more filesystems.
 	In actuality, fsck is simply a front-end for the various file system
 	checkers (fsck.fstype) available under Linux.
+
+config FEATURE_FSCK_LABEL
+	bool "Support specifying devices by label or UUID"
+	default y
+	depends on FSCK
+	select VOLUMEID
+	help
+	This allows for specifying a device by label or uuid, rather than by
+	name. This feature utilizes the same functionality as blkid/findfs.
 config LSATTR
 	bool "lsattr (5.7 kb)"
 	default y
