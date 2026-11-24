@@ -37,7 +37,3 @@ FEATURE_AUTOWIDTH=FEATURE_LS_WIDTH,FEATURE_TELNET_WIDTH
 # rename; LM confidence very_likely (0.98)
 # The patch explicitly removes the configuration symbol `FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE` and immediately introduces a new symbol `FEATURE_CMDLINE_MODULE_OPTIONS`. The help text for both symbols is semantically identical ('Allow insmod and modprobe take module options...'), and the default value (`y`) remains unchanged. The only differences are the removal of a dependency on `MODPROBE_SMALL` (likely due to architectural changes in BusyBox where this logic was moved or refactored) and a slight rephrasing of the help text ('command line' vs 'the applets' command line'). This is a classic refactoring pattern where a feature name is updated to be more generic (`CMDLINE_MODULE_OPTIONS`) while its functionality persists.
 FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE=FEATURE_CMDLINE_MODULE_OPTIONS
-# candidate 5883cf2c0bce5e16f609; commit c4e8c2366667a8d94c6785b4d0d0f40c8b758cf2
-# rename; LM confidence very_likely (0.95)
-# The diff shows a direct replacement: the entire block defining `config CATV` is removed and replaced by `config FEATURE_CATV`. The help text evolution ('catv' -> 'cat -v[etA]') supports this being a semantic rename rather than an unrelated addition. The added `depends on CAT` clarifies the relationship but does not negate the rename nature of the symbol itself.
-CATV=FEATURE_CATV

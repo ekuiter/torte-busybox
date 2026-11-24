@@ -20,6 +20,22 @@ class ReviewUiTests(unittest.TestCase):
         ]
         self.assertEqual(server.applicable_pairs(candidate, pairs), [{"left": "1_0", "right": "1_1"}])
 
+    def test_model_pairs_use_exact_constrained_variables_only(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "[date]1_0.model").write_text(
+                "#item UNCONSTRAINED\ndef(BOOL)\ndef(STRING=n)\n"
+            )
+            (root / "[date]1_1.model").write_text(
+                "#item OTHER_UNCONSTRAINED\ndef(BOOL_NEW)\ndef(STRING_NEW=n)\n"
+            )
+
+            [pair] = server.load_model_release_pairs(root)
+            self.assertEqual(pair["removed"], {"BOOL", "STRING=n"})
+            self.assertEqual(pair["added"], {"BOOL_NEW", "STRING_NEW=n"})
+            self.assertNotIn("UNCONSTRAINED", pair["removed"])
+            self.assertNotIn("STRING", pair["removed"])
+
     def test_reviews_are_written_without_touching_source_data(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "reviews.json"

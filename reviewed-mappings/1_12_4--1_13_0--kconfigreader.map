@@ -37,7 +37,3 @@ FEATURE_UDHCP_DEBUG=UDHCP_DEBUG
 # rename; LM confidence very_likely (0.98)
 # The patch explicitly renames `config FEATURE_RFC3397` to `config FEATURE_UDHCP_RFC3397` in networking/udhcp/Config.in. The defconfig file is updated from `CONFIG_FEATURE_RFC3397=y` to `CONFIG_FEATURE_UDHCP_RFC3397=y`.
 FEATURE_RFC3397=FEATURE_UDHCP_RFC3397
-# candidate 78ff2360b0b93aa00ca5; commit a83a09e2518e51fda8bce47b295374e9ffdca6fd
-# rename; LM confidence very_likely (0.98)
-# The patch explicitly renames `config DHCPC_DEFAULT_SCRIPT` to `config UDHCPC_DEFAULT_SCRIPT` in networking/udhcp/Config.in. The defconfig file is updated from `CONFIG_DHCPC_DEFAULT_SCRIPT=...` to `CONFIG_UDHCPC_DEFAULT_SCRIPT=...`.
-DHCPC_DEFAULT_SCRIPT=UDHCPC_DEFAULT_SCRIPT

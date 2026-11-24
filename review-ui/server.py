@@ -97,7 +97,14 @@ def load_release_pairs(directory: Path) -> list[dict[str, Any]]:
 
 
 def load_model_release_pairs(directory: Path) -> list[dict[str, Any]]:
-    variable_pattern = re.compile(r"(?:def\(|^#item\s+)([A-Za-z0-9_]+)", re.MULTILINE)
+    # Clausy parses only variables that occur in the formula. KConfigReader's
+    # `#item` declarations also list unconstrained symbols, but those do not
+    # affect formula semantics and must not make a mapping export-compatible.
+    # Capture the complete token inside def(...). KConfigReader represents
+    # non-Boolean symbols as value atoms such as `NAME=n` or `NAME=3`; treating
+    # their `NAME` prefix as a standalone variable would make invalid mappings
+    # appear compatible with Clausy.
+    variable_pattern = re.compile(r"def\(([^()]*)\)")
     releases: list[tuple[str, set[str]]] = []
     for path in directory.glob("*.model"):
         variables = set(variable_pattern.findall(path.read_text(encoding="utf-8")))

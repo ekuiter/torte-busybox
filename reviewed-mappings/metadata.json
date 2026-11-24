@@ -1,10 +1,10 @@
 {
-  "accepted_mapping_rules": 959,
+  "accepted_mapping_rules": 821,
   "accepted_without_release_pair": 27,
   "active_reviewed_candidates": 587,
   "candidate_records": 588,
-  "extractor_incompatible_rules": 133,
-  "extractor_release_pairs": 27,
+  "extractor_incompatible_rules": 271,
+  "extractor_release_pairs": 25,
   "format": 1,
   "results_sha256": "d752ff7c032e2a0342001298b8f3f1fe489f1522ed54824a14172f8d73c479d8",
   "reviews_sha256": "513afe67ebb105f3bf61cb0e7c2d61c46202396b00de613e78deaa18a03c94fc",
