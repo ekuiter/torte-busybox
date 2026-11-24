@@ -1,0 +1,6 @@
+# parent a7c4cf78c3ae632fd36b7d0790e11f2ca4cc12b2
+# commit 2ce31e20e4ee3cd8d057e56d39fe369c38ae95f5
+# 75f8d080a
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly renames the Kconfig symbol from `FEATURE_TELNETD_INETD` to `FEATURE_TELNETD_STANDALONE` in `networking/Config.in`. The help text is updated to reflect the semantic shift (from 'inetd only' to 'standalone'), and the corresponding configuration line in `scripts/defconfig` is updated from `CONFIG_FEATURE_TELNETD_INETD=y` to remove the old setting (implying the new one should be set or handled differently, though the diff shows removal of the explicit enablement for the old name). The change is isolated to this specific symbol and its references.
+FEATURE_TELNETD_INETD=FEATURE_TELNETD_STANDALONE

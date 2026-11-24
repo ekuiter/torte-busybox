@@ -1,0 +1,6 @@
+# parent 54956bf8d798fb2e1a8a945173c6213bf2de5e45
+# commit ebffe472b1e7835614207d05d7361063c678df9f
+# 71df2d358
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly removes the definition of 'ASH_EMBEDDED_SCRIPTS' from shell/Config.in and adds a new definition for 'FEATURE_SH_EMBEDDED_SCRIPTS' with identical help text and default value. The dependency in util-linux/Config.in is updated to reference the new name, and the build script scripts/embedded_scripts is updated to check the new symbol. This indicates an intentional renaming rather than a simple addition/removal.
+ASH_EMBEDDED_SCRIPTS=FEATURE_SH_EMBEDDED_SCRIPTS

@@ -1,0 +1,6 @@
+# parent 105045150ae1d1f9bcf32313e0a6eed59be9a6ae
+# commit c4e8c2366667a8d94c6785b4d0d0f40c8b758cf2
+# e31ca2e9b
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The diff shows a direct replacement: the entire block defining `config CATV` is removed and replaced by `config FEATURE_CATV`. The help text evolution ('catv' -> 'cat -v[etA]') supports this being a semantic rename rather than an unrelated addition. The added `depends on CAT` clarifies the relationship but does not negate the rename nature of the symbol itself.
+CATV=FEATURE_CATV

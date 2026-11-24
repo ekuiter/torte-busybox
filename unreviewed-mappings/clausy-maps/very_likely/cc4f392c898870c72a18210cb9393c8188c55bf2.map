@@ -1,0 +1,6 @@
+# parent 9affa733881bb48b04f24f24ecbd5a0f01ee846a
+# commit cc4f392c898870c72a18210cb9393c8188c55bf2
+# d66aa3c70
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The diff in `coreutils/Config.in` shows a direct line-by-line replacement of the `config FEATURE_DF_INODE` block with `config FEATURE_DF_FANCY`. The help text is updated to describe the combined functionality. The corresponding change in `scripts/defconfig` confirms the symbol name swap in the default configuration.
+FEATURE_DF_INODE=FEATURE_DF_FANCY

@@ -1,0 +1,6 @@
+# parent 5f8ef2a5c1e17015637e7693a65d7739ca4c4994
+# commit 6c7a39aa0567347778c622a3f7417bf87114e4a1
+# 6c1f348fa
+# LM confidence: very_likely; REVIEW BEFORE USE
+# split: The patch explicitly removes 'FEATURE_USE_TERMIOS' from the global scope (with a comment suggesting deletion) and adds two new features with nearly identical help text ('Accept keyboard commands') but scoped to specific applications ('powertop' and 'top'). The semantic intent is clearly to split a generic capability into application-specific ones.
+FEATURE_USE_TERMIOS=FEATURE_POWERTOP_INTERACTIVE,FEATURE_TOP_INTERACTIVE

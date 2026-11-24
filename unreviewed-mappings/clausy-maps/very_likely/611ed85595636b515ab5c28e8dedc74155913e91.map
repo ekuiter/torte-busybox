@@ -1,0 +1,6 @@
+# parent d21afb3efa49e8f102a81cc38d167050eea8070c
+# commit 611ed85595636b515ab5c28e8dedc74155913e91
+# 4c20d9f2b
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly deletes 'config FEATURE_FLOAT_SLEEP' from coreutils/Config.in and inserts 'config FLOAT_DURATION' into libbb/Config.in. The help text changes from 'Enable fractional arguments' to 'Enable fractional duration arguments', indicating a semantic refinement alongside the move. The dependency on 'FEATURE_FANCY_SLEEP' is removed in the new location, suggesting the feature is now self-contained or handled differently within libbb.
+FEATURE_FLOAT_SLEEP=FLOAT_DURATION

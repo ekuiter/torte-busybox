@@ -1,0 +1,6 @@
+# parent ebffe472b1e7835614207d05d7361063c678df9f
+# commit 884dae5214362006c29e7293abd55b64f41e40e0
+# 01055ba89
+# LM confidence: possible; REVIEW BEFORE USE
+# rename: The commit removes 'FEATURE_DC_LIBM' and adds 'FEATURE_BC_LONG_OPTIONS'. While the names are different, they both represent optional enhancements to the calculator suite (libm vs long options). However, 'DC' is also removed and re-added with identical text, suggesting a structural change rather than a simple rename. The mapping is weak because one feature disappears and another appears without a clear semantic equivalence other than being an 'optional feature for calculators'.
+FEATURE_DC_LIBM=FEATURE_BC_LONG_OPTIONS

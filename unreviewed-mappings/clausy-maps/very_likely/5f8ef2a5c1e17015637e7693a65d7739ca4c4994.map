@@ -1,0 +1,6 @@
+# parent aa46a92676ef255941e8b134ba590141dae879cd
+# commit 5f8ef2a5c1e17015637e7693a65d7739ca4c4994
+# f35ad3bd1
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The commit explicitly removes `config FEATURE_EXTRA_QUIET` and immediately defines `config FEATURE_INIT_QUIET`. The help text is updated to reflect the new name while preserving the semantic meaning ('Be quiet on boot'). The change is a direct substitution within the same file context with no other modifications to these specific symbols, strongly indicating an intentional rename rather than a removal/addition pair.
+FEATURE_EXTRA_QUIET=FEATURE_INIT_QUIET

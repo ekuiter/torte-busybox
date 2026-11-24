@@ -1,0 +1,6 @@
+# parent a5d888b6077067b27c53cb152660054b6d8551a3
+# commit 7ebe0b6022b25cb5d0551c6e300be86df8615e18
+# 0da1c0a73
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly renames the config symbol in miscutils/Config.in (changing 'config FEATURE_BEEP_LENGTH' to 'config FEATURE_BEEP_LENGTH_MS') and updates the corresponding line in scripts/defconfig. The change in name ('MS' for milliseconds) aligns with the help text update from 'default length' to imply a unit change, though the help text itself wasn't fully shown in the diff snippet, the symbol rename is explicit.
+FEATURE_BEEP_LENGTH=FEATURE_BEEP_LENGTH_MS

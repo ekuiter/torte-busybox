@@ -1,0 +1,1048 @@
+# parent 9925598404e0fc43671f1fac2b4275b51fb5075d
+# commit cdd25d01954cda7ce45cee3b29792e576f266a3a
+# 7d219aab7
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ADDGROUP=ADDGROUP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ADDUSER=ADDUSER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ADJTIMEX=ADJTIMEX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_APP_DUMPLEASES=APP_DUMPLEASES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_APP_UDHCPC=APP_UDHCPC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_APP_UDHCPD=APP_UDHCPD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_AR=AR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ARPING=ARPING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH=ASH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_ALIAS=ASH_ALIAS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_BUILTIN_ECHO=ASH_BUILTIN_ECHO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_BUILTIN_TEST=ASH_BUILTIN_TEST
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_CMDCMD=ASH_CMDCMD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_EXPAND_PRMT=ASH_EXPAND_PRMT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_GETOPTS=ASH_GETOPTS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_JOB_CONTROL=ASH_JOB_CONTROL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_MAIL=ASH_MAIL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_MATH_SUPPORT=ASH_MATH_SUPPORT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_MATH_SUPPORT_64=ASH_MATH_SUPPORT_64
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_OPTIMIZE_FOR_SIZE=ASH_OPTIMIZE_FOR_SIZE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_RANDOM_SUPPORT=ASH_RANDOM_SUPPORT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_READ_NCHARS=ASH_READ_NCHARS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ASH_READ_TIMEOUT=ASH_READ_TIMEOUT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_AWK=AWK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BASENAME=BASENAME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BBCONFIG=BBCONFIG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BB_SYSCTL=BB_SYSCTL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BUILD_AT_ONCE=BUILD_AT_ONCE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BUILD_LIBBUSYBOX=BUILD_LIBBUSYBOX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BUNZIP2=BUNZIP2
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_BUSYBOX_EXEC_PATH=BUSYBOX_EXEC_PATH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CAL=CAL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CAT=CAT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CATV=CATV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHATTR=CHATTR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHGRP=CHGRP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHMOD=CHMOD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHOWN=CHOWN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHPST=CHPST
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHROOT=CHROOT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CHVT=CHVT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CKSUM=CKSUM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CLEAR=CLEAR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CMP=CMP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_COMM=COMM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CP=CP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CPIO=CPIO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CROND=CROND
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CRONTAB=CRONTAB
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_CUT=CUT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DATE=DATE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DC=DC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DD=DD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEALLOCVT=DEALLOCVT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEBUG=DEBUG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEBUG_CROND_OPTION=DEBUG_CROND_OPTION
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEBUG_INIT=DEBUG_INIT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEBUG_PESSIMIZE=DEBUG_PESSIMIZE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEBUG_TFTP=DEBUG_TFTP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEBUG_YANK_SUSv2=DEBUG_YANK_SUSv2
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DELGROUP=DELGROUP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DELUSER=DELUSER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DESKTOP=DESKTOP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEVFSD=DEVFSD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEVFSD_FG_NP=DEVFSD_FG_NP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEVFSD_MODLOAD=DEVFSD_MODLOAD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DEVFSD_VERBOSE=DEVFSD_VERBOSE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DF=DF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DIFF=DIFF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DIRNAME=DIRNAME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DMALLOC=DMALLOC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DMESG=DMESG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DNSD=DNSD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DOS2UNIX=DOS2UNIX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DPKG=DPKG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DPKG_DEB=DPKG_DEB
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DU=DU
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_DUMPKMAP=DUMPKMAP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_E2FSCK=E2FSCK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_E2LABEL=E2LABEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ECHO=ECHO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ED=ED
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_EFENCE=EFENCE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_EJECT=EJECT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ENV=ENV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ENVDIR=ENVDIR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ENVUIDGID=ENVUIDGID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ETHER_WAKE=ETHER_WAKE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_EXPR=EXPR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_EXPR_MATH_SUPPORT_64=EXPR_MATH_SUPPORT_64
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FAKEIDENTD=FAKEIDENTD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FALSE=FALSE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FBSET=FBSET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FDFLUSH=FDFLUSH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FDFORMAT=FDFORMAT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FDISK=FDISK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_2_4_MODULES=FEATURE_2_4_MODULES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_2_6_MODULES=FEATURE_2_6_MODULES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_AIX_LABEL=FEATURE_AIX_LABEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_AR_LONG_FILENAMES=FEATURE_AR_LONG_FILENAMES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_AUTOWIDTH=FEATURE_AUTOWIDTH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_AWK_MATH=FEATURE_AWK_MATH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_BUFFERS_GO_IN_BSS=FEATURE_BUFFERS_GO_IN_BSS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_BUFFERS_GO_ON_STACK=FEATURE_BUFFERS_GO_ON_STACK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_BUFFERS_USE_MALLOC=FEATURE_BUFFERS_USE_MALLOC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_CHECK_TAINTED_MODULE=FEATURE_CHECK_TAINTED_MODULE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_CLEAN_UP=FEATURE_CLEAN_UP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMMAND_EDITING=FEATURE_COMMAND_EDITING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMMAND_EDITING_VI=FEATURE_COMMAND_EDITING_VI
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMMAND_HISTORY=FEATURE_COMMAND_HISTORY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMMAND_SAVEHISTORY=FEATURE_COMMAND_SAVEHISTORY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMMAND_TAB_COMPLETION=FEATURE_COMMAND_TAB_COMPLETION
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMMAND_USERNAME_COMPLETION=FEATURE_COMMAND_USERNAME_COMPLETION
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_COMPRESS_USAGE=FEATURE_COMPRESS_USAGE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_CROND_CALL_SENDMAIL=FEATURE_CROND_CALL_SENDMAIL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DATE_ISOFMT=FEATURE_DATE_ISOFMT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DD_IBS_OBS=FEATURE_DD_IBS_OBS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DD_SIGNAL_HANDLING=FEATURE_DD_SIGNAL_HANDLING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DEB_TAR_BZ2=FEATURE_DEB_TAR_BZ2
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DEB_TAR_GZ=FEATURE_DEB_TAR_GZ
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DEB_TAR_LZMA=FEATURE_DEB_TAR_LZMA
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DEVFS=FEATURE_DEVFS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DEVPTS=FEATURE_DEVPTS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DIFF_BINARY=FEATURE_DIFF_BINARY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DIFF_DIR=FEATURE_DIFF_DIR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DIFF_MINIMAL=FEATURE_DIFF_MINIMAL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DMESG_PRETTY=FEATURE_DMESG_PRETTY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DPKG_DEB_EXTRACT_ONLY=FEATURE_DPKG_DEB_EXTRACT_ONLY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_DU_DEFAULT_BLOCKSIZE_1K=FEATURE_DU_DEFAULT_BLOCKSIZE_1K
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_ENV_LONG_OPTIONS=FEATURE_ENV_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_EXTRA_QUIET=FEATURE_EXTRA_QUIET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FANCY_ECHO=FEATURE_FANCY_ECHO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FANCY_HEAD=FEATURE_FANCY_HEAD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FANCY_PING=FEATURE_FANCY_PING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FANCY_PING6=FEATURE_FANCY_PING6
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FANCY_SLEEP=FEATURE_FANCY_SLEEP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FANCY_TAIL=FEATURE_FANCY_TAIL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FBSET_FANCY=FEATURE_FBSET_FANCY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FBSET_READMODE=FEATURE_FBSET_READMODE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FDISK_ADVANCED=FEATURE_FDISK_ADVANCED
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FDISK_WRITABLE=FEATURE_FDISK_WRITABLE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_EXEC=FEATURE_FIND_EXEC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_INUM=FEATURE_FIND_INUM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_MMIN=FEATURE_FIND_MMIN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_MTIME=FEATURE_FIND_MTIME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_NEWER=FEATURE_FIND_NEWER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_PERM=FEATURE_FIND_PERM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_PRINT0=FEATURE_FIND_PRINT0
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_TYPE=FEATURE_FIND_TYPE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FIND_XDEV=FEATURE_FIND_XDEV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FTPGETPUT_LONG_OPTIONS=FEATURE_FTPGETPUT_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_FULL_LIBBUSYBOX=FEATURE_FULL_LIBBUSYBOX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_GREP_CONTEXT=FEATURE_GREP_CONTEXT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_GREP_EGREP_ALIAS=FEATURE_GREP_EGREP_ALIAS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_GREP_FGREP_ALIAS=FEATURE_GREP_FGREP_ALIAS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_GUNZIP_UNCOMPRESS=FEATURE_GUNZIP_UNCOMPRESS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HDPARM_GET_IDENTITY=FEATURE_HDPARM_GET_IDENTITY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HDPARM_HDIO_DRIVE_RESET=FEATURE_HDPARM_HDIO_DRIVE_RESET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HDPARM_HDIO_GETSET_DMA=FEATURE_HDPARM_HDIO_GETSET_DMA
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HDPARM_HDIO_SCAN_HWIF=FEATURE_HDPARM_HDIO_SCAN_HWIF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HDPARM_HDIO_TRISTATE_HWIF=FEATURE_HDPARM_HDIO_TRISTATE_HWIF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HDPARM_HDIO_UNREGISTER_HWIF=FEATURE_HDPARM_HDIO_UNREGISTER_HWIF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_AUTH_MD5=FEATURE_HTTPD_AUTH_MD5
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_BASIC_AUTH=FEATURE_HTTPD_BASIC_AUTH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_CGI=FEATURE_HTTPD_CGI
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_CONFIG_WITH_MIME_TYPES=FEATURE_HTTPD_CONFIG_WITH_MIME_TYPES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR=FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_ENCODE_URL_STR=FEATURE_HTTPD_ENCODE_URL_STR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_RELOAD_CONFIG_SIGHUP=FEATURE_HTTPD_RELOAD_CONFIG_SIGHUP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_SETUID=FEATURE_HTTPD_SETUID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV=FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HTTPD_WITHOUT_INETD=FEATURE_HTTPD_WITHOUT_INETD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HUMAN_READABLE=FEATURE_HUMAN_READABLE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HWCLOCK_ADJTIME_FHS=FEATURE_HWCLOCK_ADJTIME_FHS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_HWCLOCK_LONG_OPTIONS=FEATURE_HWCLOCK_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFCONFIG_BROADCAST_PLUS=FEATURE_IFCONFIG_BROADCAST_PLUS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFCONFIG_HW=FEATURE_IFCONFIG_HW
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFCONFIG_MEMSTART_IOADDR_IRQ=FEATURE_IFCONFIG_MEMSTART_IOADDR_IRQ
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFCONFIG_SLIP=FEATURE_IFCONFIG_SLIP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFCONFIG_STATUS=FEATURE_IFCONFIG_STATUS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFUPDOWN_IP=FEATURE_IFUPDOWN_IP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFUPDOWN_IPV4=FEATURE_IFUPDOWN_IPV4
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFUPDOWN_IPV6=FEATURE_IFUPDOWN_IPV6
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFUPDOWN_IPX=FEATURE_IFUPDOWN_IPX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFUPDOWN_IP_BUILTIN=FEATURE_IFUPDOWN_IP_BUILTIN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IFUPDOWN_MAPPING=FEATURE_IFUPDOWN_MAPPING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INETD_RPC=FEATURE_INETD_RPC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN=FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME=FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DISCARD=FEATURE_INETD_SUPPORT_BUILTIN_DISCARD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO=FEATURE_INETD_SUPPORT_BUILTIN_ECHO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME=FEATURE_INETD_SUPPORT_BUILTIN_TIME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INITRD=FEATURE_INITRD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INIT_COREDUMPS=FEATURE_INIT_COREDUMPS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INIT_SCTTY=FEATURE_INIT_SCTTY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSMOD_KSYMOOPS_SYMBOLS=FEATURE_INSMOD_KSYMOOPS_SYMBOLS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSMOD_LOADINKMEM=FEATURE_INSMOD_LOADINKMEM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSMOD_LOAD_MAP=FEATURE_INSMOD_LOAD_MAP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSMOD_LOAD_MAP_FULL=FEATURE_INSMOD_LOAD_MAP_FULL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSMOD_VERSION_CHECKING=FEATURE_INSMOD_VERSION_CHECKING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSTALLER=FEATURE_INSTALLER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_INSTALL_LONG_OPTIONS=FEATURE_INSTALL_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IPCALC_FANCY=FEATURE_IPCALC_FANCY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IPCALC_LONG_OPTIONS=FEATURE_IPCALC_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IPC_SYSLOG=FEATURE_IPC_SYSLOG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IPC_SYSLOG_BUFFER_SIZE=FEATURE_IPC_SYSLOG_BUFFER_SIZE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IPV6=FEATURE_IPV6
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IP_ADDRESS=FEATURE_IP_ADDRESS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IP_LINK=FEATURE_IP_LINK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IP_ROUTE=FEATURE_IP_ROUTE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IP_SHORT_FORMS=FEATURE_IP_SHORT_FORMS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_IP_TUNNEL=FEATURE_IP_TUNNEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LESS_BRACKETS=FEATURE_LESS_BRACKETS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LESS_FLAGCS=FEATURE_LESS_FLAGCS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LESS_FLAGS=FEATURE_LESS_FLAGS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LESS_MARKS=FEATURE_LESS_MARKS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LESS_REGEXP=FEATURE_LESS_REGEXP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LOGREAD_REDUCED_LOCKING=FEATURE_LOGREAD_REDUCED_LOCKING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT=FEATURE_LSMOD_PRETTY_2_6_OUTPUT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_COLOR=FEATURE_LS_COLOR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_COLOR_IS_DEFAULT=FEATURE_LS_COLOR_IS_DEFAULT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_FILETYPES=FEATURE_LS_FILETYPES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_FOLLOWLINKS=FEATURE_LS_FOLLOWLINKS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_RECURSIVE=FEATURE_LS_RECURSIVE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_SORTFILES=FEATURE_LS_SORTFILES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_TIMESTAMPS=FEATURE_LS_TIMESTAMPS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LS_USERNAME=FEATURE_LS_USERNAME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_LZMA_FAST=FEATURE_LZMA_FAST
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MAKEDEVS_LEAF=FEATURE_MAKEDEVS_LEAF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MAKEDEVS_TABLE=FEATURE_MAKEDEVS_TABLE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MD5_SHA1_SUM_CHECK=FEATURE_MD5_SHA1_SUM_CHECK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MDEV_CONF=FEATURE_MDEV_CONF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MDEV_EXEC=FEATURE_MDEV_EXEC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MINIX2=FEATURE_MINIX2
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MKDIR_LONG_OPTIONS=FEATURE_MKDIR_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MKSWAP_V0=FEATURE_MKSWAP_V0
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MODPROBE_FANCY_ALIAS=FEATURE_MODPROBE_FANCY_ALIAS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MODPROBE_MULTIPLE_OPTIONS=FEATURE_MODPROBE_MULTIPLE_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MOUNT_CIFS=FEATURE_MOUNT_CIFS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MOUNT_FLAGS=FEATURE_MOUNT_FLAGS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MOUNT_FSTAB=FEATURE_MOUNT_FSTAB
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MOUNT_LOOP=FEATURE_MOUNT_LOOP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MOUNT_NFS=FEATURE_MOUNT_NFS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MTAB_SUPPORT=FEATURE_MTAB_SUPPORT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_MV_LONG_OPTIONS=FEATURE_MV_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_OSF_LABEL=FEATURE_OSF_LABEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_PIDOF_OMIT=FEATURE_PIDOF_OMIT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_PIDOF_SINGLE=FEATURE_PIDOF_SINGLE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_PRESERVE_HARDLINKS=FEATURE_PRESERVE_HARDLINKS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_PS_WIDE=FEATURE_PS_WIDE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_QUERY_MODULE_INTERFACE=FEATURE_QUERY_MODULE_INTERFACE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_READLINK_FOLLOW=FEATURE_READLINK_FOLLOW
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_REMOTE_LOG=FEATURE_REMOTE_LOG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_ROTATE_LOGFILE=FEATURE_ROTATE_LOGFILE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS=FEATURE_RUN_PARTS_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SECURETTY=FEATURE_SECURETTY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SETCONSOLE_LONG_OPTIONS=FEATURE_SETCONSOLE_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SGI_LABEL=FEATURE_SGI_LABEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SHADOWPASSWDS=FEATURE_SHADOWPASSWDS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SHARED_BUSYBOX=FEATURE_SHARED_BUSYBOX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_EXTRA_QUIET=FEATURE_SH_EXTRA_QUIET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_FANCY_PROMPT=FEATURE_SH_FANCY_PROMPT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_IS_ASH=FEATURE_SH_IS_ASH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_IS_HUSH=FEATURE_SH_IS_HUSH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_IS_LASH=FEATURE_SH_IS_LASH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_IS_MSH=FEATURE_SH_IS_MSH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_IS_NONE=FEATURE_SH_IS_NONE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SH_STANDALONE_SHELL=FEATURE_SH_STANDALONE_SHELL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SORT_BIG=FEATURE_SORT_BIG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_START_STOP_DAEMON_FANCY=FEATURE_START_STOP_DAEMON_FANCY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS=FEATURE_START_STOP_DAEMON_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_STAT_FORMAT=FEATURE_STAT_FORMAT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SUID=FEATURE_SUID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SUID_CONFIG=FEATURE_SUID_CONFIG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SUID_CONFIG_QUIET=FEATURE_SUID_CONFIG_QUIET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SUN_LABEL=FEATURE_SUN_LABEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_SYSLOG=FEATURE_SYSLOG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_BZIP2=FEATURE_TAR_BZIP2
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_COMPRESS=FEATURE_TAR_COMPRESS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_CREATE=FEATURE_TAR_CREATE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_FROM=FEATURE_TAR_FROM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_GNU_EXTENSIONS=FEATURE_TAR_GNU_EXTENSIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_GZIP=FEATURE_TAR_GZIP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_LONG_OPTIONS=FEATURE_TAR_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_LZMA=FEATURE_TAR_LZMA
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TAR_OLDGNU_COMPATIBILITY=FEATURE_TAR_OLDGNU_COMPATIBILITY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TEE_USE_BLOCK_IO=FEATURE_TEE_USE_BLOCK_IO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TELNETD_INETD=FEATURE_TELNETD_INETD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TELNET_AUTOLOGIN=FEATURE_TELNET_AUTOLOGIN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TELNET_TTYPE=FEATURE_TELNET_TTYPE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TEST_64=FEATURE_TEST_64
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TFTP_BLOCKSIZE=FEATURE_TFTP_BLOCKSIZE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TFTP_GET=FEATURE_TFTP_GET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TFTP_PUT=FEATURE_TFTP_PUT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE=FEATURE_TOP_CPU_USAGE_PERCENTAGE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TRACEROUTE_SOURCE_ROUTE=FEATURE_TRACEROUTE_SOURCE_ROUTE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TRACEROUTE_USE_ICMP=FEATURE_TRACEROUTE_USE_ICMP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TRACEROUTE_VERBOSE=FEATURE_TRACEROUTE_VERBOSE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TR_CLASSES=FEATURE_TR_CLASSES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_TR_EQUIV=FEATURE_TR_EQUIV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_UDHCP_DEBUG=FEATURE_UDHCP_DEBUG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_UDHCP_SYSLOG=FEATURE_UDHCP_SYSLOG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_UMOUNT_ALL=FEATURE_UMOUNT_ALL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_UNARCHIVE_TAPE=FEATURE_UNARCHIVE_TAPE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_USE_INITTAB=FEATURE_USE_INITTAB
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_USE_TERMIOS=FEATURE_USE_TERMIOS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_UTMP=FEATURE_UTMP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VERBOSE_USAGE=FEATURE_VERBOSE_USAGE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_COLON=FEATURE_VI_COLON
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_DOT_CMD=FEATURE_VI_DOT_CMD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_OPTIMIZE_CURSOR=FEATURE_VI_OPTIMIZE_CURSOR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_READONLY=FEATURE_VI_READONLY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_SEARCH=FEATURE_VI_SEARCH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_SET=FEATURE_VI_SET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_SETOPTS=FEATURE_VI_SETOPTS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_USE_SIGNALS=FEATURE_VI_USE_SIGNALS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_WIN_RESIZE=FEATURE_VI_WIN_RESIZE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_VI_YANKMARK=FEATURE_VI_YANKMARK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_WC_LARGE=FEATURE_WC_LARGE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_WGET_AUTHENTICATION=FEATURE_WGET_AUTHENTICATION
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_WGET_IP6_LITERAL=FEATURE_WGET_IP6_LITERAL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_WGET_LONG_OPTIONS=FEATURE_WGET_LONG_OPTIONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_WGET_STATUSBAR=FEATURE_WGET_STATUSBAR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_WTMP=FEATURE_WTMP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION=FEATURE_XARGS_SUPPORT_CONFIRMATION
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_XARGS_SUPPORT_QUOTES=FEATURE_XARGS_SUPPORT_QUOTES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_XARGS_SUPPORT_TERMOPT=FEATURE_XARGS_SUPPORT_TERMOPT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FEATURE_XARGS_SUPPORT_ZERO_TERM=FEATURE_XARGS_SUPPORT_ZERO_TERM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FIND=FIND
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FINDFS=FINDFS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FOLD=FOLD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FREE=FREE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FREERAMDISK=FREERAMDISK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FSCK=FSCK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FSCK_MINIX=FSCK_MINIX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FTPGET=FTPGET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FTPPUT=FTPPUT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_FUSER=FUSER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_GETOPT=GETOPT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_GETOPT_LONG=GETOPT_LONG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_GETTY=GETTY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_GREP=GREP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_GUNZIP=GUNZIP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_GZIP=GZIP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HALT=HALT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HDPARM=HDPARM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HEAD=HEAD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HEXDUMP=HEXDUMP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HOSTID=HOSTID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HOSTNAME=HOSTNAME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HTTPD=HTTPD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HUSH=HUSH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_HWCLOCK=HWCLOCK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ID=ID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IFCONFIG=IFCONFIG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IFUPDOWN=IFUPDOWN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INETD=INETD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INIT=INIT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INSMOD=INSMOD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INSTALL=INSTALL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INSTALL_APPLET_DONT=INSTALL_APPLET_DONT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INSTALL_APPLET_HARDLINKS=INSTALL_APPLET_HARDLINKS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INSTALL_APPLET_SYMLINKS=INSTALL_APPLET_SYMLINKS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_INSTALL_NO_USR=INSTALL_NO_USR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IP=IP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPADDR=IPADDR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPCALC=IPCALC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPCRM=IPCRM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPCS=IPCS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPLINK=IPLINK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPROUTE=IPROUTE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_IPTUNNEL=IPTUNNEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_KILL=KILL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_KILLALL=KILLALL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_KILLALL5=KILLALL5
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_KLOGD=KLOGD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LASH=LASH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LAST=LAST
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LENGTH=LENGTH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LESS=LESS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LFS=LFS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LN=LN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOADFONT=LOADFONT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOADKMAP=LOADKMAP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOCALE_SUPPORT=LOCALE_SUPPORT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOGGER=LOGGER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOGIN=LOGIN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOGIN_SCRIPTS=LOGIN_SCRIPTS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOGNAME=LOGNAME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOGREAD=LOGREAD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LOSETUP=LOSETUP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LS=LS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LSATTR=LSATTR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_LSMOD=LSMOD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MAKEDEVS=MAKEDEVS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MD5SUM=MD5SUM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MD5_SIZE_VS_SPEED=MD5_SIZE_VS_SPEED
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MDEV=MDEV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MESG=MESG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKDIR=MKDIR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKE2FS=MKE2FS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKFIFO=MKFIFO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKFS_MINIX=MKFS_MINIX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKNOD=MKNOD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKSWAP=MKSWAP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MKTEMP=MKTEMP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MODPROBE=MODPROBE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MORE=MORE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MOUNT=MOUNT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MOUNTPOINT=MOUNTPOINT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MSH=MSH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MT=MT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_MV=MV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NAMEIF=NAMEIF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NC=NC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NC_EXTRA=NC_EXTRA
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NC_SERVER=NC_SERVER
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NETSTAT=NETSTAT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NICE=NICE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NITPICK=NITPICK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NOHUP=NOHUP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NO_DEBUG_LIB=NO_DEBUG_LIB
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_NSLOOKUP=NSLOOKUP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_OD=OD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_OPENVT=OPENVT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PASSWD=PASSWD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PASSWORD_MINLEN=PASSWORD_MINLEN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PATCH=PATCH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PIDOF=PIDOF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PING=PING
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PING6=PING6
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PIPE_PROGRESS=PIPE_PROGRESS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PIVOT_ROOT=PIVOT_ROOT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PRINTENV=PRINTENV
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PRINTF=PRINTF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PS=PS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_PWD=PWD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RDATE=RDATE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_READAHEAD=READAHEAD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_READLINK=READLINK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_READPROFILE=READPROFILE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_REALPATH=REALPATH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RENICE=RENICE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RESET=RESET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RM=RM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RMDIR=RMDIR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RMMOD=RMMOD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ROUTE=ROUTE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RPM=RPM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RPM2CPIO=RPM2CPIO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RUNLEVEL=RUNLEVEL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RUN_PARTS=RUN_PARTS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_RX=RX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SED=SED
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SELINUX=SELINUX
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SEQ=SEQ
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SETARCH=SETARCH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SETCONSOLE=SETCONSOLE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SETKEYCODES=SETKEYCODES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SETLOGCONS=SETLOGCONS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SETSID=SETSID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SETUIDGID=SETUIDGID
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SHA1SUM=SHA1SUM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SHOW_USAGE=SHOW_USAGE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SLEEP=SLEEP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SOFTLIMIT=SOFTLIMIT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SORT=SORT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_START_STOP_DAEMON=START_STOP_DAEMON
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_STAT=STAT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_STATIC=STATIC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_STRINGS=STRINGS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_STTY=STTY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SU=SU
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SULOGIN=SULOGIN
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SUM=SUM
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SU_SYSLOG=SU_SYSLOG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SWAPONOFF=SWAPONOFF
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SWITCH_ROOT=SWITCH_ROOT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SYNC=SYNC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_SYSLOGD=SYSLOGD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TAIL=TAIL
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TAR=TAR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TASKSET=TASKSET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TEE=TEE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TELNET=TELNET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TELNETD=TELNETD
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TEST=TEST
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TFTP=TFTP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TIME=TIME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TOP=TOP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TOUCH=TOUCH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TR=TR
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TRACEROUTE=TRACEROUTE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TRUE=TRUE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TTY=TTY
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_TUNE2FS=TUNE2FS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UMOUNT=UMOUNT
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UNAME=UNAME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UNCOMPRESS=UNCOMPRESS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UNIQ=UNIQ
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UNIX2DOS=UNIX2DOS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UNLZMA=UNLZMA
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UNZIP=UNZIP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UPTIME=UPTIME
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_USE_BB_PWD_GRP=USE_BB_PWD_GRP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_USE_BB_SHADOW=USE_BB_SHADOW
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_USLEEP=USLEEP
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UUDECODE=UUDECODE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_UUENCODE=UUENCODE
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_VCONFIG=VCONFIG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_VI=VI
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_VLOCK=VLOCK
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WATCH=WATCH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WATCHDOG=WATCHDOG
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WC=WC
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WGET=WGET
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WHICH=WHICH
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WHO=WHO
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_WHOAMI=WHOAMI
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_XARGS=XARGS
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_YES=YES
+# rename: Exact bijection across all 522 changed Kconfig declarations: every parent symbol starts with CONFIG_ and the corresponding commit symbol is identical after removing that prefix. This is the systematic-prefix example of feature unification.
+CONFIG_ZCIP=ZCIP

@@ -1,0 +1,6 @@
+# parent 10d02d223b5e2dd57663e86d170686f605c30f66
+# commit 9939ca1164d4e6463e0d259116da33cc7203be95
+# 9d4533ede
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly deletes the block for `config FEATURE_IFUPDOWN_IP_BUILTIN` and immediately defines `config FEATURE_IFUPDOWN_IFCONFIG_BUILTIN` with the same `depends on`, `select`, and default values, only changing the help text to reflect the new underlying implementation (ifconfig vs iproute). The symbol names differ by exactly one word ('IP' -> 'IFCONFIG'), indicating a semantic rename rather than a split or merge.
+FEATURE_IFUPDOWN_IP_BUILTIN=FEATURE_IFUPDOWN_IFCONFIG_BUILTIN

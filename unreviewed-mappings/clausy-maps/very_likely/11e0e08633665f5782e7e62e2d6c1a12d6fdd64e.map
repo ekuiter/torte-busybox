@@ -1,0 +1,6 @@
+# parent 56db975377d55f8f0092cbfcdd0efa183767df2e
+# commit 11e0e08633665f5782e7e62e2d6c1a12d6fdd64e
+# 1e07f852e
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The diff in `procps/Config.in` shows a direct line-by-line replacement of the symbol name `FEATURE_CPU_USAGE_PERCENTAGE` with `ENABLE_FEATURE_TOP_CPU_USAGE_PERCENTAGE`. The surrounding context (help text, dependencies on `CONFIG_TOP`, default value) remains identical, indicating a pure rename rather than a semantic change or split/merge.
+FEATURE_CPU_USAGE_PERCENTAGE=ENABLE_FEATURE_TOP_CPU_USAGE_PERCENTAGE

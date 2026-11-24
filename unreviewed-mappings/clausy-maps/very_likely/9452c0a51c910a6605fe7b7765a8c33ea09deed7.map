@@ -1,0 +1,6 @@
+# parent 2936e9b40ed29f00759ce055681833df12aa99f8
+# commit 9452c0a51c910a6605fe7b7765a8c33ea09deed7
+# b1d6a2c62
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly removes the configuration symbol `FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE` and immediately introduces a new symbol `FEATURE_CMDLINE_MODULE_OPTIONS`. The help text for both symbols is semantically identical ('Allow insmod and modprobe take module options...'), and the default value (`y`) remains unchanged. The only differences are the removal of a dependency on `MODPROBE_SMALL` (likely due to architectural changes in BusyBox where this logic was moved or refactored) and a slight rephrasing of the help text ('command line' vs 'the applets' command line'). This is a classic refactoring pattern where a feature name is updated to be more generic (`CMDLINE_MODULE_OPTIONS`) while its functionality persists.
+FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE=FEATURE_CMDLINE_MODULE_OPTIONS

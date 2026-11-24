@@ -1,0 +1,6 @@
+# parent 9003548b6a622ebc381356e01445b9fa5418fcf2
+# commit e7dabb0ad0104b3c1ed1d44724e5962b933bfdf0
+# 147676060
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The commit removes `FEATURE_BC_SIGNALS` and adds `FEATURE_BC_INTERACTIVE`. The help text for `FEATURE_BC_INTERACTIVE` describes 'Interactive mode', which is functionally equivalent to the 'signals' mentioned in `FEATURE_BC_SIGNALS` (interrupts, line editing). The name change from 'SIGNALS' to 'INTERACTIVE' reflects a more descriptive naming convention. The dependency logic changes slightly but the core functionality remains the same.
+FEATURE_BC_SIGNALS=FEATURE_BC_INTERACTIVE

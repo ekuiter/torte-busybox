@@ -1,0 +1,10 @@
+# parent d0f22aeaddf8da018607f0523998474eee6606d2
+# commit aa46a92676ef255941e8b134ba590141dae879cd
+# 265062d59
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly renames 'config ASH_BUILTIN_ECHO' to 'config ASH_ECHO' in shell/Config.in with identical help text and dependencies, indicating a direct rename rather than a split or merge.
+ASH_BUILTIN_ECHO=ASH_ECHO
+# rename: The patch explicitly renames 'config ASH_BUILTIN_PRINTF' to 'config ASH_PRINTF' in shell/Config.in with identical help text and dependencies.
+ASH_BUILTIN_PRINTF=ASH_PRINTF
+# rename: The patch explicitly renames 'config ASH_BUILTIN_TEST' to 'config ASH_TEST' in shell/Config.in with identical help text and dependencies.
+ASH_BUILTIN_TEST=ASH_TEST

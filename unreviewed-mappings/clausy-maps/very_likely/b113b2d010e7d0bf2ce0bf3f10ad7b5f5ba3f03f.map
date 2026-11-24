@@ -1,0 +1,6 @@
+# parent 8ba070d4ccc3880735d180468643ee5b259995a7
+# commit b113b2d010e7d0bf2ce0bf3f10ad7b5f5ba3f03f
+# 2d5bd807c
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly changes 'config FEATURE_AWK_MATH' to 'config FEATURE_AWK_LIBM' in editors/Config.in with an identical help text structure ('Enable math functions...'). The defconfig file updates the corresponding CONFIG_ symbol from CONFIG_FEATURE_AWK_MATH to CONFIG_FEATURE_AWK_LIBM. This is a direct rename.
+FEATURE_AWK_MATH=FEATURE_AWK_LIBM

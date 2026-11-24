@@ -1,0 +1,12 @@
+# parent 1be40796fd78292bb50e504d0b5588322eaf1584
+# commit 418e80fe5d0cc1900abd4ac6b48f1800d090ac0e
+# e9ad84dfd
+# LM confidence: likely; REVIEW BEFORE USE
+# rename: Functional replacement: New feature enables tar/gunzip to handle .Z data, same as old feature.
+FEATURE_TAR_COMPRESS=FEATURE_SEAMLESS_Z
+# rename: Functional replacement: New feature enables rpm to handle .bz2 data, same as old feature.
+FEATURE_RPM_BZ2=FEATURE_SEAMLESS_BZ2
+# rename: Functional replacement: New feature enables modprobe to handle .bz2 modules,
+FEATURE_MODPROBE_SMALL_ZIPPED=FEATURE_SEAMLESS_BZ2
+# rename: Functional replacement: New feature enables gunzip to handle .Z data,
+FEATURE_GUNZIP_UNCOMPRESS=FEATURE_SEAMLESS_Z

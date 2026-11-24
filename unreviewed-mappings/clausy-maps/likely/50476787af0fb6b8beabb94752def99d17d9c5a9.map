@@ -1,0 +1,6 @@
+# parent 18aa53c8d9daef67c531b75e20c0cc5a3e2c2941
+# commit 50476787af0fb6b8beabb94752def99d17d9c5a9
+# 9a647c326
+# LM confidence: likely; REVIEW BEFORE USE
+# split: The commit replaces a single feature 'FEATURE_WGET_SSL_HELPER' (which handled HTTPS via an external helper) with two new features: 'FEATURE_WGET_HTTPS' (handling HTTPS via internal TLS code) and 'SSL_CLIENT' (a new tool for piping data to/from sockets). The patch text explicitly mentions that wget will now use internal TLS code ('FEATURE_WGET_HTTPS') and introduces a new tool 'ssl_client'. This indicates a split of the previous single HTTPS support mechanism into two distinct features: one for internal implementation and one for an external helper tool.
+FEATURE_WGET_SSL_HELPER=FEATURE_WGET_HTTPS,SSL_CLIENT

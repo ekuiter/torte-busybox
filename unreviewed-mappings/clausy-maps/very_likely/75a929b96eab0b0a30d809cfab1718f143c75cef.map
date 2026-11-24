@@ -1,0 +1,6 @@
+# parent 0b9bb547382f0c32c47a2a20b96e2d5b77019daa
+# commit 75a929b96eab0b0a30d809cfab1718f143c75cef
+# a8c696bf0
+# LM confidence: very_likely; REVIEW BEFORE USE
+# split: The patch explicitly removes the single config block `config IFUPDOWN` and replaces it with two separate blocks: `config IFUP` and `config IFDOWN`. The help text for the new features describes them as 'Activate the specified interfaces' and 'Deactivate the specified interfaces', respectively, clearly indicating a semantic split of the original monolithic feature into its constituent actions. Furthermore, all dependent symbols (e.g., `FEATURE_IFUPDOWN_IP`) have their `depends on` clauses updated from `IFUPDOWN` to `IFUP || IFDOWN`, confirming that the old feature is no longer a single unit but a logical OR of the two new ones.
+IFUPDOWN=IFUP,IFDOWN

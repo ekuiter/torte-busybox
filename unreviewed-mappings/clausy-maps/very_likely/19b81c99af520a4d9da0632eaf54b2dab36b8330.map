@@ -1,0 +1,8 @@
+# parent 3b26abaf123492f78b7516eb6fa667d6bd18c52c
+# commit 19b81c99af520a4d9da0632eaf54b2dab36b8330
+# 98c52645c
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The symbol name changed from 'ASH_MATH_SUPPORT' to 'SH_MATH_SUPPORT'. The help text was updated to generalize the scope from just 'ash' to 'the shell', and the dependency was expanded from 'depends on ASH' to 'depends on ASH || HUSH'. This indicates a deliberate refactoring to unify math support across multiple shells (Ash, Hush, etc.) rather than an unrelated addition. The change is strictly 1-to-1.
+ASH_MATH_SUPPORT=SH_MATH_SUPPORT
+# rename: The symbol name changed from 'ASH_MATH_SUPPORT_64' to 'SH_MATH_SUPPORT_64'. Similar to the base feature, the help text was updated to refer to 'the shell' instead of 'Posix math support', and the dependency chain now references the renamed parent 'SH_MATH_SUPPORT'. This is a consistent 1-to-1 rename.
+ASH_MATH_SUPPORT_64=SH_MATH_SUPPORT_64

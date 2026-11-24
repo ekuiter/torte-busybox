@@ -1,0 +1,2358 @@
+{
+  "reviews": {
+    "00abed9df76c8ca5b993": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "00d2b86f3a01b52e1e54": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "00e98356a33a8549eab1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0144c6bb19c135c98389": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0145f058a21d59cdff5b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "014ec6f20a7cc2c742ca": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "02e19d1bdc7a27877fcd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "02e27ba529897af1c43a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "035827a269c7f22aabab": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "038827e2d4d342b6e846": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "038ba6cdca9129f3fdbe": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "03e267722f941fb2a170": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "03e8f44a6d70efebdc30": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "03f0eb804d97ec7bd695": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "03f6c66b35390682006d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "03ff41cadd3c2d52b9bd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "04205becb3396361e5f8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "042baf18bf18301b1ac4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "047709ef11c4fc680320": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "052126a337d682669463": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "058de89c0b93159b5912": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0668909e0ddadcab720c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "071a29d647c9fa329bab": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "07546f75dfe3ea5d97fb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "076c622af9d3c5b53a5b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0780db6152c9c5ec6fc6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "07c26e1f1604c39ae7c1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "07ea7b88213d07824356": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "083e30926a341521ecaa": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "08c694f08d6d16c7b43e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0a95b87a92eee7898c91": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0b0c1713e2607810b18b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0b8b84c97ec613db78c1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0bb7fa603af2ba68deb3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0bcfb71f8dc3b4e22646": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0bfa0021a3ebd9bf93d1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0c08c2ce2358d4266a9f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0c8f156bcbbd9acf8cbd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0d1e7e7285694d2a8dbf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0d5b8776bc34ce6b2295": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0ddff93df22496dcb98d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0e58b5ee2157742e43e3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0ea056bc00f7931c432e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0eb4adc101695e616908": {
+      "decision": "accepted",
+      "note": "are you really sure about this? Please check with the original commit 6c1f348fa in BusyBox. the split option mentions top and all options mention keyboard input, but it would be best to check with the source code.\n\nCodex assessment: I recommend accepting this split. The upstream commit explicitly says there are no code changes. Before the commit, FEATURE_USE_TERMIOS guards exactly two consumers, powertop.c and top.c; every guard is mechanically replaced by FEATURE_POWERTOP_INTERACTIVE or FEATURE_TOP_INTERACTIVE respectively. The two independently selectable successors are a clean split of the old shared control."
+    },
+    "0eb8c08e7f6e67c9b2db": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "0fc5c91fa804367c6d8a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1028fd35711c42c69fbf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "10b78647534ad7db0dba": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "13227c9020c2f8b36b79": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1410469a64696ed84d39": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1441615fe8187c496ac4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "14a3332da4ef62a27c1d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "153c7331f7d31e87388d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "15442e3b12a9c3c3bb4c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "159b4eacb7d244a2296d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1680c378ec823de08ad5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "17abab6a5e83732acf78": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "181af2ff4c58ed463c6c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "185d2b80a8b67f671ce0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "19317afa914f26e2c6c1": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "1935b318cd18abdd1051": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "19dd2ad1945bb1290ce1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1b8bfc0f0728647bb8c0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1c106859bf71eb564d94": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1c143654d71d1677e684": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1c8f69849cead13df250": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1d185dabb3d9a414e901": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1ea06a9fc7c12136abe4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "1ff3bebb2776f82a6ec8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "20207706f750d38735b6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2026bf8926084c07bc89": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "20460af536000edc504b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "20b7488bb2cc2520771a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "20d37a6f4497da96ffaa": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2101005e64359703451f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2106ced689d5b1a32677": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "215613e38a7ed4a1d507": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "218406db13412603519a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "226422dfed49623d4da1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "22769dcda0bd12551ffd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "22843c63c13c9f2e3e2d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "237b63354a67cf7f71eb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "242f62a2e546238ea9bd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "244bbe0a5f817fc002c9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "25b08de7e93a987a3aa8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "25d924d3fdad08250094": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "25ee593ad60dbe62dc5a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "25f81dbac3e0b480bfe7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "261246fc589b51ef6eda": {
+      "decision": "rejected",
+      "excluded": true,
+      "note": "if the logic changes a lot, and this is a semantic shift from small to big, I would not consider this a renaming/a clean split. please check the original commit 147676060. \"which is functionally equivalent to the 'signals' mentioned in `FEATURE_BC_SIGNALS`\" - this seems a little bit farfetched to me.\n\nCodex assessment: This commit has mixed results. Reject FEATURE_DC_SMALL=FEATURE_DC_BIG,FEATURE_BC_INTERACTIVE: SMALL to BIG is a polarity reversal, not a split, and the interactive option is unrelated to that choice. However, FEATURE_BC_SIGNALS=FEATURE_BC_INTERACTIVE is a genuine mechanical rename: every source guard changes directly and the existing help already described interactive behavior such as Ctrl-C and line editing. I recommend revising the candidate set to retain only that rename, then accepting the commit."
+    },
+    "26217f7d468b80ebe76e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "26e593dbbcad60857f73": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "27bb6f7e6b13f14122dc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "27bfd98543b3f3b6a10f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "27cf136f811ea73ed7cf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "286e35823d9683dbd0dd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "28e9dbe3801710330576": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "298af6dfbe0485c9f211": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "29a3c1f154ba053006f1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "29ba3a0d4d8a74574a8a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2a396b40b681c1f4de94": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2a3a466d2fbbf3f361eb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2a7941d2df7fe372f0fd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2aa0958c073de4714ce5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2ad6c6c918a768739311": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2b733a4fe02cba387f68": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2b7900a9830d73138aac": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2c5a22fe4bb1547cfeda": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2c7aa3e8348f5bcf42e9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2d28585dc0b4fc55eddb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2ed6b9bf1ccde507f140": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2f9d7d24b543e12bf841": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2faf1d2d32c00a82bac0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "2fe49d7a84027179a360": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3047f6d597a4e6279be4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3082f40d4a15f69871aa": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "30bbc6aea87c8fa9187d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "30d031c074139d876d4e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "30db06c88b208d45d082": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "30e61db7962a0c9b06e5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "319d3dec1947719bc0a8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "31c2605179273df3c65b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "31d8a00bddd58919a0dc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "32266497654fa9de6672": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "323aa7d34d4f8ee33cd1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "327543996ec1d0f5c8f3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "32ae7ffbdbab0f7e3800": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "32f4674352846e6d8abe": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "348a2afb4c02c8d0b8bb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "34a5c2ba418863de674c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3529e6e6a10c93a79471": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "35adebaffba82c11b4ce": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "35adfbf2496ce2322e49": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "35c4dfd5a61eb80daf1c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "35cf757cd3100cbad7bc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "35f0a67c774170349157": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "35ffce0bc18fb3dba9f6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3641f04ebeabb2f99e84": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "364a73f7cea18e091097": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "381c25579bf70f9ac62c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "38aacd5e168b1a95defa": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "391fc48b4d4091b5b027": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "39437c7d32113f14cb8e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "399acefcdf3e596048cf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "39f4057ef1bc351b8d35": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3a27c82ee04574d85de7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3a56edacb9f190d0fbfe": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3ad84d91df942a1b6e27": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3add6c6c5310958ea168": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3b1cae085fa87adc303f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3b72549605aa6b99ba50": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3c02f008819df6798d4b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3d990eee895ad7650f43": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3dd43641ceee7cc5a481": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3df40095df51d238840b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3e3e6ad0f9b9dcecd2ff": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3f758f322f00fdc15bf8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "3fa2e59be50657704fc0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4010b14609c0806ee676": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4031e15efbde5245738c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "40641b896f7343856944": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "421f5840ad1d60d0bdc4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4280cad80eff9731874f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "42c4fd31d9fd4fd1e858": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "43d86b7e4d4cc9f392cb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "44181f91d7048bc2c58c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "45287a897aeddc285d4a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "453121b4a6bc44b209d1": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "455afe55cfd531d61c60": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4664e6c637aa20736bc3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "467eb191cdbce409ae19": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "469eb843bccd3e4da031": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "46fa6251aba37f2f0fe4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "474887de73811a13359a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "475506324071225ad839": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "480c9bf04161e93eabdd": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "48ae31e826076a7763f4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "491479c2605ccaf3c9cc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4929fec7bdc02d5f5300": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4941499245a9dd0fbbff": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "49b57126e63f3be4fab3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "49e48b462c8196a08bd3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4b4d406e1948c6b6c1a3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4bd15551cd02dab6eee5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4c173ccc427fa78e7ae4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4c23611d2ec85485fefb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4cb6400217ffac095bbf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4cba4d5d69bba7a20b40": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4cbe51843ee0bcafa695": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4cccff28398cd07f6aa5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4d3ed5e80dd73c59b07a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4d5d7c7677d59f637b2d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4e15eb6bcd2b85477077": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4e58522659d28b86d521": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4e5e5ace422ee7180d06": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4f074bb1da06f2dff3c0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "4f452bce151a035ed0fd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5036b8b4d6116ffd04f4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "50a0eb302d6eaa479efb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5110a41201537f019686": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "51804a55f3577a1c867a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "51d947c6d802c95c7da2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "52159b8eb4e63f970b2b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5244f6ed0d3c8f79b578": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "52a68e85c76e878067e7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "534aa0eb92fba744c4ff": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "53c070b7be7b8423f2fe": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "54399ffde574269d63cc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "54cdf7cc01709c089b75": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "559d7ca4afc512d4756c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "55af96161bcf03dad3c0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "55b1bbc058f25b863acc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "55bb473f7f25520d40fd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "56b6977d29e5c4f09b33": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "581638e99f66b4f5d75c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5883cf2c0bce5e16f609": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5932242e9619a30cbdb9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "594513cda23c98557de0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "594c49a157b33fbed5b5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5979efc8cba0d70c30d2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5adcf005793c467f325d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5b65ac64bee6474d4165": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5b7f5e6957ceb9bac636": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5b9314aeefea3615a1ba": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5c4521e6930adf0a3541": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5cc09dbc0e7ee2a67e2a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5d9dedf95aed7e5610ce": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5dcfacbc9544a75642dd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5de37c633a0772dc513c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5df4a666e6c6f59995e2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5e0100f4eac9430e14c1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5e439a614ea519307091": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5e6860e125c881ce90e0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5e750fbccfd7e2246958": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5e7ea357da03174b7d35": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5eb1240fedaaefcd1b76": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "5ff27d1cbaca2650abe5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "600c9c31a111b8d9d7d6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "607903984a432d7980b6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "61490a04362aab8df71a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "61f1389f0f0d73bf9f3b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "61fc728348293561c8c4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "621d7f39099f8f404458": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "622025a0038b12fa8971": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "62e87a6683e249a66e62": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6396334657e381207f1b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "649eaf717b0f9e2e6510": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "64db02557e7504abe03f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "66cfbe9780941a8b9dea": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "66f7801ed03057169d8d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "679a6c0a71af6cfef304": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "688c63117101e829cca6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "691b6105dc8da53d05a5": {
+      "decision": "rejected",
+      "note": "a semantic flip is not a semantics-preserving renaming, clausy currently does not support these kinds of flips\n\nCodex assessment: Keep rejected. The source changes every old !ENABLE_DEBUG_YANK_SUSv2 guard to ENABLE_INCLUDE_SUSv2, confirming an exact logical negation. A valid correspondence would require x <-> !y, which Clausy's current positive variable mappings cannot express."
+    },
+    "693a11bbdcb3e18169fc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6976b40b602bb06a0817": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "69ad4889e02f6b0fa965": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6b29934afaa8f6134454": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6b7a62db0a1466fe5eef": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6bce9509acfb1b6f1f1d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6ca1a09bb604a5ecd62b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6caf144985ca1a585c31": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6d621db0f1bfc9a8d874": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6d86b87adf91e2a3945c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6d8a8d6cff4d63ce1c0d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6db6c21993cb682df1de": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6f643b873a29d4bdaaf8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6f661df2316a84ecbff1": {
+      "decision": "rejected",
+      "note": "I think this is one of the cases where we need to check the original commit 01055ba89 to determine the source code whether this can be considered a renaming.\n\nCodex assessment: Reject this candidate. FEATURE_DC_LIBM is not removed by the upstream commit: it remains afterward and continues to guard dc's power and exponent implementation. FEATURE_BC_LONG_OPTIONS is newly introduced and gates getopt32long for bc/dc, which is unrelated. This is a false positive caused by the old dc code being moved while the new bc implementation was added."
+    },
+    "6fd3103df72d90011ee5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "6ffee82316ce8f282680": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "702f37bd01e1f7e6c7b0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "70cefe48fc5589a0db93": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "71b63ff64e432f073b59": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "71ec01efe5e0c82e0256": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7218a81537d8e857aae8": {
+      "decision": "accepted",
+      "note": "if the logic changes a lot, and this is a semantic shift from small to big, I would not consider this a renaming/a clean split. please check the original commit 147676060. \"which is functionally equivalent to the 'signals' mentioned in `FEATURE_BC_SIGNALS`\" - this seems a little bit farfetched to me.\n\nCodex assessment: This commit has mixed results. Reject FEATURE_DC_SMALL=FEATURE_DC_BIG,FEATURE_BC_INTERACTIVE: SMALL to BIG is a polarity reversal, not a split, and the interactive option is unrelated to that choice. However, FEATURE_BC_SIGNALS=FEATURE_BC_INTERACTIVE is a genuine mechanical rename: every source guard changes directly and the existing help already described interactive behavior such as Ctrl-C and line editing. I recommend revising the candidate set to retain only that rename, then accepting the commit.\n\nhuman response: I revised the mapping to omit the split and only keep the rename."
+    },
+    "7271b532c9f8f395b554": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7287277e1270abad0e7f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "73a195c2e565831bdec2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "73ddde5242ee9a68c827": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "73fbc314d23ca4ea26a1": {
+      "decision": "accepted",
+      "note": "looking at the original commit message confirms this is a rename\n\nCodex assessment: Agree with accepted. The upstream subject explicitly names FEATURE_EXTRA_QUIET -> FEATURE_INIT_QUIET, and the same source guard is mechanically renamed while retaining the behavior of suppressing init's startup message."
+    },
+    "745b2c1681e7984b289b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7593f4cc5a70a598cc9d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "770125d3b5eaaf901469": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7806d4b6aba687f8829f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "780dfa7e4ac97b79613f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "785f9d8abf1304eed60e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7890971c51c0d455ede5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "78be088e5b5e9c100972": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "78ff2360b0b93aa00ca5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "795704a1ec5f8ca93699": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7960d128d28185779278": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "79cdebb8807e585f0e13": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "79f301016627f71bbaa8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7a469acaab247d6770a4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7ac4b6be3ab4df9a238d": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "7b128e625aaa10e8546a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7b45235b844f071e5571": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7b6030bb8fae056012f8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7b8eccb73d4f8247fbe1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7c3b557cb2f080d160f0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7d3e30b6110d4ff91aa3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7d94c7c7fca4dae86b80": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7df87715baa5ffdd5b05": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7e00c3ec302b1afd2aa5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7e0ef2f7838716186bbd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7e8f5ad2c6f4d85fc501": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7e9b0502d3dcf246ff30": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7eade7213d2ce5480ae1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "7f0f89bb6566d4eda582": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "805d11d96bece463caf2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "809583beea1400b73289": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8097d12d5808d584df72": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "80e1badceb684e3300fc": {
+      "decision": "accepted",
+      "note": "this is supported by the original commit message\n\nCodex assessment: Agree with accepted. The upstream subject explicitly says this is a rename, and the Kconfig declaration, C preprocessor guards, and applet registration all change mechanically from FEATURE_LZMA_ALIAS to LZMA without a polarity or scope change."
+    },
+    "811fb23ac6a11367529d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "814408cfb68d4c096706": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "822131490a5a4fe8d6f0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "822c3091b5d1b51c8993": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "82d4a4315adafa8ac0b4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "83d281b5c0230449d5f0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "841cb5f8cf8643aeeb8a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "85562551c071fe438765": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "85563bf8c1aa358203e4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8620062a7c8f551ace29": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8644f7df01a9137da918": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "86b5db5c3ba21a59c3dd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "876d9544534f2aaaa187": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "88a8dc86bacabd8f0cb9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8958c26984b9399d5ec9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8982314b45fde4127fb1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "89c1331db118d200abf7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "89fb56e4acd6ceb0dfab": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8a2911732cc56244925f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8a363cb46a020ae809ad": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8a4b5206dfa8241a1e7c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8a85c72037daf5572e23": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8a9585b20a01a821bd80": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8b21af7cb9b987b532c3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8b24670057a15d424c48": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8d8df29c362b3daa7524": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8dd1435ab085ca60554a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8e1c95e74482e87d9ed5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8e43f38da2e062ccf45d": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "8e86a390ec44e1428f2c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8e9f84412813aacf5d9a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8eb9d630b5007eb9b16f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "8f910c583e3bcc4ee482": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "904f0fc8d1e4ff91aae7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "906d8f3d5df1c87bdab6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "90869617bda2939d2a37": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "90f973a8a85520b363d3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9180cf49f1dd21143b27": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "918aa4c5effca800cf2e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "92fbcb2f7adc30243595": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9356bf50648e3864ddb4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "936dfb2eb1760a8af250": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "93cc3858544a2509346d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "93d4a8e96b2e7b8110e4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "93fde23ec163c084bdd5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9411badde21e4db2d813": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "94b050c12d07f1ac39dc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "94c49998c15d1d7cfe4d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "950f9031f7af2f64b03f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "95187d3c4ce5192fa6a9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "95496691fa6d150ad283": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "961c423ac9f5d5535296": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "969e104eef94b490dbf7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9745ceba6c2770d05c01": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "98d2302eb27ef9db5515": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "99bdc92014b4a49d144b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9a1d0b78b3f978540cd9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9b50110dc205eca89152": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9c043e3347b4dd212183": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9c0c725344836723bff0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9c7188d94d559820869f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9c88c0cc9aa41b6c114b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9cfc9758d3cb72783e2d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9cfee79f72e0b4a939a0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9d3cb31a5fcfdde731d8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9d920078e80bb7fad515": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9e42e43944d07cc82daa": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "9edf90edb5c28bbf57e5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a05c1a5ce894a662f15e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a10cbe7a0b589cc3fb9a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a18edd7d8c4063930177": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a1adacab81ecd3016a58": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a2a4b6450d60a617f868": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a2c64dcf7fb9d3f6237e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a2cc13b1ba64814d1d53": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a37d9860903d67cb02d8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a48dbc3e75047dbf684a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a4dbcc97ae67223a3994": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a4f37d29a9e04d6f9271": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a66bfcb300dfc33a9633": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a74bf7af424f7c618ffb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a7830dacf7d1781061ef": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a79893469bc84fec9205": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a83752c27771ab81ed36": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a85be138fcd27e776c11": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a88e1b4ca2d410474c3a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a94901eebb02410a1aa2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "a983a504075e3572b228": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "aa29fa39c425c7dd7a77": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "aa5b5c9b8950a4039c93": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ab43c7c6a5d68700c5ce": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ab633b18b242ace9935f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "abed11412ef077cdec5c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "acc16995722c46dbda75": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "acd51c55c111381861a4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ad162bf89ff68af8c8d2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ad6c2118ecd73bea610b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ae3cf704963733e46476": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "aed4911ff605f94881fb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "af2c13e56b50a76d4355": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b01f1a82aedfe2dbf65d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b1339a0b39b312de6f00": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b1582aa4beb2c34ac9e0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b1e1a1ecebcdec4bc7f0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b2ef6c8c91a95a3c4968": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b2f9c644ff390270b863": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b31f430394a6a192d9a6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b62c38bd732ec95cb832": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b6e212e584c9ad660c41": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b6e6235c82664b747007": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b7380d8244f520c022e6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b747b53e12578da888f0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b789a4ab13a08b4b4ee6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "b8a98cfc3752f426225d": {
+      "decision": "accepted",
+      "note": "if you consider this a merge including FEATURE_QUERY_MODULE_INTERFACE, why don't you declare it as a merge in the mapping? and I looked at this FEATURE_QUERY_MODULE_INTERFACE and don't see why this is supposed to be a merge. so I kind of agree with the renaming but I don't understand your model summary about the merge with FEATURE_QUERY_MODULE_INTERFACE.\n\nCodex assessment: The candidate itself is defensible, but the model summary is wrong. The source replaces FEATURE_DEPMOD_ALIAS's depmod guards with FEATURE_MODUTILS_ALIAS and extends the same alias-file concept to modprobe. FEATURE_QUERY_MODULE_INTERFACE instead controls obsolete Linux 2.4 query_module code and is removed independently; it is not part of this mapping. I recommend accepting the rename/generalization while disregarding the claimed merge."
+    },
+    "ba248a777a4bf9e768b9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ba2db19d487881e668fa": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ba60b50a152784cb851b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ba879a0a78edecebc2cf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ba8d8f4e4d1be6e67d0a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bab0bc889f5cbd22d734": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bb6b683bf49ba82557ee": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bce1aaf3d7edbd567ef5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bd39f023a89608002e55": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bd3a00a0c1ab3f4b7723": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bd4b7546f2d5182a3104": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bd5f88030186df1e5869": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bd917d68bd42a03e09f5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bde52a1d91a778702304": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "be71e55cc6a9d733fb4f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bf53dcad7a8ab846093f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "bf940ab2d9b44397f010": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c01bb2cd446309c18bcf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c081967707366b1f8057": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c08f18dc0ed1e7399c46": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c0fe9f8af94b0dd55a59": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c122e2f254787cf57f5c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c129dc45b648833f20c9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c15a1f17a177799428f1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c1ea6d367c565d3076b7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c27afba85ee36e514852": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "c2c980a8405fed5a3ad2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c2e24f2c181c4d267191": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c371ac61381bdaa6e4c5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c3bb12deb60cb2c96c1e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c3c068201a6b588bcab2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c3da1381c6f7475e9cce": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c3faa2c9a1502ef72b78": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c4d4ee5780cbb1563b60": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c590f3718bac1a421133": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c693a41e2031db25d0ae": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c81cdbf3b3201fcbb49d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c85baf76dcfc0924eae5": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "c86bb0d5c803fae05c3a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c8fc68d615a7a2ada3ba": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c92069fef4eb7db61554": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c94adc280c8bdf1f1035": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c955869d4b689b5dc00e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "c9c2eda0b8a0d00cdb8d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cac01c870f5155480d31": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cb4bdce16396787744d4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cb7215707993bdcde5de": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cbc8a610c25784317669": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cbcedf6e1d12411d2048": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cbd3c84965afef97cc3e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cbdb353d0f60ac493c21": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cbea32ebe9a5260d3736": {
+      "decision": "rejected",
+      "note": "while it looks plausible that this is a relatively clean split, I am not fully sure about this, please check against the source code of BusyBox commit 9a647c326\n\nCodex assessment: The current split mapping should be rejected and replaced. In wget.c, every FEATURE_WGET_SSL_HELPER guard is mechanically replaced by FEATURE_WGET_HTTPS. SSL_CLIENT is a new, separately selectable applet that shares the extracted TLS library; FEATURE_WGET_HTTPS selects TLS, not SSL_CLIENT. The defensible mapping is FEATURE_WGET_SSL_HELPER=FEATURE_WGET_HTTPS only.\n\nhuman response: because of the complex and opaque nature of this change I would completely drop the mapping."
+    },
+    "cded651369f88affc1dc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ce0b32031ae6d0465e1c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cf1af80308c254249a5c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "cf4afef16dce782e105f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d18f43961cea14db1fbf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d19698528db004e12adb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d2add5e5191c87d623d8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d2d6dba35fdf8d78d967": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d4737b41fc4efa790543": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d533f4d61747f89bd8fd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d59ff54f9243af4498ef": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d6a5fd70380f5a264dcb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d70968e19cf4d0e76ea9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d733a7dd6ac2d624eb06": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d74972565861c656834d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d765ea8293eb03db7f59": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d854d8eed035af28e722": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "d94005cca2bca8be113e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "da16b934350aaf7413f3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "da8cd703276b73428236": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "db517733adcfd8240808": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "db55aa4ea57bca5efdcb": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "dd2c65fb9ce439412afa": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "dda285e11a02bc1d8d65": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "de560c466906529fbd2a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "df0288f147a61e956a32": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "df0d6013d50a0123092c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "df843f608fce0574e247": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "dfc5a2a700c8ba741f81": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e0147faec7c4950bb7c1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e12e22e172a4eb234bf2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e2138ccf5973a50bc8df": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e23000c552189af640ba": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e29040fdc6dc854339ac": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e2f192010c26538c00e4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e3b61369247882b96582": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e586194fa7c282e401cc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e634167f486ed6230859": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e65d5898b146635d15b6": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e668a66184bdce5e1b53": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e733797b8b0f5b18c384": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e7442a2abc3ceabff6c5": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e761b1241680ddef3fa7": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e7a87e659ba57751b85e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e8341c24752040f3dde8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e876348318b2957d8f22": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "e9a83e54d0417d7c126d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ea0e2d6b5ccf3e29503e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ea5843e712c3d060a0a8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ea9c3161ed28b3f2bb80": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "eb165b215c65156fc76e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "eb36840668083d137cd3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ebf019cefd2881ac31ef": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ed0a22b21b22d3dd46ca": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ed4e31f1678f39e28a3f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ed93083cb697e8024e0f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ee73e9fb52dda9b5d722": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ef4107bd7421bc01552a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "efdc8c4c4e8199157036": {
+      "decision": "rejected",
+      "note": "isn't this a semantic negation/reversal of the logic? check the original BusyBox commit 75f8d080a. provided this is a semantic negation, I would reject this.\n\nCodex assessment: Keep rejected. The upstream message and telnetd.c confirm a polarity and scope change: old y meant inetd-only, whereas new y permits standalone operation in addition to inetd and new n means inetd-only. This is not a semantics-preserving rename, and Clausy's current positive mapping cannot express it."
+    },
+    "f001d8dc9a39d5369e6e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f001f76417fb8b322a8f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f01dc3fe5e9e119fd40c": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "f06ce0fd5b303d99cae3": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f0a981a4e715a8b4bca0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f145321195ab1df5c65f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f14dda48a02c9056406b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f1871be4084eb52cc4d9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f1c0ecad32fcb1626cdd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f26d80988fba71daec5f": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f2736cf3d5a77b33c53a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f2b43702f9d26e692e76": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f3009b0eaa7f58380a51": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f34373dfad2f74367684": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f43b234309c0025aef25": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f496aa851e1ac3e4eca0": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f4dd3ae07fa30c1ba5bf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f4f16b9857e7939e73ca": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f530e00ad3920f8bbbe4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f540a0160631d8849cbd": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f5adfbed4807f59df67b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f66988d7753c219d3641": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f6e263ed35262b38d235": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f6f71393a160363d486b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f757488037c9a3cd064e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f764ab9cbb9af5527203": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f7987d38503bed4155df": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f84f739d30dddc1f9bb8": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f8585201247539cf6e8b": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f8c06b4cba833ff0c001": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f8c829277c2051836735": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f9a58988c50bb920498d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f9c0f5a258d27fe73b60": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "f9e66fa2bd41391a505d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fa0c6f31e6e46deadec9": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fa74c5585be9ac9b7df2": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fa7fc155351dbfbaa7fe": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fad3981f1e55906aaa23": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fbea3136ea1ca883e9ab": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fc5477a4645b065e58a2": {
+      "decision": "rejected",
+      "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+    },
+    "fc8bb3f2d608fc620321": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fccc90bcd1aa63070ca4": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fd7bbf847e7ea629a3cc": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fd97a102fb00ad4a960a": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fda7526ddd505521b48e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fdc203e7565044f88f5e": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fe017befa7f3ab1a547c": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fe2fc391480d58edecb1": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "feaa1763c87f832d854d": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fef3866112990e248f38": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "ff01650623ec52a8aecf": {
+      "decision": "accepted",
+      "note": ""
+    },
+    "fff8c86ba19e483fb888": {
+      "decision": "accepted",
+      "note": ""
+    }
+  },
+  "schema_version": 1
+}

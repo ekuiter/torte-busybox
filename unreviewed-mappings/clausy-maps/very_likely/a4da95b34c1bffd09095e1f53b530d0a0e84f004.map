@@ -1,0 +1,8 @@
+# parent a84cd1b1859b8a67a818a8a92b5dafe33298c3d4
+# commit a4da95b34c1bffd09095e1f53b530d0a0e84f004
+# 1924e99ad
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly removes `config FEATURE_GREP_EGREP_ALIAS` and adds `config EGREP`. The help text for the new feature ('Alias to 
+FEATURE_GREP_EGREP_ALIAS=EGREP
+# rename: Similar to the first candidate, `FEATURE_GREP_FGREP_ALIAS` is directly replaced by `config FGREP`. The help text confirms the semantic equivalence ('Alias to 
+FEATURE_GREP_FGREP_ALIAS=FGREP

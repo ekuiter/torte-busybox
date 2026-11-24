@@ -1,0 +1,6 @@
+# parent 9003548b6a622ebc381356e01445b9fa5418fcf2
+# commit e7dabb0ad0104b3c1ed1d44724e5962b933bfdf0
+# 147676060
+# LM confidence: likely; REVIEW BEFORE USE
+# split: The commit removes `FEATURE_DC_SMALL` and introduces two new features: `FEATURE_DC_BIG` (which replaces the 'small' implementation with a larger one using the bc code base) and `FEATURE_BC_INTERACTIVE` (which replaces `FEATURE_BC_SIGNALS`). The dependency logic changes significantly, suggesting that the functionality previously gated by `!FEATURE_DC_SMALL` is now split into two distinct paths: one for a large DC implementation (`FEATURE_DC_BIG`) and one for interactive mode (`FEATURE_BC_INTERACTIVE`). While `FEATURE_BC_SIGNALS` is also removed, it appears to be replaced by `FEATURE_BC_INTERACTIVE`, suggesting a rename as well. However, the primary structural change is the split of the 'small' feature into two distinct features based on the implementation choice (bc code base vs not) and the interactive mode requirement.
+FEATURE_DC_SMALL=FEATURE_DC_BIG,FEATURE_BC_INTERACTIVE

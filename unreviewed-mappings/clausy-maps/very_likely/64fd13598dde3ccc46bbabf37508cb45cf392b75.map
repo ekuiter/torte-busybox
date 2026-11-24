@@ -1,0 +1,6 @@
+# parent a655cd5e7ddfe1a5e2b211a757b77b730af5414f
+# commit 64fd13598dde3ccc46bbabf37508cb45cf392b75
+# 53c80f097
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly renames `config FEATURE_LESS_FLAGCS` to `config FEATURE_LESS_DASHCMD`. The help text is updated to reflect the new name in parentheses ('-' command), and the corresponding line in `scripts/defconfig` is updated from `CONFIG_FEATURE_LESS_FLAGCS=y` to `CONFIG_FEATURE_LESS_DASHCMD=y`. This is a direct 1-to-1 replacement.
+FEATURE_LESS_FLAGCS=FEATURE_LESS_DASHCMD

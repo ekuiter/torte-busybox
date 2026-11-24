@@ -1,0 +1,6 @@
+# parent 2944dc582d8addd858d2321e4deda063df792ea5
+# commit 1ee473a57433a550095fb1c4a747b06ffa4d2d1e
+# d4461ef9f
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The diff explicitly shows the line `config NSLOOKUP_BIG` being replaced by `config FEATURE_NSLOOKUP_BIG`. The body of the config block and its dependencies (after updating the reference) remain logically identical. This is a canonical rename operation.
+NSLOOKUP_BIG=FEATURE_NSLOOKUP_BIG

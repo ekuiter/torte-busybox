@@ -1,0 +1,10 @@
+# parent 1be40796fd78292bb50e504d0b5588322eaf1584
+# commit 418e80fe5d0cc1900abd4ac6b48f1800d090ac0e
+# e9ad84dfd
+# LM confidence: possible; REVIEW BEFORE USE
+# rename: Generalization: New feature covers broader toolset including implied dpkg support,
+FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ
+# rename: Generalization: New feature covers broader toolset including implied dpkg support,
+FEATURE_DEB_TAR_BZ2=FEATURE_SEAMLESS_BZ2
+# rename: Generalization: New feature covers broader toolset including implied dpkg support,
+FEATURE_DEB_TAR_LZMA=FEATURE_SEAMLESS_LZMA

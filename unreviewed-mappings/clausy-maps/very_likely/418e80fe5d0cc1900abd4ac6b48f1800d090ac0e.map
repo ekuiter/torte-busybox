@@ -1,0 +1,10 @@
+# parent 1be40796fd78292bb50e504d0b5588322eaf1584
+# commit 418e80fe5d0cc1900abd4ac6b48f1800d090ac0e
+# e9ad84dfd
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: Direct functional replacement: New feature enables tar to handle .gz data, same as old feature.
+FEATURE_TAR_GZIP=FEATURE_SEAMLESS_GZ
+# rename: Direct functional replacement: New feature enables tar to handle .bz2 data, same as old feature.
+FEATURE_TAR_BZIP2=FEATURE_SEAMLESS_BZ2
+# rename: Direct functional replacement: New feature enables tar to handle .lzma data, same as old feature.
+FEATURE_TAR_LZMA=FEATURE_SEAMLESS_LZMA

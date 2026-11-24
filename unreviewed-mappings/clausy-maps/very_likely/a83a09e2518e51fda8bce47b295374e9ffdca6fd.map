@@ -1,0 +1,14 @@
+# parent dcce5895a6536fa126d8d9d643811070caebac17
+# commit a83a09e2518e51fda8bce47b295374e9ffdca6fd
+# 35a064b67
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly renames `config DEBUG_CROND_OPTION` to `config FEATURE_CROND_D` in miscutils/Config.in. The defconfig file is updated from `# CONFIG_DEBUG_CROND_OPTION is not set` to `# CONFIG_FEATURE_CROND_D is not set`, confirming the symbol change.
+DEBUG_CROND_OPTION=FEATURE_CROND_D
+# rename: The patch explicitly renames `config DEBUG_TFTP` to `config TFTP_DEBUG` in networking/Config.in. The defconfig file is updated from `# CONFIG_DEBUG_TFTP is not set` to `# CONFIG_TFTP_DEBUG is not set`.
+DEBUG_TFTP=TFTP_DEBUG
+# rename: The patch explicitly renames `config FEATURE_UDHCP_DEBUG` to `config UDHCP_DEBUG` in networking/udhcp/Config.in. The defconfig file is updated from `# CONFIG_FEATURE_UDHCP_DEBUG is not set` to `# CONFIG_UDHCP_DEBUG is not set`.
+FEATURE_UDHCP_DEBUG=UDHCP_DEBUG
+# rename: The patch explicitly renames `config FEATURE_RFC3397` to `config FEATURE_UDHCP_RFC3397` in networking/udhcp/Config.in. The defconfig file is updated from `CONFIG_FEATURE_RFC3397=y` to `CONFIG_FEATURE_UDHCP_RFC3397=y`.
+FEATURE_RFC3397=FEATURE_UDHCP_RFC3397
+# rename: The patch explicitly renames `config DHCPC_DEFAULT_SCRIPT` to `config UDHCPC_DEFAULT_SCRIPT` in networking/udhcp/Config.in. The defconfig file is updated from `CONFIG_DHCPC_DEFAULT_SCRIPT=...` to `CONFIG_UDHCPC_DEFAULT_SCRIPT=...`.
+DHCPC_DEFAULT_SCRIPT=UDHCPC_DEFAULT_SCRIPT

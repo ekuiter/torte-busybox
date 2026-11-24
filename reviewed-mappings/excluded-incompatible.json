@@ -1,0 +1,1199 @@
+[
+  {
+    "candidate": "491479c2605ccaf3c9cc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ADDGROUP=ADDGROUP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "94c49998c15d1d7cfe4d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ADDUSER=ADDUSER",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "30db06c88b208d45d082",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ADJTIMEX=ADJTIMEX",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "2ed6b9bf1ccde507f140",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ARPING=ARPING",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "38aacd5e168b1a95defa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_BASENAME=BASENAME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "40641b896f7343856944",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_BBCONFIG=BBCONFIG",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "822c3091b5d1b51c8993",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_BB_SYSCTL=BB_SYSCTL",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "421f5840ad1d60d0bdc4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_BUILD_AT_ONCE=BUILD_AT_ONCE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "e7a87e659ba57751b85e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_BUNZIP2=BUNZIP2",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "0d1e7e7285694d2a8dbf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CAL=CAL",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "61fc728348293561c8c4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CAT=CAT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "594513cda23c98557de0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CATV=CATV",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "54cdf7cc01709c089b75",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CHATTR=CHATTR",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "348a2afb4c02c8d0b8bb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CHGRP=CHGRP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "181af2ff4c58ed463c6c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CHMOD=CHMOD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "a4f37d29a9e04d6f9271",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CHOWN=CHOWN",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "076c622af9d3c5b53a5b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CHROOT=CHROOT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "8e86a390ec44e1428f2c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CHVT=CHVT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "bd4b7546f2d5182a3104",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CKSUM=CKSUM",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ea0e2d6b5ccf3e29503e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CLEAR=CLEAR",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "702f37bd01e1f7e6c7b0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CMP=CMP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "4e5e5ace422ee7180d06",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_COMM=COMM",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "fdc203e7565044f88f5e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_CUT=CUT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "4e15eb6bcd2b85477077",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DC=DC",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "c86bb0d5c803fae05c3a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DEALLOCVT=DEALLOCVT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "73ddde5242ee9a68c827",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DEBUG_YANK_SUSv2=DEBUG_YANK_SUSv2",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ff01650623ec52a8aecf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DELGROUP=DELGROUP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "6b7a62db0a1466fe5eef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DELUSER=DELUSER",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "79f301016627f71bbaa8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DIRNAME=DIRNAME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "7806d4b6aba687f8829f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DMESG=DMESG",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "de560c466906529fbd2a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DNSD=DNSD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "693a11bbdcb3e18169fc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_DUMPKMAP=DUMPKMAP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "185d2b80a8b67f671ce0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_E2FSCK=E2FSCK",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "2026bf8926084c07bc89",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ED=ED",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "49e48b462c8196a08bd3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_EJECT=EJECT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "1ff3bebb2776f82a6ec8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ETHER_WAKE=ETHER_WAKE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "8d8df29c362b3daa7524",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FAKEIDENTD=FAKEIDENTD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "d765ea8293eb03db7f59",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FDFLUSH=FDFLUSH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "07ea7b88213d07824356",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FDFORMAT=FDFORMAT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "73a195c2e565831bdec2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FEATURE_DEVFS=FEATURE_DEVFS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "2f9d7d24b543e12bf841",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FEATURE_DEVPTS=FEATURE_DEVPTS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "9745ceba6c2770d05c01",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FEATURE_HTTPD_WITHOUT_INETD=FEATURE_HTTPD_WITHOUT_INETD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "9745ceba6c2770d05c01",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kconfigreader",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FEATURE_HTTPD_WITHOUT_INETD=FEATURE_HTTPD_WITHOUT_INETD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "286e35823d9683dbd0dd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FOLD=FOLD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "b2f9c644ff390270b863",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FREE=FREE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "218406db13412603519a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FREERAMDISK=FREERAMDISK",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "a2a4b6450d60a617f868",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FSCK=FSCK",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "a7830dacf7d1781061ef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_FUSER=FUSER",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ef4107bd7421bc01552a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_GETOPT=GETOPT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "00d2b86f3a01b52e1e54",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_GZIP=GZIP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "e8341c24752040f3dde8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_HALT=HALT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "28e9dbe3801710330576",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_HEXDUMP=HEXDUMP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "071a29d647c9fa329bab",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_HOSTID=HOSTID",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "30e61db7962a0c9b06e5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_HOSTNAME=HOSTNAME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "c2c980a8405fed5a3ad2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ID=ID",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "feaa1763c87f832d854d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_INSTALL_NO_USR=INSTALL_NO_USR",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f8c06b4cba833ff0c001",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LENGTH=LENGTH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f145321195ab1df5c65f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LN=LN",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "0e58b5ee2157742e43e3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LOADFONT=LOADFONT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "323aa7d34d4f8ee33cd1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LOADKMAP=LOADKMAP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "62e87a6683e249a66e62",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LOCALE_SUPPORT=LOCALE_SUPPORT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "4e58522659d28b86d521",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LOGGER=LOGGER",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "fccc90bcd1aa63070ca4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LOGNAME=LOGNAME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "226422dfed49623d4da1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LOSETUP=LOSETUP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "a983a504075e3572b228",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_LSATTR=LSATTR",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f540a0160631d8849cbd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MESG=MESG",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "2c5a22fe4bb1547cfeda",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MKE2FS=MKE2FS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "b1582aa4beb2c34ac9e0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MKFIFO=MKFIFO",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "64db02557e7504abe03f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MKNOD=MKNOD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "89fb56e4acd6ceb0dfab",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MKTEMP=MKTEMP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f4dd3ae07fa30c1ba5bf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MOUNTPOINT=MOUNTPOINT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "30d031c074139d876d4e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_MT=MT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ab43c7c6a5d68700c5ce",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_NAMEIF=NAMEIF",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "15442e3b12a9c3c3bb4c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_NETSTAT=NETSTAT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "8f910c583e3bcc4ee482",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_NICE=NICE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "bd5f88030186df1e5869",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_NOHUP=NOHUP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "52a68e85c76e878067e7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_NSLOOKUP=NSLOOKUP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ae3cf704963733e46476",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_OD=OD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "a4dbcc97ae67223a3994",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_OPENVT=OPENVT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "052126a337d682669463",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_PATCH=PATCH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "71b63ff64e432f073b59",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_PIPE_PROGRESS=PIPE_PROGRESS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "679a6c0a71af6cfef304",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_PIVOT_ROOT=PIVOT_ROOT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "acd51c55c111381861a4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_PRINTENV=PRINTENV",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "39f4057ef1bc351b8d35",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_PRINTF=PRINTF",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "27bfd98543b3f3b6a10f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_PWD=PWD",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "7b6030bb8fae056012f8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RDATE=RDATE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f8c829277c2051836735",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_READPROFILE=READPROFILE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "0bb7fa603af2ba68deb3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_REALPATH=REALPATH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "936dfb2eb1760a8af250",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RENICE=RENICE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "bd39f023a89608002e55",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RESET=RESET",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "047709ef11c4fc680320",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RM=RM",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "c8fc68d615a7a2ada3ba",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RMDIR=RMDIR",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "5244f6ed0d3c8f79b578",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RPM=RPM",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "55bb473f7f25520d40fd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RPM2CPIO=RPM2CPIO",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "7593f4cc5a70a598cc9d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RUNLEVEL=RUNLEVEL",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "5e7ea357da03174b7d35",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_RX=RX",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f1c0ecad32fcb1626cdd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SED=SED",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "876d9544534f2aaaa187",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SELINUX=SELINUX",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "4cbe51843ee0bcafa695",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SEQ=SEQ",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "622025a0038b12fa8971",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SETARCH=SETARCH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f5adfbed4807f59df67b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SETCONSOLE=SETCONSOLE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "e586194fa7c282e401cc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SETKEYCODES=SETKEYCODES",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ea5843e712c3d060a0a8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SETLOGCONS=SETLOGCONS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "0b8b84c97ec613db78c1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SETSID=SETSID",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "66cfbe9780941a8b9dea",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_STRINGS=STRINGS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f7987d38503bed4155df",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_STTY=STTY",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "f2b43702f9d26e692e76",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SULOGIN=SULOGIN",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "8a4b5206dfa8241a1e7c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SUM=SUM",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "327543996ec1d0f5c8f3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SWAPONOFF=SWAPONOFF",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "cbd3c84965afef97cc3e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SWITCH_ROOT=SWITCH_ROOT",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "780dfa7e4ac97b79613f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_SYNC=SYNC",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "7e9b0502d3dcf246ff30",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_TASKSET=TASKSET",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "e12e22e172a4eb234bf2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_TIME=TIME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "fe017befa7f3ab1a547c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_TOUCH=TOUCH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "27bb6f7e6b13f14122dc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_TTY=TTY",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "e7442a2abc3ceabff6c5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UNAME=UNAME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "69ad4889e02f6b0fa965",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UNCOMPRESS=UNCOMPRESS",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "93d4a8e96b2e7b8110e4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UNIQ=UNIQ",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ed4e31f1678f39e28a3f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UNZIP=UNZIP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "811fb23ac6a11367529d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UPTIME=UPTIME",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "93cc3858544a2509346d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_USLEEP=USLEEP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "c92069fef4eb7db61554",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UUDECODE=UUDECODE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "d59ff54f9243af4498ef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_UUENCODE=UUENCODE",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "ad6c2118ecd73bea610b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_VCONFIG=VCONFIG",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "2c7aa3e8348f5bcf42e9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_WATCHDOG=WATCHDOG",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "6bce9509acfb1b6f1f1d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_WC=WC",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "29ba3a0d4d8a74574a8a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_WHICH=WHICH",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "d733a7dd6ac2d624eb06",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_WHOAMI=WHOAMI",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "6db6c21993cb682df1de",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_YES=YES",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "9a1d0b78b3f978540cd9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "extractor": "kclause",
+    "left_release": "1_2_1",
+    "mapping": "CONFIG_ZCIP=ZCIP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_3_0"
+  },
+  {
+    "candidate": "9411badde21e4db2d813",
+    "commit": "a4da95b34c1bffd09095e1f53b530d0a0e84f004",
+    "extractor": "kclause",
+    "left_release": "1_25_1",
+    "mapping": "FEATURE_GREP_FGREP_ALIAS=FGREP",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_26_0"
+  },
+  {
+    "candidate": "5883cf2c0bce5e16f609",
+    "commit": "c4e8c2366667a8d94c6785b4d0d0f40c8b758cf2",
+    "extractor": "kclause",
+    "left_release": "1_26_2",
+    "mapping": "CATV=FEATURE_CATV",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_27_0"
+  },
+  {
+    "candidate": "8a85c72037daf5572e23",
+    "commit": "611ed85595636b515ab5c28e8dedc74155913e91",
+    "extractor": "kclause",
+    "left_release": "1_29_3",
+    "mapping": "FEATURE_FLOAT_SLEEP=FLOAT_DURATION",
+    "reason": "at least one mapping endpoint is absent from the extractor's .model formula",
+    "right_release": "1_30_0"
+  }
+]

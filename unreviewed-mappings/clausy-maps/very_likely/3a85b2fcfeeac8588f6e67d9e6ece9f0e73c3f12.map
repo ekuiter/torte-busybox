@@ -1,0 +1,6 @@
+# parent d3d49bba71ff868db448a4bf9c5296ac64167a86
+# commit 3a85b2fcfeeac8588f6e67d9e6ece9f0e73c3f12
+# 8d75d794e
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch removes `config FEATURE_HTTPD_USE_SENDFILE` from `networking/Config.in` and adds `config FEATURE_USE_SENDFILE` to the root `Config.in`. The help text is nearly identical (only expanding scope description), and the feature name changes only by dropping the `HTTPD_` prefix, indicating a deliberate renaming during a scope expansion rather than an unrelated addition.
+FEATURE_HTTPD_USE_SENDFILE=FEATURE_USE_SENDFILE

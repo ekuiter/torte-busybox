@@ -1,0 +1,6 @@
+# parent a4da95b34c1bffd09095e1f53b530d0a0e84f004
+# commit 0b9bb547382f0c32c47a2a20b96e2d5b77019daa
+# f417ffd88
+# LM confidence: very_likely; REVIEW BEFORE USE
+# split: The patch explicitly removes the single 'SWAPONOFF' feature which previously enabled both utilities and its dependent features (FEATURE_SWAPON_DISCARD, FEATURE_SWAPON_PRI). It simultaneously introduces two separate top-level features: 'SWAPON' for enabling swap space and 'SWAPOFF' for disabling it. The dependent features are updated to depend on the new split parent ('SWAPON') instead of the old one. This is a textbook feature split driven by semantic separation of concerns.
+SWAPONOFF=SWAPON,SWAPOFF

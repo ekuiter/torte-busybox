@@ -1,0 +1,8 @@
+# parent 7b868b728c5f857820880dab89aff05d46f18aa5
+# commit b8e6d2bb2a61e8ca55faaa2a4d053b9f8b60bf25
+# 522041ee7
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The commit replaces `config GZIP_BIG_MEM` (bool) with `config GZIP_FAST` (int). The help text in the new config explicitly describes the same trade-off ('Trade memory for gzip speed') and lists options that correspond to the previous binary choice (small vs big), effectively refining a boolean toggle into a multi-level integer selector. The semantic intent is preserved.
+GZIP_BIG_MEM=GZIP_FAST
+# rename: The commit replaces `config MD5_SIZE_VS_SPEED` (bool) with `config MD5_SMALL` (int). The help text explicitly states 'Trade bytes for speed', mirroring the old 'Trade memory for speed' theme. The new integer options (0:fast, 3:slow) map directly to the previous binary choice of optimizing for size or speed.
+MD5_SIZE_VS_SPEED=MD5_SMALL

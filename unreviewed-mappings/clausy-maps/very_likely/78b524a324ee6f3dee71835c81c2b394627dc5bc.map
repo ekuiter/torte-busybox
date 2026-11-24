@@ -1,0 +1,6 @@
+# parent 619795da94f87c040ee72c4283158bd9cf3813f5
+# commit 78b524a324ee6f3dee71835c81c2b394627dc5bc
+# e04c867a2
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The diff in archival/Config.in shows a direct line-by-line replacement where 'config FEATURE_LZMA_ALIAS' becomes 'config LZMA'. The help text is updated to remove the word 'alias', and the symbol name in scripts/defconfig and gen_build_files.sh is implicitly handled by the rename (though the provided snippet for defconfig shows unrelated changes, the Config.in change is definitive). This is a clean, explicit rename with no other features affected.
+FEATURE_LZMA_ALIAS=LZMA

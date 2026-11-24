@@ -1,0 +1,6 @@
+# parent 59f15c44a56ae55ac82507b5d73cfadd1da2cd6f
+# commit 1c8ae8aef3e20d3ea124ce8dbf20b54a5f070b1d
+# 52977a7d6
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch removes the exact definition of 'config FEATURE_INITRD' and introduces 'config LINUXRC'. The help text for both is identical ('Legacy support for running init under the old-style initrd...'), and the default value ('y') is preserved. The only change is the symbol name and a slight rephrasing in the new help text to clarify it doesn't apply to initramfs, which was implied but not explicitly stated in the old version. This is a clear semantic rename.
+FEATURE_INITRD=LINUXRC

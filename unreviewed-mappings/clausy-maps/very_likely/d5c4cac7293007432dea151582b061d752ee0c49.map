@@ -1,0 +1,6 @@
+# parent 23103cd6eff36fa9da23f35db24d9e589e0054f1
+# commit d5c4cac7293007432dea151582b061d752ee0c49
+# 0849207ce
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The diff explicitly removes `config DEBUG_YANK_SUSv2` and immediately defines `config INCLUDE_SUSv2` in the same location within `Config.in`. The corresponding entry in `scripts/defconfig` is also updated from `CONFIG_DEBUG_YANK_SUSv2=y` to `CONFIG_INCLUDE_SUSv2=y`. This is a direct 1-to-1 substitution.
+DEBUG_YANK_SUSv2=INCLUDE_SUSv2

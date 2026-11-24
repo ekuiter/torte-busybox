@@ -1,0 +1,6 @@
+# parent 399ed06cce7ec17cd78c98aede908fcb5ea571e4
+# commit 0544a4b3326c198add1c42394419ccfbfde58663
+# 19158a837
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch explicitly renames 'config FEATURE_ASSUME_UNICODE' to 'config UNICODE_SUPPORT' in Config.in. The help text and default values remain identical. All dependent features (FEATURE_CHECK_UNICODE_IN_ENV, SUBST_WCHAR, LAST_SUPPORTED_WCHAR, UNICODE_COMBINING_WCHARS, UNICODE_WIDE_WCHARS, UNICODE_BIDI_SUPPORT, UNICODE_NEUTRAL_TABLE) are updated to depend on the new name. The defconfig and randomtest scripts are also updated to use the new symbol name.
+FEATURE_ASSUME_UNICODE=UNICODE_SUPPORT

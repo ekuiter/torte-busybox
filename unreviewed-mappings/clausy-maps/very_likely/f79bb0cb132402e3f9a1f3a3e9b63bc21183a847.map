@@ -1,0 +1,6 @@
+# parent 7252d7532051c803b2ea352a895a8741ff0ea817
+# commit f79bb0cb132402e3f9a1f3a3e9b63bc21183a847
+# 483405a9b
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The patch shows a direct substitution of the symbol 'config BBARCH' with 'config BB_ARCH' in the same file (coreutils/Config.in). The surrounding context (help text, default value) remains identical, indicating no semantic change other than the name. This fits the strict definition of a clean rename where one parent feature becomes exactly one commit feature.
+BBARCH=BB_ARCH

@@ -1,0 +1,6 @@
+# parent 6c7a39aa0567347778c622a3f7417bf87114e4a1
+# commit 81e3a12930cb7afcd0f744ab7fa7c482fa4eb8af
+# ed15dde60
+# LM confidence: very_likely; REVIEW BEFORE USE
+# split: The patch explicitly removes the generic 'FEATURE_AUTOWIDTH' which described enabling width calculation for utilities like 'ls' and 'telnet'. It then adds two new, specific features: 'FEATURE_LS_WIDTH' (dependent on LS) and 'FEATURE_TELNET_WIDTH' (dependent on TELNET). The semantic meaning is preserved but scoped to specific applets, constituting a definitive split.
+FEATURE_AUTOWIDTH=FEATURE_LS_WIDTH,FEATURE_TELNET_WIDTH

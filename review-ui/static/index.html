@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BusyBox mapping review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">differencing · human verification</p>
+      <h1>BusyBox mapping review</h1>
+    </div>
+    <div class="header-actions">
+      <div id="progress" class="progress" aria-live="polite"></div>
+      <button id="export" class="primary">Export accepted maps</button>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <div class="filters">
+        <label class="search"><span>Search</span><input id="search" type="search" placeholder="symbol, commit, rationale…"></label>
+        <div class="filter-grid">
+          <label><span>Decision</span><select id="decision-filter"><option value="">All</option><option>pending</option><option>accepted</option><option>rejected</option><option>uncertain</option><option>mixed</option></select></label>
+          <label><span>Confidence</span><select id="confidence-filter"><option value="">All</option><option value="very_likely">very likely</option><option>likely</option><option>possible</option></select></label>
+          <label><span>Kind</span><select id="kind-filter"><option value="">All</option><option>rename</option><option>split</option><option>merge</option></select></label>
+          <label class="checkbox"><input id="release-filter" type="checkbox"><span>Release-applicable only</span></label>
+          <label class="checkbox"><input id="note-filter" type="checkbox"><span>Has review note</span></label>
+        </div>
+      </div>
+      <div id="result-count" class="result-count"></div>
+      <div id="candidate-list" class="candidate-list" role="listbox" aria-label="Commits with mapping candidates"></div>
+    </aside>
+
+    <section id="detail" class="detail empty">
+      <div class="empty-state"><span>↳</span><p>Select a commit to inspect all proposed mappings, rationales, and its concrete Git diff.</p></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# parent 6064c208dc9704d883e6919cfeda0fa82f2f6bd9
+# commit c9b0c4517f2bd3582f0a4e291fcb720bd3c544c2
+# ba1315d0f
+# LM confidence: very_likely; REVIEW BEFORE USE
+# rename: The old feature name contains 'DEPMOD', while the new one is 'MODUTILS'. The help text for the new feature explicitly describes generating and parsing 'modules.alias' (the alias file), which matches the functionality of the old 'FEATURE_DEPMOD_ALIAS'. The dependency on 'DEPMOD' in the new feature further confirms this is a rename rather than an unrelated addition.
+FEATURE_DEPMOD_ALIAS=FEATURE_MODUTILS_ALIAS

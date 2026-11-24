@@ -1,0 +1,4706 @@
+[
+  {
+    "candidate": "e23000c552189af640ba",
+    "commit": "11e0e08633665f5782e7e62e2d6c1a12d6fdd64e",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_CPU_USAGE_PERCENTAGE=ENABLE_FEATURE_TOP_CPU_USAGE_PERCENTAGE",
+    "note": ""
+  },
+  {
+    "candidate": "491479c2605ccaf3c9cc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ADDGROUP=ADDGROUP",
+    "note": ""
+  },
+  {
+    "candidate": "94c49998c15d1d7cfe4d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ADDUSER=ADDUSER",
+    "note": ""
+  },
+  {
+    "candidate": "30db06c88b208d45d082",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ADJTIMEX=ADJTIMEX",
+    "note": ""
+  },
+  {
+    "candidate": "f3009b0eaa7f58380a51",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_APP_DUMPLEASES=APP_DUMPLEASES",
+    "note": ""
+  },
+  {
+    "candidate": "70cefe48fc5589a0db93",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_APP_UDHCPC=APP_UDHCPC",
+    "note": ""
+  },
+  {
+    "candidate": "3f758f322f00fdc15bf8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_APP_UDHCPD=APP_UDHCPD",
+    "note": ""
+  },
+  {
+    "candidate": "66f7801ed03057169d8d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_AR=AR",
+    "note": ""
+  },
+  {
+    "candidate": "2ed6b9bf1ccde507f140",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ARPING=ARPING",
+    "note": ""
+  },
+  {
+    "candidate": "2d28585dc0b4fc55eddb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH=ASH",
+    "note": ""
+  },
+  {
+    "candidate": "d854d8eed035af28e722",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_ALIAS=ASH_ALIAS",
+    "note": ""
+  },
+  {
+    "candidate": "5eb1240fedaaefcd1b76",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_BUILTIN_ECHO=ASH_BUILTIN_ECHO",
+    "note": ""
+  },
+  {
+    "candidate": "d4737b41fc4efa790543",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_BUILTIN_TEST=ASH_BUILTIN_TEST",
+    "note": ""
+  },
+  {
+    "candidate": "f4f16b9857e7939e73ca",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_CMDCMD=ASH_CMDCMD",
+    "note": ""
+  },
+  {
+    "candidate": "22769dcda0bd12551ffd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_EXPAND_PRMT=ASH_EXPAND_PRMT",
+    "note": ""
+  },
+  {
+    "candidate": "4bd15551cd02dab6eee5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_GETOPTS=ASH_GETOPTS",
+    "note": ""
+  },
+  {
+    "candidate": "a18edd7d8c4063930177",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_JOB_CONTROL=ASH_JOB_CONTROL",
+    "note": ""
+  },
+  {
+    "candidate": "d70968e19cf4d0e76ea9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_MAIL=ASH_MAIL",
+    "note": ""
+  },
+  {
+    "candidate": "5979efc8cba0d70c30d2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_MATH_SUPPORT=ASH_MATH_SUPPORT",
+    "note": ""
+  },
+  {
+    "candidate": "d533f4d61747f89bd8fd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_MATH_SUPPORT_64=ASH_MATH_SUPPORT_64",
+    "note": ""
+  },
+  {
+    "candidate": "aa29fa39c425c7dd7a77",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_OPTIMIZE_FOR_SIZE=ASH_OPTIMIZE_FOR_SIZE",
+    "note": ""
+  },
+  {
+    "candidate": "71ec01efe5e0c82e0256",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_RANDOM_SUPPORT=ASH_RANDOM_SUPPORT",
+    "note": ""
+  },
+  {
+    "candidate": "4280cad80eff9731874f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_READ_NCHARS=ASH_READ_NCHARS",
+    "note": ""
+  },
+  {
+    "candidate": "4c173ccc427fa78e7ae4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ASH_READ_TIMEOUT=ASH_READ_TIMEOUT",
+    "note": ""
+  },
+  {
+    "candidate": "5dcfacbc9544a75642dd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_AWK=AWK",
+    "note": ""
+  },
+  {
+    "candidate": "38aacd5e168b1a95defa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BASENAME=BASENAME",
+    "note": ""
+  },
+  {
+    "candidate": "40641b896f7343856944",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BBCONFIG=BBCONFIG",
+    "note": ""
+  },
+  {
+    "candidate": "822c3091b5d1b51c8993",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BB_SYSCTL=BB_SYSCTL",
+    "note": ""
+  },
+  {
+    "candidate": "421f5840ad1d60d0bdc4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BUILD_AT_ONCE=BUILD_AT_ONCE",
+    "note": ""
+  },
+  {
+    "candidate": "02e27ba529897af1c43a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BUILD_LIBBUSYBOX=BUILD_LIBBUSYBOX",
+    "note": ""
+  },
+  {
+    "candidate": "e7a87e659ba57751b85e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BUNZIP2=BUNZIP2",
+    "note": ""
+  },
+  {
+    "candidate": "e2f192010c26538c00e4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_BUSYBOX_EXEC_PATH=BUSYBOX_EXEC_PATH",
+    "note": ""
+  },
+  {
+    "candidate": "0d1e7e7285694d2a8dbf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CAL=CAL",
+    "note": ""
+  },
+  {
+    "candidate": "61fc728348293561c8c4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CAT=CAT",
+    "note": ""
+  },
+  {
+    "candidate": "594513cda23c98557de0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CATV=CATV",
+    "note": ""
+  },
+  {
+    "candidate": "54cdf7cc01709c089b75",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHATTR=CHATTR",
+    "note": ""
+  },
+  {
+    "candidate": "348a2afb4c02c8d0b8bb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHGRP=CHGRP",
+    "note": ""
+  },
+  {
+    "candidate": "181af2ff4c58ed463c6c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHMOD=CHMOD",
+    "note": ""
+  },
+  {
+    "candidate": "a4f37d29a9e04d6f9271",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHOWN=CHOWN",
+    "note": ""
+  },
+  {
+    "candidate": "918aa4c5effca800cf2e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHPST=CHPST",
+    "note": ""
+  },
+  {
+    "candidate": "076c622af9d3c5b53a5b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHROOT=CHROOT",
+    "note": ""
+  },
+  {
+    "candidate": "8e86a390ec44e1428f2c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CHVT=CHVT",
+    "note": ""
+  },
+  {
+    "candidate": "bd4b7546f2d5182a3104",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CKSUM=CKSUM",
+    "note": ""
+  },
+  {
+    "candidate": "ea0e2d6b5ccf3e29503e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CLEAR=CLEAR",
+    "note": ""
+  },
+  {
+    "candidate": "702f37bd01e1f7e6c7b0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CMP=CMP",
+    "note": ""
+  },
+  {
+    "candidate": "4e5e5ace422ee7180d06",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_COMM=COMM",
+    "note": ""
+  },
+  {
+    "candidate": "7e00c3ec302b1afd2aa5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CP=CP",
+    "note": ""
+  },
+  {
+    "candidate": "00abed9df76c8ca5b993",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CPIO=CPIO",
+    "note": ""
+  },
+  {
+    "candidate": "ba2db19d487881e668fa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CROND=CROND",
+    "note": ""
+  },
+  {
+    "candidate": "20207706f750d38735b6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CRONTAB=CRONTAB",
+    "note": ""
+  },
+  {
+    "candidate": "fdc203e7565044f88f5e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_CUT=CUT",
+    "note": ""
+  },
+  {
+    "candidate": "5c4521e6930adf0a3541",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DATE=DATE",
+    "note": ""
+  },
+  {
+    "candidate": "4e15eb6bcd2b85477077",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DC=DC",
+    "note": ""
+  },
+  {
+    "candidate": "3d990eee895ad7650f43",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DD=DD",
+    "note": ""
+  },
+  {
+    "candidate": "c86bb0d5c803fae05c3a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEALLOCVT=DEALLOCVT",
+    "note": ""
+  },
+  {
+    "candidate": "7271b532c9f8f395b554",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEBUG=DEBUG",
+    "note": ""
+  },
+  {
+    "candidate": "50a0eb302d6eaa479efb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEBUG_CROND_OPTION=DEBUG_CROND_OPTION",
+    "note": ""
+  },
+  {
+    "candidate": "5932242e9619a30cbdb9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEBUG_INIT=DEBUG_INIT",
+    "note": ""
+  },
+  {
+    "candidate": "5b9314aeefea3615a1ba",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEBUG_PESSIMIZE=DEBUG_PESSIMIZE",
+    "note": ""
+  },
+  {
+    "candidate": "9e42e43944d07cc82daa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEBUG_TFTP=DEBUG_TFTP",
+    "note": ""
+  },
+  {
+    "candidate": "73ddde5242ee9a68c827",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEBUG_YANK_SUSv2=DEBUG_YANK_SUSv2",
+    "note": ""
+  },
+  {
+    "candidate": "ff01650623ec52a8aecf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DELGROUP=DELGROUP",
+    "note": ""
+  },
+  {
+    "candidate": "6b7a62db0a1466fe5eef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DELUSER=DELUSER",
+    "note": ""
+  },
+  {
+    "candidate": "9c0c725344836723bff0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DESKTOP=DESKTOP",
+    "note": ""
+  },
+  {
+    "candidate": "9c88c0cc9aa41b6c114b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEVFSD=DEVFSD",
+    "note": ""
+  },
+  {
+    "candidate": "3b1cae085fa87adc303f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEVFSD_FG_NP=DEVFSD_FG_NP",
+    "note": ""
+  },
+  {
+    "candidate": "fe2fc391480d58edecb1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEVFSD_MODLOAD=DEVFSD_MODLOAD",
+    "note": ""
+  },
+  {
+    "candidate": "474887de73811a13359a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DEVFSD_VERBOSE=DEVFSD_VERBOSE",
+    "note": ""
+  },
+  {
+    "candidate": "6396334657e381207f1b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DF=DF",
+    "note": ""
+  },
+  {
+    "candidate": "44181f91d7048bc2c58c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DIFF=DIFF",
+    "note": ""
+  },
+  {
+    "candidate": "79f301016627f71bbaa8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DIRNAME=DIRNAME",
+    "note": ""
+  },
+  {
+    "candidate": "46fa6251aba37f2f0fe4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DMALLOC=DMALLOC",
+    "note": ""
+  },
+  {
+    "candidate": "7806d4b6aba687f8829f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DMESG=DMESG",
+    "note": ""
+  },
+  {
+    "candidate": "de560c466906529fbd2a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DNSD=DNSD",
+    "note": ""
+  },
+  {
+    "candidate": "a10cbe7a0b589cc3fb9a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DOS2UNIX=DOS2UNIX",
+    "note": ""
+  },
+  {
+    "candidate": "c2e24f2c181c4d267191",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DPKG=DPKG",
+    "note": ""
+  },
+  {
+    "candidate": "5cc09dbc0e7ee2a67e2a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DPKG_DEB=DPKG_DEB",
+    "note": ""
+  },
+  {
+    "candidate": "bde52a1d91a778702304",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DU=DU",
+    "note": ""
+  },
+  {
+    "candidate": "693a11bbdcb3e18169fc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_DUMPKMAP=DUMPKMAP",
+    "note": ""
+  },
+  {
+    "candidate": "185d2b80a8b67f671ce0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_E2FSCK=E2FSCK",
+    "note": ""
+  },
+  {
+    "candidate": "35adebaffba82c11b4ce",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_E2LABEL=E2LABEL",
+    "note": ""
+  },
+  {
+    "candidate": "688c63117101e829cca6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ECHO=ECHO",
+    "note": ""
+  },
+  {
+    "candidate": "2026bf8926084c07bc89",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ED=ED",
+    "note": ""
+  },
+  {
+    "candidate": "2fe49d7a84027179a360",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_EFENCE=EFENCE",
+    "note": ""
+  },
+  {
+    "candidate": "49e48b462c8196a08bd3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_EJECT=EJECT",
+    "note": ""
+  },
+  {
+    "candidate": "cded651369f88affc1dc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ENV=ENV",
+    "note": ""
+  },
+  {
+    "candidate": "3fa2e59be50657704fc0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ENVDIR=ENVDIR",
+    "note": ""
+  },
+  {
+    "candidate": "649eaf717b0f9e2e6510",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ENVUIDGID=ENVUIDGID",
+    "note": ""
+  },
+  {
+    "candidate": "1ff3bebb2776f82a6ec8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ETHER_WAKE=ETHER_WAKE",
+    "note": ""
+  },
+  {
+    "candidate": "969e104eef94b490dbf7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_EXPR=EXPR",
+    "note": ""
+  },
+  {
+    "candidate": "b789a4ab13a08b4b4ee6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_EXPR_MATH_SUPPORT_64=EXPR_MATH_SUPPORT_64",
+    "note": ""
+  },
+  {
+    "candidate": "8d8df29c362b3daa7524",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FAKEIDENTD=FAKEIDENTD",
+    "note": ""
+  },
+  {
+    "candidate": "85562551c071fe438765",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FALSE=FALSE",
+    "note": ""
+  },
+  {
+    "candidate": "a66bfcb300dfc33a9633",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FBSET=FBSET",
+    "note": ""
+  },
+  {
+    "candidate": "d765ea8293eb03db7f59",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FDFLUSH=FDFLUSH",
+    "note": ""
+  },
+  {
+    "candidate": "07ea7b88213d07824356",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FDFORMAT=FDFORMAT",
+    "note": ""
+  },
+  {
+    "candidate": "22843c63c13c9f2e3e2d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FDISK=FDISK",
+    "note": ""
+  },
+  {
+    "candidate": "3047f6d597a4e6279be4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_2_4_MODULES=FEATURE_2_4_MODULES",
+    "note": ""
+  },
+  {
+    "candidate": "20d37a6f4497da96ffaa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_2_6_MODULES=FEATURE_2_6_MODULES",
+    "note": ""
+  },
+  {
+    "candidate": "2faf1d2d32c00a82bac0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_AIX_LABEL=FEATURE_AIX_LABEL",
+    "note": ""
+  },
+  {
+    "candidate": "39437c7d32113f14cb8e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_AR_LONG_FILENAMES=FEATURE_AR_LONG_FILENAMES",
+    "note": ""
+  },
+  {
+    "candidate": "4010b14609c0806ee676",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_AUTOWIDTH=FEATURE_AUTOWIDTH",
+    "note": ""
+  },
+  {
+    "candidate": "0144c6bb19c135c98389",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_AWK_MATH=FEATURE_AWK_MATH",
+    "note": ""
+  },
+  {
+    "candidate": "f6f71393a160363d486b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_BUFFERS_GO_IN_BSS=FEATURE_BUFFERS_GO_IN_BSS",
+    "note": ""
+  },
+  {
+    "candidate": "8dd1435ab085ca60554a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_BUFFERS_GO_ON_STACK=FEATURE_BUFFERS_GO_ON_STACK",
+    "note": ""
+  },
+  {
+    "candidate": "455afe55cfd531d61c60",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_BUFFERS_USE_MALLOC=FEATURE_BUFFERS_USE_MALLOC",
+    "note": ""
+  },
+  {
+    "candidate": "2b7900a9830d73138aac",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_CHECK_TAINTED_MODULE=FEATURE_CHECK_TAINTED_MODULE",
+    "note": ""
+  },
+  {
+    "candidate": "5d9dedf95aed7e5610ce",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_CLEAN_UP=FEATURE_CLEAN_UP",
+    "note": ""
+  },
+  {
+    "candidate": "cf4afef16dce782e105f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMMAND_EDITING=FEATURE_COMMAND_EDITING",
+    "note": ""
+  },
+  {
+    "candidate": "8982314b45fde4127fb1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMMAND_EDITING_VI=FEATURE_COMMAND_EDITING_VI",
+    "note": ""
+  },
+  {
+    "candidate": "e9a83e54d0417d7c126d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMMAND_HISTORY=FEATURE_COMMAND_HISTORY",
+    "note": ""
+  },
+  {
+    "candidate": "d74972565861c656834d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMMAND_SAVEHISTORY=FEATURE_COMMAND_SAVEHISTORY",
+    "note": ""
+  },
+  {
+    "candidate": "86b5db5c3ba21a59c3dd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMMAND_TAB_COMPLETION=FEATURE_COMMAND_TAB_COMPLETION",
+    "note": ""
+  },
+  {
+    "candidate": "10b78647534ad7db0dba",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMMAND_USERNAME_COMPLETION=FEATURE_COMMAND_USERNAME_COMPLETION",
+    "note": ""
+  },
+  {
+    "candidate": "745b2c1681e7984b289b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_COMPRESS_USAGE=FEATURE_COMPRESS_USAGE",
+    "note": ""
+  },
+  {
+    "candidate": "bf53dcad7a8ab846093f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_CROND_CALL_SENDMAIL=FEATURE_CROND_CALL_SENDMAIL",
+    "note": ""
+  },
+  {
+    "candidate": "61490a04362aab8df71a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DATE_ISOFMT=FEATURE_DATE_ISOFMT",
+    "note": ""
+  },
+  {
+    "candidate": "eb165b215c65156fc76e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DD_IBS_OBS=FEATURE_DD_IBS_OBS",
+    "note": ""
+  },
+  {
+    "candidate": "4031e15efbde5245738c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DD_SIGNAL_HANDLING=FEATURE_DD_SIGNAL_HANDLING",
+    "note": ""
+  },
+  {
+    "candidate": "6fd3103df72d90011ee5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DEB_TAR_BZ2=FEATURE_DEB_TAR_BZ2",
+    "note": ""
+  },
+  {
+    "candidate": "be71e55cc6a9d733fb4f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DEB_TAR_GZ=FEATURE_DEB_TAR_GZ",
+    "note": ""
+  },
+  {
+    "candidate": "038827e2d4d342b6e846",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DEB_TAR_LZMA=FEATURE_DEB_TAR_LZMA",
+    "note": ""
+  },
+  {
+    "candidate": "73a195c2e565831bdec2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DEVFS=FEATURE_DEVFS",
+    "note": ""
+  },
+  {
+    "candidate": "2f9d7d24b543e12bf841",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DEVPTS=FEATURE_DEVPTS",
+    "note": ""
+  },
+  {
+    "candidate": "8a363cb46a020ae809ad",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DIFF_BINARY=FEATURE_DIFF_BINARY",
+    "note": ""
+  },
+  {
+    "candidate": "b7380d8244f520c022e6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DIFF_DIR=FEATURE_DIFF_DIR",
+    "note": ""
+  },
+  {
+    "candidate": "153c7331f7d31e87388d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DIFF_MINIMAL=FEATURE_DIFF_MINIMAL",
+    "note": ""
+  },
+  {
+    "candidate": "03ff41cadd3c2d52b9bd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DMESG_PRETTY=FEATURE_DMESG_PRETTY",
+    "note": ""
+  },
+  {
+    "candidate": "5e750fbccfd7e2246958",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DPKG_DEB_EXTRACT_ONLY=FEATURE_DPKG_DEB_EXTRACT_ONLY",
+    "note": ""
+  },
+  {
+    "candidate": "9356bf50648e3864ddb4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_DU_DEFAULT_BLOCKSIZE_1K=FEATURE_DU_DEFAULT_BLOCKSIZE_1K",
+    "note": ""
+  },
+  {
+    "candidate": "4664e6c637aa20736bc3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_ENV_LONG_OPTIONS=FEATURE_ENV_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "bb6b683bf49ba82557ee",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_EXTRA_QUIET=FEATURE_EXTRA_QUIET",
+    "note": ""
+  },
+  {
+    "candidate": "770125d3b5eaaf901469",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FANCY_ECHO=FEATURE_FANCY_ECHO",
+    "note": ""
+  },
+  {
+    "candidate": "469eb843bccd3e4da031",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FANCY_HEAD=FEATURE_FANCY_HEAD",
+    "note": ""
+  },
+  {
+    "candidate": "bce1aaf3d7edbd567ef5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FANCY_PING=FEATURE_FANCY_PING",
+    "note": ""
+  },
+  {
+    "candidate": "f66988d7753c219d3641",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FANCY_PING6=FEATURE_FANCY_PING6",
+    "note": ""
+  },
+  {
+    "candidate": "b6e212e584c9ad660c41",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FANCY_SLEEP=FEATURE_FANCY_SLEEP",
+    "note": ""
+  },
+  {
+    "candidate": "9cfee79f72e0b4a939a0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FANCY_TAIL=FEATURE_FANCY_TAIL",
+    "note": ""
+  },
+  {
+    "candidate": "fad3981f1e55906aaa23",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FBSET_FANCY=FEATURE_FBSET_FANCY",
+    "note": ""
+  },
+  {
+    "candidate": "53c070b7be7b8423f2fe",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FBSET_READMODE=FEATURE_FBSET_READMODE",
+    "note": ""
+  },
+  {
+    "candidate": "cb4bdce16396787744d4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FDISK_ADVANCED=FEATURE_FDISK_ADVANCED",
+    "note": ""
+  },
+  {
+    "candidate": "5110a41201537f019686",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FDISK_WRITABLE=FEATURE_FDISK_WRITABLE",
+    "note": ""
+  },
+  {
+    "candidate": "7890971c51c0d455ede5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_EXEC=FEATURE_FIND_EXEC",
+    "note": ""
+  },
+  {
+    "candidate": "381c25579bf70f9ac62c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_INUM=FEATURE_FIND_INUM",
+    "note": ""
+  },
+  {
+    "candidate": "d18f43961cea14db1fbf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_MMIN=FEATURE_FIND_MMIN",
+    "note": ""
+  },
+  {
+    "candidate": "319d3dec1947719bc0a8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_MTIME=FEATURE_FIND_MTIME",
+    "note": ""
+  },
+  {
+    "candidate": "1680c378ec823de08ad5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_NEWER=FEATURE_FIND_NEWER",
+    "note": ""
+  },
+  {
+    "candidate": "6caf144985ca1a585c31",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_PERM=FEATURE_FIND_PERM",
+    "note": ""
+  },
+  {
+    "candidate": "26217f7d468b80ebe76e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_PRINT0=FEATURE_FIND_PRINT0",
+    "note": ""
+  },
+  {
+    "candidate": "1c106859bf71eb564d94",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_TYPE=FEATURE_FIND_TYPE",
+    "note": ""
+  },
+  {
+    "candidate": "d2d6dba35fdf8d78d967",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FIND_XDEV=FEATURE_FIND_XDEV",
+    "note": ""
+  },
+  {
+    "candidate": "25b08de7e93a987a3aa8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FTPGETPUT_LONG_OPTIONS=FEATURE_FTPGETPUT_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "c3da1381c6f7475e9cce",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_FULL_LIBBUSYBOX=FEATURE_FULL_LIBBUSYBOX",
+    "note": ""
+  },
+  {
+    "candidate": "8e1c95e74482e87d9ed5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_GREP_CONTEXT=FEATURE_GREP_CONTEXT",
+    "note": ""
+  },
+  {
+    "candidate": "db55aa4ea57bca5efdcb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_GREP_EGREP_ALIAS=FEATURE_GREP_EGREP_ALIAS",
+    "note": ""
+  },
+  {
+    "candidate": "6d86b87adf91e2a3945c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_GREP_FGREP_ALIAS=FEATURE_GREP_FGREP_ALIAS",
+    "note": ""
+  },
+  {
+    "candidate": "0eb8c08e7f6e67c9b2db",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_GUNZIP_UNCOMPRESS=FEATURE_GUNZIP_UNCOMPRESS",
+    "note": ""
+  },
+  {
+    "candidate": "f8585201247539cf6e8b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HDPARM_GET_IDENTITY=FEATURE_HDPARM_GET_IDENTITY",
+    "note": ""
+  },
+  {
+    "candidate": "5036b8b4d6116ffd04f4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HDPARM_HDIO_DRIVE_RESET=FEATURE_HDPARM_HDIO_DRIVE_RESET",
+    "note": ""
+  },
+  {
+    "candidate": "d94005cca2bca8be113e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HDPARM_HDIO_GETSET_DMA=FEATURE_HDPARM_HDIO_GETSET_DMA",
+    "note": ""
+  },
+  {
+    "candidate": "df0288f147a61e956a32",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HDPARM_HDIO_SCAN_HWIF=FEATURE_HDPARM_HDIO_SCAN_HWIF",
+    "note": ""
+  },
+  {
+    "candidate": "4b4d406e1948c6b6c1a3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HDPARM_HDIO_TRISTATE_HWIF=FEATURE_HDPARM_HDIO_TRISTATE_HWIF",
+    "note": ""
+  },
+  {
+    "candidate": "b01f1a82aedfe2dbf65d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HDPARM_HDIO_UNREGISTER_HWIF=FEATURE_HDPARM_HDIO_UNREGISTER_HWIF",
+    "note": ""
+  },
+  {
+    "candidate": "a1adacab81ecd3016a58",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_AUTH_MD5=FEATURE_HTTPD_AUTH_MD5",
+    "note": ""
+  },
+  {
+    "candidate": "fd97a102fb00ad4a960a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_BASIC_AUTH=FEATURE_HTTPD_BASIC_AUTH",
+    "note": ""
+  },
+  {
+    "candidate": "85563bf8c1aa358203e4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_CGI=FEATURE_HTTPD_CGI",
+    "note": ""
+  },
+  {
+    "candidate": "3082f40d4a15f69871aa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_CONFIG_WITH_MIME_TYPES=FEATURE_HTTPD_CONFIG_WITH_MIME_TYPES",
+    "note": ""
+  },
+  {
+    "candidate": "f9c0f5a258d27fe73b60",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR=FEATURE_HTTPD_CONFIG_WITH_SCRIPT_INTERPR",
+    "note": ""
+  },
+  {
+    "candidate": "f9e66fa2bd41391a505d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_ENCODE_URL_STR=FEATURE_HTTPD_ENCODE_URL_STR",
+    "note": ""
+  },
+  {
+    "candidate": "08c694f08d6d16c7b43e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_RELOAD_CONFIG_SIGHUP=FEATURE_HTTPD_RELOAD_CONFIG_SIGHUP",
+    "note": ""
+  },
+  {
+    "candidate": "fc8bb3f2d608fc620321",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_SETUID=FEATURE_HTTPD_SETUID",
+    "note": ""
+  },
+  {
+    "candidate": "6d8a8d6cff4d63ce1c0d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV=FEATURE_HTTPD_SET_REMOTE_PORT_TO_ENV",
+    "note": ""
+  },
+  {
+    "candidate": "9745ceba6c2770d05c01",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HTTPD_WITHOUT_INETD=FEATURE_HTTPD_WITHOUT_INETD",
+    "note": ""
+  },
+  {
+    "candidate": "bab0bc889f5cbd22d734",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HUMAN_READABLE=FEATURE_HUMAN_READABLE",
+    "note": ""
+  },
+  {
+    "candidate": "0ea056bc00f7931c432e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HWCLOCK_ADJTIME_FHS=FEATURE_HWCLOCK_ADJTIME_FHS",
+    "note": ""
+  },
+  {
+    "candidate": "5de37c633a0772dc513c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_HWCLOCK_LONG_OPTIONS=FEATURE_HWCLOCK_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "13227c9020c2f8b36b79",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFCONFIG_BROADCAST_PLUS=FEATURE_IFCONFIG_BROADCAST_PLUS",
+    "note": ""
+  },
+  {
+    "candidate": "35c4dfd5a61eb80daf1c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFCONFIG_HW=FEATURE_IFCONFIG_HW",
+    "note": ""
+  },
+  {
+    "candidate": "95187d3c4ce5192fa6a9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFCONFIG_MEMSTART_IOADDR_IRQ=FEATURE_IFCONFIG_MEMSTART_IOADDR_IRQ",
+    "note": ""
+  },
+  {
+    "candidate": "3b72549605aa6b99ba50",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFCONFIG_SLIP=FEATURE_IFCONFIG_SLIP",
+    "note": ""
+  },
+  {
+    "candidate": "78be088e5b5e9c100972",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFCONFIG_STATUS=FEATURE_IFCONFIG_STATUS",
+    "note": ""
+  },
+  {
+    "candidate": "ad162bf89ff68af8c8d2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFUPDOWN_IP=FEATURE_IFUPDOWN_IP",
+    "note": ""
+  },
+  {
+    "candidate": "8b21af7cb9b987b532c3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFUPDOWN_IPV4=FEATURE_IFUPDOWN_IPV4",
+    "note": ""
+  },
+  {
+    "candidate": "fef3866112990e248f38",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFUPDOWN_IPV6=FEATURE_IFUPDOWN_IPV6",
+    "note": ""
+  },
+  {
+    "candidate": "a37d9860903d67cb02d8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFUPDOWN_IPX=FEATURE_IFUPDOWN_IPX",
+    "note": ""
+  },
+  {
+    "candidate": "8097d12d5808d584df72",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFUPDOWN_IP_BUILTIN=FEATURE_IFUPDOWN_IP_BUILTIN",
+    "note": ""
+  },
+  {
+    "candidate": "cbc8a610c25784317669",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IFUPDOWN_MAPPING=FEATURE_IFUPDOWN_MAPPING",
+    "note": ""
+  },
+  {
+    "candidate": "5b7f5e6957ceb9bac636",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INETD_RPC=FEATURE_INETD_RPC",
+    "note": ""
+  },
+  {
+    "candidate": "0c8f156bcbbd9acf8cbd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN=FEATURE_INETD_SUPPORT_BUILTIN_CHARGEN",
+    "note": ""
+  },
+  {
+    "candidate": "0d5b8776bc34ce6b2295",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME=FEATURE_INETD_SUPPORT_BUILTIN_DAYTIME",
+    "note": ""
+  },
+  {
+    "candidate": "fa7fc155351dbfbaa7fe",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_DISCARD=FEATURE_INETD_SUPPORT_BUILTIN_DISCARD",
+    "note": ""
+  },
+  {
+    "candidate": "a88e1b4ca2d410474c3a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_ECHO=FEATURE_INETD_SUPPORT_BUILTIN_ECHO",
+    "note": ""
+  },
+  {
+    "candidate": "0bcfb71f8dc3b4e22646",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INETD_SUPPORT_BUILTIN_TIME=FEATURE_INETD_SUPPORT_BUILTIN_TIME",
+    "note": ""
+  },
+  {
+    "candidate": "31c2605179273df3c65b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INITRD=FEATURE_INITRD",
+    "note": ""
+  },
+  {
+    "candidate": "c9c2eda0b8a0d00cdb8d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INIT_COREDUMPS=FEATURE_INIT_COREDUMPS",
+    "note": ""
+  },
+  {
+    "candidate": "805d11d96bece463caf2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INIT_SCTTY=FEATURE_INIT_SCTTY",
+    "note": ""
+  },
+  {
+    "candidate": "5e439a614ea519307091",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSMOD_KSYMOOPS_SYMBOLS=FEATURE_INSMOD_KSYMOOPS_SYMBOLS",
+    "note": ""
+  },
+  {
+    "candidate": "da8cd703276b73428236",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSMOD_LOADINKMEM=FEATURE_INSMOD_LOADINKMEM",
+    "note": ""
+  },
+  {
+    "candidate": "bd3a00a0c1ab3f4b7723",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSMOD_LOAD_MAP=FEATURE_INSMOD_LOAD_MAP",
+    "note": ""
+  },
+  {
+    "candidate": "c3c068201a6b588bcab2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSMOD_LOAD_MAP_FULL=FEATURE_INSMOD_LOAD_MAP_FULL",
+    "note": ""
+  },
+  {
+    "candidate": "7eade7213d2ce5480ae1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSMOD_VERSION_CHECKING=FEATURE_INSMOD_VERSION_CHECKING",
+    "note": ""
+  },
+  {
+    "candidate": "04205becb3396361e5f8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSTALLER=FEATURE_INSTALLER",
+    "note": ""
+  },
+  {
+    "candidate": "7c3b557cb2f080d160f0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_INSTALL_LONG_OPTIONS=FEATURE_INSTALL_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "399acefcdf3e596048cf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IPCALC_FANCY=FEATURE_IPCALC_FANCY",
+    "note": ""
+  },
+  {
+    "candidate": "600c9c31a111b8d9d7d6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IPCALC_LONG_OPTIONS=FEATURE_IPCALC_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "0c08c2ce2358d4266a9f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IPC_SYSLOG=FEATURE_IPC_SYSLOG",
+    "note": ""
+  },
+  {
+    "candidate": "a05c1a5ce894a662f15e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IPC_SYSLOG_BUFFER_SIZE=FEATURE_IPC_SYSLOG_BUFFER_SIZE",
+    "note": ""
+  },
+  {
+    "candidate": "8a2911732cc56244925f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IPV6=FEATURE_IPV6",
+    "note": ""
+  },
+  {
+    "candidate": "d2add5e5191c87d623d8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IP_ADDRESS=FEATURE_IP_ADDRESS",
+    "note": ""
+  },
+  {
+    "candidate": "4cb6400217ffac095bbf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IP_LINK=FEATURE_IP_LINK",
+    "note": ""
+  },
+  {
+    "candidate": "f6e263ed35262b38d235",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IP_ROUTE=FEATURE_IP_ROUTE",
+    "note": ""
+  },
+  {
+    "candidate": "e2138ccf5973a50bc8df",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IP_SHORT_FORMS=FEATURE_IP_SHORT_FORMS",
+    "note": ""
+  },
+  {
+    "candidate": "89c1331db118d200abf7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_IP_TUNNEL=FEATURE_IP_TUNNEL",
+    "note": ""
+  },
+  {
+    "candidate": "f530e00ad3920f8bbbe4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LESS_BRACKETS=FEATURE_LESS_BRACKETS",
+    "note": ""
+  },
+  {
+    "candidate": "a2c64dcf7fb9d3f6237e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LESS_FLAGCS=FEATURE_LESS_FLAGCS",
+    "note": ""
+  },
+  {
+    "candidate": "03e267722f941fb2a170",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LESS_FLAGS=FEATURE_LESS_FLAGS",
+    "note": ""
+  },
+  {
+    "candidate": "1b8bfc0f0728647bb8c0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LESS_MARKS=FEATURE_LESS_MARKS",
+    "note": ""
+  },
+  {
+    "candidate": "dda285e11a02bc1d8d65",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LESS_REGEXP=FEATURE_LESS_REGEXP",
+    "note": ""
+  },
+  {
+    "candidate": "a79893469bc84fec9205",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LOGREAD_REDUCED_LOCKING=FEATURE_LOGREAD_REDUCED_LOCKING",
+    "note": ""
+  },
+  {
+    "candidate": "55af96161bcf03dad3c0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LSMOD_PRETTY_2_6_OUTPUT=FEATURE_LSMOD_PRETTY_2_6_OUTPUT",
+    "note": ""
+  },
+  {
+    "candidate": "f496aa851e1ac3e4eca0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_COLOR=FEATURE_LS_COLOR",
+    "note": ""
+  },
+  {
+    "candidate": "6f643b873a29d4bdaaf8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_COLOR_IS_DEFAULT=FEATURE_LS_COLOR_IS_DEFAULT",
+    "note": ""
+  },
+  {
+    "candidate": "5e6860e125c881ce90e0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_FILETYPES=FEATURE_LS_FILETYPES",
+    "note": ""
+  },
+  {
+    "candidate": "fa74c5585be9ac9b7df2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_FOLLOWLINKS=FEATURE_LS_FOLLOWLINKS",
+    "note": ""
+  },
+  {
+    "candidate": "bf940ab2d9b44397f010",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_RECURSIVE=FEATURE_LS_RECURSIVE",
+    "note": ""
+  },
+  {
+    "candidate": "45287a897aeddc285d4a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_SORTFILES=FEATURE_LS_SORTFILES",
+    "note": ""
+  },
+  {
+    "candidate": "2b733a4fe02cba387f68",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_TIMESTAMPS=FEATURE_LS_TIMESTAMPS",
+    "note": ""
+  },
+  {
+    "candidate": "fff8c86ba19e483fb888",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LS_USERNAME=FEATURE_LS_USERNAME",
+    "note": ""
+  },
+  {
+    "candidate": "34a5c2ba418863de674c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_LZMA_FAST=FEATURE_LZMA_FAST",
+    "note": ""
+  },
+  {
+    "candidate": "27cf136f811ea73ed7cf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MAKEDEVS_LEAF=FEATURE_MAKEDEVS_LEAF",
+    "note": ""
+  },
+  {
+    "candidate": "9d3cb31a5fcfdde731d8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MAKEDEVS_TABLE=FEATURE_MAKEDEVS_TABLE",
+    "note": ""
+  },
+  {
+    "candidate": "32f4674352846e6d8abe",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MD5_SHA1_SUM_CHECK=FEATURE_MD5_SHA1_SUM_CHECK",
+    "note": ""
+  },
+  {
+    "candidate": "f9a58988c50bb920498d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MDEV_CONF=FEATURE_MDEV_CONF",
+    "note": ""
+  },
+  {
+    "candidate": "1c8f69849cead13df250",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MDEV_EXEC=FEATURE_MDEV_EXEC",
+    "note": ""
+  },
+  {
+    "candidate": "ed0a22b21b22d3dd46ca",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MINIX2=FEATURE_MINIX2",
+    "note": ""
+  },
+  {
+    "candidate": "ba8d8f4e4d1be6e67d0a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MKDIR_LONG_OPTIONS=FEATURE_MKDIR_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "fd7bbf847e7ea629a3cc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MKSWAP_V0=FEATURE_MKSWAP_V0",
+    "note": ""
+  },
+  {
+    "candidate": "4f074bb1da06f2dff3c0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MODPROBE_FANCY_ALIAS=FEATURE_MODPROBE_FANCY_ALIAS",
+    "note": ""
+  },
+  {
+    "candidate": "48ae31e826076a7763f4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MODPROBE_MULTIPLE_OPTIONS=FEATURE_MODPROBE_MULTIPLE_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "7e0ef2f7838716186bbd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MOUNT_CIFS=FEATURE_MOUNT_CIFS",
+    "note": ""
+  },
+  {
+    "candidate": "d19698528db004e12adb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MOUNT_FLAGS=FEATURE_MOUNT_FLAGS",
+    "note": ""
+  },
+  {
+    "candidate": "1c143654d71d1677e684",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MOUNT_FSTAB=FEATURE_MOUNT_FSTAB",
+    "note": ""
+  },
+  {
+    "candidate": "c122e2f254787cf57f5c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MOUNT_LOOP=FEATURE_MOUNT_LOOP",
+    "note": ""
+  },
+  {
+    "candidate": "cac01c870f5155480d31",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MOUNT_NFS=FEATURE_MOUNT_NFS",
+    "note": ""
+  },
+  {
+    "candidate": "c1ea6d367c565d3076b7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MTAB_SUPPORT=FEATURE_MTAB_SUPPORT",
+    "note": ""
+  },
+  {
+    "candidate": "244bbe0a5f817fc002c9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_MV_LONG_OPTIONS=FEATURE_MV_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "3529e6e6a10c93a79471",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_OSF_LABEL=FEATURE_OSF_LABEL",
+    "note": ""
+  },
+  {
+    "candidate": "5b65ac64bee6474d4165",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_PIDOF_OMIT=FEATURE_PIDOF_OMIT",
+    "note": ""
+  },
+  {
+    "candidate": "df0d6013d50a0123092c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_PIDOF_SINGLE=FEATURE_PIDOF_SINGLE",
+    "note": ""
+  },
+  {
+    "candidate": "79cdebb8807e585f0e13",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_PRESERVE_HARDLINKS=FEATURE_PRESERVE_HARDLINKS",
+    "note": ""
+  },
+  {
+    "candidate": "215613e38a7ed4a1d507",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_PS_WIDE=FEATURE_PS_WIDE",
+    "note": ""
+  },
+  {
+    "candidate": "785f9d8abf1304eed60e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_QUERY_MODULE_INTERFACE=FEATURE_QUERY_MODULE_INTERFACE",
+    "note": ""
+  },
+  {
+    "candidate": "b1e1a1ecebcdec4bc7f0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_READLINK_FOLLOW=FEATURE_READLINK_FOLLOW",
+    "note": ""
+  },
+  {
+    "candidate": "1ea06a9fc7c12136abe4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_REMOTE_LOG=FEATURE_REMOTE_LOG",
+    "note": ""
+  },
+  {
+    "candidate": "42c4fd31d9fd4fd1e858",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_ROTATE_LOGFILE=FEATURE_ROTATE_LOGFILE",
+    "note": ""
+  },
+  {
+    "candidate": "abed11412ef077cdec5c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_RUN_PARTS_LONG_OPTIONS=FEATURE_RUN_PARTS_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "e634167f486ed6230859",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SECURETTY=FEATURE_SECURETTY",
+    "note": ""
+  },
+  {
+    "candidate": "55b1bbc058f25b863acc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SETCONSOLE_LONG_OPTIONS=FEATURE_SETCONSOLE_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "52159b8eb4e63f970b2b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SGI_LABEL=FEATURE_SGI_LABEL",
+    "note": ""
+  },
+  {
+    "candidate": "9d920078e80bb7fad515",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SHADOWPASSWDS=FEATURE_SHADOWPASSWDS",
+    "note": ""
+  },
+  {
+    "candidate": "03f6c66b35390682006d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SHARED_BUSYBOX=FEATURE_SHARED_BUSYBOX",
+    "note": ""
+  },
+  {
+    "candidate": "a94901eebb02410a1aa2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_EXTRA_QUIET=FEATURE_SH_EXTRA_QUIET",
+    "note": ""
+  },
+  {
+    "candidate": "ee73e9fb52dda9b5d722",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_FANCY_PROMPT=FEATURE_SH_FANCY_PROMPT",
+    "note": ""
+  },
+  {
+    "candidate": "32266497654fa9de6672",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_IS_ASH=FEATURE_SH_IS_ASH",
+    "note": ""
+  },
+  {
+    "candidate": "7f0f89bb6566d4eda582",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_IS_HUSH=FEATURE_SH_IS_HUSH",
+    "note": ""
+  },
+  {
+    "candidate": "035827a269c7f22aabab",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_IS_LASH=FEATURE_SH_IS_LASH",
+    "note": ""
+  },
+  {
+    "candidate": "acc16995722c46dbda75",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_IS_MSH=FEATURE_SH_IS_MSH",
+    "note": ""
+  },
+  {
+    "candidate": "35adfbf2496ce2322e49",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_IS_NONE=FEATURE_SH_IS_NONE",
+    "note": ""
+  },
+  {
+    "candidate": "e761b1241680ddef3fa7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SH_STANDALONE_SHELL=FEATURE_SH_STANDALONE_SHELL",
+    "note": ""
+  },
+  {
+    "candidate": "02e19d1bdc7a27877fcd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SORT_BIG=FEATURE_SORT_BIG",
+    "note": ""
+  },
+  {
+    "candidate": "4cccff28398cd07f6aa5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_START_STOP_DAEMON_FANCY=FEATURE_START_STOP_DAEMON_FANCY",
+    "note": ""
+  },
+  {
+    "candidate": "7df87715baa5ffdd5b05",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_START_STOP_DAEMON_LONG_OPTIONS=FEATURE_START_STOP_DAEMON_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "e876348318b2957d8f22",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_STAT_FORMAT=FEATURE_STAT_FORMAT",
+    "note": ""
+  },
+  {
+    "candidate": "f001f76417fb8b322a8f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SUID=FEATURE_SUID",
+    "note": ""
+  },
+  {
+    "candidate": "f84f739d30dddc1f9bb8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SUID_CONFIG=FEATURE_SUID_CONFIG",
+    "note": ""
+  },
+  {
+    "candidate": "467eb191cdbce409ae19",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SUID_CONFIG_QUIET=FEATURE_SUID_CONFIG_QUIET",
+    "note": ""
+  },
+  {
+    "candidate": "29a3c1f154ba053006f1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SUN_LABEL=FEATURE_SUN_LABEL",
+    "note": ""
+  },
+  {
+    "candidate": "43d86b7e4d4cc9f392cb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_SYSLOG=FEATURE_SYSLOG",
+    "note": ""
+  },
+  {
+    "candidate": "159b4eacb7d244a2296d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_BZIP2=FEATURE_TAR_BZIP2",
+    "note": ""
+  },
+  {
+    "candidate": "19dd2ad1945bb1290ce1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_COMPRESS=FEATURE_TAR_COMPRESS",
+    "note": ""
+  },
+  {
+    "candidate": "841cb5f8cf8643aeeb8a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_CREATE=FEATURE_TAR_CREATE",
+    "note": ""
+  },
+  {
+    "candidate": "f26d80988fba71daec5f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_FROM=FEATURE_TAR_FROM",
+    "note": ""
+  },
+  {
+    "candidate": "25ee593ad60dbe62dc5a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_GNU_EXTENSIONS=FEATURE_TAR_GNU_EXTENSIONS",
+    "note": ""
+  },
+  {
+    "candidate": "c3faa2c9a1502ef72b78",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_GZIP=FEATURE_TAR_GZIP",
+    "note": ""
+  },
+  {
+    "candidate": "cf1af80308c254249a5c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_LONG_OPTIONS=FEATURE_TAR_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "c08f18dc0ed1e7399c46",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_LZMA=FEATURE_TAR_LZMA",
+    "note": ""
+  },
+  {
+    "candidate": "fda7526ddd505521b48e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TAR_OLDGNU_COMPATIBILITY=FEATURE_TAR_OLDGNU_COMPATIBILITY",
+    "note": ""
+  },
+  {
+    "candidate": "6ca1a09bb604a5ecd62b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TEE_USE_BLOCK_IO=FEATURE_TEE_USE_BLOCK_IO",
+    "note": ""
+  },
+  {
+    "candidate": "4d3ed5e80dd73c59b07a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TELNETD_INETD=FEATURE_TELNETD_INETD",
+    "note": ""
+  },
+  {
+    "candidate": "35f0a67c774170349157",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TELNET_AUTOLOGIN=FEATURE_TELNET_AUTOLOGIN",
+    "note": ""
+  },
+  {
+    "candidate": "0b0c1713e2607810b18b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TELNET_TTYPE=FEATURE_TELNET_TTYPE",
+    "note": ""
+  },
+  {
+    "candidate": "f2736cf3d5a77b33c53a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TEST_64=FEATURE_TEST_64",
+    "note": ""
+  },
+  {
+    "candidate": "00e98356a33a8549eab1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TFTP_BLOCKSIZE=FEATURE_TFTP_BLOCKSIZE",
+    "note": ""
+  },
+  {
+    "candidate": "a85be138fcd27e776c11",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TFTP_GET=FEATURE_TFTP_GET",
+    "note": ""
+  },
+  {
+    "candidate": "da16b934350aaf7413f3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TFTP_PUT=FEATURE_TFTP_PUT",
+    "note": ""
+  },
+  {
+    "candidate": "2aa0958c073de4714ce5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TOP_CPU_USAGE_PERCENTAGE=FEATURE_TOP_CPU_USAGE_PERCENTAGE",
+    "note": ""
+  },
+  {
+    "candidate": "8eb9d630b5007eb9b16f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TRACEROUTE_SOURCE_ROUTE=FEATURE_TRACEROUTE_SOURCE_ROUTE",
+    "note": ""
+  },
+  {
+    "candidate": "814408cfb68d4c096706",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TRACEROUTE_USE_ICMP=FEATURE_TRACEROUTE_USE_ICMP",
+    "note": ""
+  },
+  {
+    "candidate": "30bbc6aea87c8fa9187d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TRACEROUTE_VERBOSE=FEATURE_TRACEROUTE_VERBOSE",
+    "note": ""
+  },
+  {
+    "candidate": "3e3e6ad0f9b9dcecd2ff",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TR_CLASSES=FEATURE_TR_CLASSES",
+    "note": ""
+  },
+  {
+    "candidate": "795704a1ec5f8ca93699",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_TR_EQUIV=FEATURE_TR_EQUIV",
+    "note": ""
+  },
+  {
+    "candidate": "d6a5fd70380f5a264dcb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_UDHCP_DEBUG=FEATURE_UDHCP_DEBUG",
+    "note": ""
+  },
+  {
+    "candidate": "7b8eccb73d4f8247fbe1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_UDHCP_SYSLOG=FEATURE_UDHCP_SYSLOG",
+    "note": ""
+  },
+  {
+    "candidate": "1935b318cd18abdd1051",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_UMOUNT_ALL=FEATURE_UMOUNT_ALL",
+    "note": ""
+  },
+  {
+    "candidate": "92fbcb2f7adc30243595",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_UNARCHIVE_TAPE=FEATURE_UNARCHIVE_TAPE",
+    "note": ""
+  },
+  {
+    "candidate": "7a469acaab247d6770a4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_USE_INITTAB=FEATURE_USE_INITTAB",
+    "note": ""
+  },
+  {
+    "candidate": "4c23611d2ec85485fefb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_USE_TERMIOS=FEATURE_USE_TERMIOS",
+    "note": ""
+  },
+  {
+    "candidate": "94b050c12d07f1ac39dc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_UTMP=FEATURE_UTMP",
+    "note": ""
+  },
+  {
+    "candidate": "f001d8dc9a39d5369e6e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VERBOSE_USAGE=FEATURE_VERBOSE_USAGE",
+    "note": ""
+  },
+  {
+    "candidate": "f1871be4084eb52cc4d9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_COLON=FEATURE_VI_COLON",
+    "note": ""
+  },
+  {
+    "candidate": "3a27c82ee04574d85de7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_DOT_CMD=FEATURE_VI_DOT_CMD",
+    "note": ""
+  },
+  {
+    "candidate": "51804a55f3577a1c867a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_OPTIMIZE_CURSOR=FEATURE_VI_OPTIMIZE_CURSOR",
+    "note": ""
+  },
+  {
+    "candidate": "4929fec7bdc02d5f5300",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_READONLY=FEATURE_VI_READONLY",
+    "note": ""
+  },
+  {
+    "candidate": "9cfc9758d3cb72783e2d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_SEARCH=FEATURE_VI_SEARCH",
+    "note": ""
+  },
+  {
+    "candidate": "c81cdbf3b3201fcbb49d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_SET=FEATURE_VI_SET",
+    "note": ""
+  },
+  {
+    "candidate": "98d2302eb27ef9db5515",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_SETOPTS=FEATURE_VI_SETOPTS",
+    "note": ""
+  },
+  {
+    "candidate": "c94adc280c8bdf1f1035",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_USE_SIGNALS=FEATURE_VI_USE_SIGNALS",
+    "note": ""
+  },
+  {
+    "candidate": "607903984a432d7980b6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_WIN_RESIZE=FEATURE_VI_WIN_RESIZE",
+    "note": ""
+  },
+  {
+    "candidate": "26e593dbbcad60857f73",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_VI_YANKMARK=FEATURE_VI_YANKMARK",
+    "note": ""
+  },
+  {
+    "candidate": "eb36840668083d137cd3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_WC_LARGE=FEATURE_WC_LARGE",
+    "note": ""
+  },
+  {
+    "candidate": "1028fd35711c42c69fbf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_WGET_AUTHENTICATION=FEATURE_WGET_AUTHENTICATION",
+    "note": ""
+  },
+  {
+    "candidate": "b2ef6c8c91a95a3c4968",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_WGET_IP6_LITERAL=FEATURE_WGET_IP6_LITERAL",
+    "note": ""
+  },
+  {
+    "candidate": "9c043e3347b4dd212183",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_WGET_LONG_OPTIONS=FEATURE_WGET_LONG_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "0a95b87a92eee7898c91",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_WGET_STATUSBAR=FEATURE_WGET_STATUSBAR",
+    "note": ""
+  },
+  {
+    "candidate": "0ddff93df22496dcb98d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_WTMP=FEATURE_WTMP",
+    "note": ""
+  },
+  {
+    "candidate": "7e8f5ad2c6f4d85fc501",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_XARGS_SUPPORT_CONFIRMATION=FEATURE_XARGS_SUPPORT_CONFIRMATION",
+    "note": ""
+  },
+  {
+    "candidate": "c15a1f17a177799428f1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_XARGS_SUPPORT_QUOTES=FEATURE_XARGS_SUPPORT_QUOTES",
+    "note": ""
+  },
+  {
+    "candidate": "b62c38bd732ec95cb832",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_XARGS_SUPPORT_TERMOPT=FEATURE_XARGS_SUPPORT_TERMOPT",
+    "note": ""
+  },
+  {
+    "candidate": "fbea3136ea1ca883e9ab",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FEATURE_XARGS_SUPPORT_ZERO_TERM=FEATURE_XARGS_SUPPORT_ZERO_TERM",
+    "note": ""
+  },
+  {
+    "candidate": "f34373dfad2f74367684",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FIND=FIND",
+    "note": ""
+  },
+  {
+    "candidate": "c371ac61381bdaa6e4c5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FINDFS=FINDFS",
+    "note": ""
+  },
+  {
+    "candidate": "286e35823d9683dbd0dd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FOLD=FOLD",
+    "note": ""
+  },
+  {
+    "candidate": "b2f9c644ff390270b863",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FREE=FREE",
+    "note": ""
+  },
+  {
+    "candidate": "218406db13412603519a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FREERAMDISK=FREERAMDISK",
+    "note": ""
+  },
+  {
+    "candidate": "a2a4b6450d60a617f868",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FSCK=FSCK",
+    "note": ""
+  },
+  {
+    "candidate": "9180cf49f1dd21143b27",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FSCK_MINIX=FSCK_MINIX",
+    "note": ""
+  },
+  {
+    "candidate": "32ae7ffbdbab0f7e3800",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FTPGET=FTPGET",
+    "note": ""
+  },
+  {
+    "candidate": "8644f7df01a9137da918",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FTPPUT=FTPPUT",
+    "note": ""
+  },
+  {
+    "candidate": "a7830dacf7d1781061ef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_FUSER=FUSER",
+    "note": ""
+  },
+  {
+    "candidate": "ef4107bd7421bc01552a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_GETOPT=GETOPT",
+    "note": ""
+  },
+  {
+    "candidate": "8958c26984b9399d5ec9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_GETOPT_LONG=GETOPT_LONG",
+    "note": ""
+  },
+  {
+    "candidate": "5adcf005793c467f325d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_GETTY=GETTY",
+    "note": ""
+  },
+  {
+    "candidate": "e3b61369247882b96582",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_GREP=GREP",
+    "note": ""
+  },
+  {
+    "candidate": "ebf019cefd2881ac31ef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_GUNZIP=GUNZIP",
+    "note": ""
+  },
+  {
+    "candidate": "00d2b86f3a01b52e1e54",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_GZIP=GZIP",
+    "note": ""
+  },
+  {
+    "candidate": "e8341c24752040f3dde8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HALT=HALT",
+    "note": ""
+  },
+  {
+    "candidate": "aed4911ff605f94881fb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HDPARM=HDPARM",
+    "note": ""
+  },
+  {
+    "candidate": "07546f75dfe3ea5d97fb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HEAD=HEAD",
+    "note": ""
+  },
+  {
+    "candidate": "28e9dbe3801710330576",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HEXDUMP=HEXDUMP",
+    "note": ""
+  },
+  {
+    "candidate": "071a29d647c9fa329bab",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HOSTID=HOSTID",
+    "note": ""
+  },
+  {
+    "candidate": "30e61db7962a0c9b06e5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HOSTNAME=HOSTNAME",
+    "note": ""
+  },
+  {
+    "candidate": "3dd43641ceee7cc5a481",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HTTPD=HTTPD",
+    "note": ""
+  },
+  {
+    "candidate": "20460af536000edc504b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HUSH=HUSH",
+    "note": ""
+  },
+  {
+    "candidate": "db517733adcfd8240808",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_HWCLOCK=HWCLOCK",
+    "note": ""
+  },
+  {
+    "candidate": "c2c980a8405fed5a3ad2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ID=ID",
+    "note": ""
+  },
+  {
+    "candidate": "a74bf7af424f7c618ffb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IFCONFIG=IFCONFIG",
+    "note": ""
+  },
+  {
+    "candidate": "56b6977d29e5c4f09b33",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IFUPDOWN=IFUPDOWN",
+    "note": ""
+  },
+  {
+    "candidate": "0bfa0021a3ebd9bf93d1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INETD=INETD",
+    "note": ""
+  },
+  {
+    "candidate": "bd917d68bd42a03e09f5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INIT=INIT",
+    "note": ""
+  },
+  {
+    "candidate": "cbcedf6e1d12411d2048",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INSMOD=INSMOD",
+    "note": ""
+  },
+  {
+    "candidate": "dfc5a2a700c8ba741f81",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INSTALL=INSTALL",
+    "note": ""
+  },
+  {
+    "candidate": "0145f058a21d59cdff5b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INSTALL_APPLET_DONT=INSTALL_APPLET_DONT",
+    "note": ""
+  },
+  {
+    "candidate": "2ad6c6c918a768739311",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INSTALL_APPLET_HARDLINKS=INSTALL_APPLET_HARDLINKS",
+    "note": ""
+  },
+  {
+    "candidate": "a83752c27771ab81ed36",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INSTALL_APPLET_SYMLINKS=INSTALL_APPLET_SYMLINKS",
+    "note": ""
+  },
+  {
+    "candidate": "feaa1763c87f832d854d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_INSTALL_NO_USR=INSTALL_NO_USR",
+    "note": ""
+  },
+  {
+    "candidate": "8e9f84412813aacf5d9a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IP=IP",
+    "note": ""
+  },
+  {
+    "candidate": "25f81dbac3e0b480bfe7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPADDR=IPADDR",
+    "note": ""
+  },
+  {
+    "candidate": "0780db6152c9c5ec6fc6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPCALC=IPCALC",
+    "note": ""
+  },
+  {
+    "candidate": "2106ced689d5b1a32677",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPCRM=IPCRM",
+    "note": ""
+  },
+  {
+    "candidate": "3c02f008819df6798d4b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPCS=IPCS",
+    "note": ""
+  },
+  {
+    "candidate": "298af6dfbe0485c9f211",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPLINK=IPLINK",
+    "note": ""
+  },
+  {
+    "candidate": "a2cc13b1ba64814d1d53",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPROUTE=IPROUTE",
+    "note": ""
+  },
+  {
+    "candidate": "af2c13e56b50a76d4355",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_IPTUNNEL=IPTUNNEL",
+    "note": ""
+  },
+  {
+    "candidate": "3df40095df51d238840b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_KILL=KILL",
+    "note": ""
+  },
+  {
+    "candidate": "3a56edacb9f190d0fbfe",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_KILLALL=KILLALL",
+    "note": ""
+  },
+  {
+    "candidate": "364a73f7cea18e091097",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_KILLALL5=KILLALL5",
+    "note": ""
+  },
+  {
+    "candidate": "475506324071225ad839",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_KLOGD=KLOGD",
+    "note": ""
+  },
+  {
+    "candidate": "99bdc92014b4a49d144b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LASH=LASH",
+    "note": ""
+  },
+  {
+    "candidate": "7960d128d28185779278",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LAST=LAST",
+    "note": ""
+  },
+  {
+    "candidate": "f8c06b4cba833ff0c001",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LENGTH=LENGTH",
+    "note": ""
+  },
+  {
+    "candidate": "e733797b8b0f5b18c384",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LESS=LESS",
+    "note": ""
+  },
+  {
+    "candidate": "0fc5c91fa804367c6d8a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LFS=LFS",
+    "note": ""
+  },
+  {
+    "candidate": "f145321195ab1df5c65f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LN=LN",
+    "note": ""
+  },
+  {
+    "candidate": "0e58b5ee2157742e43e3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOADFONT=LOADFONT",
+    "note": ""
+  },
+  {
+    "candidate": "323aa7d34d4f8ee33cd1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOADKMAP=LOADKMAP",
+    "note": ""
+  },
+  {
+    "candidate": "62e87a6683e249a66e62",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOCALE_SUPPORT=LOCALE_SUPPORT",
+    "note": ""
+  },
+  {
+    "candidate": "4e58522659d28b86d521",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOGGER=LOGGER",
+    "note": ""
+  },
+  {
+    "candidate": "906d8f3d5df1c87bdab6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOGIN=LOGIN",
+    "note": ""
+  },
+  {
+    "candidate": "4f452bce151a035ed0fd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOGIN_SCRIPTS=LOGIN_SCRIPTS",
+    "note": ""
+  },
+  {
+    "candidate": "fccc90bcd1aa63070ca4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOGNAME=LOGNAME",
+    "note": ""
+  },
+  {
+    "candidate": "f0a981a4e715a8b4bca0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOGREAD=LOGREAD",
+    "note": ""
+  },
+  {
+    "candidate": "226422dfed49623d4da1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LOSETUP=LOSETUP",
+    "note": ""
+  },
+  {
+    "candidate": "6ffee82316ce8f282680",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LS=LS",
+    "note": ""
+  },
+  {
+    "candidate": "a983a504075e3572b228",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LSATTR=LSATTR",
+    "note": ""
+  },
+  {
+    "candidate": "1441615fe8187c496ac4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_LSMOD=LSMOD",
+    "note": ""
+  },
+  {
+    "candidate": "b747b53e12578da888f0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MAKEDEVS=MAKEDEVS",
+    "note": ""
+  },
+  {
+    "candidate": "8b24670057a15d424c48",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MD5SUM=MD5SUM",
+    "note": ""
+  },
+  {
+    "candidate": "b6e6235c82664b747007",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MD5_SIZE_VS_SPEED=MD5_SIZE_VS_SPEED",
+    "note": ""
+  },
+  {
+    "candidate": "cb7215707993bdcde5de",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MDEV=MDEV",
+    "note": ""
+  },
+  {
+    "candidate": "f540a0160631d8849cbd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MESG=MESG",
+    "note": ""
+  },
+  {
+    "candidate": "7d3e30b6110d4ff91aa3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKDIR=MKDIR",
+    "note": ""
+  },
+  {
+    "candidate": "2c5a22fe4bb1547cfeda",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKE2FS=MKE2FS",
+    "note": ""
+  },
+  {
+    "candidate": "b1582aa4beb2c34ac9e0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKFIFO=MKFIFO",
+    "note": ""
+  },
+  {
+    "candidate": "2a3a466d2fbbf3f361eb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKFS_MINIX=MKFS_MINIX",
+    "note": ""
+  },
+  {
+    "candidate": "64db02557e7504abe03f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKNOD=MKNOD",
+    "note": ""
+  },
+  {
+    "candidate": "35ffce0bc18fb3dba9f6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKSWAP=MKSWAP",
+    "note": ""
+  },
+  {
+    "candidate": "89fb56e4acd6ceb0dfab",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MKTEMP=MKTEMP",
+    "note": ""
+  },
+  {
+    "candidate": "c081967707366b1f8057",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MODPROBE=MODPROBE",
+    "note": ""
+  },
+  {
+    "candidate": "4941499245a9dd0fbbff",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MORE=MORE",
+    "note": ""
+  },
+  {
+    "candidate": "391fc48b4d4091b5b027",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MOUNT=MOUNT",
+    "note": ""
+  },
+  {
+    "candidate": "f4dd3ae07fa30c1ba5bf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MOUNTPOINT=MOUNTPOINT",
+    "note": ""
+  },
+  {
+    "candidate": "3641f04ebeabb2f99e84",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MSH=MSH",
+    "note": ""
+  },
+  {
+    "candidate": "30d031c074139d876d4e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MT=MT",
+    "note": ""
+  },
+  {
+    "candidate": "49b57126e63f3be4fab3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_MV=MV",
+    "note": ""
+  },
+  {
+    "candidate": "ab43c7c6a5d68700c5ce",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NAMEIF=NAMEIF",
+    "note": ""
+  },
+  {
+    "candidate": "961c423ac9f5d5535296",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NC=NC",
+    "note": ""
+  },
+  {
+    "candidate": "7287277e1270abad0e7f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NC_EXTRA=NC_EXTRA",
+    "note": ""
+  },
+  {
+    "candidate": "03e8f44a6d70efebdc30",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NC_SERVER=NC_SERVER",
+    "note": ""
+  },
+  {
+    "candidate": "15442e3b12a9c3c3bb4c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NETSTAT=NETSTAT",
+    "note": ""
+  },
+  {
+    "candidate": "8f910c583e3bcc4ee482",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NICE=NICE",
+    "note": ""
+  },
+  {
+    "candidate": "90f973a8a85520b363d3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NITPICK=NITPICK",
+    "note": ""
+  },
+  {
+    "candidate": "bd5f88030186df1e5869",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NOHUP=NOHUP",
+    "note": ""
+  },
+  {
+    "candidate": "cbdb353d0f60ac493c21",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NO_DEBUG_LIB=NO_DEBUG_LIB",
+    "note": ""
+  },
+  {
+    "candidate": "52a68e85c76e878067e7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_NSLOOKUP=NSLOOKUP",
+    "note": ""
+  },
+  {
+    "candidate": "ae3cf704963733e46476",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_OD=OD",
+    "note": ""
+  },
+  {
+    "candidate": "a4dbcc97ae67223a3994",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_OPENVT=OPENVT",
+    "note": ""
+  },
+  {
+    "candidate": "5ff27d1cbaca2650abe5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PASSWD=PASSWD",
+    "note": ""
+  },
+  {
+    "candidate": "b1339a0b39b312de6f00",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PASSWORD_MINLEN=PASSWORD_MINLEN",
+    "note": ""
+  },
+  {
+    "candidate": "052126a337d682669463",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PATCH=PATCH",
+    "note": ""
+  },
+  {
+    "candidate": "61f1389f0f0d73bf9f3b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PIDOF=PIDOF",
+    "note": ""
+  },
+  {
+    "candidate": "ea9c3161ed28b3f2bb80",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PING=PING",
+    "note": ""
+  },
+  {
+    "candidate": "88a8dc86bacabd8f0cb9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PING6=PING6",
+    "note": ""
+  },
+  {
+    "candidate": "71b63ff64e432f073b59",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PIPE_PROGRESS=PIPE_PROGRESS",
+    "note": ""
+  },
+  {
+    "candidate": "679a6c0a71af6cfef304",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PIVOT_ROOT=PIVOT_ROOT",
+    "note": ""
+  },
+  {
+    "candidate": "acd51c55c111381861a4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PRINTENV=PRINTENV",
+    "note": ""
+  },
+  {
+    "candidate": "39f4057ef1bc351b8d35",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PRINTF=PRINTF",
+    "note": ""
+  },
+  {
+    "candidate": "2a396b40b681c1f4de94",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PS=PS",
+    "note": ""
+  },
+  {
+    "candidate": "27bfd98543b3f3b6a10f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_PWD=PWD",
+    "note": ""
+  },
+  {
+    "candidate": "7b6030bb8fae056012f8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RDATE=RDATE",
+    "note": ""
+  },
+  {
+    "candidate": "237b63354a67cf7f71eb",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_READAHEAD=READAHEAD",
+    "note": ""
+  },
+  {
+    "candidate": "7b45235b844f071e5571",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_READLINK=READLINK",
+    "note": ""
+  },
+  {
+    "candidate": "f8c829277c2051836735",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_READPROFILE=READPROFILE",
+    "note": ""
+  },
+  {
+    "candidate": "0bb7fa603af2ba68deb3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_REALPATH=REALPATH",
+    "note": ""
+  },
+  {
+    "candidate": "936dfb2eb1760a8af250",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RENICE=RENICE",
+    "note": ""
+  },
+  {
+    "candidate": "bd39f023a89608002e55",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RESET=RESET",
+    "note": ""
+  },
+  {
+    "candidate": "047709ef11c4fc680320",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RM=RM",
+    "note": ""
+  },
+  {
+    "candidate": "c8fc68d615a7a2ada3ba",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RMDIR=RMDIR",
+    "note": ""
+  },
+  {
+    "candidate": "9edf90edb5c28bbf57e5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RMMOD=RMMOD",
+    "note": ""
+  },
+  {
+    "candidate": "e65d5898b146635d15b6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ROUTE=ROUTE",
+    "note": ""
+  },
+  {
+    "candidate": "5244f6ed0d3c8f79b578",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RPM=RPM",
+    "note": ""
+  },
+  {
+    "candidate": "55bb473f7f25520d40fd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RPM2CPIO=RPM2CPIO",
+    "note": ""
+  },
+  {
+    "candidate": "7593f4cc5a70a598cc9d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RUNLEVEL=RUNLEVEL",
+    "note": ""
+  },
+  {
+    "candidate": "2a7941d2df7fe372f0fd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RUN_PARTS=RUN_PARTS",
+    "note": ""
+  },
+  {
+    "candidate": "5e7ea357da03174b7d35",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_RX=RX",
+    "note": ""
+  },
+  {
+    "candidate": "f1c0ecad32fcb1626cdd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SED=SED",
+    "note": ""
+  },
+  {
+    "candidate": "876d9544534f2aaaa187",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SELINUX=SELINUX",
+    "note": ""
+  },
+  {
+    "candidate": "4cbe51843ee0bcafa695",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SEQ=SEQ",
+    "note": ""
+  },
+  {
+    "candidate": "622025a0038b12fa8971",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SETARCH=SETARCH",
+    "note": ""
+  },
+  {
+    "candidate": "f5adfbed4807f59df67b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SETCONSOLE=SETCONSOLE",
+    "note": ""
+  },
+  {
+    "candidate": "e586194fa7c282e401cc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SETKEYCODES=SETKEYCODES",
+    "note": ""
+  },
+  {
+    "candidate": "ea5843e712c3d060a0a8",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SETLOGCONS=SETLOGCONS",
+    "note": ""
+  },
+  {
+    "candidate": "0b8b84c97ec613db78c1",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SETSID=SETSID",
+    "note": ""
+  },
+  {
+    "candidate": "950f9031f7af2f64b03f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SETUIDGID=SETUIDGID",
+    "note": ""
+  },
+  {
+    "candidate": "b31f430394a6a192d9a6",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SHA1SUM=SHA1SUM",
+    "note": ""
+  },
+  {
+    "candidate": "c3bb12deb60cb2c96c1e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SHOW_USAGE=SHOW_USAGE",
+    "note": ""
+  },
+  {
+    "candidate": "c955869d4b689b5dc00e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SLEEP=SLEEP",
+    "note": ""
+  },
+  {
+    "candidate": "042baf18bf18301b1ac4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SOFTLIMIT=SOFTLIMIT",
+    "note": ""
+  },
+  {
+    "candidate": "904f0fc8d1e4ff91aae7",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SORT=SORT",
+    "note": ""
+  },
+  {
+    "candidate": "c129dc45b648833f20c9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_START_STOP_DAEMON=START_STOP_DAEMON",
+    "note": ""
+  },
+  {
+    "candidate": "6b29934afaa8f6134454",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_STAT=STAT",
+    "note": ""
+  },
+  {
+    "candidate": "5df4a666e6c6f59995e2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_STATIC=STATIC",
+    "note": ""
+  },
+  {
+    "candidate": "66cfbe9780941a8b9dea",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_STRINGS=STRINGS",
+    "note": ""
+  },
+  {
+    "candidate": "f7987d38503bed4155df",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_STTY=STTY",
+    "note": ""
+  },
+  {
+    "candidate": "25d924d3fdad08250094",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SU=SU",
+    "note": ""
+  },
+  {
+    "candidate": "f2b43702f9d26e692e76",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SULOGIN=SULOGIN",
+    "note": ""
+  },
+  {
+    "candidate": "8a4b5206dfa8241a1e7c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SUM=SUM",
+    "note": ""
+  },
+  {
+    "candidate": "df843f608fce0574e247",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SU_SYSLOG=SU_SYSLOG",
+    "note": ""
+  },
+  {
+    "candidate": "327543996ec1d0f5c8f3",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SWAPONOFF=SWAPONOFF",
+    "note": ""
+  },
+  {
+    "candidate": "cbd3c84965afef97cc3e",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SWITCH_ROOT=SWITCH_ROOT",
+    "note": ""
+  },
+  {
+    "candidate": "780dfa7e4ac97b79613f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SYNC=SYNC",
+    "note": ""
+  },
+  {
+    "candidate": "83d281b5c0230449d5f0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_SYSLOGD=SYSLOGD",
+    "note": ""
+  },
+  {
+    "candidate": "8620062a7c8f551ace29",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TAIL=TAIL",
+    "note": ""
+  },
+  {
+    "candidate": "9c7188d94d559820869f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TAR=TAR",
+    "note": ""
+  },
+  {
+    "candidate": "7e9b0502d3dcf246ff30",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TASKSET=TASKSET",
+    "note": ""
+  },
+  {
+    "candidate": "014ec6f20a7cc2c742ca",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TEE=TEE",
+    "note": ""
+  },
+  {
+    "candidate": "242f62a2e546238ea9bd",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TELNET=TELNET",
+    "note": ""
+  },
+  {
+    "candidate": "93fde23ec163c084bdd5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TELNETD=TELNETD",
+    "note": ""
+  },
+  {
+    "candidate": "058de89c0b93159b5912",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TEST=TEST",
+    "note": ""
+  },
+  {
+    "candidate": "a48dbc3e75047dbf684a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TFTP=TFTP",
+    "note": ""
+  },
+  {
+    "candidate": "e12e22e172a4eb234bf2",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TIME=TIME",
+    "note": ""
+  },
+  {
+    "candidate": "90869617bda2939d2a37",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TOP=TOP",
+    "note": ""
+  },
+  {
+    "candidate": "fe017befa7f3ab1a547c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TOUCH=TOUCH",
+    "note": ""
+  },
+  {
+    "candidate": "c01bb2cd446309c18bcf",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TR=TR",
+    "note": ""
+  },
+  {
+    "candidate": "dd2c65fb9ce439412afa",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TRACEROUTE=TRACEROUTE",
+    "note": ""
+  },
+  {
+    "candidate": "4cba4d5d69bba7a20b40",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TRUE=TRUE",
+    "note": ""
+  },
+  {
+    "candidate": "27bb6f7e6b13f14122dc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TTY=TTY",
+    "note": ""
+  },
+  {
+    "candidate": "3ad84d91df942a1b6e27",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_TUNE2FS=TUNE2FS",
+    "note": ""
+  },
+  {
+    "candidate": "c693a41e2031db25d0ae",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UMOUNT=UMOUNT",
+    "note": ""
+  },
+  {
+    "candidate": "e7442a2abc3ceabff6c5",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UNAME=UNAME",
+    "note": ""
+  },
+  {
+    "candidate": "69ad4889e02f6b0fa965",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UNCOMPRESS=UNCOMPRESS",
+    "note": ""
+  },
+  {
+    "candidate": "93d4a8e96b2e7b8110e4",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UNIQ=UNIQ",
+    "note": ""
+  },
+  {
+    "candidate": "581638e99f66b4f5d75c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UNIX2DOS=UNIX2DOS",
+    "note": ""
+  },
+  {
+    "candidate": "aa5b5c9b8950a4039c93",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UNLZMA=UNLZMA",
+    "note": ""
+  },
+  {
+    "candidate": "ed4e31f1678f39e28a3f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UNZIP=UNZIP",
+    "note": ""
+  },
+  {
+    "candidate": "811fb23ac6a11367529d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UPTIME=UPTIME",
+    "note": ""
+  },
+  {
+    "candidate": "7d94c7c7fca4dae86b80",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_USE_BB_PWD_GRP=USE_BB_PWD_GRP",
+    "note": ""
+  },
+  {
+    "candidate": "ce0b32031ae6d0465e1c",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_USE_BB_SHADOW=USE_BB_SHADOW",
+    "note": ""
+  },
+  {
+    "candidate": "93cc3858544a2509346d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_USLEEP=USLEEP",
+    "note": ""
+  },
+  {
+    "candidate": "c92069fef4eb7db61554",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UUDECODE=UUDECODE",
+    "note": ""
+  },
+  {
+    "candidate": "d59ff54f9243af4498ef",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_UUENCODE=UUENCODE",
+    "note": ""
+  },
+  {
+    "candidate": "ad6c2118ecd73bea610b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_VCONFIG=VCONFIG",
+    "note": ""
+  },
+  {
+    "candidate": "ba60b50a152784cb851b",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_VI=VI",
+    "note": ""
+  },
+  {
+    "candidate": "621d7f39099f8f404458",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_VLOCK=VLOCK",
+    "note": ""
+  },
+  {
+    "candidate": "31d8a00bddd58919a0dc",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WATCH=WATCH",
+    "note": ""
+  },
+  {
+    "candidate": "2c7aa3e8348f5bcf42e9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WATCHDOG=WATCHDOG",
+    "note": ""
+  },
+  {
+    "candidate": "6bce9509acfb1b6f1f1d",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WC=WC",
+    "note": ""
+  },
+  {
+    "candidate": "822131490a5a4fe8d6f0",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WGET=WGET",
+    "note": ""
+  },
+  {
+    "candidate": "29ba3a0d4d8a74574a8a",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WHICH=WHICH",
+    "note": ""
+  },
+  {
+    "candidate": "1d185dabb3d9a414e901",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WHO=WHO",
+    "note": ""
+  },
+  {
+    "candidate": "d733a7dd6ac2d624eb06",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_WHOAMI=WHOAMI",
+    "note": ""
+  },
+  {
+    "candidate": "ed93083cb697e8024e0f",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_XARGS=XARGS",
+    "note": ""
+  },
+  {
+    "candidate": "6db6c21993cb682df1de",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_YES=YES",
+    "note": ""
+  },
+  {
+    "candidate": "9a1d0b78b3f978540cd9",
+    "commit": "cdd25d01954cda7ce45cee3b29792e576f266a3a",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CONFIG_ZCIP=ZCIP",
+    "note": ""
+  },
+  {
+    "candidate": "95496691fa6d150ad283",
+    "commit": "9939ca1164d4e6463e0d259116da33cc7203be95",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_IFUPDOWN_IP_BUILTIN=FEATURE_IFUPDOWN_IFCONFIG_BUILTIN",
+    "note": ""
+  },
+  {
+    "candidate": "efdc8c4c4e8199157036",
+    "commit": "2ce31e20e4ee3cd8d057e56d39fe369c38ae95f5",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_TELNETD_INETD=FEATURE_TELNETD_STANDALONE",
+    "note": "isn't this a semantic negation/reversal of the logic? check the original BusyBox commit 75f8d080a. provided this is a semantic negation, I would reject this.\n\nCodex assessment: Keep rejected. The upstream message and telnetd.c confirm a polarity and scope change: old y meant inetd-only, whereas new y permits standalone operation in addition to inetd and new n means inetd-only. This is not a semantics-preserving rename, and Clausy's current positive mapping cannot express it."
+  },
+  {
+    "candidate": "f14dda48a02c9056406b",
+    "commit": "4267e125c33d4ca7438f2c45ad57c3e8d4930910",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "SU_SYSLOG=FEATURE_SU_SYSLOG",
+    "note": ""
+  },
+  {
+    "candidate": "691b6105dc8da53d05a5",
+    "commit": "d5c4cac7293007432dea151582b061d752ee0c49",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "DEBUG_YANK_SUSv2=INCLUDE_SUSv2",
+    "note": "a semantic flip is not a semantics-preserving renaming, clausy currently does not support these kinds of flips\n\nCodex assessment: Keep rejected. The source changes every old !ENABLE_DEBUG_YANK_SUSv2 guard to ENABLE_INCLUDE_SUSv2, confirming an exact logical negation. A valid correspondence would require x <-> !y, which Clausy's current positive variable mappings cannot express."
+  },
+  {
+    "candidate": "534aa0eb92fba744c4ff",
+    "commit": "8877b4680fc10af35d2866aa372f22446c0c93d9",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_EXEC_PREFER_APPLETS=FEATURE_PREFER_APPLETS",
+    "note": ""
+  },
+  {
+    "candidate": "8a9585b20a01a821bd80",
+    "commit": "8877b4680fc10af35d2866aa372f22446c0c93d9",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_SH_STANDALONE_SHELL=FEATURE_SH_STANDALONE",
+    "note": ""
+  },
+  {
+    "candidate": "c27afba85ee36e514852",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_TAR_GZIP=FEATURE_SEAMLESS_GZ",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "8e43f38da2e062ccf45d",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_TAR_BZIP2=FEATURE_SEAMLESS_BZ2",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "c85baf76dcfc0924eae5",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_TAR_LZMA=FEATURE_SEAMLESS_LZMA",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "f01dc3fe5e9e119fd40c",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_TAR_COMPRESS=FEATURE_SEAMLESS_Z",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "453121b4a6bc44b209d1",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_RPM_BZ2=FEATURE_SEAMLESS_BZ2",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "19317afa914f26e2c6c1",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "083e30926a341521ecaa",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_DEB_TAR_BZ2=FEATURE_SEAMLESS_BZ2",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "7ac4b6be3ab4df9a238d",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_DEB_TAR_LZMA=FEATURE_SEAMLESS_LZMA",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "480c9bf04161e93eabdd",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_MODPROBE_SMALL_ZIPPED=FEATURE_SEAMLESS_BZ2",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "fc5477a4645b065e58a2",
+    "commit": "418e80fe5d0cc1900abd4ac6b48f1800d090ac0e",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_GUNZIP_UNCOMPRESS=FEATURE_SEAMLESS_Z",
+    "note": "I disagree. if anything, this looks like a complex merge of features with FEATURE_TAR_GZIP,FEATURE_DEB_TAR_GZ=FEATURE_SEAMLESS_GZ etc., not a collection of renames. however, the dependencies are also different, and the help texts too. the original commit https://github.com/mirror/busybox/commit/e9ad84dfd declares this as a refactoring, but I would consider the individual features too different to just be renames\n\nCodex assessment: Your objection is correct. The ten one-to-one rename candidates are the wrong representation. The new format-wide SEAMLESS variables jointly replace several independently selectable consumer-specific flags; FEATURE_MODPROBE_SMALL_ZIPPED also overlaps the new GZ/BZ2 paths while LZMA support is added. This is a complex overlapping many-to-many refactor, not clean disjoint renames or merges. I recommend rejecting all current candidates for this commit unless Clausy gains richer overlapping mapping semantics."
+  },
+  {
+    "candidate": "4d5d7c7677d59f637b2d",
+    "commit": "cc4f392c898870c72a18210cb9393c8188c55bf2",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_DF_INODE=FEATURE_DF_FANCY",
+    "note": ""
+  },
+  {
+    "candidate": "b8a98cfc3752f426225d",
+    "commit": "c9b0c4517f2bd3582f0a4e291fcb720bd3c544c2",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_DEPMOD_ALIAS=FEATURE_MODUTILS_ALIAS",
+    "note": "if you consider this a merge including FEATURE_QUERY_MODULE_INTERFACE, why don't you declare it as a merge in the mapping? and I looked at this FEATURE_QUERY_MODULE_INTERFACE and don't see why this is supposed to be a merge. so I kind of agree with the renaming but I don't understand your model summary about the merge with FEATURE_QUERY_MODULE_INTERFACE.\n\nCodex assessment: The candidate itself is defensible, but the model summary is wrong. The source replaces FEATURE_DEPMOD_ALIAS's depmod guards with FEATURE_MODUTILS_ALIAS and extends the same alias-file concept to modprobe. FEATURE_QUERY_MODULE_INTERFACE instead controls obsolete Linux 2.4 query_module code and is removed independently; it is not part of this mapping. I recommend accepting the rename/generalization while disregarding the claimed merge."
+  },
+  {
+    "candidate": "54399ffde574269d63cc",
+    "commit": "b113b2d010e7d0bf2ce0bf3f10ad7b5f5ba3f03f",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_AWK_MATH=FEATURE_AWK_LIBM",
+    "note": ""
+  },
+  {
+    "candidate": "2101005e64359703451f",
+    "commit": "64fd13598dde3ccc46bbabf37508cb45cf392b75",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_LESS_FLAGCS=FEATURE_LESS_DASHCMD",
+    "note": ""
+  },
+  {
+    "candidate": "809583beea1400b73289",
+    "commit": "a83a09e2518e51fda8bce47b295374e9ffdca6fd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "DEBUG_CROND_OPTION=FEATURE_CROND_D",
+    "note": ""
+  },
+  {
+    "candidate": "e668a66184bdce5e1b53",
+    "commit": "a83a09e2518e51fda8bce47b295374e9ffdca6fd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "DEBUG_TFTP=TFTP_DEBUG",
+    "note": ""
+  },
+  {
+    "candidate": "6976b40b602bb06a0817",
+    "commit": "a83a09e2518e51fda8bce47b295374e9ffdca6fd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_UDHCP_DEBUG=UDHCP_DEBUG",
+    "note": ""
+  },
+  {
+    "candidate": "ba248a777a4bf9e768b9",
+    "commit": "a83a09e2518e51fda8bce47b295374e9ffdca6fd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_RFC3397=FEATURE_UDHCP_RFC3397",
+    "note": ""
+  },
+  {
+    "candidate": "78ff2360b0b93aa00ca5",
+    "commit": "a83a09e2518e51fda8bce47b295374e9ffdca6fd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "DHCPC_DEFAULT_SCRIPT=UDHCPC_DEFAULT_SCRIPT",
+    "note": ""
+  },
+  {
+    "candidate": "35cf757cd3100cbad7bc",
+    "commit": "19b81c99af520a4d9da0632eaf54b2dab36b8330",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "ASH_MATH_SUPPORT=SH_MATH_SUPPORT",
+    "note": ""
+  },
+  {
+    "candidate": "e29040fdc6dc854339ac",
+    "commit": "19b81c99af520a4d9da0632eaf54b2dab36b8330",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "ASH_MATH_SUPPORT_64=SH_MATH_SUPPORT_64",
+    "note": ""
+  },
+  {
+    "candidate": "038ba6cdca9129f3fdbe",
+    "commit": "8d41280b90735705c0506bb406be1f842f5230dc",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "GETOPT_LONG=LONG_OPTS",
+    "note": ""
+  },
+  {
+    "candidate": "f43b234309c0025aef25",
+    "commit": "7ebe0b6022b25cb5d0551c6e300be86df8615e18",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_BEEP_LENGTH=FEATURE_BEEP_LENGTH_MS",
+    "note": ""
+  },
+  {
+    "candidate": "07c26e1f1604c39ae7c1",
+    "commit": "0544a4b3326c198add1c42394419ccfbfde58663",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_ASSUME_UNICODE=UNICODE_SUPPORT",
+    "note": ""
+  },
+  {
+    "candidate": "80e1badceb684e3300fc",
+    "commit": "78b524a324ee6f3dee71835c81c2b394627dc5bc",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_LZMA_ALIAS=LZMA",
+    "note": "this is supported by the original commit message\n\nCodex assessment: Agree with accepted. The upstream subject explicitly says this is a rename, and the Kconfig declaration, C preprocessor guards, and applet registration all change mechanically from FEATURE_LZMA_ALIAS to LZMA without a polarity or scope change."
+  },
+  {
+    "candidate": "fa0c6f31e6e46deadec9",
+    "commit": "b8e6d2bb2a61e8ca55faaa2a4d053b9f8b60bf25",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "GZIP_BIG_MEM=GZIP_FAST",
+    "note": ""
+  },
+  {
+    "candidate": "c590f3718bac1a421133",
+    "commit": "b8e6d2bb2a61e8ca55faaa2a4d053b9f8b60bf25",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "MD5_SIZE_VS_SPEED=MD5_SMALL",
+    "note": ""
+  },
+  {
+    "candidate": "9b50110dc205eca89152",
+    "commit": "3a85b2fcfeeac8588f6e67d9e6ece9f0e73c3f12",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_HTTPD_USE_SENDFILE=FEATURE_USE_SENDFILE",
+    "note": ""
+  },
+  {
+    "candidate": "f764ab9cbb9af5527203",
+    "commit": "1c8ae8aef3e20d3ea124ce8dbf20b54a5f070b1d",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_INITRD=LINUXRC",
+    "note": ""
+  },
+  {
+    "candidate": "f06ce0fd5b303d99cae3",
+    "commit": "a4da95b34c1bffd09095e1f53b530d0a0e84f004",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_GREP_EGREP_ALIAS=EGREP",
+    "note": ""
+  },
+  {
+    "candidate": "9411badde21e4db2d813",
+    "commit": "a4da95b34c1bffd09095e1f53b530d0a0e84f004",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_GREP_FGREP_ALIAS=FGREP",
+    "note": ""
+  },
+  {
+    "candidate": "7b128e625aaa10e8546a",
+    "commit": "0b9bb547382f0c32c47a2a20b96e2d5b77019daa",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "SWAPONOFF=SWAPON,SWAPOFF",
+    "note": ""
+  },
+  {
+    "candidate": "1410469a64696ed84d39",
+    "commit": "75a929b96eab0b0a30d809cfab1718f143c75cef",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "IFUPDOWN=IFUP,IFDOWN",
+    "note": ""
+  },
+  {
+    "candidate": "e0147faec7c4950bb7c1",
+    "commit": "ffb53f3892018f128eb23990aa83b01dd5459e56",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_FTP_WRITE=FEATURE_FTPD_WRITE",
+    "note": ""
+  },
+  {
+    "candidate": "17abab6a5e83732acf78",
+    "commit": "ffb53f3892018f128eb23990aa83b01dd5459e56",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_FTP_AUTHENTICATION=FEATURE_FTPD_AUTHENTICATION",
+    "note": ""
+  },
+  {
+    "candidate": "559d7ca4afc512d4756c",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_SH_IS_ASH=SH_IS_ASH",
+    "note": ""
+  },
+  {
+    "candidate": "5e0100f4eac9430e14c1",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_SH_IS_HUSH=SH_IS_HUSH",
+    "note": ""
+  },
+  {
+    "candidate": "594c49a157b33fbed5b5",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_SH_IS_NONE=SH_IS_NONE",
+    "note": ""
+  },
+  {
+    "candidate": "ab633b18b242ace9935f",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_BASH_IS_ASH=BASH_IS_ASH",
+    "note": ""
+  },
+  {
+    "candidate": "03f0eb804d97ec7bd695",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_BASH_IS_HUSH=BASH_IS_HUSH",
+    "note": ""
+  },
+  {
+    "candidate": "0668909e0ddadcab720c",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_BASH_IS_NONE=BASH_IS_NONE",
+    "note": ""
+  },
+  {
+    "candidate": "ba879a0a78edecebc2cf",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "SH_MATH_SUPPORT=FEATURE_SH_MATH",
+    "note": ""
+  },
+  {
+    "candidate": "c0fe9f8af94b0dd55a59",
+    "commit": "81867f3c8337dce1afe3f525fcd65aebf96ed101",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "SH_MATH_SUPPORT_64=FEATURE_SH_MATH_64",
+    "note": ""
+  },
+  {
+    "candidate": "c4d4ee5780cbb1563b60",
+    "commit": "aa46a92676ef255941e8b134ba590141dae879cd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "ASH_BUILTIN_ECHO=ASH_ECHO",
+    "note": ""
+  },
+  {
+    "candidate": "14a3332da4ef62a27c1d",
+    "commit": "aa46a92676ef255941e8b134ba590141dae879cd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "ASH_BUILTIN_PRINTF=ASH_PRINTF",
+    "note": ""
+  },
+  {
+    "candidate": "20b7488bb2cc2520771a",
+    "commit": "aa46a92676ef255941e8b134ba590141dae879cd",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "ASH_BUILTIN_TEST=ASH_TEST",
+    "note": ""
+  },
+  {
+    "candidate": "73fbc314d23ca4ea26a1",
+    "commit": "5f8ef2a5c1e17015637e7693a65d7739ca4c4994",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_EXTRA_QUIET=FEATURE_INIT_QUIET",
+    "note": "looking at the original commit message confirms this is a rename\n\nCodex assessment: Agree with accepted. The upstream subject explicitly names FEATURE_EXTRA_QUIET -> FEATURE_INIT_QUIET, and the same source guard is mechanically renamed while retaining the behavior of suppressing init's startup message."
+  },
+  {
+    "candidate": "0eb4adc101695e616908",
+    "commit": "6c7a39aa0567347778c622a3f7417bf87114e4a1",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_USE_TERMIOS=FEATURE_POWERTOP_INTERACTIVE,FEATURE_TOP_INTERACTIVE",
+    "note": "are you really sure about this? Please check with the original commit 6c1f348fa in BusyBox. the split option mentions top and all options mention keyboard input, but it would be best to check with the source code.\n\nCodex assessment: I recommend accepting this split. The upstream commit explicitly says there are no code changes. Before the commit, FEATURE_USE_TERMIOS guards exactly two consumers, powertop.c and top.c; every guard is mechanically replaced by FEATURE_POWERTOP_INTERACTIVE or FEATURE_TOP_INTERACTIVE respectively. The two independently selectable successors are a clean split of the old shared control."
+  },
+  {
+    "candidate": "6d621db0f1bfc9a8d874",
+    "commit": "81e3a12930cb7afcd0f744ab7fa7c482fa4eb8af",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_AUTOWIDTH=FEATURE_LS_WIDTH,FEATURE_TELNET_WIDTH",
+    "note": ""
+  },
+  {
+    "candidate": "cbea32ebe9a5260d3736",
+    "commit": "50476787af0fb6b8beabb94752def99d17d9c5a9",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_WGET_SSL_HELPER=FEATURE_WGET_HTTPS,SSL_CLIENT",
+    "note": "while it looks plausible that this is a relatively clean split, I am not fully sure about this, please check against the source code of BusyBox commit 9a647c326\n\nCodex assessment: The current split mapping should be rejected and replaced. In wget.c, every FEATURE_WGET_SSL_HELPER guard is mechanically replaced by FEATURE_WGET_HTTPS. SSL_CLIENT is a new, separately selectable applet that shares the extracted TLS library; FEATURE_WGET_HTTPS selects TLS, not SSL_CLIENT. The defensible mapping is FEATURE_WGET_SSL_HELPER=FEATURE_WGET_HTTPS only.\n\nhuman response: because of the complex and opaque nature of this change I would completely drop the mapping."
+  },
+  {
+    "candidate": "82d4a4315adafa8ac0b4",
+    "commit": "9452c0a51c910a6605fe7b7765a8c33ea09deed7",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_MODPROBE_SMALL_OPTIONS_ON_CMDLINE=FEATURE_CMDLINE_MODULE_OPTIONS",
+    "note": ""
+  },
+  {
+    "candidate": "5883cf2c0bce5e16f609",
+    "commit": "c4e8c2366667a8d94c6785b4d0d0f40c8b758cf2",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "CATV=FEATURE_CATV",
+    "note": ""
+  },
+  {
+    "candidate": "51d947c6d802c95c7da2",
+    "commit": "f79bb0cb132402e3f9a1f3a3e9b63bc21183a847",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "BBARCH=BB_ARCH",
+    "note": ""
+  },
+  {
+    "candidate": "f757488037c9a3cd064e",
+    "commit": "1ee473a57433a550095fb1c4a747b06ffa4d2d1e",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "NSLOOKUP_BIG=FEATURE_NSLOOKUP_BIG",
+    "note": ""
+  },
+  {
+    "candidate": "8a85c72037daf5572e23",
+    "commit": "611ed85595636b515ab5c28e8dedc74155913e91",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_FLOAT_SLEEP=FLOAT_DURATION",
+    "note": ""
+  },
+  {
+    "candidate": "3add6c6c5310958ea168",
+    "commit": "ebffe472b1e7835614207d05d7361063c678df9f",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "ASH_EMBEDDED_SCRIPTS=FEATURE_SH_EMBEDDED_SCRIPTS",
+    "note": ""
+  },
+  {
+    "candidate": "6f661df2316a84ecbff1",
+    "commit": "884dae5214362006c29e7293abd55b64f41e40e0",
+    "decision": "rejected",
+    "excluded": false,
+    "mapping": "FEATURE_DC_LIBM=FEATURE_BC_LONG_OPTIONS",
+    "note": "I think this is one of the cases where we need to check the original commit 01055ba89 to determine the source code whether this can be considered a renaming.\n\nCodex assessment: Reject this candidate. FEATURE_DC_LIBM is not removed by the upstream commit: it remains afterward and continues to guard dc's power and exponent implementation. FEATURE_BC_LONG_OPTIONS is newly introduced and gates getopt32long for bc/dc, which is unrelated. This is a false positive caused by the old dc code being moved while the new bc implementation was added."
+  },
+  {
+    "candidate": "261246fc589b51ef6eda",
+    "commit": "e7dabb0ad0104b3c1ed1d44724e5962b933bfdf0",
+    "decision": "rejected",
+    "excluded": true,
+    "mapping": "FEATURE_DC_SMALL=FEATURE_DC_BIG,FEATURE_BC_INTERACTIVE",
+    "note": "if the logic changes a lot, and this is a semantic shift from small to big, I would not consider this a renaming/a clean split. please check the original commit 147676060. \"which is functionally equivalent to the 'signals' mentioned in `FEATURE_BC_SIGNALS`\" - this seems a little bit farfetched to me.\n\nCodex assessment: This commit has mixed results. Reject FEATURE_DC_SMALL=FEATURE_DC_BIG,FEATURE_BC_INTERACTIVE: SMALL to BIG is a polarity reversal, not a split, and the interactive option is unrelated to that choice. However, FEATURE_BC_SIGNALS=FEATURE_BC_INTERACTIVE is a genuine mechanical rename: every source guard changes directly and the existing help already described interactive behavior such as Ctrl-C and line editing. I recommend revising the candidate set to retain only that rename, then accepting the commit."
+  },
+  {
+    "candidate": "7218a81537d8e857aae8",
+    "commit": "e7dabb0ad0104b3c1ed1d44724e5962b933bfdf0",
+    "decision": "accepted",
+    "excluded": false,
+    "mapping": "FEATURE_BC_SIGNALS=FEATURE_BC_INTERACTIVE",
+    "note": "if the logic changes a lot, and this is a semantic shift from small to big, I would not consider this a renaming/a clean split. please check the original commit 147676060. \"which is functionally equivalent to the 'signals' mentioned in `FEATURE_BC_SIGNALS`\" - this seems a little bit farfetched to me.\n\nCodex assessment: This commit has mixed results. Reject FEATURE_DC_SMALL=FEATURE_DC_BIG,FEATURE_BC_INTERACTIVE: SMALL to BIG is a polarity reversal, not a split, and the interactive option is unrelated to that choice. However, FEATURE_BC_SIGNALS=FEATURE_BC_INTERACTIVE is a genuine mechanical rename: every source guard changes directly and the existing help already described interactive behavior such as Ctrl-C and line editing. I recommend revising the candidate set to retain only that rename, then accepting the commit.\n\nhuman response: I revised the mapping to omit the split and only keep the rename."
+  }
+]
